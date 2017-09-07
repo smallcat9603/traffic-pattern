@@ -1,0 +1,201 @@
+ID Allocation Policy is 0(low port first) / 1(Crossing Paths based method): 1
+Address method is 0(destination_based) / 1(path_based): 1
+ dst_based renewable label = 3
+ path_based renewable label = 4
+
+
+ (east, west, south, north, front, back, from host0,... east(vch2), south(vch2), west(vch2), north(vch2), front, back, from host(vch2)0,.. to host(vch2)0,..
+ Node  0:   0 0 1 0 1 0 1 1
+ Node  1:   0 1 1 0 1 0 1 0
+ Node  2:   0 1 0 0 1 0 1 1
+ Node  3:   0 2 0 0 1 0 1 1
+ Node  4:   0 0 0 1 1 0 1 2
+ Node  5:   0 0 1 0 1 0 1 0
+ Node  6:   0 0 0 0 1 0 1 2
+ Node  7:   0 0 1 0 1 0 1 1
+ Node  8:   2 0 0 2 0 0 1 0
+ Node  9:   2 1 0 0 1 0 1 1
+ Node 10:   1 1 0 2 1 0 1 0
+ Node 11:   0 1 0 1 1 0 1 2
+ Node 12:   0 0 0 1 1 0 1 0
+ Node 13:   0 1 0 0 1 0 1 1
+ Node 14:   1 2 0 1 1 0 1 0
+ Node 15:   0 3 0 1 1 0 1 0
+ Node 16:   1 0 1 0 2 0 1 0
+ Node 17:   2 1 0 0 2 1 1 0
+ Node 18:   2 1 1 0 2 0 1 1
+ Node 19:   0 0 1 0 1 3 1 1
+ Node 20:   3 0 1 0 1 0 1 0
+ Node 21:   3 0 0 0 2 0 1 0
+ Node 22:   3 0 1 1 2 0 1 2
+ Node 23:   0 0 2 0 1 1 1 3
+ Node 24:   1 0 2 0 0 1 1 0
+ Node 25:   2 1 0 0 1 0 1 0
+ Node 26:   0 1 0 2 2 0 1 1
+ Node 27:   0 1 1 1 1 1 1 1
+ Node 28:   2 0 0 0 0 0 1 2
+ Node 29:   1 0 0 0 2 0 1 1
+ Node 30:   1 0 0 0 2 1 1 0
+ Node 31:   0 0 0 1 1 3 1 1
+ Node 32:   0 0 2 0 2 1 1 2
+ Node 33:   0 1 0 0 1 2 1 0
+ Node 34:   1 0 0 0 1 2 1 2
+ Node 35:   0 0 0 0 1 2 1 2
+ Node 36:   0 0 0 2 1 2 1 3
+ Node 37:   1 1 1 0 0 0 1 1
+ Node 38:   0 1 1 2 2 1 1 0
+ Node 39:   0 1 0 1 1 0 1 0
+ Node 40:   0 0 0 2 0 1 1 2
+ Node 41:   1 1 1 0 1 0 1 3
+ Node 42:   0 2 0 1 3 0 1 1
+ Node 43:   0 1 0 1 1 1 1 1
+ Node 44:   1 0 0 3 1 0 1 0
+ Node 45:   0 3 0 2 1 0 1 1
+ Node 46:   2 1 0 0 0 1 1 0
+ Node 47:   0 0 0 2 1 2 1 0
+ Node 48:   2 0 0 0 0 1 1 2
+ Node 49:   1 1 0 0 0 1 1 2
+ Node 50:   0 1 2 0 0 1 1 0
+ Node 51:   0 1 0 0 0 1 1 1
+ Node 52:   1 0 1 1 0 1 1 2
+ Node 53:   1 3 0 0 0 0 1 0
+ Node 54:   0 2 2 0 0 1 1 3
+ Node 55:   0 2 0 1 0 0 1 1
+ Node 56:   1 0 1 1 0 0 1 2
+ Node 57:   0 3 1 0 0 0 1 1
+ Node 58:   0 2 4 0 0 1 1 0
+ Node 59:   0 1 0 2 0 1 1 0
+ Node 60:   1 0 0 0 0 1 1 1
+ Node 61:   2 0 0 0 0 1 1 2
+ Node 62:   2 1 0 0 0 1 1 4
+ Node 63:   0 1 0 2 0 1 1 0
+
+(Maximum) Crossing Paths: 4
+The number of paths on this application : 64 (all-to-all cases: 4032)
+The average hops : 4.921875
+ID size(without ID modification)4
+total_slots: 251
+avg_slots: 0.653646
+efficiency: 0.163411
+unused_total_slots: 1285
+unused_avg_slots: 3.346354
+inefficiency: 0.836589
+
+src_greedy total_increased_slots: 223
+
+src_greedy src_greedy total_slots: 474
+src_greedy avg_slots: 1.234375
+src_greedy increased_avg_slots: 0.580729
+src_greedy efficiency: 0.308594
+src_greedy increased_efficiency: 0.145182
+src_greedy unused_total_slots: 1062
+src_greedy unused_avg_slots: 2.765625
+src_greedy decreased_unused_avg_slots: 0.580729
+src_greedy inefficiency: 0.691406
+src_greedy decreased_inefficiency: 0.145182
+
+src_polling total_increased_slots: 216
+
+src_polling total_slots: 467
+src_polling avg_slots: 1.216146
+src_polling increased_avg_slots: 0.562500
+src_polling efficiency: 0.304036
+src_polling increased_efficiency: 0.140625
+src_polling unused_total_slots: 1069
+src_polling unused_avg_slots: 2.783854
+src_polling decreased_unused_avg_slots: 0.562500
+src_polling inefficiency: 0.695964
+src_polling decreased_inefficiency: 0.140625
+
+hcLtoS_greedy total_increased_slots: 244
+
+hcLtoS_greedy total_slots: 495
+hcLtoS_greedy avg_slots: 1.289062
+hcLtoS_greedy increased_avg_slots: 0.635417
+hcLtoS_greedy efficiency: 0.322266
+hcLtoS_greedy increased_efficiency: 0.158854
+hcLtoS_greedy unused_total_slots: 1041
+hcLtoS_greedy unused_avg_slots: 2.710938
+hcLtoS_greedy decreased_unused_avg_slots: 0.635417
+hcLtoS_greedy inefficiency: 0.677734
+hcLtoS_greedy decreased_inefficiency: 0.158854
+
+hcLtoS_polling total_increased_slots: 218
+
+hcLtoS_polling total_slots: 469
+hcLtoS_polling avg_slots: 1.221354
+hcLtoS_polling increased_avg_slots: 0.567708
+hcLtoS_polling efficiency: 0.305339
+hcLtoS_polling increased_efficiency: 0.141927
+hcLtoS_polling unused_total_slots: 1067
+hcLtoS_polling unused_avg_slots: 2.778646
+hcLtoS_polling decreased_unused_avg_slots: 0.567708
+hcLtoS_polling inefficiency: 0.694661
+hcLtoS_polling decreased_inefficiency: 0.141927
+
+hcStoL_greedy total_increased_slots: 206
+
+hcStoL_greedy total_slots: 457
+hcStoL_greedy avg_slots: 1.190104
+hcStoL_greedy increased_avg_slots: 0.536458
+hcStoL_greedy efficiency: 0.297526
+hcStoL_greedy increased_efficiency: 0.134115
+hcStoL_greedy unused_total_slots: 1079
+hcStoL_greedy unused_avg_slots: 2.809896
+hcStoL_greedy decreased_unused_avg_slots: 0.536458
+hcStoL_greedy inefficiency: 0.702474
+hcStoL_greedy decreased_inefficiency: 0.134115
+
+hcStoL_polling total_increased_slots: 217
+
+hcStoL_polling total_slots: 468
+hcStoL_polling avg_slots: 1.218750
+hcStoL_polling increased_avg_slots: 0.565104
+hcStoL_polling efficiency: 0.304688
+hcStoL_polling increased_efficiency: 0.141276
+hcStoL_polling unused_total_slots: 1068
+hcStoL_polling unused_avg_slots: 2.781250
+hcStoL_polling decreased_unused_avg_slots: 0.565104
+hcStoL_polling inefficiency: 0.695312
+hcStoL_polling decreased_inefficiency: 0.141276
+
+total_slots: 251
+src_greedy_total_slots: 474
+src_polling_total_slots: 467
+hcLtoS_greedy_total_slots: 495
+hcLtoS_polling_total_slots: 469
+hcStoL_greedy_total_slots: 457
+hcStoL_polling_total_slots: 468
+
+baseline_efficiency: 0.163411
+src_greedy_efficiency: 0.308594
+src_polling_efficiency: 0.304036
+hcLtoS_greedy_efficiency: 0.322266
+hcLtoS_polling_efficiency: 0.305339
+hcStoL_greedy_efficiency: 0.297526
+hcStoL_polling_efficiency: 0.304688
+
+baseline_inefficiency: 0.836589
+src_greedy_inefficiency: 0.691406
+src_polling_inefficiency: 0.695964
+hcLtoS_greedy_inefficiency: 0.677734
+hcLtoS_polling_inefficiency: 0.694661
+hcStoL_greedy_inefficiency: 0.702474
+hcStoL_polling_inefficiency: 0.695312
+
+baseline_avg_slots: 0.653646
+src_greedy_avg_slots: 1.234375
+src_polling_avg_slots: 1.216146
+hcLtoS_greedy_avg_slots: 1.289062
+hcLtoS_polling_avg_slots: 1.221354
+hcStoL_greedy_avg_slots: 1.190104
+hcStoL_polling_avg_slots: 1.218750
+
+baseline_unused_avg_slots: 3.346354
+src_greedy_unused_avg_slots: 2.765625
+src_polling_unused_avg_slots: 2.783854
+hcLtoS_greedy_unused_avg_slots: 2.710938
+hcLtoS_polling_unused_avg_slots: 2.778646
+hcStoL_greedy_unused_avg_slots: 2.809896
+hcStoL_polling_unused_avg_slots: 2.781250
+

@@ -1,0 +1,81 @@
+ID Allocation Policy is 0(low port first) / 1(Crossing Paths based method): 1
+Address method is 0(destination_based) / 1(path_based): 1
+ dst_based renewable label = 2
+ path_based renewable label = 2
+
+
+ (east, west, south, north, front, back, from host0,... east(vch2), south(vch2), west(vch2), north(vch2), front, back, from host(vch2)0,.. to host(vch2)0,..
+ Node  0:   1 0 1 0 1 0 1 1
+ Node  1:   2 1 1 0 1 0 1 1
+ Node  2:   1 2 1 0 1 0 1 1
+ Node  3:   0 1 1 0 1 0 1 1
+ Node  4:   1 0 2 1 1 0 1 1
+ Node  5:   2 1 2 1 1 0 1 1
+ Node  6:   1 2 2 1 1 0 1 1
+ Node  7:   0 1 2 1 1 0 1 1
+ Node  8:   1 0 1 2 1 0 1 1
+ Node  9:   2 1 1 2 1 0 1 1
+ Node 10:   1 2 1 2 1 0 1 1
+ Node 11:   0 1 1 2 1 0 1 1
+ Node 12:   1 0 0 1 1 0 1 1
+ Node 13:   2 1 0 1 1 0 1 1
+ Node 14:   1 2 0 1 1 0 1 1
+ Node 15:   0 1 0 1 1 0 1 1
+ Node 16:   1 0 1 0 2 1 1 1
+ Node 17:   2 1 1 0 2 1 1 1
+ Node 18:   1 2 1 0 2 1 1 1
+ Node 19:   0 1 1 0 2 1 1 1
+ Node 20:   1 0 2 1 2 1 1 1
+ Node 21:   2 1 2 1 2 1 1 1
+ Node 22:   1 2 2 1 2 1 1 1
+ Node 23:   0 1 2 1 2 1 1 1
+ Node 24:   1 0 1 2 2 1 1 1
+ Node 25:   2 1 1 2 2 1 1 1
+ Node 26:   1 2 1 2 2 1 1 1
+ Node 27:   0 1 1 2 2 1 1 1
+ Node 28:   1 0 0 1 2 1 1 1
+ Node 29:   2 1 0 1 2 1 1 1
+ Node 30:   1 2 0 1 2 1 1 1
+ Node 31:   0 1 0 1 2 1 1 1
+ Node 32:   1 0 1 0 1 2 1 1
+ Node 33:   2 1 1 0 1 2 1 1
+ Node 34:   1 2 1 0 1 2 1 1
+ Node 35:   0 1 1 0 1 2 1 1
+ Node 36:   1 0 2 1 1 2 1 1
+ Node 37:   2 1 2 1 1 2 1 1
+ Node 38:   1 2 2 1 1 2 1 1
+ Node 39:   0 1 2 1 1 2 1 1
+ Node 40:   1 0 1 2 1 2 1 1
+ Node 41:   2 1 1 2 1 2 1 1
+ Node 42:   1 2 1 2 1 2 1 1
+ Node 43:   0 1 1 2 1 2 1 1
+ Node 44:   1 0 0 1 1 2 1 1
+ Node 45:   2 1 0 1 1 2 1 1
+ Node 46:   1 2 0 1 1 2 1 1
+ Node 47:   0 1 0 1 1 2 1 1
+ Node 48:   1 0 1 0 0 1 1 1
+ Node 49:   2 1 1 0 0 1 1 1
+ Node 50:   1 2 1 0 0 1 1 1
+ Node 51:   0 1 1 0 0 1 1 1
+ Node 52:   1 0 2 1 0 1 1 1
+ Node 53:   2 1 2 1 0 1 1 1
+ Node 54:   1 2 2 1 0 1 1 1
+ Node 55:   0 1 2 1 0 1 1 1
+ Node 56:   1 0 1 2 0 1 1 1
+ Node 57:   2 1 1 2 0 1 1 1
+ Node 58:   1 2 1 2 0 1 1 1
+ Node 59:   0 1 1 2 0 1 1 1
+ Node 60:   1 0 0 1 0 1 1 1
+ Node 61:   2 1 0 1 0 1 1 1
+ Node 62:   1 2 0 1 0 1 1 1
+ Node 63:   0 1 0 1 0 1 1 1
+
+(Maximum) Crossing Paths: 2
+The number of paths on this application : 64 (all-to-all cases: 4032)
+The average hops : 7.000000
+ID size(without ID modification)2
+total_slots: 384
+avg_slots: 1.000000
+unused_total_slots: 384
+unused_avg_slots: 1.000000
+

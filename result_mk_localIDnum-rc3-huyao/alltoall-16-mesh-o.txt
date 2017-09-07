@@ -1,0 +1,1385 @@
+ID Allocation Policy is 0(low port first) / 1(Crossing Paths based method): 1
+Address method is 0(destination_based) / 1(path_based): 1
+ dst_based renewable label = 15
+ path_based renewable label = 16
+
+Channels (0)
+Channels (1)
+ channel from 0 to 1 is assigned to the ID 13
+ channel from 0 to 2 is assigned to the ID 0
+ channel from 0 to 3 is assigned to the ID 1
+ channel from 0 to 5 is assigned to the ID 14
+ channel from 0 to 6 is assigned to the ID 2
+ channel from 0 to 7 is assigned to the ID 3
+ channel from 0 to 9 is assigned to the ID 10
+ channel from 0 to 10 is assigned to the ID 4
+ channel from 0 to 11 is assigned to the ID 5
+ channel from 0 to 13 is assigned to the ID 12
+ channel from 0 to 14 is assigned to the ID 6
+ channel from 0 to 15 is assigned to the ID 7
+Channels (2)
+Channels (3)
+ channel from 0 to 4 is assigned to the ID 16
+ channel from 0 to 8 is assigned to the ID 8
+ channel from 0 to 12 is assigned to the ID 9
+ channel from 1 to 4 is assigned to the ID 17
+ channel from 1 to 8 is assigned to the ID 1
+ channel from 1 to 12 is assigned to the ID 3
+ channel from 2 to 4 is assigned to the ID 2
+ channel from 2 to 8 is assigned to the ID 4
+ channel from 2 to 12 is assigned to the ID 6
+ channel from 3 to 4 is assigned to the ID 10
+ channel from 3 to 8 is assigned to the ID 12
+ channel from 3 to 12 is assigned to the ID 14
+Channels (4)
+Channels (5)
+ channel from 0 to 1 is assigned to the ID 13
+ channel from 0 to 2 is assigned to the ID 0
+ channel from 0 to 3 is assigned to the ID 1
+ channel from 0 to 4 is assigned to the ID 16
+ channel from 0 to 5 is assigned to the ID 14
+ channel from 0 to 6 is assigned to the ID 2
+ channel from 0 to 7 is assigned to the ID 3
+ channel from 0 to 8 is assigned to the ID 8
+ channel from 0 to 9 is assigned to the ID 10
+ channel from 0 to 10 is assigned to the ID 4
+ channel from 0 to 11 is assigned to the ID 5
+ channel from 0 to 12 is assigned to the ID 9
+ channel from 0 to 13 is assigned to the ID 12
+ channel from 0 to 14 is assigned to the ID 6
+ channel from 0 to 15 is assigned to the ID 7
+Channels (6)
+ channel from 1 to 0 is assigned to the ID 5
+ channel from 2 to 0 is assigned to the ID 0
+ channel from 3 to 0 is assigned to the ID 8
+ channel from 4 to 0 is assigned to the ID 15
+ channel from 5 to 0 is assigned to the ID 16
+ channel from 6 to 0 is assigned to the ID 1
+ channel from 7 to 0 is assigned to the ID 12
+ channel from 8 to 0 is assigned to the ID 2
+ channel from 9 to 0 is assigned to the ID 3
+ channel from 10 to 0 is assigned to the ID 4
+ channel from 11 to 0 is assigned to the ID 6
+ channel from 12 to 0 is assigned to the ID 9
+ channel from 13 to 0 is assigned to the ID 10
+ channel from 14 to 0 is assigned to the ID 13
+ channel from 15 to 0 is assigned to the ID 14
+Channels (7)
+Channels (8)
+ channel from 0 to 2 is assigned to the ID 0
+ channel from 0 to 3 is assigned to the ID 1
+ channel from 0 to 6 is assigned to the ID 2
+ channel from 0 to 7 is assigned to the ID 3
+ channel from 0 to 10 is assigned to the ID 4
+ channel from 0 to 11 is assigned to the ID 5
+ channel from 0 to 14 is assigned to the ID 6
+ channel from 0 to 15 is assigned to the ID 7
+ channel from 1 to 2 is assigned to the ID 8
+ channel from 1 to 3 is assigned to the ID 9
+ channel from 1 to 6 is assigned to the ID 10
+ channel from 1 to 7 is assigned to the ID 11
+ channel from 1 to 10 is assigned to the ID 12
+ channel from 1 to 11 is assigned to the ID 13
+ channel from 1 to 14 is assigned to the ID 14
+ channel from 1 to 15 is assigned to the ID 15
+Channels (9)
+ channel from 1 to 0 is assigned to the ID 5
+ channel from 1 to 4 is assigned to the ID 17
+ channel from 1 to 8 is assigned to the ID 1
+ channel from 1 to 12 is assigned to the ID 3
+ channel from 2 to 0 is assigned to the ID 0
+ channel from 2 to 4 is assigned to the ID 2
+ channel from 2 to 8 is assigned to the ID 4
+ channel from 2 to 12 is assigned to the ID 6
+ channel from 3 to 0 is assigned to the ID 8
+ channel from 3 to 4 is assigned to the ID 10
+ channel from 3 to 8 is assigned to the ID 12
+ channel from 3 to 12 is assigned to the ID 14
+Channels (10)
+ channel from 0 to 5 is assigned to the ID 14
+ channel from 0 to 9 is assigned to the ID 10
+ channel from 0 to 13 is assigned to the ID 12
+ channel from 1 to 5 is assigned to the ID 4
+ channel from 1 to 9 is assigned to the ID 0
+ channel from 1 to 13 is assigned to the ID 2
+ channel from 2 to 5 is assigned to the ID 3
+ channel from 2 to 9 is assigned to the ID 5
+ channel from 2 to 13 is assigned to the ID 7
+ channel from 3 to 5 is assigned to the ID 11
+ channel from 3 to 9 is assigned to the ID 13
+ channel from 3 to 13 is assigned to the ID 15
+Channels (11)
+Channels (12)
+ channel from 1 to 0 is assigned to the ID 5
+ channel from 1 to 2 is assigned to the ID 8
+ channel from 1 to 3 is assigned to the ID 9
+ channel from 1 to 4 is assigned to the ID 17
+ channel from 1 to 5 is assigned to the ID 4
+ channel from 1 to 6 is assigned to the ID 10
+ channel from 1 to 7 is assigned to the ID 11
+ channel from 1 to 8 is assigned to the ID 1
+ channel from 1 to 9 is assigned to the ID 0
+ channel from 1 to 10 is assigned to the ID 12
+ channel from 1 to 11 is assigned to the ID 13
+ channel from 1 to 12 is assigned to the ID 3
+ channel from 1 to 13 is assigned to the ID 2
+ channel from 1 to 14 is assigned to the ID 14
+ channel from 1 to 15 is assigned to the ID 15
+Channels (13)
+ channel from 0 to 1 is assigned to the ID 13
+ channel from 2 to 1 is assigned to the ID 1
+ channel from 3 to 1 is assigned to the ID 9
+ channel from 4 to 1 is assigned to the ID 12
+ channel from 5 to 1 is assigned to the ID 8
+ channel from 6 to 1 is assigned to the ID 0
+ channel from 7 to 1 is assigned to the ID 5
+ channel from 8 to 1 is assigned to the ID 10
+ channel from 9 to 1 is assigned to the ID 4
+ channel from 10 to 1 is assigned to the ID 2
+ channel from 11 to 1 is assigned to the ID 3
+ channel from 12 to 1 is assigned to the ID 6
+ channel from 13 to 1 is assigned to the ID 7
+ channel from 14 to 1 is assigned to the ID 11
+ channel from 15 to 1 is assigned to the ID 17
+Channels (14)
+Channels (15)
+ channel from 0 to 3 is assigned to the ID 1
+ channel from 0 to 7 is assigned to the ID 3
+ channel from 0 to 11 is assigned to the ID 5
+ channel from 0 to 15 is assigned to the ID 7
+ channel from 1 to 3 is assigned to the ID 9
+ channel from 1 to 7 is assigned to the ID 11
+ channel from 1 to 11 is assigned to the ID 13
+ channel from 1 to 15 is assigned to the ID 15
+ channel from 2 to 3 is assigned to the ID 12
+ channel from 2 to 7 is assigned to the ID 16
+ channel from 2 to 11 is assigned to the ID 8
+ channel from 2 to 15 is assigned to the ID 10
+Channels (16)
+ channel from 2 to 0 is assigned to the ID 0
+ channel from 2 to 1 is assigned to the ID 1
+ channel from 2 to 4 is assigned to the ID 2
+ channel from 2 to 5 is assigned to the ID 3
+ channel from 2 to 8 is assigned to the ID 4
+ channel from 2 to 9 is assigned to the ID 5
+ channel from 2 to 12 is assigned to the ID 6
+ channel from 2 to 13 is assigned to the ID 7
+ channel from 3 to 0 is assigned to the ID 8
+ channel from 3 to 1 is assigned to the ID 9
+ channel from 3 to 4 is assigned to the ID 10
+ channel from 3 to 5 is assigned to the ID 11
+ channel from 3 to 8 is assigned to the ID 12
+ channel from 3 to 9 is assigned to the ID 13
+ channel from 3 to 12 is assigned to the ID 14
+ channel from 3 to 13 is assigned to the ID 15
+Channels (17)
+ channel from 0 to 6 is assigned to the ID 2
+ channel from 0 to 10 is assigned to the ID 4
+ channel from 0 to 14 is assigned to the ID 6
+ channel from 1 to 6 is assigned to the ID 10
+ channel from 1 to 10 is assigned to the ID 12
+ channel from 1 to 14 is assigned to the ID 14
+ channel from 2 to 6 is assigned to the ID 15
+ channel from 2 to 10 is assigned to the ID 9
+ channel from 2 to 14 is assigned to the ID 11
+ channel from 3 to 6 is assigned to the ID 3
+ channel from 3 to 10 is assigned to the ID 0
+ channel from 3 to 14 is assigned to the ID 1
+Channels (18)
+Channels (19)
+ channel from 2 to 0 is assigned to the ID 0
+ channel from 2 to 1 is assigned to the ID 1
+ channel from 2 to 3 is assigned to the ID 12
+ channel from 2 to 4 is assigned to the ID 2
+ channel from 2 to 5 is assigned to the ID 3
+ channel from 2 to 6 is assigned to the ID 15
+ channel from 2 to 7 is assigned to the ID 16
+ channel from 2 to 8 is assigned to the ID 4
+ channel from 2 to 9 is assigned to the ID 5
+ channel from 2 to 10 is assigned to the ID 9
+ channel from 2 to 11 is assigned to the ID 8
+ channel from 2 to 12 is assigned to the ID 6
+ channel from 2 to 13 is assigned to the ID 7
+ channel from 2 to 14 is assigned to the ID 11
+ channel from 2 to 15 is assigned to the ID 10
+Channels (20)
+ channel from 0 to 2 is assigned to the ID 0
+ channel from 1 to 2 is assigned to the ID 8
+ channel from 3 to 2 is assigned to the ID 5
+ channel from 4 to 2 is assigned to the ID 1
+ channel from 5 to 2 is assigned to the ID 2
+ channel from 6 to 2 is assigned to the ID 7
+ channel from 7 to 2 is assigned to the ID 16
+ channel from 8 to 2 is assigned to the ID 3
+ channel from 9 to 2 is assigned to the ID 9
+ channel from 10 to 2 is assigned to the ID 6
+ channel from 11 to 2 is assigned to the ID 4
+ channel from 12 to 2 is assigned to the ID 10
+ channel from 13 to 2 is assigned to the ID 12
+ channel from 14 to 2 is assigned to the ID 15
+ channel from 15 to 2 is assigned to the ID 11
+Channels (21)
+Channels (22)
+Channels (23)
+ channel from 3 to 0 is assigned to the ID 8
+ channel from 3 to 1 is assigned to the ID 9
+ channel from 3 to 2 is assigned to the ID 5
+ channel from 3 to 4 is assigned to the ID 10
+ channel from 3 to 5 is assigned to the ID 11
+ channel from 3 to 6 is assigned to the ID 3
+ channel from 3 to 8 is assigned to the ID 12
+ channel from 3 to 9 is assigned to the ID 13
+ channel from 3 to 10 is assigned to the ID 0
+ channel from 3 to 12 is assigned to the ID 14
+ channel from 3 to 13 is assigned to the ID 15
+ channel from 3 to 14 is assigned to the ID 1
+Channels (24)
+ channel from 0 to 7 is assigned to the ID 3
+ channel from 0 to 11 is assigned to the ID 5
+ channel from 0 to 15 is assigned to the ID 7
+ channel from 1 to 7 is assigned to the ID 11
+ channel from 1 to 11 is assigned to the ID 13
+ channel from 1 to 15 is assigned to the ID 15
+ channel from 2 to 7 is assigned to the ID 16
+ channel from 2 to 11 is assigned to the ID 8
+ channel from 2 to 15 is assigned to the ID 10
+ channel from 3 to 7 is assigned to the ID 17
+ channel from 3 to 11 is assigned to the ID 2
+ channel from 3 to 15 is assigned to the ID 4
+Channels (25)
+Channels (26)
+ channel from 3 to 0 is assigned to the ID 8
+ channel from 3 to 1 is assigned to the ID 9
+ channel from 3 to 2 is assigned to the ID 5
+ channel from 3 to 4 is assigned to the ID 10
+ channel from 3 to 5 is assigned to the ID 11
+ channel from 3 to 6 is assigned to the ID 3
+ channel from 3 to 7 is assigned to the ID 17
+ channel from 3 to 8 is assigned to the ID 12
+ channel from 3 to 9 is assigned to the ID 13
+ channel from 3 to 10 is assigned to the ID 0
+ channel from 3 to 11 is assigned to the ID 2
+ channel from 3 to 12 is assigned to the ID 14
+ channel from 3 to 13 is assigned to the ID 15
+ channel from 3 to 14 is assigned to the ID 1
+ channel from 3 to 15 is assigned to the ID 4
+Channels (27)
+ channel from 0 to 3 is assigned to the ID 1
+ channel from 1 to 3 is assigned to the ID 9
+ channel from 2 to 3 is assigned to the ID 12
+ channel from 4 to 3 is assigned to the ID 3
+ channel from 5 to 3 is assigned to the ID 0
+ channel from 6 to 3 is assigned to the ID 20
+ channel from 7 to 3 is assigned to the ID 6
+ channel from 8 to 3 is assigned to the ID 4
+ channel from 9 to 3 is assigned to the ID 2
+ channel from 10 to 3 is assigned to the ID 13
+ channel from 11 to 3 is assigned to the ID 8
+ channel from 12 to 3 is assigned to the ID 5
+ channel from 13 to 3 is assigned to the ID 15
+ channel from 14 to 3 is assigned to the ID 10
+ channel from 15 to 3 is assigned to the ID 19
+Channels (28)
+Channels (29)
+ channel from 4 to 1 is assigned to the ID 12
+ channel from 4 to 2 is assigned to the ID 1
+ channel from 4 to 3 is assigned to the ID 3
+ channel from 4 to 5 is assigned to the ID 10
+ channel from 4 to 6 is assigned to the ID 4
+ channel from 4 to 7 is assigned to the ID 5
+ channel from 4 to 9 is assigned to the ID 11
+ channel from 4 to 10 is assigned to the ID 7
+ channel from 4 to 11 is assigned to the ID 6
+ channel from 4 to 13 is assigned to the ID 14
+ channel from 4 to 14 is assigned to the ID 8
+ channel from 4 to 15 is assigned to the ID 9
+Channels (30)
+Channels (31)
+ channel from 0 to 8 is assigned to the ID 8
+ channel from 0 to 12 is assigned to the ID 9
+ channel from 1 to 8 is assigned to the ID 1
+ channel from 1 to 12 is assigned to the ID 3
+ channel from 2 to 8 is assigned to the ID 4
+ channel from 2 to 12 is assigned to the ID 6
+ channel from 3 to 8 is assigned to the ID 12
+ channel from 3 to 12 is assigned to the ID 14
+ channel from 4 to 8 is assigned to the ID 0
+ channel from 4 to 12 is assigned to the ID 2
+ channel from 5 to 8 is assigned to the ID 5
+ channel from 5 to 12 is assigned to the ID 7
+ channel from 6 to 8 is assigned to the ID 10
+ channel from 6 to 12 is assigned to the ID 11
+ channel from 7 to 8 is assigned to the ID 13
+ channel from 7 to 12 is assigned to the ID 15
+Channels (32)
+ channel from 4 to 0 is assigned to the ID 15
+ channel from 5 to 0 is assigned to the ID 16
+ channel from 6 to 0 is assigned to the ID 1
+ channel from 7 to 0 is assigned to the ID 12
+ channel from 8 to 0 is assigned to the ID 2
+ channel from 9 to 0 is assigned to the ID 3
+ channel from 10 to 0 is assigned to the ID 4
+ channel from 11 to 0 is assigned to the ID 6
+ channel from 12 to 0 is assigned to the ID 9
+ channel from 13 to 0 is assigned to the ID 10
+ channel from 14 to 0 is assigned to the ID 13
+ channel from 15 to 0 is assigned to the ID 14
+Channels (33)
+ channel from 4 to 0 is assigned to the ID 15
+ channel from 4 to 1 is assigned to the ID 12
+ channel from 4 to 2 is assigned to the ID 1
+ channel from 4 to 3 is assigned to the ID 3
+ channel from 4 to 5 is assigned to the ID 10
+ channel from 4 to 6 is assigned to the ID 4
+ channel from 4 to 7 is assigned to the ID 5
+ channel from 4 to 8 is assigned to the ID 0
+ channel from 4 to 9 is assigned to the ID 11
+ channel from 4 to 10 is assigned to the ID 7
+ channel from 4 to 11 is assigned to the ID 6
+ channel from 4 to 12 is assigned to the ID 2
+ channel from 4 to 13 is assigned to the ID 14
+ channel from 4 to 14 is assigned to the ID 8
+ channel from 4 to 15 is assigned to the ID 9
+Channels (34)
+ channel from 0 to 4 is assigned to the ID 16
+ channel from 1 to 4 is assigned to the ID 17
+ channel from 2 to 4 is assigned to the ID 2
+ channel from 3 to 4 is assigned to the ID 10
+ channel from 5 to 4 is assigned to the ID 4
+ channel from 6 to 4 is assigned to the ID 3
+ channel from 7 to 4 is assigned to the ID 14
+ channel from 8 to 4 is assigned to the ID 0
+ channel from 9 to 4 is assigned to the ID 1
+ channel from 10 to 4 is assigned to the ID 5
+ channel from 11 to 4 is assigned to the ID 7
+ channel from 12 to 4 is assigned to the ID 8
+ channel from 13 to 4 is assigned to the ID 11
+ channel from 14 to 4 is assigned to the ID 12
+ channel from 15 to 4 is assigned to the ID 15
+Channels (35)
+Channels (36)
+ channel from 4 to 2 is assigned to the ID 1
+ channel from 4 to 3 is assigned to the ID 3
+ channel from 4 to 6 is assigned to the ID 4
+ channel from 4 to 7 is assigned to the ID 5
+ channel from 4 to 10 is assigned to the ID 7
+ channel from 4 to 11 is assigned to the ID 6
+ channel from 4 to 14 is assigned to the ID 8
+ channel from 4 to 15 is assigned to the ID 9
+ channel from 5 to 2 is assigned to the ID 2
+ channel from 5 to 3 is assigned to the ID 0
+ channel from 5 to 6 is assigned to the ID 11
+ channel from 5 to 7 is assigned to the ID 10
+ channel from 5 to 10 is assigned to the ID 13
+ channel from 5 to 11 is assigned to the ID 12
+ channel from 5 to 14 is assigned to the ID 15
+ channel from 5 to 15 is assigned to the ID 14
+Channels (37)
+ channel from 5 to 0 is assigned to the ID 16
+ channel from 5 to 4 is assigned to the ID 4
+ channel from 5 to 8 is assigned to the ID 5
+ channel from 5 to 12 is assigned to the ID 7
+ channel from 6 to 0 is assigned to the ID 1
+ channel from 6 to 4 is assigned to the ID 3
+ channel from 6 to 8 is assigned to the ID 10
+ channel from 6 to 12 is assigned to the ID 11
+ channel from 7 to 0 is assigned to the ID 12
+ channel from 7 to 4 is assigned to the ID 14
+ channel from 7 to 8 is assigned to the ID 13
+ channel from 7 to 12 is assigned to the ID 15
+Channels (38)
+ channel from 0 to 9 is assigned to the ID 10
+ channel from 0 to 13 is assigned to the ID 12
+ channel from 1 to 9 is assigned to the ID 0
+ channel from 1 to 13 is assigned to the ID 2
+ channel from 2 to 9 is assigned to the ID 5
+ channel from 2 to 13 is assigned to the ID 7
+ channel from 3 to 9 is assigned to the ID 13
+ channel from 3 to 13 is assigned to the ID 15
+ channel from 4 to 9 is assigned to the ID 11
+ channel from 4 to 13 is assigned to the ID 14
+ channel from 5 to 9 is assigned to the ID 1
+ channel from 5 to 13 is assigned to the ID 3
+ channel from 6 to 9 is assigned to the ID 4
+ channel from 6 to 13 is assigned to the ID 6
+ channel from 7 to 9 is assigned to the ID 8
+ channel from 7 to 13 is assigned to the ID 9
+Channels (39)
+ channel from 4 to 1 is assigned to the ID 12
+ channel from 5 to 1 is assigned to the ID 8
+ channel from 6 to 1 is assigned to the ID 0
+ channel from 7 to 1 is assigned to the ID 5
+ channel from 8 to 1 is assigned to the ID 10
+ channel from 9 to 1 is assigned to the ID 4
+ channel from 10 to 1 is assigned to the ID 2
+ channel from 11 to 1 is assigned to the ID 3
+ channel from 12 to 1 is assigned to the ID 6
+ channel from 13 to 1 is assigned to the ID 7
+ channel from 14 to 1 is assigned to the ID 11
+ channel from 15 to 1 is assigned to the ID 17
+Channels (40)
+ channel from 5 to 0 is assigned to the ID 16
+ channel from 5 to 1 is assigned to the ID 8
+ channel from 5 to 2 is assigned to the ID 2
+ channel from 5 to 3 is assigned to the ID 0
+ channel from 5 to 4 is assigned to the ID 4
+ channel from 5 to 6 is assigned to the ID 11
+ channel from 5 to 7 is assigned to the ID 10
+ channel from 5 to 8 is assigned to the ID 5
+ channel from 5 to 9 is assigned to the ID 1
+ channel from 5 to 10 is assigned to the ID 13
+ channel from 5 to 11 is assigned to the ID 12
+ channel from 5 to 12 is assigned to the ID 7
+ channel from 5 to 13 is assigned to the ID 3
+ channel from 5 to 14 is assigned to the ID 15
+ channel from 5 to 15 is assigned to the ID 14
+Channels (41)
+ channel from 0 to 5 is assigned to the ID 14
+ channel from 1 to 5 is assigned to the ID 4
+ channel from 2 to 5 is assigned to the ID 3
+ channel from 3 to 5 is assigned to the ID 11
+ channel from 4 to 5 is assigned to the ID 10
+ channel from 6 to 5 is assigned to the ID 2
+ channel from 7 to 5 is assigned to the ID 7
+ channel from 8 to 5 is assigned to the ID 9
+ channel from 9 to 5 is assigned to the ID 5
+ channel from 10 to 5 is assigned to the ID 0
+ channel from 11 to 5 is assigned to the ID 1
+ channel from 12 to 5 is assigned to the ID 12
+ channel from 13 to 5 is assigned to the ID 8
+ channel from 14 to 5 is assigned to the ID 16
+ channel from 15 to 5 is assigned to the ID 18
+Channels (42)
+Channels (43)
+ channel from 4 to 3 is assigned to the ID 3
+ channel from 4 to 7 is assigned to the ID 5
+ channel from 4 to 11 is assigned to the ID 6
+ channel from 4 to 15 is assigned to the ID 9
+ channel from 5 to 3 is assigned to the ID 0
+ channel from 5 to 7 is assigned to the ID 10
+ channel from 5 to 11 is assigned to the ID 12
+ channel from 5 to 15 is assigned to the ID 14
+ channel from 6 to 3 is assigned to the ID 20
+ channel from 6 to 7 is assigned to the ID 8
+ channel from 6 to 11 is assigned to the ID 17
+ channel from 6 to 15 is assigned to the ID 18
+Channels (44)
+ channel from 6 to 0 is assigned to the ID 1
+ channel from 6 to 1 is assigned to the ID 0
+ channel from 6 to 4 is assigned to the ID 3
+ channel from 6 to 5 is assigned to the ID 2
+ channel from 6 to 8 is assigned to the ID 10
+ channel from 6 to 9 is assigned to the ID 4
+ channel from 6 to 12 is assigned to the ID 11
+ channel from 6 to 13 is assigned to the ID 6
+ channel from 7 to 0 is assigned to the ID 12
+ channel from 7 to 1 is assigned to the ID 5
+ channel from 7 to 4 is assigned to the ID 14
+ channel from 7 to 5 is assigned to the ID 7
+ channel from 7 to 8 is assigned to the ID 13
+ channel from 7 to 9 is assigned to the ID 8
+ channel from 7 to 12 is assigned to the ID 15
+ channel from 7 to 13 is assigned to the ID 9
+Channels (45)
+ channel from 0 to 10 is assigned to the ID 4
+ channel from 0 to 14 is assigned to the ID 6
+ channel from 1 to 10 is assigned to the ID 12
+ channel from 1 to 14 is assigned to the ID 14
+ channel from 2 to 10 is assigned to the ID 9
+ channel from 2 to 14 is assigned to the ID 11
+ channel from 3 to 10 is assigned to the ID 0
+ channel from 3 to 14 is assigned to the ID 1
+ channel from 4 to 10 is assigned to the ID 7
+ channel from 4 to 14 is assigned to the ID 8
+ channel from 5 to 10 is assigned to the ID 13
+ channel from 5 to 14 is assigned to the ID 15
+ channel from 6 to 10 is assigned to the ID 5
+ channel from 6 to 14 is assigned to the ID 16
+ channel from 7 to 10 is assigned to the ID 2
+ channel from 7 to 14 is assigned to the ID 3
+Channels (46)
+ channel from 4 to 2 is assigned to the ID 1
+ channel from 5 to 2 is assigned to the ID 2
+ channel from 6 to 2 is assigned to the ID 7
+ channel from 7 to 2 is assigned to the ID 16
+ channel from 8 to 2 is assigned to the ID 3
+ channel from 9 to 2 is assigned to the ID 9
+ channel from 10 to 2 is assigned to the ID 6
+ channel from 11 to 2 is assigned to the ID 4
+ channel from 12 to 2 is assigned to the ID 10
+ channel from 13 to 2 is assigned to the ID 12
+ channel from 14 to 2 is assigned to the ID 15
+ channel from 15 to 2 is assigned to the ID 11
+Channels (47)
+ channel from 6 to 0 is assigned to the ID 1
+ channel from 6 to 1 is assigned to the ID 0
+ channel from 6 to 2 is assigned to the ID 7
+ channel from 6 to 3 is assigned to the ID 20
+ channel from 6 to 4 is assigned to the ID 3
+ channel from 6 to 5 is assigned to the ID 2
+ channel from 6 to 7 is assigned to the ID 8
+ channel from 6 to 8 is assigned to the ID 10
+ channel from 6 to 9 is assigned to the ID 4
+ channel from 6 to 10 is assigned to the ID 5
+ channel from 6 to 11 is assigned to the ID 17
+ channel from 6 to 12 is assigned to the ID 11
+ channel from 6 to 13 is assigned to the ID 6
+ channel from 6 to 14 is assigned to the ID 16
+ channel from 6 to 15 is assigned to the ID 18
+Channels (48)
+ channel from 0 to 6 is assigned to the ID 2
+ channel from 1 to 6 is assigned to the ID 10
+ channel from 2 to 6 is assigned to the ID 15
+ channel from 3 to 6 is assigned to the ID 3
+ channel from 4 to 6 is assigned to the ID 4
+ channel from 5 to 6 is assigned to the ID 11
+ channel from 7 to 6 is assigned to the ID 17
+ channel from 8 to 6 is assigned to the ID 1
+ channel from 9 to 6 is assigned to the ID 0
+ channel from 10 to 6 is assigned to the ID 7
+ channel from 11 to 6 is assigned to the ID 5
+ channel from 12 to 6 is assigned to the ID 13
+ channel from 13 to 6 is assigned to the ID 14
+ channel from 14 to 6 is assigned to the ID 8
+ channel from 15 to 6 is assigned to the ID 16
+Channels (49)
+Channels (50)
+Channels (51)
+ channel from 7 to 0 is assigned to the ID 12
+ channel from 7 to 1 is assigned to the ID 5
+ channel from 7 to 2 is assigned to the ID 16
+ channel from 7 to 4 is assigned to the ID 14
+ channel from 7 to 5 is assigned to the ID 7
+ channel from 7 to 6 is assigned to the ID 17
+ channel from 7 to 8 is assigned to the ID 13
+ channel from 7 to 9 is assigned to the ID 8
+ channel from 7 to 10 is assigned to the ID 2
+ channel from 7 to 12 is assigned to the ID 15
+ channel from 7 to 13 is assigned to the ID 9
+ channel from 7 to 14 is assigned to the ID 3
+Channels (52)
+ channel from 0 to 11 is assigned to the ID 5
+ channel from 0 to 15 is assigned to the ID 7
+ channel from 1 to 11 is assigned to the ID 13
+ channel from 1 to 15 is assigned to the ID 15
+ channel from 2 to 11 is assigned to the ID 8
+ channel from 2 to 15 is assigned to the ID 10
+ channel from 3 to 11 is assigned to the ID 2
+ channel from 3 to 15 is assigned to the ID 4
+ channel from 4 to 11 is assigned to the ID 6
+ channel from 4 to 15 is assigned to the ID 9
+ channel from 5 to 11 is assigned to the ID 12
+ channel from 5 to 15 is assigned to the ID 14
+ channel from 6 to 11 is assigned to the ID 17
+ channel from 6 to 15 is assigned to the ID 18
+ channel from 7 to 11 is assigned to the ID 0
+ channel from 7 to 15 is assigned to the ID 1
+Channels (53)
+ channel from 4 to 3 is assigned to the ID 3
+ channel from 5 to 3 is assigned to the ID 0
+ channel from 6 to 3 is assigned to the ID 20
+ channel from 7 to 3 is assigned to the ID 6
+ channel from 8 to 3 is assigned to the ID 4
+ channel from 9 to 3 is assigned to the ID 2
+ channel from 10 to 3 is assigned to the ID 13
+ channel from 11 to 3 is assigned to the ID 8
+ channel from 12 to 3 is assigned to the ID 5
+ channel from 13 to 3 is assigned to the ID 15
+ channel from 14 to 3 is assigned to the ID 10
+ channel from 15 to 3 is assigned to the ID 19
+Channels (54)
+ channel from 7 to 0 is assigned to the ID 12
+ channel from 7 to 1 is assigned to the ID 5
+ channel from 7 to 2 is assigned to the ID 16
+ channel from 7 to 3 is assigned to the ID 6
+ channel from 7 to 4 is assigned to the ID 14
+ channel from 7 to 5 is assigned to the ID 7
+ channel from 7 to 6 is assigned to the ID 17
+ channel from 7 to 8 is assigned to the ID 13
+ channel from 7 to 9 is assigned to the ID 8
+ channel from 7 to 10 is assigned to the ID 2
+ channel from 7 to 11 is assigned to the ID 0
+ channel from 7 to 12 is assigned to the ID 15
+ channel from 7 to 13 is assigned to the ID 9
+ channel from 7 to 14 is assigned to the ID 3
+ channel from 7 to 15 is assigned to the ID 1
+Channels (55)
+ channel from 0 to 7 is assigned to the ID 3
+ channel from 1 to 7 is assigned to the ID 11
+ channel from 2 to 7 is assigned to the ID 16
+ channel from 3 to 7 is assigned to the ID 17
+ channel from 4 to 7 is assigned to the ID 5
+ channel from 5 to 7 is assigned to the ID 10
+ channel from 6 to 7 is assigned to the ID 8
+ channel from 8 to 7 is assigned to the ID 6
+ channel from 9 to 7 is assigned to the ID 12
+ channel from 10 to 7 is assigned to the ID 1
+ channel from 11 to 7 is assigned to the ID 0
+ channel from 12 to 7 is assigned to the ID 7
+ channel from 13 to 7 is assigned to the ID 9
+ channel from 14 to 7 is assigned to the ID 14
+ channel from 15 to 7 is assigned to the ID 20
+Channels (56)
+Channels (57)
+ channel from 8 to 1 is assigned to the ID 10
+ channel from 8 to 2 is assigned to the ID 3
+ channel from 8 to 3 is assigned to the ID 4
+ channel from 8 to 5 is assigned to the ID 9
+ channel from 8 to 6 is assigned to the ID 1
+ channel from 8 to 7 is assigned to the ID 6
+ channel from 8 to 9 is assigned to the ID 15
+ channel from 8 to 10 is assigned to the ID 8
+ channel from 8 to 11 is assigned to the ID 7
+ channel from 8 to 13 is assigned to the ID 13
+ channel from 8 to 14 is assigned to the ID 5
+ channel from 8 to 15 is assigned to the ID 11
+Channels (58)
+Channels (59)
+ channel from 0 to 12 is assigned to the ID 9
+ channel from 1 to 12 is assigned to the ID 3
+ channel from 2 to 12 is assigned to the ID 6
+ channel from 3 to 12 is assigned to the ID 14
+ channel from 4 to 12 is assigned to the ID 2
+ channel from 5 to 12 is assigned to the ID 7
+ channel from 6 to 12 is assigned to the ID 11
+ channel from 7 to 12 is assigned to the ID 15
+ channel from 8 to 12 is assigned to the ID 12
+ channel from 9 to 12 is assigned to the ID 17
+ channel from 10 to 12 is assigned to the ID 8
+ channel from 11 to 12 is assigned to the ID 13
+Channels (60)
+ channel from 8 to 0 is assigned to the ID 2
+ channel from 8 to 4 is assigned to the ID 0
+ channel from 9 to 0 is assigned to the ID 3
+ channel from 9 to 4 is assigned to the ID 1
+ channel from 10 to 0 is assigned to the ID 4
+ channel from 10 to 4 is assigned to the ID 5
+ channel from 11 to 0 is assigned to the ID 6
+ channel from 11 to 4 is assigned to the ID 7
+ channel from 12 to 0 is assigned to the ID 9
+ channel from 12 to 4 is assigned to the ID 8
+ channel from 13 to 0 is assigned to the ID 10
+ channel from 13 to 4 is assigned to the ID 11
+ channel from 14 to 0 is assigned to the ID 13
+ channel from 14 to 4 is assigned to the ID 12
+ channel from 15 to 0 is assigned to the ID 14
+ channel from 15 to 4 is assigned to the ID 15
+Channels (61)
+ channel from 8 to 0 is assigned to the ID 2
+ channel from 8 to 1 is assigned to the ID 10
+ channel from 8 to 2 is assigned to the ID 3
+ channel from 8 to 3 is assigned to the ID 4
+ channel from 8 to 4 is assigned to the ID 0
+ channel from 8 to 5 is assigned to the ID 9
+ channel from 8 to 6 is assigned to the ID 1
+ channel from 8 to 7 is assigned to the ID 6
+ channel from 8 to 9 is assigned to the ID 15
+ channel from 8 to 10 is assigned to the ID 8
+ channel from 8 to 11 is assigned to the ID 7
+ channel from 8 to 12 is assigned to the ID 12
+ channel from 8 to 13 is assigned to the ID 13
+ channel from 8 to 14 is assigned to the ID 5
+ channel from 8 to 15 is assigned to the ID 11
+Channels (62)
+ channel from 0 to 8 is assigned to the ID 8
+ channel from 1 to 8 is assigned to the ID 1
+ channel from 2 to 8 is assigned to the ID 4
+ channel from 3 to 8 is assigned to the ID 12
+ channel from 4 to 8 is assigned to the ID 0
+ channel from 5 to 8 is assigned to the ID 5
+ channel from 6 to 8 is assigned to the ID 10
+ channel from 7 to 8 is assigned to the ID 13
+ channel from 9 to 8 is assigned to the ID 15
+ channel from 10 to 8 is assigned to the ID 9
+ channel from 11 to 8 is assigned to the ID 11
+ channel from 12 to 8 is assigned to the ID 16
+ channel from 13 to 8 is assigned to the ID 3
+ channel from 14 to 8 is assigned to the ID 2
+ channel from 15 to 8 is assigned to the ID 6
+Channels (63)
+Channels (64)
+ channel from 8 to 2 is assigned to the ID 3
+ channel from 8 to 3 is assigned to the ID 4
+ channel from 8 to 6 is assigned to the ID 1
+ channel from 8 to 7 is assigned to the ID 6
+ channel from 8 to 10 is assigned to the ID 8
+ channel from 8 to 11 is assigned to the ID 7
+ channel from 8 to 14 is assigned to the ID 5
+ channel from 8 to 15 is assigned to the ID 11
+ channel from 9 to 2 is assigned to the ID 9
+ channel from 9 to 3 is assigned to the ID 2
+ channel from 9 to 6 is assigned to the ID 0
+ channel from 9 to 7 is assigned to the ID 12
+ channel from 9 to 10 is assigned to the ID 10
+ channel from 9 to 11 is assigned to the ID 14
+ channel from 9 to 14 is assigned to the ID 13
+ channel from 9 to 15 is assigned to the ID 16
+Channels (65)
+ channel from 9 to 0 is assigned to the ID 3
+ channel from 9 to 4 is assigned to the ID 1
+ channel from 9 to 8 is assigned to the ID 15
+ channel from 9 to 12 is assigned to the ID 17
+ channel from 10 to 0 is assigned to the ID 4
+ channel from 10 to 4 is assigned to the ID 5
+ channel from 10 to 8 is assigned to the ID 9
+ channel from 10 to 12 is assigned to the ID 8
+ channel from 11 to 0 is assigned to the ID 6
+ channel from 11 to 4 is assigned to the ID 7
+ channel from 11 to 8 is assigned to the ID 11
+ channel from 11 to 12 is assigned to the ID 13
+Channels (66)
+ channel from 0 to 13 is assigned to the ID 12
+ channel from 1 to 13 is assigned to the ID 2
+ channel from 2 to 13 is assigned to the ID 7
+ channel from 3 to 13 is assigned to the ID 15
+ channel from 4 to 13 is assigned to the ID 14
+ channel from 5 to 13 is assigned to the ID 3
+ channel from 6 to 13 is assigned to the ID 6
+ channel from 7 to 13 is assigned to the ID 9
+ channel from 8 to 13 is assigned to the ID 13
+ channel from 9 to 13 is assigned to the ID 8
+ channel from 10 to 13 is assigned to the ID 10
+ channel from 11 to 13 is assigned to the ID 16
+Channels (67)
+ channel from 8 to 1 is assigned to the ID 10
+ channel from 8 to 5 is assigned to the ID 9
+ channel from 9 to 1 is assigned to the ID 4
+ channel from 9 to 5 is assigned to the ID 5
+ channel from 10 to 1 is assigned to the ID 2
+ channel from 10 to 5 is assigned to the ID 0
+ channel from 11 to 1 is assigned to the ID 3
+ channel from 11 to 5 is assigned to the ID 1
+ channel from 12 to 1 is assigned to the ID 6
+ channel from 12 to 5 is assigned to the ID 12
+ channel from 13 to 1 is assigned to the ID 7
+ channel from 13 to 5 is assigned to the ID 8
+ channel from 14 to 1 is assigned to the ID 11
+ channel from 14 to 5 is assigned to the ID 16
+ channel from 15 to 1 is assigned to the ID 17
+ channel from 15 to 5 is assigned to the ID 18
+Channels (68)
+ channel from 9 to 0 is assigned to the ID 3
+ channel from 9 to 1 is assigned to the ID 4
+ channel from 9 to 2 is assigned to the ID 9
+ channel from 9 to 3 is assigned to the ID 2
+ channel from 9 to 4 is assigned to the ID 1
+ channel from 9 to 5 is assigned to the ID 5
+ channel from 9 to 6 is assigned to the ID 0
+ channel from 9 to 7 is assigned to the ID 12
+ channel from 9 to 8 is assigned to the ID 15
+ channel from 9 to 10 is assigned to the ID 10
+ channel from 9 to 11 is assigned to the ID 14
+ channel from 9 to 12 is assigned to the ID 17
+ channel from 9 to 13 is assigned to the ID 8
+ channel from 9 to 14 is assigned to the ID 13
+ channel from 9 to 15 is assigned to the ID 16
+Channels (69)
+ channel from 0 to 9 is assigned to the ID 10
+ channel from 1 to 9 is assigned to the ID 0
+ channel from 2 to 9 is assigned to the ID 5
+ channel from 3 to 9 is assigned to the ID 13
+ channel from 4 to 9 is assigned to the ID 11
+ channel from 5 to 9 is assigned to the ID 1
+ channel from 6 to 9 is assigned to the ID 4
+ channel from 7 to 9 is assigned to the ID 8
+ channel from 8 to 9 is assigned to the ID 15
+ channel from 10 to 9 is assigned to the ID 12
+ channel from 11 to 9 is assigned to the ID 14
+ channel from 12 to 9 is assigned to the ID 19
+ channel from 13 to 9 is assigned to the ID 2
+ channel from 14 to 9 is assigned to the ID 3
+ channel from 15 to 9 is assigned to the ID 9
+Channels (70)
+Channels (71)
+ channel from 8 to 3 is assigned to the ID 4
+ channel from 8 to 7 is assigned to the ID 6
+ channel from 8 to 11 is assigned to the ID 7
+ channel from 8 to 15 is assigned to the ID 11
+ channel from 9 to 3 is assigned to the ID 2
+ channel from 9 to 7 is assigned to the ID 12
+ channel from 9 to 11 is assigned to the ID 14
+ channel from 9 to 15 is assigned to the ID 16
+ channel from 10 to 3 is assigned to the ID 13
+ channel from 10 to 7 is assigned to the ID 1
+ channel from 10 to 11 is assigned to the ID 15
+ channel from 10 to 15 is assigned to the ID 3
+Channels (72)
+ channel from 10 to 0 is assigned to the ID 4
+ channel from 10 to 1 is assigned to the ID 2
+ channel from 10 to 4 is assigned to the ID 5
+ channel from 10 to 5 is assigned to the ID 0
+ channel from 10 to 8 is assigned to the ID 9
+ channel from 10 to 9 is assigned to the ID 12
+ channel from 10 to 12 is assigned to the ID 8
+ channel from 10 to 13 is assigned to the ID 10
+ channel from 11 to 0 is assigned to the ID 6
+ channel from 11 to 1 is assigned to the ID 3
+ channel from 11 to 4 is assigned to the ID 7
+ channel from 11 to 5 is assigned to the ID 1
+ channel from 11 to 8 is assigned to the ID 11
+ channel from 11 to 9 is assigned to the ID 14
+ channel from 11 to 12 is assigned to the ID 13
+ channel from 11 to 13 is assigned to the ID 16
+Channels (73)
+ channel from 0 to 14 is assigned to the ID 6
+ channel from 1 to 14 is assigned to the ID 14
+ channel from 2 to 14 is assigned to the ID 11
+ channel from 3 to 14 is assigned to the ID 1
+ channel from 4 to 14 is assigned to the ID 8
+ channel from 5 to 14 is assigned to the ID 15
+ channel from 6 to 14 is assigned to the ID 16
+ channel from 7 to 14 is assigned to the ID 3
+ channel from 8 to 14 is assigned to the ID 5
+ channel from 9 to 14 is assigned to the ID 13
+ channel from 10 to 14 is assigned to the ID 18
+ channel from 11 to 14 is assigned to the ID 2
+Channels (74)
+ channel from 8 to 2 is assigned to the ID 3
+ channel from 8 to 6 is assigned to the ID 1
+ channel from 9 to 2 is assigned to the ID 9
+ channel from 9 to 6 is assigned to the ID 0
+ channel from 10 to 2 is assigned to the ID 6
+ channel from 10 to 6 is assigned to the ID 7
+ channel from 11 to 2 is assigned to the ID 4
+ channel from 11 to 6 is assigned to the ID 5
+ channel from 12 to 2 is assigned to the ID 10
+ channel from 12 to 6 is assigned to the ID 13
+ channel from 13 to 2 is assigned to the ID 12
+ channel from 13 to 6 is assigned to the ID 14
+ channel from 14 to 2 is assigned to the ID 15
+ channel from 14 to 6 is assigned to the ID 8
+ channel from 15 to 2 is assigned to the ID 11
+ channel from 15 to 6 is assigned to the ID 16
+Channels (75)
+ channel from 10 to 0 is assigned to the ID 4
+ channel from 10 to 1 is assigned to the ID 2
+ channel from 10 to 2 is assigned to the ID 6
+ channel from 10 to 3 is assigned to the ID 13
+ channel from 10 to 4 is assigned to the ID 5
+ channel from 10 to 5 is assigned to the ID 0
+ channel from 10 to 6 is assigned to the ID 7
+ channel from 10 to 7 is assigned to the ID 1
+ channel from 10 to 8 is assigned to the ID 9
+ channel from 10 to 9 is assigned to the ID 12
+ channel from 10 to 11 is assigned to the ID 15
+ channel from 10 to 12 is assigned to the ID 8
+ channel from 10 to 13 is assigned to the ID 10
+ channel from 10 to 14 is assigned to the ID 18
+ channel from 10 to 15 is assigned to the ID 3
+Channels (76)
+ channel from 0 to 10 is assigned to the ID 4
+ channel from 1 to 10 is assigned to the ID 12
+ channel from 2 to 10 is assigned to the ID 9
+ channel from 3 to 10 is assigned to the ID 0
+ channel from 4 to 10 is assigned to the ID 7
+ channel from 5 to 10 is assigned to the ID 13
+ channel from 6 to 10 is assigned to the ID 5
+ channel from 7 to 10 is assigned to the ID 2
+ channel from 8 to 10 is assigned to the ID 8
+ channel from 9 to 10 is assigned to the ID 10
+ channel from 11 to 10 is assigned to the ID 15
+ channel from 12 to 10 is assigned to the ID 1
+ channel from 13 to 10 is assigned to the ID 6
+ channel from 14 to 10 is assigned to the ID 17
+ channel from 15 to 10 is assigned to the ID 3
+Channels (77)
+Channels (78)
+Channels (79)
+ channel from 11 to 0 is assigned to the ID 6
+ channel from 11 to 1 is assigned to the ID 3
+ channel from 11 to 2 is assigned to the ID 4
+ channel from 11 to 4 is assigned to the ID 7
+ channel from 11 to 5 is assigned to the ID 1
+ channel from 11 to 6 is assigned to the ID 5
+ channel from 11 to 8 is assigned to the ID 11
+ channel from 11 to 9 is assigned to the ID 14
+ channel from 11 to 10 is assigned to the ID 15
+ channel from 11 to 12 is assigned to the ID 13
+ channel from 11 to 13 is assigned to the ID 16
+ channel from 11 to 14 is assigned to the ID 2
+Channels (80)
+ channel from 0 to 15 is assigned to the ID 7
+ channel from 1 to 15 is assigned to the ID 15
+ channel from 2 to 15 is assigned to the ID 10
+ channel from 3 to 15 is assigned to the ID 4
+ channel from 4 to 15 is assigned to the ID 9
+ channel from 5 to 15 is assigned to the ID 14
+ channel from 6 to 15 is assigned to the ID 18
+ channel from 7 to 15 is assigned to the ID 1
+ channel from 8 to 15 is assigned to the ID 11
+ channel from 9 to 15 is assigned to the ID 16
+ channel from 10 to 15 is assigned to the ID 3
+ channel from 11 to 15 is assigned to the ID 12
+Channels (81)
+ channel from 8 to 3 is assigned to the ID 4
+ channel from 8 to 7 is assigned to the ID 6
+ channel from 9 to 3 is assigned to the ID 2
+ channel from 9 to 7 is assigned to the ID 12
+ channel from 10 to 3 is assigned to the ID 13
+ channel from 10 to 7 is assigned to the ID 1
+ channel from 11 to 3 is assigned to the ID 8
+ channel from 11 to 7 is assigned to the ID 0
+ channel from 12 to 3 is assigned to the ID 5
+ channel from 12 to 7 is assigned to the ID 7
+ channel from 13 to 3 is assigned to the ID 15
+ channel from 13 to 7 is assigned to the ID 9
+ channel from 14 to 3 is assigned to the ID 10
+ channel from 14 to 7 is assigned to the ID 14
+ channel from 15 to 3 is assigned to the ID 19
+ channel from 15 to 7 is assigned to the ID 20
+Channels (82)
+ channel from 11 to 0 is assigned to the ID 6
+ channel from 11 to 1 is assigned to the ID 3
+ channel from 11 to 2 is assigned to the ID 4
+ channel from 11 to 3 is assigned to the ID 8
+ channel from 11 to 4 is assigned to the ID 7
+ channel from 11 to 5 is assigned to the ID 1
+ channel from 11 to 6 is assigned to the ID 5
+ channel from 11 to 7 is assigned to the ID 0
+ channel from 11 to 8 is assigned to the ID 11
+ channel from 11 to 9 is assigned to the ID 14
+ channel from 11 to 10 is assigned to the ID 15
+ channel from 11 to 12 is assigned to the ID 13
+ channel from 11 to 13 is assigned to the ID 16
+ channel from 11 to 14 is assigned to the ID 2
+ channel from 11 to 15 is assigned to the ID 12
+Channels (83)
+ channel from 0 to 11 is assigned to the ID 5
+ channel from 1 to 11 is assigned to the ID 13
+ channel from 2 to 11 is assigned to the ID 8
+ channel from 3 to 11 is assigned to the ID 2
+ channel from 4 to 11 is assigned to the ID 6
+ channel from 5 to 11 is assigned to the ID 12
+ channel from 6 to 11 is assigned to the ID 17
+ channel from 7 to 11 is assigned to the ID 0
+ channel from 8 to 11 is assigned to the ID 7
+ channel from 9 to 11 is assigned to the ID 14
+ channel from 10 to 11 is assigned to the ID 15
+ channel from 12 to 11 is assigned to the ID 3
+ channel from 13 to 11 is assigned to the ID 4
+ channel from 14 to 11 is assigned to the ID 18
+ channel from 15 to 11 is assigned to the ID 1
+Channels (84)
+Channels (85)
+ channel from 12 to 1 is assigned to the ID 6
+ channel from 12 to 2 is assigned to the ID 10
+ channel from 12 to 3 is assigned to the ID 5
+ channel from 12 to 5 is assigned to the ID 12
+ channel from 12 to 6 is assigned to the ID 13
+ channel from 12 to 7 is assigned to the ID 7
+ channel from 12 to 9 is assigned to the ID 19
+ channel from 12 to 10 is assigned to the ID 1
+ channel from 12 to 11 is assigned to the ID 3
+ channel from 12 to 13 is assigned to the ID 4
+ channel from 12 to 14 is assigned to the ID 0
+ channel from 12 to 15 is assigned to the ID 2
+Channels (86)
+Channels (87)
+Channels (88)
+ channel from 12 to 0 is assigned to the ID 9
+ channel from 12 to 4 is assigned to the ID 8
+ channel from 12 to 8 is assigned to the ID 16
+ channel from 13 to 0 is assigned to the ID 10
+ channel from 13 to 4 is assigned to the ID 11
+ channel from 13 to 8 is assigned to the ID 3
+ channel from 14 to 0 is assigned to the ID 13
+ channel from 14 to 4 is assigned to the ID 12
+ channel from 14 to 8 is assigned to the ID 2
+ channel from 15 to 0 is assigned to the ID 14
+ channel from 15 to 4 is assigned to the ID 15
+ channel from 15 to 8 is assigned to the ID 6
+Channels (89)
+ channel from 12 to 0 is assigned to the ID 9
+ channel from 12 to 1 is assigned to the ID 6
+ channel from 12 to 2 is assigned to the ID 10
+ channel from 12 to 3 is assigned to the ID 5
+ channel from 12 to 4 is assigned to the ID 8
+ channel from 12 to 5 is assigned to the ID 12
+ channel from 12 to 6 is assigned to the ID 13
+ channel from 12 to 7 is assigned to the ID 7
+ channel from 12 to 8 is assigned to the ID 16
+ channel from 12 to 9 is assigned to the ID 19
+ channel from 12 to 10 is assigned to the ID 1
+ channel from 12 to 11 is assigned to the ID 3
+ channel from 12 to 13 is assigned to the ID 4
+ channel from 12 to 14 is assigned to the ID 0
+ channel from 12 to 15 is assigned to the ID 2
+Channels (90)
+ channel from 0 to 12 is assigned to the ID 9
+ channel from 1 to 12 is assigned to the ID 3
+ channel from 2 to 12 is assigned to the ID 6
+ channel from 3 to 12 is assigned to the ID 14
+ channel from 4 to 12 is assigned to the ID 2
+ channel from 5 to 12 is assigned to the ID 7
+ channel from 6 to 12 is assigned to the ID 11
+ channel from 7 to 12 is assigned to the ID 15
+ channel from 8 to 12 is assigned to the ID 12
+ channel from 9 to 12 is assigned to the ID 17
+ channel from 10 to 12 is assigned to the ID 8
+ channel from 11 to 12 is assigned to the ID 13
+ channel from 13 to 12 is assigned to the ID 1
+ channel from 14 to 12 is assigned to the ID 0
+ channel from 15 to 12 is assigned to the ID 4
+Channels (91)
+Channels (92)
+ channel from 12 to 2 is assigned to the ID 10
+ channel from 12 to 3 is assigned to the ID 5
+ channel from 12 to 6 is assigned to the ID 13
+ channel from 12 to 7 is assigned to the ID 7
+ channel from 12 to 10 is assigned to the ID 1
+ channel from 12 to 11 is assigned to the ID 3
+ channel from 12 to 14 is assigned to the ID 0
+ channel from 12 to 15 is assigned to the ID 2
+ channel from 13 to 2 is assigned to the ID 12
+ channel from 13 to 3 is assigned to the ID 15
+ channel from 13 to 6 is assigned to the ID 14
+ channel from 13 to 7 is assigned to the ID 9
+ channel from 13 to 10 is assigned to the ID 6
+ channel from 13 to 11 is assigned to the ID 4
+ channel from 13 to 14 is assigned to the ID 17
+ channel from 13 to 15 is assigned to the ID 19
+Channels (93)
+ channel from 13 to 0 is assigned to the ID 10
+ channel from 13 to 4 is assigned to the ID 11
+ channel from 13 to 8 is assigned to the ID 3
+ channel from 13 to 12 is assigned to the ID 1
+ channel from 14 to 0 is assigned to the ID 13
+ channel from 14 to 4 is assigned to the ID 12
+ channel from 14 to 8 is assigned to the ID 2
+ channel from 14 to 12 is assigned to the ID 0
+ channel from 15 to 0 is assigned to the ID 14
+ channel from 15 to 4 is assigned to the ID 15
+ channel from 15 to 8 is assigned to the ID 6
+ channel from 15 to 12 is assigned to the ID 4
+Channels (94)
+Channels (95)
+ channel from 12 to 1 is assigned to the ID 6
+ channel from 12 to 5 is assigned to the ID 12
+ channel from 12 to 9 is assigned to the ID 19
+ channel from 13 to 1 is assigned to the ID 7
+ channel from 13 to 5 is assigned to the ID 8
+ channel from 13 to 9 is assigned to the ID 2
+ channel from 14 to 1 is assigned to the ID 11
+ channel from 14 to 5 is assigned to the ID 16
+ channel from 14 to 9 is assigned to the ID 3
+ channel from 15 to 1 is assigned to the ID 17
+ channel from 15 to 5 is assigned to the ID 18
+ channel from 15 to 9 is assigned to the ID 9
+Channels (96)
+ channel from 13 to 0 is assigned to the ID 10
+ channel from 13 to 1 is assigned to the ID 7
+ channel from 13 to 2 is assigned to the ID 12
+ channel from 13 to 3 is assigned to the ID 15
+ channel from 13 to 4 is assigned to the ID 11
+ channel from 13 to 5 is assigned to the ID 8
+ channel from 13 to 6 is assigned to the ID 14
+ channel from 13 to 7 is assigned to the ID 9
+ channel from 13 to 8 is assigned to the ID 3
+ channel from 13 to 9 is assigned to the ID 2
+ channel from 13 to 10 is assigned to the ID 6
+ channel from 13 to 11 is assigned to the ID 4
+ channel from 13 to 12 is assigned to the ID 1
+ channel from 13 to 14 is assigned to the ID 17
+ channel from 13 to 15 is assigned to the ID 19
+Channels (97)
+ channel from 0 to 13 is assigned to the ID 12
+ channel from 1 to 13 is assigned to the ID 2
+ channel from 2 to 13 is assigned to the ID 7
+ channel from 3 to 13 is assigned to the ID 15
+ channel from 4 to 13 is assigned to the ID 14
+ channel from 5 to 13 is assigned to the ID 3
+ channel from 6 to 13 is assigned to the ID 6
+ channel from 7 to 13 is assigned to the ID 9
+ channel from 8 to 13 is assigned to the ID 13
+ channel from 9 to 13 is assigned to the ID 8
+ channel from 10 to 13 is assigned to the ID 10
+ channel from 11 to 13 is assigned to the ID 16
+ channel from 12 to 13 is assigned to the ID 4
+ channel from 14 to 13 is assigned to the ID 1
+ channel from 15 to 13 is assigned to the ID 5
+Channels (98)
+Channels (99)
+ channel from 12 to 3 is assigned to the ID 5
+ channel from 12 to 7 is assigned to the ID 7
+ channel from 12 to 11 is assigned to the ID 3
+ channel from 12 to 15 is assigned to the ID 2
+ channel from 13 to 3 is assigned to the ID 15
+ channel from 13 to 7 is assigned to the ID 9
+ channel from 13 to 11 is assigned to the ID 4
+ channel from 13 to 15 is assigned to the ID 19
+ channel from 14 to 3 is assigned to the ID 10
+ channel from 14 to 7 is assigned to the ID 14
+ channel from 14 to 11 is assigned to the ID 18
+ channel from 14 to 15 is assigned to the ID 6
+Channels (100)
+ channel from 14 to 0 is assigned to the ID 13
+ channel from 14 to 1 is assigned to the ID 11
+ channel from 14 to 4 is assigned to the ID 12
+ channel from 14 to 5 is assigned to the ID 16
+ channel from 14 to 8 is assigned to the ID 2
+ channel from 14 to 9 is assigned to the ID 3
+ channel from 14 to 12 is assigned to the ID 0
+ channel from 14 to 13 is assigned to the ID 1
+ channel from 15 to 0 is assigned to the ID 14
+ channel from 15 to 1 is assigned to the ID 17
+ channel from 15 to 4 is assigned to the ID 15
+ channel from 15 to 5 is assigned to the ID 18
+ channel from 15 to 8 is assigned to the ID 6
+ channel from 15 to 9 is assigned to the ID 9
+ channel from 15 to 12 is assigned to the ID 4
+ channel from 15 to 13 is assigned to the ID 5
+Channels (101)
+Channels (102)
+ channel from 12 to 2 is assigned to the ID 10
+ channel from 12 to 6 is assigned to the ID 13
+ channel from 12 to 10 is assigned to the ID 1
+ channel from 13 to 2 is assigned to the ID 12
+ channel from 13 to 6 is assigned to the ID 14
+ channel from 13 to 10 is assigned to the ID 6
+ channel from 14 to 2 is assigned to the ID 15
+ channel from 14 to 6 is assigned to the ID 8
+ channel from 14 to 10 is assigned to the ID 17
+ channel from 15 to 2 is assigned to the ID 11
+ channel from 15 to 6 is assigned to the ID 16
+ channel from 15 to 10 is assigned to the ID 3
+Channels (103)
+ channel from 14 to 0 is assigned to the ID 13
+ channel from 14 to 1 is assigned to the ID 11
+ channel from 14 to 2 is assigned to the ID 15
+ channel from 14 to 3 is assigned to the ID 10
+ channel from 14 to 4 is assigned to the ID 12
+ channel from 14 to 5 is assigned to the ID 16
+ channel from 14 to 6 is assigned to the ID 8
+ channel from 14 to 7 is assigned to the ID 14
+ channel from 14 to 8 is assigned to the ID 2
+ channel from 14 to 9 is assigned to the ID 3
+ channel from 14 to 10 is assigned to the ID 17
+ channel from 14 to 11 is assigned to the ID 18
+ channel from 14 to 12 is assigned to the ID 0
+ channel from 14 to 13 is assigned to the ID 1
+ channel from 14 to 15 is assigned to the ID 6
+Channels (104)
+ channel from 0 to 14 is assigned to the ID 6
+ channel from 1 to 14 is assigned to the ID 14
+ channel from 2 to 14 is assigned to the ID 11
+ channel from 3 to 14 is assigned to the ID 1
+ channel from 4 to 14 is assigned to the ID 8
+ channel from 5 to 14 is assigned to the ID 15
+ channel from 6 to 14 is assigned to the ID 16
+ channel from 7 to 14 is assigned to the ID 3
+ channel from 8 to 14 is assigned to the ID 5
+ channel from 9 to 14 is assigned to the ID 13
+ channel from 10 to 14 is assigned to the ID 18
+ channel from 11 to 14 is assigned to the ID 2
+ channel from 12 to 14 is assigned to the ID 0
+ channel from 13 to 14 is assigned to the ID 17
+ channel from 15 to 14 is assigned to the ID 7
+Channels (105)
+Channels (106)
+Channels (107)
+ channel from 15 to 0 is assigned to the ID 14
+ channel from 15 to 1 is assigned to the ID 17
+ channel from 15 to 2 is assigned to the ID 11
+ channel from 15 to 4 is assigned to the ID 15
+ channel from 15 to 5 is assigned to the ID 18
+ channel from 15 to 6 is assigned to the ID 16
+ channel from 15 to 8 is assigned to the ID 6
+ channel from 15 to 9 is assigned to the ID 9
+ channel from 15 to 10 is assigned to the ID 3
+ channel from 15 to 12 is assigned to the ID 4
+ channel from 15 to 13 is assigned to the ID 5
+ channel from 15 to 14 is assigned to the ID 7
+Channels (108)
+Channels (109)
+ channel from 12 to 3 is assigned to the ID 5
+ channel from 12 to 7 is assigned to the ID 7
+ channel from 12 to 11 is assigned to the ID 3
+ channel from 13 to 3 is assigned to the ID 15
+ channel from 13 to 7 is assigned to the ID 9
+ channel from 13 to 11 is assigned to the ID 4
+ channel from 14 to 3 is assigned to the ID 10
+ channel from 14 to 7 is assigned to the ID 14
+ channel from 14 to 11 is assigned to the ID 18
+ channel from 15 to 3 is assigned to the ID 19
+ channel from 15 to 7 is assigned to the ID 20
+ channel from 15 to 11 is assigned to the ID 1
+Channels (110)
+ channel from 15 to 0 is assigned to the ID 14
+ channel from 15 to 1 is assigned to the ID 17
+ channel from 15 to 2 is assigned to the ID 11
+ channel from 15 to 3 is assigned to the ID 19
+ channel from 15 to 4 is assigned to the ID 15
+ channel from 15 to 5 is assigned to the ID 18
+ channel from 15 to 6 is assigned to the ID 16
+ channel from 15 to 7 is assigned to the ID 20
+ channel from 15 to 8 is assigned to the ID 6
+ channel from 15 to 9 is assigned to the ID 9
+ channel from 15 to 10 is assigned to the ID 3
+ channel from 15 to 11 is assigned to the ID 1
+ channel from 15 to 12 is assigned to the ID 4
+ channel from 15 to 13 is assigned to the ID 5
+ channel from 15 to 14 is assigned to the ID 7
+Channels (111)
+ channel from 0 to 15 is assigned to the ID 7
+ channel from 1 to 15 is assigned to the ID 15
+ channel from 2 to 15 is assigned to the ID 10
+ channel from 3 to 15 is assigned to the ID 4
+ channel from 4 to 15 is assigned to the ID 9
+ channel from 5 to 15 is assigned to the ID 14
+ channel from 6 to 15 is assigned to the ID 18
+ channel from 7 to 15 is assigned to the ID 1
+ channel from 8 to 15 is assigned to the ID 11
+ channel from 9 to 15 is assigned to the ID 16
+ channel from 10 to 15 is assigned to the ID 3
+ channel from 11 to 15 is assigned to the ID 12
+ channel from 12 to 15 is assigned to the ID 2
+ channel from 13 to 15 is assigned to the ID 19
+ channel from 14 to 15 is assigned to the ID 6
+
+ (east, west, south, north, from host0,... east(vch2), south(vch2), west(vch2), north(vch2), from host(vch2)0,.. to host(vch2)0,..
+ Node  0:   12 0 12 0 15 15
+ Node  1:   16 12 12 0 15 15
+ Node  2:   12 16 12 0 15 15
+ Node  3:   0 12 12 0 15 15
+ Node  4:   12 0 16 12 15 15
+ Node  5:   16 12 16 12 15 15
+ Node  6:   12 16 16 12 15 15
+ Node  7:   0 12 16 12 15 15
+ Node  8:   12 0 12 16 15 15
+ Node  9:   16 12 12 16 15 15
+ Node 10:   12 16 12 16 15 15
+ Node 11:   0 12 12 16 15 15
+ Node 12:   12 0 0 12 15 15
+ Node 13:   16 12 0 12 15 15
+ Node 14:   12 16 0 12 15 15
+ Node 15:   0 12 0 12 15 15
+
+(Maximum) Crossing Paths: 16
+The number of paths on this application : 240 (all-to-all cases: 240)
+The average hops : 3.666667
+ID size(without ID modification)21
+total_slots: 640
+avg_slots: 10.000000
+efficiency: 0.625000
+unused_total_slots: 384
+unused_avg_slots: 6.000000
+inefficiency: 0.375000
+
+src_greedy total_increased_slots: 128
+
+src_greedy src_greedy total_slots: 768
+src_greedy avg_slots: 12.000000
+src_greedy increased_avg_slots: 2.000000
+src_greedy efficiency: 0.750000
+src_greedy increased_efficiency: 0.125000
+src_greedy unused_total_slots: 256
+src_greedy unused_avg_slots: 4.000000
+src_greedy decreased_unused_avg_slots: 2.000000
+src_greedy inefficiency: 0.250000
+src_greedy decreased_inefficiency: 0.125000
+
+src_polling total_increased_slots: 128
+
+src_polling total_slots: 768
+src_polling avg_slots: 12.000000
+src_polling increased_avg_slots: 2.000000
+src_polling efficiency: 0.750000
+src_polling increased_efficiency: 0.125000
+src_polling unused_total_slots: 256
+src_polling unused_avg_slots: 4.000000
+src_polling decreased_unused_avg_slots: 2.000000
+src_polling inefficiency: 0.250000
+src_polling decreased_inefficiency: 0.125000
+
+hcLtoS_greedy total_increased_slots: 128
+
+hcLtoS_greedy total_slots: 768
+hcLtoS_greedy avg_slots: 12.000000
+hcLtoS_greedy increased_avg_slots: 2.000000
+hcLtoS_greedy efficiency: 0.750000
+hcLtoS_greedy increased_efficiency: 0.125000
+hcLtoS_greedy unused_total_slots: 256
+hcLtoS_greedy unused_avg_slots: 4.000000
+hcLtoS_greedy decreased_unused_avg_slots: 2.000000
+hcLtoS_greedy inefficiency: 0.250000
+hcLtoS_greedy decreased_inefficiency: 0.125000
+
+hcLtoS_polling total_increased_slots: 128
+
+hcLtoS_polling total_slots: 768
+hcLtoS_polling avg_slots: 12.000000
+hcLtoS_polling increased_avg_slots: 2.000000
+hcLtoS_polling efficiency: 0.750000
+hcLtoS_polling increased_efficiency: 0.125000
+hcLtoS_polling unused_total_slots: 256
+hcLtoS_polling unused_avg_slots: 4.000000
+hcLtoS_polling decreased_unused_avg_slots: 2.000000
+hcLtoS_polling inefficiency: 0.250000
+hcLtoS_polling decreased_inefficiency: 0.125000
+
+hcStoL_greedy total_increased_slots: 128
+
+hcStoL_greedy total_slots: 768
+hcStoL_greedy avg_slots: 12.000000
+hcStoL_greedy increased_avg_slots: 2.000000
+hcStoL_greedy efficiency: 0.750000
+hcStoL_greedy increased_efficiency: 0.125000
+hcStoL_greedy unused_total_slots: 256
+hcStoL_greedy unused_avg_slots: 4.000000
+hcStoL_greedy decreased_unused_avg_slots: 2.000000
+hcStoL_greedy inefficiency: 0.250000
+hcStoL_greedy decreased_inefficiency: 0.125000
+
+hcStoL_polling total_increased_slots: 128
+
+hcStoL_polling total_slots: 768
+hcStoL_polling avg_slots: 12.000000
+hcStoL_polling increased_avg_slots: 2.000000
+hcStoL_polling efficiency: 0.750000
+hcStoL_polling increased_efficiency: 0.125000
+hcStoL_polling unused_total_slots: 256
+hcStoL_polling unused_avg_slots: 4.000000
+hcStoL_polling decreased_unused_avg_slots: 2.000000
+hcStoL_polling inefficiency: 0.250000
+hcStoL_polling decreased_inefficiency: 0.125000
+
+total_slots: 640
+src_greedy_total_slots: 768
+src_polling_total_slots: 768
+hcLtoS_greedy_total_slots: 768
+hcLtoS_polling_total_slots: 768
+hcStoL_greedy_total_slots: 768
+hcStoL_polling_total_slots: 768
+
+baseline_efficiency: 0.625000
+src_greedy_efficiency: 0.750000
+src_polling_efficiency: 0.750000
+hcLtoS_greedy_efficiency: 0.750000
+hcLtoS_polling_efficiency: 0.750000
+hcStoL_greedy_efficiency: 0.750000
+hcStoL_polling_efficiency: 0.750000
+
+baseline_inefficiency: 0.375000
+src_greedy_inefficiency: 0.250000
+src_polling_inefficiency: 0.250000
+hcLtoS_greedy_inefficiency: 0.250000
+hcLtoS_polling_inefficiency: 0.250000
+hcStoL_greedy_inefficiency: 0.250000
+hcStoL_polling_inefficiency: 0.250000
+
+baseline_avg_slots: 10.000000
+src_greedy_avg_slots: 12.000000
+src_polling_avg_slots: 12.000000
+hcLtoS_greedy_avg_slots: 12.000000
+hcLtoS_polling_avg_slots: 12.000000
+hcStoL_greedy_avg_slots: 12.000000
+hcStoL_polling_avg_slots: 12.000000
+
+baseline_unused_avg_slots: 6.000000
+src_greedy_unused_avg_slots: 4.000000
+src_polling_unused_avg_slots: 4.000000
+hcLtoS_greedy_unused_avg_slots: 4.000000
+hcLtoS_polling_unused_avg_slots: 4.000000
+hcStoL_greedy_unused_avg_slots: 4.000000
+hcStoL_polling_unused_avg_slots: 4.000000
+

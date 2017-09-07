@@ -1,0 +1,29 @@
+ID Allocation Policy is 0(low port first) / 1(Crossing Paths based method): 1
+Address method is 0(destination_based) / 1(path_based): 1
+ dst_based renewable label = 8
+ path_based renewable label = 12
+
+
+ (east, west, south, north, from host0,... east(vch2), south(vch2), west(vch2), north(vch2), from host(vch2)0,.. to host(vch2)0,..
+ Node  0:   8 0 8 0 7 7 0 4 0 4 8 8
+ Node  1:   12 8 8 0 8 8 0 0 0 4 7 7
+ Node  2:   8 12 8 0 7 7 0 0 0 4 8 8
+ Node  3:   0 8 8 0 8 8 4 0 0 4 7 7
+ Node  4:   8 0 12 8 7 7 0 4 0 0 8 8
+ Node  5:   12 8 12 8 8 8 0 0 0 0 7 7
+ Node  6:   8 12 12 8 7 7 0 0 0 0 8 8
+ Node  7:   0 8 12 8 8 8 4 0 0 0 7 7
+ Node  8:   8 0 8 12 7 7 0 4 0 0 8 8
+ Node  9:   12 8 8 12 8 8 0 0 0 0 7 7
+ Node 10:   8 12 8 12 7 7 0 0 0 0 8 8
+ Node 11:   0 8 8 12 8 8 4 0 0 0 7 7
+ Node 12:   8 0 0 8 7 7 0 4 4 0 8 8
+ Node 13:   12 8 0 8 8 8 0 0 4 0 7 7
+ Node 14:   8 12 0 8 7 7 0 0 4 0 8 8
+ Node 15:   0 8 0 8 8 8 4 0 4 0 7 7
+
+(Maximum) Crossing Paths: 12
+The number of paths on this application : 240 (all-to-all cases: 240)
+The average hops : 3.133333
+ID size(without ID modification)15
+(Maximum) number of slots: 12

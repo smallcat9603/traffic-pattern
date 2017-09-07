@@ -1,0 +1,817 @@
+ID Allocation Policy is 0(low port first) / 1(Crossing Paths based method): 1
+
+Channels (0)
+ channel from 0 to 63 is assigned to the ID 16
+Channels (1)
+Channels (2)
+Channels (3)
+Channels (4)
+Channels (5)
+ channel from 1 to 2 is assigned to the ID 0
+Channels (6)
+Channels (7)
+Channels (8)
+Channels (9)
+Channels (10)
+ channel from 2 to 4 is assigned to the ID 0
+Channels (11)
+Channels (12)
+Channels (13)
+Channels (14)
+Channels (15)
+ channel from 3 to 6 is assigned to the ID 1
+Channels (16)
+Channels (17)
+Channels (18)
+Channels (19)
+Channels (20)
+ channel from 4 to 8 is assigned to the ID 0
+Channels (21)
+Channels (22)
+Channels (23)
+Channels (24)
+Channels (25)
+ channel from 5 to 10 is assigned to the ID 1
+Channels (26)
+Channels (27)
+Channels (28)
+Channels (29)
+Channels (30)
+ channel from 6 to 12 is assigned to the ID 2
+Channels (31)
+Channels (32)
+Channels (33)
+Channels (34)
+Channels (35)
+ channel from 7 to 14 is assigned to the ID 3
+Channels (36)
+Channels (37)
+Channels (38)
+Channels (39)
+Channels (40)
+ channel from 8 to 16 is assigned to the ID 0
+Channels (41)
+Channels (42)
+Channels (43)
+Channels (44)
+Channels (45)
+ channel from 9 to 18 is assigned to the ID 1
+Channels (46)
+Channels (47)
+Channels (48)
+Channels (49)
+Channels (50)
+ channel from 10 to 20 is assigned to the ID 2
+Channels (51)
+Channels (52)
+Channels (53)
+Channels (54)
+Channels (55)
+ channel from 11 to 22 is assigned to the ID 3
+Channels (56)
+Channels (57)
+Channels (58)
+Channels (59)
+Channels (60)
+ channel from 12 to 24 is assigned to the ID 4
+Channels (61)
+Channels (62)
+Channels (63)
+Channels (64)
+Channels (65)
+ channel from 13 to 26 is assigned to the ID 5
+Channels (66)
+Channels (67)
+Channels (68)
+Channels (69)
+Channels (70)
+ channel from 14 to 28 is assigned to the ID 6
+Channels (71)
+Channels (72)
+Channels (73)
+Channels (74)
+Channels (75)
+ channel from 15 to 30 is assigned to the ID 7
+Channels (76)
+Channels (77)
+Channels (78)
+Channels (79)
+Channels (80)
+ channel from 16 to 32 is assigned to the ID 0
+Channels (81)
+Channels (82)
+Channels (83)
+Channels (84)
+Channels (85)
+ channel from 17 to 34 is assigned to the ID 1
+Channels (86)
+Channels (87)
+Channels (88)
+Channels (89)
+Channels (90)
+ channel from 18 to 36 is assigned to the ID 2
+Channels (91)
+Channels (92)
+Channels (93)
+Channels (94)
+Channels (95)
+ channel from 19 to 38 is assigned to the ID 3
+Channels (96)
+Channels (97)
+Channels (98)
+Channels (99)
+Channels (100)
+ channel from 20 to 40 is assigned to the ID 4
+Channels (101)
+Channels (102)
+Channels (103)
+Channels (104)
+Channels (105)
+ channel from 21 to 42 is assigned to the ID 5
+Channels (106)
+Channels (107)
+Channels (108)
+Channels (109)
+Channels (110)
+ channel from 22 to 44 is assigned to the ID 6
+Channels (111)
+Channels (112)
+Channels (113)
+Channels (114)
+Channels (115)
+ channel from 23 to 46 is assigned to the ID 7
+Channels (116)
+Channels (117)
+Channels (118)
+Channels (119)
+Channels (120)
+ channel from 24 to 48 is assigned to the ID 8
+Channels (121)
+Channels (122)
+Channels (123)
+Channels (124)
+Channels (125)
+ channel from 25 to 50 is assigned to the ID 9
+Channels (126)
+Channels (127)
+Channels (128)
+Channels (129)
+Channels (130)
+ channel from 26 to 52 is assigned to the ID 10
+Channels (131)
+Channels (132)
+Channels (133)
+Channels (134)
+Channels (135)
+ channel from 27 to 54 is assigned to the ID 11
+Channels (136)
+Channels (137)
+Channels (138)
+Channels (139)
+Channels (140)
+ channel from 28 to 56 is assigned to the ID 12
+Channels (141)
+Channels (142)
+Channels (143)
+Channels (144)
+Channels (145)
+ channel from 29 to 58 is assigned to the ID 13
+Channels (146)
+Channels (147)
+Channels (148)
+Channels (149)
+Channels (150)
+ channel from 30 to 60 is assigned to the ID 14
+Channels (151)
+Channels (152)
+Channels (153)
+Channels (154)
+Channels (155)
+ channel from 31 to 62 is assigned to the ID 15
+Channels (156)
+Channels (157)
+Channels (158)
+Channels (159)
+Channels (160)
+ channel from 32 to 1 is assigned to the ID 0
+Channels (161)
+Channels (162)
+Channels (163)
+Channels (164)
+Channels (165)
+ channel from 33 to 3 is assigned to the ID 1
+Channels (166)
+Channels (167)
+Channels (168)
+Channels (169)
+Channels (170)
+ channel from 34 to 5 is assigned to the ID 2
+Channels (171)
+Channels (172)
+Channels (173)
+Channels (174)
+Channels (175)
+ channel from 35 to 7 is assigned to the ID 3
+Channels (176)
+Channels (177)
+Channels (178)
+Channels (179)
+Channels (180)
+ channel from 36 to 9 is assigned to the ID 4
+Channels (181)
+Channels (182)
+Channels (183)
+Channels (184)
+Channels (185)
+ channel from 37 to 11 is assigned to the ID 5
+Channels (186)
+Channels (187)
+Channels (188)
+Channels (189)
+Channels (190)
+ channel from 38 to 13 is assigned to the ID 6
+Channels (191)
+Channels (192)
+Channels (193)
+Channels (194)
+Channels (195)
+ channel from 39 to 15 is assigned to the ID 7
+Channels (196)
+Channels (197)
+Channels (198)
+Channels (199)
+Channels (200)
+ channel from 40 to 17 is assigned to the ID 8
+Channels (201)
+Channels (202)
+Channels (203)
+Channels (204)
+Channels (205)
+ channel from 41 to 19 is assigned to the ID 9
+Channels (206)
+Channels (207)
+Channels (208)
+Channels (209)
+Channels (210)
+ channel from 42 to 21 is assigned to the ID 10
+Channels (211)
+Channels (212)
+Channels (213)
+Channels (214)
+Channels (215)
+ channel from 43 to 23 is assigned to the ID 11
+Channels (216)
+Channels (217)
+Channels (218)
+Channels (219)
+Channels (220)
+ channel from 44 to 25 is assigned to the ID 12
+Channels (221)
+Channels (222)
+Channels (223)
+Channels (224)
+Channels (225)
+ channel from 45 to 27 is assigned to the ID 13
+Channels (226)
+Channels (227)
+Channels (228)
+Channels (229)
+Channels (230)
+ channel from 46 to 29 is assigned to the ID 14
+Channels (231)
+Channels (232)
+Channels (233)
+Channels (234)
+Channels (235)
+ channel from 47 to 31 is assigned to the ID 15
+Channels (236)
+Channels (237)
+Channels (238)
+Channels (239)
+Channels (240)
+ channel from 48 to 33 is assigned to the ID 8
+Channels (241)
+Channels (242)
+Channels (243)
+Channels (244)
+Channels (245)
+ channel from 49 to 35 is assigned to the ID 9
+Channels (246)
+Channels (247)
+Channels (248)
+Channels (249)
+Channels (250)
+ channel from 50 to 37 is assigned to the ID 10
+Channels (251)
+Channels (252)
+Channels (253)
+Channels (254)
+Channels (255)
+ channel from 51 to 39 is assigned to the ID 11
+Channels (256)
+Channels (257)
+Channels (258)
+Channels (259)
+Channels (260)
+ channel from 52 to 41 is assigned to the ID 12
+Channels (261)
+Channels (262)
+Channels (263)
+Channels (264)
+Channels (265)
+ channel from 53 to 43 is assigned to the ID 13
+Channels (266)
+Channels (267)
+Channels (268)
+Channels (269)
+Channels (270)
+ channel from 54 to 45 is assigned to the ID 14
+Channels (271)
+Channels (272)
+Channels (273)
+Channels (274)
+Channels (275)
+ channel from 55 to 47 is assigned to the ID 15
+Channels (276)
+Channels (277)
+Channels (278)
+Channels (279)
+Channels (280)
+ channel from 56 to 49 is assigned to the ID 0
+Channels (281)
+Channels (282)
+Channels (283)
+Channels (284)
+Channels (285)
+ channel from 57 to 51 is assigned to the ID 1
+Channels (286)
+Channels (287)
+Channels (288)
+Channels (289)
+Channels (290)
+ channel from 58 to 53 is assigned to the ID 2
+Channels (291)
+Channels (292)
+Channels (293)
+Channels (294)
+Channels (295)
+ channel from 59 to 55 is assigned to the ID 3
+Channels (296)
+Channels (297)
+Channels (298)
+Channels (299)
+Channels (300)
+ channel from 60 to 57 is assigned to the ID 0
+Channels (301)
+Channels (302)
+Channels (303)
+Channels (304)
+Channels (305)
+ channel from 61 to 59 is assigned to the ID 1
+Channels (306)
+Channels (307)
+Channels (308)
+Channels (309)
+Channels (310)
+ channel from 62 to 61 is assigned to the ID 0
+Channels (311)
+Channels (312)
+Channels (313)
+Channels (314)
+Channels (315)
+ channel from 63 to 0 is assigned to the ID 16
+Channels (316)
+Channels (317)
+Channels (318)
+Channels (319)
+Channels (320)
+ channel from 0 to 63 is assigned to the ID 16
+ channel from 2 to 4 is assigned to the ID 0
+ channel from 3 to 6 is assigned to the ID 1
+Channels (321)
+ channel from 63 to 0 is assigned to the ID 16
+Channels (322)
+ channel from 32 to 1 is assigned to the ID 0
+Channels (323)
+ channel from 1 to 2 is assigned to the ID 0
+Channels (324)
+ channel from 33 to 3 is assigned to the ID 1
+Channels (325)
+ channel from 4 to 8 is assigned to the ID 0
+ channel from 5 to 10 is assigned to the ID 1
+ channel from 6 to 12 is assigned to the ID 2
+ channel from 7 to 14 is assigned to the ID 3
+Channels (326)
+ channel from 2 to 4 is assigned to the ID 0
+Channels (327)
+ channel from 34 to 5 is assigned to the ID 2
+Channels (328)
+ channel from 3 to 6 is assigned to the ID 1
+Channels (329)
+ channel from 35 to 7 is assigned to the ID 3
+Channels (330)
+ channel from 8 to 16 is assigned to the ID 0
+ channel from 9 to 18 is assigned to the ID 1
+ channel from 10 to 20 is assigned to the ID 2
+ channel from 11 to 22 is assigned to the ID 3
+Channels (331)
+ channel from 4 to 8 is assigned to the ID 0
+Channels (332)
+ channel from 36 to 9 is assigned to the ID 4
+Channels (333)
+ channel from 5 to 10 is assigned to the ID 1
+Channels (334)
+ channel from 37 to 11 is assigned to the ID 5
+Channels (335)
+ channel from 12 to 24 is assigned to the ID 4
+ channel from 13 to 26 is assigned to the ID 5
+ channel from 14 to 28 is assigned to the ID 6
+ channel from 15 to 30 is assigned to the ID 7
+Channels (336)
+ channel from 6 to 12 is assigned to the ID 2
+Channels (337)
+ channel from 38 to 13 is assigned to the ID 6
+Channels (338)
+ channel from 7 to 14 is assigned to the ID 3
+Channels (339)
+ channel from 39 to 15 is assigned to the ID 7
+Channels (340)
+ channel from 16 to 32 is assigned to the ID 0
+ channel from 17 to 34 is assigned to the ID 1
+ channel from 18 to 36 is assigned to the ID 2
+ channel from 19 to 38 is assigned to the ID 3
+Channels (341)
+ channel from 8 to 16 is assigned to the ID 0
+Channels (342)
+ channel from 40 to 17 is assigned to the ID 8
+Channels (343)
+ channel from 9 to 18 is assigned to the ID 1
+Channels (344)
+ channel from 41 to 19 is assigned to the ID 9
+Channels (345)
+ channel from 20 to 40 is assigned to the ID 4
+ channel from 21 to 42 is assigned to the ID 5
+ channel from 22 to 44 is assigned to the ID 6
+ channel from 23 to 46 is assigned to the ID 7
+Channels (346)
+ channel from 10 to 20 is assigned to the ID 2
+Channels (347)
+ channel from 42 to 21 is assigned to the ID 10
+Channels (348)
+ channel from 11 to 22 is assigned to the ID 3
+Channels (349)
+ channel from 43 to 23 is assigned to the ID 11
+Channels (350)
+ channel from 24 to 48 is assigned to the ID 8
+ channel from 25 to 50 is assigned to the ID 9
+ channel from 26 to 52 is assigned to the ID 10
+ channel from 27 to 54 is assigned to the ID 11
+Channels (351)
+ channel from 12 to 24 is assigned to the ID 4
+Channels (352)
+ channel from 44 to 25 is assigned to the ID 12
+Channels (353)
+ channel from 13 to 26 is assigned to the ID 5
+Channels (354)
+ channel from 45 to 27 is assigned to the ID 13
+Channels (355)
+ channel from 28 to 56 is assigned to the ID 12
+ channel from 29 to 58 is assigned to the ID 13
+ channel from 30 to 60 is assigned to the ID 14
+ channel from 31 to 62 is assigned to the ID 15
+Channels (356)
+ channel from 14 to 28 is assigned to the ID 6
+Channels (357)
+ channel from 46 to 29 is assigned to the ID 14
+Channels (358)
+ channel from 15 to 30 is assigned to the ID 7
+Channels (359)
+ channel from 47 to 31 is assigned to the ID 15
+Channels (360)
+ channel from 32 to 1 is assigned to the ID 0
+ channel from 33 to 3 is assigned to the ID 1
+ channel from 34 to 5 is assigned to the ID 2
+ channel from 35 to 7 is assigned to the ID 3
+Channels (361)
+ channel from 16 to 32 is assigned to the ID 0
+Channels (362)
+ channel from 48 to 33 is assigned to the ID 8
+Channels (363)
+ channel from 17 to 34 is assigned to the ID 1
+Channels (364)
+ channel from 49 to 35 is assigned to the ID 9
+Channels (365)
+ channel from 36 to 9 is assigned to the ID 4
+ channel from 37 to 11 is assigned to the ID 5
+ channel from 38 to 13 is assigned to the ID 6
+ channel from 39 to 15 is assigned to the ID 7
+Channels (366)
+ channel from 18 to 36 is assigned to the ID 2
+Channels (367)
+ channel from 50 to 37 is assigned to the ID 10
+Channels (368)
+ channel from 19 to 38 is assigned to the ID 3
+Channels (369)
+ channel from 51 to 39 is assigned to the ID 11
+Channels (370)
+ channel from 40 to 17 is assigned to the ID 8
+ channel from 41 to 19 is assigned to the ID 9
+ channel from 42 to 21 is assigned to the ID 10
+ channel from 43 to 23 is assigned to the ID 11
+Channels (371)
+ channel from 20 to 40 is assigned to the ID 4
+Channels (372)
+ channel from 52 to 41 is assigned to the ID 12
+Channels (373)
+ channel from 21 to 42 is assigned to the ID 5
+Channels (374)
+ channel from 53 to 43 is assigned to the ID 13
+Channels (375)
+ channel from 44 to 25 is assigned to the ID 12
+ channel from 45 to 27 is assigned to the ID 13
+ channel from 46 to 29 is assigned to the ID 14
+ channel from 47 to 31 is assigned to the ID 15
+Channels (376)
+ channel from 22 to 44 is assigned to the ID 6
+Channels (377)
+ channel from 54 to 45 is assigned to the ID 14
+Channels (378)
+ channel from 23 to 46 is assigned to the ID 7
+Channels (379)
+ channel from 55 to 47 is assigned to the ID 15
+Channels (380)
+ channel from 48 to 33 is assigned to the ID 8
+ channel from 49 to 35 is assigned to the ID 9
+ channel from 50 to 37 is assigned to the ID 10
+ channel from 51 to 39 is assigned to the ID 11
+Channels (381)
+ channel from 24 to 48 is assigned to the ID 8
+Channels (382)
+ channel from 56 to 49 is assigned to the ID 0
+Channels (383)
+ channel from 25 to 50 is assigned to the ID 9
+Channels (384)
+ channel from 57 to 51 is assigned to the ID 1
+Channels (385)
+ channel from 52 to 41 is assigned to the ID 12
+ channel from 53 to 43 is assigned to the ID 13
+ channel from 54 to 45 is assigned to the ID 14
+ channel from 55 to 47 is assigned to the ID 15
+Channels (386)
+ channel from 26 to 52 is assigned to the ID 10
+Channels (387)
+ channel from 58 to 53 is assigned to the ID 2
+Channels (388)
+ channel from 27 to 54 is assigned to the ID 11
+Channels (389)
+ channel from 59 to 55 is assigned to the ID 3
+Channels (390)
+ channel from 56 to 49 is assigned to the ID 0
+ channel from 57 to 51 is assigned to the ID 1
+ channel from 58 to 53 is assigned to the ID 2
+ channel from 59 to 55 is assigned to the ID 3
+Channels (391)
+ channel from 28 to 56 is assigned to the ID 12
+Channels (392)
+ channel from 60 to 57 is assigned to the ID 0
+Channels (393)
+ channel from 29 to 58 is assigned to the ID 13
+Channels (394)
+ channel from 61 to 59 is assigned to the ID 1
+Channels (395)
+ channel from 60 to 57 is assigned to the ID 0
+ channel from 61 to 59 is assigned to the ID 1
+ channel from 63 to 0 is assigned to the ID 16
+Channels (396)
+ channel from 30 to 60 is assigned to the ID 14
+Channels (397)
+ channel from 62 to 61 is assigned to the ID 0
+Channels (398)
+ channel from 31 to 62 is assigned to the ID 15
+Channels (399)
+ channel from 0 to 63 is assigned to the ID 16
+Channels (400)
+ channel from 0 to 63 is assigned to the ID 16
+ channel from 8 to 16 is assigned to the ID 0
+ channel from 9 to 18 is assigned to the ID 1
+ channel from 10 to 20 is assigned to the ID 2
+ channel from 11 to 22 is assigned to the ID 3
+ channel from 12 to 24 is assigned to the ID 4
+ channel from 13 to 26 is assigned to the ID 5
+ channel from 14 to 28 is assigned to the ID 6
+ channel from 15 to 30 is assigned to the ID 7
+Channels (401)
+ channel from 32 to 1 is assigned to the ID 0
+ channel from 33 to 3 is assigned to the ID 1
+ channel from 63 to 0 is assigned to the ID 16
+Channels (402)
+ channel from 2 to 4 is assigned to the ID 0
+ channel from 3 to 6 is assigned to the ID 1
+ channel from 34 to 5 is assigned to the ID 2
+ channel from 35 to 7 is assigned to the ID 3
+Channels (403)
+ channel from 4 to 8 is assigned to the ID 0
+ channel from 5 to 10 is assigned to the ID 1
+ channel from 36 to 9 is assigned to the ID 4
+ channel from 37 to 11 is assigned to the ID 5
+Channels (404)
+ channel from 6 to 12 is assigned to the ID 2
+ channel from 7 to 14 is assigned to the ID 3
+ channel from 38 to 13 is assigned to the ID 6
+ channel from 39 to 15 is assigned to the ID 7
+Channels (405)
+ channel from 16 to 32 is assigned to the ID 0
+ channel from 17 to 34 is assigned to the ID 1
+ channel from 18 to 36 is assigned to the ID 2
+ channel from 19 to 38 is assigned to the ID 3
+ channel from 20 to 40 is assigned to the ID 4
+ channel from 21 to 42 is assigned to the ID 5
+ channel from 22 to 44 is assigned to the ID 6
+ channel from 23 to 46 is assigned to the ID 7
+ channel from 24 to 48 is assigned to the ID 8
+ channel from 25 to 50 is assigned to the ID 9
+ channel from 26 to 52 is assigned to the ID 10
+ channel from 27 to 54 is assigned to the ID 11
+ channel from 28 to 56 is assigned to the ID 12
+ channel from 29 to 58 is assigned to the ID 13
+ channel from 30 to 60 is assigned to the ID 14
+ channel from 31 to 62 is assigned to the ID 15
+Channels (406)
+ channel from 8 to 16 is assigned to the ID 0
+ channel from 9 to 18 is assigned to the ID 1
+ channel from 40 to 17 is assigned to the ID 8
+ channel from 41 to 19 is assigned to the ID 9
+Channels (407)
+ channel from 10 to 20 is assigned to the ID 2
+ channel from 11 to 22 is assigned to the ID 3
+ channel from 42 to 21 is assigned to the ID 10
+ channel from 43 to 23 is assigned to the ID 11
+Channels (408)
+ channel from 12 to 24 is assigned to the ID 4
+ channel from 13 to 26 is assigned to the ID 5
+ channel from 44 to 25 is assigned to the ID 12
+ channel from 45 to 27 is assigned to the ID 13
+Channels (409)
+ channel from 14 to 28 is assigned to the ID 6
+ channel from 15 to 30 is assigned to the ID 7
+ channel from 46 to 29 is assigned to the ID 14
+ channel from 47 to 31 is assigned to the ID 15
+Channels (410)
+ channel from 32 to 1 is assigned to the ID 0
+ channel from 33 to 3 is assigned to the ID 1
+ channel from 34 to 5 is assigned to the ID 2
+ channel from 35 to 7 is assigned to the ID 3
+ channel from 36 to 9 is assigned to the ID 4
+ channel from 37 to 11 is assigned to the ID 5
+ channel from 38 to 13 is assigned to the ID 6
+ channel from 39 to 15 is assigned to the ID 7
+ channel from 40 to 17 is assigned to the ID 8
+ channel from 41 to 19 is assigned to the ID 9
+ channel from 42 to 21 is assigned to the ID 10
+ channel from 43 to 23 is assigned to the ID 11
+ channel from 44 to 25 is assigned to the ID 12
+ channel from 45 to 27 is assigned to the ID 13
+ channel from 46 to 29 is assigned to the ID 14
+ channel from 47 to 31 is assigned to the ID 15
+Channels (411)
+ channel from 16 to 32 is assigned to the ID 0
+ channel from 17 to 34 is assigned to the ID 1
+ channel from 48 to 33 is assigned to the ID 8
+ channel from 49 to 35 is assigned to the ID 9
+Channels (412)
+ channel from 18 to 36 is assigned to the ID 2
+ channel from 19 to 38 is assigned to the ID 3
+ channel from 50 to 37 is assigned to the ID 10
+ channel from 51 to 39 is assigned to the ID 11
+Channels (413)
+ channel from 20 to 40 is assigned to the ID 4
+ channel from 21 to 42 is assigned to the ID 5
+ channel from 52 to 41 is assigned to the ID 12
+ channel from 53 to 43 is assigned to the ID 13
+Channels (414)
+ channel from 22 to 44 is assigned to the ID 6
+ channel from 23 to 46 is assigned to the ID 7
+ channel from 54 to 45 is assigned to the ID 14
+ channel from 55 to 47 is assigned to the ID 15
+Channels (415)
+ channel from 48 to 33 is assigned to the ID 8
+ channel from 49 to 35 is assigned to the ID 9
+ channel from 50 to 37 is assigned to the ID 10
+ channel from 51 to 39 is assigned to the ID 11
+ channel from 52 to 41 is assigned to the ID 12
+ channel from 53 to 43 is assigned to the ID 13
+ channel from 54 to 45 is assigned to the ID 14
+ channel from 55 to 47 is assigned to the ID 15
+ channel from 63 to 0 is assigned to the ID 16
+Channels (416)
+ channel from 24 to 48 is assigned to the ID 8
+ channel from 25 to 50 is assigned to the ID 9
+ channel from 56 to 49 is assigned to the ID 0
+ channel from 57 to 51 is assigned to the ID 1
+Channels (417)
+ channel from 26 to 52 is assigned to the ID 10
+ channel from 27 to 54 is assigned to the ID 11
+ channel from 58 to 53 is assigned to the ID 2
+ channel from 59 to 55 is assigned to the ID 3
+Channels (418)
+ channel from 28 to 56 is assigned to the ID 12
+ channel from 29 to 58 is assigned to the ID 13
+ channel from 60 to 57 is assigned to the ID 0
+ channel from 61 to 59 is assigned to the ID 1
+Channels (419)
+ channel from 0 to 63 is assigned to the ID 16
+ channel from 30 to 60 is assigned to the ID 14
+ channel from 31 to 62 is assigned to the ID 15
+Channels (420)
+
+ (UP0, DOWN0, DOWN1, DOWN2, DOWN3)
+ Node  0:   1 0 0 0 0
+ Node  1:   1 0 0 0 0
+ Node  2:   1 0 0 0 0
+ Node  3:   1 0 0 0 0
+ Node  4:   1 0 0 0 0
+ Node  5:   1 0 0 0 0
+ Node  6:   1 0 0 0 0
+ Node  7:   1 0 0 0 0
+ Node  8:   1 0 0 0 0
+ Node  9:   1 0 0 0 0
+ Node 10:   1 0 0 0 0
+ Node 11:   1 0 0 0 0
+ Node 12:   1 0 0 0 0
+ Node 13:   1 0 0 0 0
+ Node 14:   1 0 0 0 0
+ Node 15:   1 0 0 0 0
+ Node 16:   1 0 0 0 0
+ Node 17:   1 0 0 0 0
+ Node 18:   1 0 0 0 0
+ Node 19:   1 0 0 0 0
+ Node 20:   1 0 0 0 0
+ Node 21:   1 0 0 0 0
+ Node 22:   1 0 0 0 0
+ Node 23:   1 0 0 0 0
+ Node 24:   1 0 0 0 0
+ Node 25:   1 0 0 0 0
+ Node 26:   1 0 0 0 0
+ Node 27:   1 0 0 0 0
+ Node 28:   1 0 0 0 0
+ Node 29:   1 0 0 0 0
+ Node 30:   1 0 0 0 0
+ Node 31:   1 0 0 0 0
+ Node 32:   1 0 0 0 0
+ Node 33:   1 0 0 0 0
+ Node 34:   1 0 0 0 0
+ Node 35:   1 0 0 0 0
+ Node 36:   1 0 0 0 0
+ Node 37:   1 0 0 0 0
+ Node 38:   1 0 0 0 0
+ Node 39:   1 0 0 0 0
+ Node 40:   1 0 0 0 0
+ Node 41:   1 0 0 0 0
+ Node 42:   1 0 0 0 0
+ Node 43:   1 0 0 0 0
+ Node 44:   1 0 0 0 0
+ Node 45:   1 0 0 0 0
+ Node 46:   1 0 0 0 0
+ Node 47:   1 0 0 0 0
+ Node 48:   1 0 0 0 0
+ Node 49:   1 0 0 0 0
+ Node 50:   1 0 0 0 0
+ Node 51:   1 0 0 0 0
+ Node 52:   1 0 0 0 0
+ Node 53:   1 0 0 0 0
+ Node 54:   1 0 0 0 0
+ Node 55:   1 0 0 0 0
+ Node 56:   1 0 0 0 0
+ Node 57:   1 0 0 0 0
+ Node 58:   1 0 0 0 0
+ Node 59:   1 0 0 0 0
+ Node 60:   1 0 0 0 0
+ Node 61:   1 0 0 0 0
+ Node 62:   1 0 0 0 0
+ Node 63:   1 0 0 0 0
+ Node 64:   3 1 1 1 1
+ Node 65:   4 1 1 1 1
+ Node 66:   4 1 1 1 1
+ Node 67:   4 1 1 1 1
+ Node 68:   4 1 1 1 1
+ Node 69:   4 1 1 1 1
+ Node 70:   4 1 1 1 1
+ Node 71:   4 1 1 1 1
+ Node 72:   4 1 1 1 1
+ Node 73:   4 1 1 1 1
+ Node 74:   4 1 1 1 1
+ Node 75:   4 1 1 1 1
+ Node 76:   4 1 1 1 1
+ Node 77:   4 1 1 1 1
+ Node 78:   4 1 1 1 1
+ Node 79:   3 1 1 1 1
+ Node 80:   9 3 4 4 4
+ Node 81:   16 4 4 4 4
+ Node 82:   16 4 4 4 4
+ Node 83:   9 4 4 4 3
+ Node 84:   0 9 16 16 9
+ Node 85:  
+(Maximum) Crossing Paths: 16
+The number of paths on this application : 64 (all-to-all cases: 4032)
+The average hops : 4.500000
+ID size(without ID modification)16
