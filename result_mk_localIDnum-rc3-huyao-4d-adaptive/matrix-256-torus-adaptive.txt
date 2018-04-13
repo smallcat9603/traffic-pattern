@@ -1,0 +1,393 @@
+ID Allocation Policy is 0(low port first) / 1(Crossing Paths based method): 1
+Address method is 0(destination_based) / 1(path_based): 1
+ dst_based renewable label = 3
+ path_based renewable label = 3
+
+
+ (east, west, south, north, front, back, out, in, from host0,... east(vch2), south(vch2), west(vch2), north(vch2), front, back, out, in, from host(vch2)0,.. to host(vch2)0,..
+ Node  0:   0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 1
+ Node  1:   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1
+ Node  2:   1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1
+ Node  3:   0 0 0 0 2 0 0 0 0 0 1 0 0 1 0 1 0 0 1 1
+ Node  4:   0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 1 1
+ Node  5:   1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node  6:   2 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node  7:   0 0 1 0 2 0 0 0 0 0 0 0 0 0 0 1 0 0 1 1
+ Node  8:   0 0 0 2 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node  9:   1 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 10:   2 0 0 2 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 11:   0 0 1 0 2 0 1 0 0 0 0 0 0 0 0 1 0 0 1 1
+ Node 12:   0 0 0 2 0 0 0 0 0 0 0 3 0 0 0 1 0 0 1 1
+ Node 13:   2 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 14:   3 0 0 3 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 1
+ Node 15:   0 0 0 2 2 0 1 0 1 1 0 0 3 0 0 1 0 2 0 0
+ Node 16:   1 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 1 0 0
+ Node 17:   2 0 0 0 0 1 0 0 1 1 0 0 0 1 0 0 0 1 0 0
+ Node 18:   0 1 0 0 2 1 0 0 1 1 0 0 0 1 0 0 0 0 0 0
+ Node 19:   0 1 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 1 0 0
+ Node 20:   0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 21:   1 0 0 0 0 1 1 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 22:   0 0 1 0 2 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 23:   0 0 0 0 1 0 1 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 24:   1 0 0 0 0 0 1 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 25:   2 0 0 2 0 1 1 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 26:   0 0 2 1 2 1 0 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 27:   0 0 0 0 1 0 1 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 28:   2 0 0 1 0 0 0 0 1 1 0 0 1 0 0 0 0 0 0 0
+ Node 29:   3 0 0 3 1 1 0 0 1 1 0 0 1 0 0 0 0 0 0 0
+ Node 30:   0 0 0 3 2 2 2 0 0 0 0 0 1 0 0 0 0 2 1 1
+ Node 31:   0 3 0 0 1 0 0 0 1 1 0 0 1 0 0 0 0 0 0 0
+ Node 32:   1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 1 1
+ Node 33:   1 0 0 0 1 2 0 0 0 0 0 0 0 0 0 0 0 1 1 1
+ Node 34:   0 2 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 1 1 1
+ Node 35:   0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1
+ Node 36:   0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 37:   0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 38:   0 1 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 39:   0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 40:   0 0 0 1 0 1 1 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 41:   0 0 0 1 1 2 1 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 42:   0 2 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 43:   0 1 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 44:   3 0 0 1 0 1 0 0 0 0 0 0 1 0 0 0 0 0 1 1
+ Node 45:   0 0 0 3 1 3 0 0 1 1 0 0 1 0 0 0 0 1 0 0
+ Node 46:   0 3 0 1 1 1 0 0 0 0 0 0 1 0 0 0 0 0 1 1
+ Node 47:   0 1 0 2 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 1
+ Node 48:   0 0 0 0 0 2 0 0 1 1 0 1 0 0 1 0 0 1 0 0
+ Node 49:   0 2 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 1 0 0
+ Node 50:   0 1 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 1 0 0
+ Node 51:   0 0 0 0 0 0 0 0 1 1 1 0 0 1 0 0 0 1 0 0
+ Node 52:   0 0 0 0 0 1 1 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 53:   0 1 0 0 0 0 1 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 54:   0 1 0 0 0 0 1 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 55:   0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 56:   0 0 0 1 0 2 1 0 1 1 0 0 0 0 1 0 0 0 0 0
+ Node 57:   0 2 0 0 0 0 1 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 58:   0 1 0 1 0 0 1 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 59:   0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 60:   0 0 0 3 0 3 0 0 0 0 0 0 1 0 2 0 0 1 1 1
+ Node 61:   0 3 0 1 0 0 0 0 1 1 0 0 1 0 0 0 0 0 0 0
+ Node 62:   0 1 0 2 0 0 0 0 1 1 0 0 1 0 0 0 0 0 0 0
+ Node 63:   0 0 0 0 0 0 0 0 1 1 3 0 1 0 1 0 0 0 0 0
+ Node 64:   0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 65:   0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 66:   1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 67:   0 0 1 0 2 0 0 0 0 0 0 0 0 0 0 1 0 0 1 1
+ Node 68:   0 0 1 0 0 0 2 0 0 0 0 1 0 0 0 0 0 0 1 1
+ Node 69:   1 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 70:   2 0 0 1 0 0 2 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 71:   0 0 2 2 2 0 0 1 0 0 1 0 0 0 0 1 0 0 1 1
+ Node 72:   0 0 1 1 0 0 1 0 0 0 0 3 0 0 0 1 0 0 1 1
+ Node 73:   3 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 74:   3 1 2 2 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 75:   0 1 2 3 2 0 2 0 1 1 1 0 0 0 0 1 0 0 0 0
+ Node 76:   0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 77:   0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 78:   1 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 79:   0 0 0 0 1 0 1 1 0 0 0 0 0 0 0 1 0 0 1 1
+ Node 80:   1 0 0 0 0 0 1 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 81:   2 0 0 0 0 1 1 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 82:   0 0 0 0 2 1 1 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 83:   0 1 0 0 1 0 1 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 84:   0 0 0 1 0 0 2 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 85:   1 0 1 1 0 1 2 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 86:   0 1 1 0 2 1 0 1 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 87:   0 0 0 1 1 0 2 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 88:   2 0 1 1 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 89:   3 1 1 2 2 1 0 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 90:   1 2 2 3 0 2 2 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 91:   0 3 0 1 2 1 0 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 92:   0 0 0 0 0 0 0 2 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 93:   0 0 0 0 0 0 0 2 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 94:   0 0 0 0 2 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 95:   0 0 0 0 0 0 0 2 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 96:   1 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 97:   0 0 0 0 1 2 1 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 98:   0 2 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 99:   0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 100:   0 0 0 1 0 1 2 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 101:   1 0 1 0 1 2 1 1 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 102:   0 1 1 1 1 0 2 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 103:   0 1 0 1 0 0 2 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 104:   3 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 105:   1 1 2 3 1 2 2 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 106:   0 3 0 1 0 3 0 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 107:   0 1 1 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 108:   0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 109:   0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 110:   0 0 0 0 1 0 0 2 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 111:   0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 112:   0 0 0 0 0 2 1 0 1 1 0 0 0 0 1 0 0 0 0 0
+ Node 113:   0 2 0 0 0 0 1 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 114:   0 1 0 0 0 0 1 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 115:   0 0 0 0 0 0 1 0 1 1 1 0 0 0 0 0 0 0 0 0
+ Node 116:   0 0 1 0 0 2 1 0 1 1 0 1 0 0 1 0 0 0 0 0
+ Node 117:   0 1 0 1 0 0 2 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 118:   0 1 0 1 0 0 2 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 119:   0 0 1 1 0 0 2 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 120:   1 0 2 3 0 1 2 0 0 0 0 0 0 0 2 0 0 0 1 1
+ Node 121:   1 3 0 1 0 1 0 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 122:   0 1 0 2 0 1 0 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 123:   0 0 0 1 0 0 0 0 1 1 3 0 0 0 1 0 0 0 0 0
+ Node 124:   0 0 0 0 0 1 0 2 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 125:   0 0 0 0 0 0 0 2 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 126:   0 0 0 0 0 0 0 2 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 127:   0 0 0 0 0 0 0 2 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 128:   0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 129:   0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 130:   1 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 131:   0 0 1 0 2 0 0 1 0 0 0 0 0 0 0 1 0 0 1 1
+ Node 132:   0 0 2 0 0 0 0 0 0 0 0 3 0 0 0 2 0 0 1 1
+ Node 133:   3 0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 134:   3 2 2 1 2 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 135:   0 2 2 3 2 0 1 2 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 136:   0 0 1 1 0 0 0 2 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 137:   0 0 1 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 138:   0 0 2 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 139:   0 0 1 1 0 0 1 1 0 0 0 0 0 0 0 1 0 0 1 1
+ Node 140:   0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 141:   0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 142:   1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 143:   0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 1 0 0 1 1
+ Node 144:   1 0 0 0 0 0 2 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 145:   2 0 0 0 0 1 2 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 146:   0 0 1 0 2 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 147:   0 0 0 0 1 0 2 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 148:   1 0 2 1 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 149:   3 1 2 1 2 1 0 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 150:   2 1 2 2 1 2 1 2 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 151:   0 3 2 0 2 2 0 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 152:   1 0 1 0 0 0 0 2 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 153:   2 0 1 1 0 0 0 2 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 154:   0 1 2 1 2 1 0 1 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 155:   0 1 0 0 0 0 0 2 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 156:   0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 157:   0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 158:   0 0 0 1 2 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 159:   0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 160:   1 0 0 0 0 1 2 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 161:   0 0 1 0 1 2 1 1 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 162:   0 2 0 0 1 0 2 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 163:   0 1 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 164:   3 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 165:   1 0 2 1 2 3 1 2 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 166:   1 3 1 1 0 2 0 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 167:   0 1 2 1 0 2 0 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 168:   0 0 0 0 0 1 0 2 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 169:   1 0 2 1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 170:   0 1 0 1 1 0 0 2 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 171:   0 0 1 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 172:   0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 173:   0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 174:   0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 175:   0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 176:   0 0 0 0 0 2 2 1 1 1 0 0 0 0 1 0 0 0 0 0
+ Node 177:   0 2 0 0 0 0 2 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 178:   0 1 0 0 0 0 2 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 179:   0 0 0 0 0 0 2 0 1 1 1 0 0 0 0 0 0 0 0 0
+ Node 180:   1 0 2 1 0 2 0 1 0 0 0 1 0 0 3 0 0 0 1 1
+ Node 181:   1 3 2 1 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 182:   0 1 1 1 0 1 0 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 183:   0 0 0 1 0 0 0 0 1 1 3 0 0 0 1 0 0 0 0 0
+ Node 184:   0 0 2 0 0 2 0 1 1 1 0 1 0 0 0 0 0 0 0 0
+ Node 185:   0 2 0 0 0 0 0 2 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 186:   0 1 0 0 0 0 0 2 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 187:   0 0 0 1 0 0 0 2 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 188:   0 0 0 0 0 1 0 1 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 189:   0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 190:   0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 191:   0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 192:   0 0 2 0 0 0 0 0 0 0 0 3 0 1 0 1 0 0 1 1
+ Node 193:   3 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 1
+ Node 194:   3 1 2 0 1 0 0 0 0 0 0 0 0 2 0 0 0 0 1 1
+ Node 195:   0 1 2 0 2 0 0 1 1 1 1 0 0 1 0 1 1 0 0 0
+ Node 196:   0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 1 1
+ Node 197:   1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 198:   2 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 199:   0 0 2 1 2 0 0 1 0 0 0 0 0 0 0 1 0 0 1 1
+ Node 200:   0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 201:   0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 202:   1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 203:   0 0 0 1 2 0 0 0 0 0 0 0 0 0 0 1 0 0 1 1
+ Node 204:   0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 1 1
+ Node 205:   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 1
+ Node 206:   1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 1
+ Node 207:   0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 1 1 0 1 1
+ Node 208:   2 0 2 0 0 0 0 0 1 1 0 0 0 1 0 0 0 0 0 0
+ Node 209:   3 1 3 0 2 1 0 0 1 1 0 0 0 1 0 0 0 0 0 0
+ Node 210:   1 2 2 0 1 2 0 1 0 0 0 0 0 2 0 0 1 0 1 1
+ Node 211:   0 3 1 0 2 1 0 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 212:   1 0 1 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 213:   2 0 1 0 0 1 0 1 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 214:   0 0 2 1 2 1 0 1 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 215:   0 1 0 0 1 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 216:   1 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 217:   2 0 0 0 0 1 0 1 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 218:   0 0 0 1 2 1 0 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 219:   0 0 0 0 1 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 220:   0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 1 0 0 0
+ Node 221:   0 0 0 0 0 0 0 0 1 1 0 0 1 0 0 0 1 0 0 0
+ Node 222:   0 1 0 0 2 0 0 0 1 1 0 0 0 0 0 0 1 0 0 0
+ Node 223:   0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 1 0 0 0
+ Node 224:   3 0 1 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 225:   1 1 3 0 0 3 0 1 1 1 0 0 0 2 0 0 1 0 0 0
+ Node 226:   0 3 1 0 1 3 0 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 227:   0 1 2 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 1 1
+ Node 228:   0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 229:   0 0 2 1 1 1 0 1 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 230:   0 1 1 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 231:   0 1 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 232:   0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 233:   0 0 0 1 1 2 0 0 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 234:   0 2 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 235:   0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 236:   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 1
+ Node 237:   1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 0 1 1
+ Node 238:   0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 1 0 1 1
+ Node 239:   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 1
+ Node 240:   1 0 3 0 0 2 0 1 0 0 0 0 0 2 2 0 1 0 1 1
+ Node 241:   0 3 1 0 0 1 0 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 242:   0 1 2 0 0 1 0 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 243:   0 0 0 0 0 0 0 0 1 1 3 0 0 0 2 0 0 0 0 0
+ Node 244:   0 0 2 1 0 1 0 1 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 245:   0 1 1 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 246:   0 1 1 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 247:   0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 248:   0 0 0 1 0 2 0 0 1 1 0 0 0 0 1 0 0 0 0 0
+ Node 249:   0 2 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 250:   0 1 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 251:   0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 252:   0 0 0 0 0 1 0 0 1 1 0 1 0 0 0 0 1 0 0 0
+ Node 253:   0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 1 0 0 0
+ Node 254:   0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 1 0 0 0
+ Node 255:   0 0 0 0 0 0 0 0 1 1 0 0 1 0 0 0 1 0 0 0
+
+(Maximum) Crossing Paths: 3
+The number of paths on this application : 256 (all-to-all cases: 65280)
+The average hops : 5.250000
+ID size(without ID modification)4
+total_slots: 1088
+avg_slots: 0.531250
+efficiency: 0.177083
+unused_total_slots: 5056
+unused_avg_slots: 2.468750
+inefficiency: 0.822917
+
+src_greedy total_increased_slots: 520
+
+src_greedy src_greedy total_slots: 1608
+src_greedy avg_slots: 0.785156
+src_greedy increased_avg_slots: 0.253906
+src_greedy efficiency: 0.261719
+src_greedy increased_efficiency: 0.084635
+src_greedy unused_total_slots: 4536
+src_greedy unused_avg_slots: 2.214844
+src_greedy decreased_unused_avg_slots: 0.253906
+src_greedy inefficiency: 0.738281
+src_greedy decreased_inefficiency: 0.084635
+
+src_polling total_increased_slots: 520
+
+src_polling total_slots: 1608
+src_polling avg_slots: 0.785156
+src_polling increased_avg_slots: 0.253906
+src_polling efficiency: 0.261719
+src_polling increased_efficiency: 0.084635
+src_polling unused_total_slots: 4536
+src_polling unused_avg_slots: 2.214844
+src_polling decreased_unused_avg_slots: 0.253906
+src_polling inefficiency: 0.738281
+src_polling decreased_inefficiency: 0.084635
+
+hcLtoS_greedy total_increased_slots: 518
+
+hcLtoS_greedy total_slots: 1606
+hcLtoS_greedy avg_slots: 0.784180
+hcLtoS_greedy increased_avg_slots: 0.252930
+hcLtoS_greedy efficiency: 0.261393
+hcLtoS_greedy increased_efficiency: 0.084310
+hcLtoS_greedy unused_total_slots: 4538
+hcLtoS_greedy unused_avg_slots: 2.215820
+hcLtoS_greedy decreased_unused_avg_slots: 0.252930
+hcLtoS_greedy inefficiency: 0.738607
+hcLtoS_greedy decreased_inefficiency: 0.084310
+
+hcLtoS_polling total_increased_slots: 518
+
+hcLtoS_polling total_slots: 1606
+hcLtoS_polling avg_slots: 0.784180
+hcLtoS_polling increased_avg_slots: 0.252930
+hcLtoS_polling efficiency: 0.261393
+hcLtoS_polling increased_efficiency: 0.084310
+hcLtoS_polling unused_total_slots: 4538
+hcLtoS_polling unused_avg_slots: 2.215820
+hcLtoS_polling decreased_unused_avg_slots: 0.252930
+hcLtoS_polling inefficiency: 0.738607
+hcLtoS_polling decreased_inefficiency: 0.084310
+
+hcStoL_greedy total_increased_slots: 486
+
+hcStoL_greedy total_slots: 1574
+hcStoL_greedy avg_slots: 0.768555
+hcStoL_greedy increased_avg_slots: 0.237305
+hcStoL_greedy efficiency: 0.256185
+hcStoL_greedy increased_efficiency: 0.079102
+hcStoL_greedy unused_total_slots: 4570
+hcStoL_greedy unused_avg_slots: 2.231445
+hcStoL_greedy decreased_unused_avg_slots: 0.237305
+hcStoL_greedy inefficiency: 0.743815
+hcStoL_greedy decreased_inefficiency: 0.079102
+
+hcStoL_polling total_increased_slots: 486
+
+hcStoL_polling total_slots: 1574
+hcStoL_polling avg_slots: 0.768555
+hcStoL_polling increased_avg_slots: 0.237305
+hcStoL_polling efficiency: 0.256185
+hcStoL_polling increased_efficiency: 0.079102
+hcStoL_polling unused_total_slots: 4570
+hcStoL_polling unused_avg_slots: 2.231445
+hcStoL_polling decreased_unused_avg_slots: 0.237305
+hcStoL_polling inefficiency: 0.743815
+hcStoL_polling decreased_inefficiency: 0.079102
+
+total_slots: 1088
+src_greedy_total_slots: 1608
+src_polling_total_slots: 1608
+hcLtoS_greedy_total_slots: 1606
+hcLtoS_polling_total_slots: 1606
+hcStoL_greedy_total_slots: 1574
+hcStoL_polling_total_slots: 1574
+
+baseline_efficiency: 0.177083
+src_greedy_efficiency: 0.261719
+src_polling_efficiency: 0.261719
+hcLtoS_greedy_efficiency: 0.261393
+hcLtoS_polling_efficiency: 0.261393
+hcStoL_greedy_efficiency: 0.256185
+hcStoL_polling_efficiency: 0.256185
+
+baseline_inefficiency: 0.822917
+src_greedy_inefficiency: 0.738281
+src_polling_inefficiency: 0.738281
+hcLtoS_greedy_inefficiency: 0.738607
+hcLtoS_polling_inefficiency: 0.738607
+hcStoL_greedy_inefficiency: 0.743815
+hcStoL_polling_inefficiency: 0.743815
+
+baseline_avg_slots: 0.531250
+src_greedy_avg_slots: 0.785156
+src_polling_avg_slots: 0.785156
+hcLtoS_greedy_avg_slots: 0.784180
+hcLtoS_polling_avg_slots: 0.784180
+hcStoL_greedy_avg_slots: 0.768555
+hcStoL_polling_avg_slots: 0.768555
+
+baseline_unused_avg_slots: 2.468750
+src_greedy_unused_avg_slots: 2.214844
+src_polling_unused_avg_slots: 2.214844
+hcLtoS_greedy_unused_avg_slots: 2.215820
+hcLtoS_polling_unused_avg_slots: 2.215820
+hcStoL_greedy_unused_avg_slots: 2.231445
+hcStoL_polling_unused_avg_slots: 2.231445
+

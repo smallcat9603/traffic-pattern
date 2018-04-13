@@ -1,0 +1,393 @@
+ID Allocation Policy is 0(low port first) / 1(Crossing Paths based method): 1
+Address method is 0(destination_based) / 1(path_based): 1
+ dst_based renewable label = 2
+ path_based renewable label = 2
+
+
+ (east, west, south, north, front, back, out, in, from host0,... east(vch2), south(vch2), west(vch2), north(vch2), front, back, out, in, from host(vch2)0,.. to host(vch2)0,..
+ Node  0:   2 0 1 0 1 0 1 0 1 1
+ Node  1:   1 1 0 0 2 0 1 0 1 1
+ Node  2:   0 1 0 0 2 0 1 0 1 1
+ Node  3:   0 1 0 0 2 0 1 0 1 1
+ Node  4:   2 0 1 1 0 0 0 0 1 1
+ Node  5:   1 0 0 2 0 0 1 0 1 1
+ Node  6:   0 0 0 2 0 0 1 0 1 1
+ Node  7:   0 0 0 2 0 0 1 0 1 1
+ Node  8:   2 0 1 0 1 0 0 0 1 1
+ Node  9:   1 0 0 1 0 0 1 0 1 1
+ Node 10:   0 0 0 1 0 0 1 0 1 1
+ Node 11:   0 0 0 1 0 0 1 0 1 1
+ Node 12:   2 0 0 0 2 0 0 0 1 1
+ Node 13:   1 0 0 0 1 0 1 0 1 1
+ Node 14:   0 0 0 0 1 0 1 0 1 1
+ Node 15:   0 0 0 0 1 0 1 0 1 1
+ Node 16:   2 0 1 0 1 1 0 0 1 1
+ Node 17:   1 0 1 0 1 0 1 0 1 1
+ Node 18:   0 0 1 0 1 0 1 0 1 1
+ Node 19:   0 0 1 0 1 0 1 0 1 1
+ Node 20:   2 0 1 1 2 1 0 0 1 1
+ Node 21:   1 0 2 0 0 1 1 0 1 1
+ Node 22:   0 0 2 0 0 1 1 0 1 1
+ Node 23:   0 0 2 0 0 1 1 0 1 1
+ Node 24:   2 0 1 2 1 1 1 0 1 1
+ Node 25:   1 1 1 0 2 1 1 0 1 1
+ Node 26:   0 1 1 0 2 1 1 0 1 1
+ Node 27:   0 1 1 0 2 1 1 0 1 1
+ Node 28:   2 0 0 1 2 1 0 0 1 1
+ Node 29:   1 0 0 1 1 1 1 0 1 1
+ Node 30:   0 0 0 1 1 1 1 0 1 1
+ Node 31:   0 0 0 1 1 1 1 0 1 1
+ Node 32:   2 0 1 0 0 1 0 0 1 1
+ Node 33:   1 0 1 0 0 0 1 0 1 1
+ Node 34:   0 0 1 0 0 0 1 0 1 1
+ Node 35:   0 0 1 0 0 0 1 0 1 1
+ Node 36:   2 0 2 0 1 2 1 0 1 1
+ Node 37:   1 1 0 0 1 2 1 0 1 1
+ Node 38:   0 1 0 0 1 2 1 0 1 1
+ Node 39:   0 1 0 0 1 2 1 0 1 1
+ Node 40:   2 0 0 2 1 2 0 0 1 1
+ Node 41:   1 0 0 2 1 1 1 0 1 1
+ Node 42:   0 0 0 2 1 1 1 0 1 1
+ Node 43:   0 0 0 2 1 1 1 0 1 1
+ Node 44:   2 0 0 1 2 1 0 0 1 1
+ Node 45:   1 0 0 1 1 1 1 0 1 1
+ Node 46:   0 0 0 1 1 1 1 0 1 1
+ Node 47:   0 0 0 1 1 1 1 0 1 1
+ Node 48:   2 0 1 0 0 1 0 0 1 1
+ Node 49:   1 0 1 0 0 0 1 0 1 1
+ Node 50:   0 0 1 0 0 0 1 0 1 1
+ Node 51:   0 0 1 0 0 0 1 0 1 1
+ Node 52:   2 0 2 2 0 0 0 0 1 1
+ Node 53:   1 0 2 1 0 0 1 0 1 1
+ Node 54:   0 0 2 1 0 0 1 0 1 1
+ Node 55:   0 0 2 1 0 0 1 0 1 1
+ Node 56:   2 0 2 2 0 1 0 0 1 1
+ Node 57:   1 0 2 1 0 1 1 0 1 1
+ Node 58:   0 0 2 1 0 1 1 0 1 1
+ Node 59:   0 0 2 1 0 1 1 0 1 1
+ Node 60:   2 0 0 2 0 2 1 0 1 1
+ Node 61:   1 1 0 1 0 2 1 0 1 1
+ Node 62:   0 1 0 1 0 2 1 0 1 1
+ Node 63:   0 1 0 1 0 2 1 0 1 1
+ Node 64:   0 0 0 0 1 0 1 2 1 1
+ Node 65:   1 1 0 0 2 0 2 0 1 1
+ Node 66:   1 2 1 0 2 0 1 0 1 1
+ Node 67:   0 0 0 0 2 0 2 2 1 1
+ Node 68:   0 0 0 1 0 0 0 2 1 1
+ Node 69:   0 1 0 2 0 0 2 0 1 1
+ Node 70:   1 2 1 2 0 0 0 0 1 1
+ Node 71:   0 0 0 2 0 0 2 1 1 1
+ Node 72:   0 0 0 0 1 0 0 2 1 1
+ Node 73:   0 1 0 1 0 0 2 0 1 1
+ Node 74:   1 2 1 1 0 0 0 0 1 1
+ Node 75:   0 0 0 1 0 0 2 1 1 1
+ Node 76:   0 0 0 0 1 0 0 2 1 1
+ Node 77:   0 1 0 0 1 0 2 0 1 1
+ Node 78:   1 2 0 0 2 0 0 0 1 1
+ Node 79:   0 0 0 0 1 0 2 1 1 1
+ Node 80:   0 0 1 0 1 0 0 2 1 1
+ Node 81:   0 1 1 0 1 0 2 0 1 1
+ Node 82:   1 2 1 0 1 1 0 0 1 1
+ Node 83:   0 0 1 0 1 0 2 1 1 1
+ Node 84:   0 0 1 1 1 1 0 2 1 1
+ Node 85:   0 1 2 0 0 1 2 0 1 1
+ Node 86:   1 2 2 0 1 1 0 0 1 1
+ Node 87:   0 0 2 0 0 1 2 1 1 1
+ Node 88:   0 0 1 1 1 1 1 2 1 1
+ Node 89:   1 1 1 0 2 1 2 0 1 1
+ Node 90:   1 2 1 1 2 1 1 0 1 1
+ Node 91:   0 0 1 0 2 1 2 2 1 1
+ Node 92:   0 0 0 1 1 1 0 2 1 1
+ Node 93:   0 1 0 1 1 1 2 0 1 1
+ Node 94:   1 2 0 1 2 1 0 0 1 1
+ Node 95:   0 0 0 1 1 1 2 1 1 1
+ Node 96:   0 0 1 0 0 0 0 2 1 1
+ Node 97:   0 1 1 0 0 0 2 0 1 1
+ Node 98:   1 2 1 0 0 1 0 0 1 1
+ Node 99:   0 0 1 0 0 0 2 1 1 1
+ Node 100:   0 0 1 0 1 2 1 2 1 1
+ Node 101:   1 1 0 0 1 2 2 0 1 1
+ Node 102:   1 2 1 0 1 2 1 0 1 1
+ Node 103:   0 0 0 0 1 2 2 2 1 1
+ Node 104:   0 0 0 2 1 1 0 2 1 1
+ Node 105:   0 1 0 2 1 1 2 0 1 1
+ Node 106:   1 2 0 2 1 2 0 0 1 1
+ Node 107:   0 0 0 2 1 1 2 1 1 1
+ Node 108:   0 0 0 1 1 1 0 2 1 1
+ Node 109:   0 1 0 1 1 1 2 0 1 1
+ Node 110:   1 2 0 1 2 1 0 0 1 1
+ Node 111:   0 0 0 1 1 1 2 1 1 1
+ Node 112:   0 0 1 0 0 0 0 2 1 1
+ Node 113:   0 1 1 0 0 0 2 0 1 1
+ Node 114:   1 2 1 0 0 1 0 0 1 1
+ Node 115:   0 0 1 0 0 0 2 1 1 1
+ Node 116:   0 0 2 1 0 0 0 2 1 1
+ Node 117:   0 1 2 1 0 0 2 0 1 1
+ Node 118:   1 2 2 2 0 0 0 0 1 1
+ Node 119:   0 0 2 1 0 0 2 1 1 1
+ Node 120:   0 0 2 1 0 1 0 2 1 1
+ Node 121:   0 1 2 1 0 1 2 0 1 1
+ Node 122:   1 2 2 2 0 1 0 0 1 1
+ Node 123:   0 0 2 1 0 1 2 1 1 1
+ Node 124:   0 0 0 1 0 2 1 2 1 1
+ Node 125:   1 1 0 1 0 2 2 0 1 1
+ Node 126:   1 2 0 2 0 2 1 0 1 1
+ Node 127:   0 0 0 1 0 2 2 2 1 1
+ Node 128:   0 0 0 0 1 0 1 1 1 1
+ Node 129:   2 1 1 0 2 0 1 1 1 1
+ Node 130:   1 2 0 0 2 0 0 2 1 1
+ Node 131:   0 1 0 0 2 0 2 2 1 1
+ Node 132:   0 0 0 1 0 0 0 1 1 1
+ Node 133:   2 1 1 2 0 0 1 0 1 1
+ Node 134:   1 1 0 2 0 0 0 2 1 1
+ Node 135:   0 1 0 2 0 0 2 1 1 1
+ Node 136:   0 0 0 0 1 0 0 1 1 1
+ Node 137:   2 1 1 1 0 0 1 0 1 1
+ Node 138:   1 1 0 1 0 0 0 2 1 1
+ Node 139:   0 1 0 1 0 0 2 1 1 1
+ Node 140:   0 0 0 0 1 0 0 1 1 1
+ Node 141:   2 1 0 0 2 0 1 0 1 1
+ Node 142:   1 1 0 0 1 0 0 2 1 1
+ Node 143:   0 1 0 0 1 0 2 1 1 1
+ Node 144:   0 0 1 0 1 0 0 1 1 1
+ Node 145:   2 1 1 0 1 1 1 0 1 1
+ Node 146:   1 1 1 0 1 0 0 2 1 1
+ Node 147:   0 1 1 0 1 0 2 1 1 1
+ Node 148:   0 0 1 1 1 1 0 1 1 1
+ Node 149:   2 1 2 0 1 1 1 0 1 1
+ Node 150:   1 1 2 0 0 1 0 2 1 1
+ Node 151:   0 1 2 0 0 1 2 1 1 1
+ Node 152:   0 0 1 1 1 1 1 1 1 1
+ Node 153:   2 1 1 1 2 1 1 1 1 1
+ Node 154:   1 2 1 0 2 1 0 2 1 1
+ Node 155:   0 1 1 0 2 1 2 2 1 1
+ Node 156:   0 0 0 1 1 1 0 1 1 1
+ Node 157:   2 1 0 1 2 1 1 0 1 1
+ Node 158:   1 1 0 1 1 1 0 2 1 1
+ Node 159:   0 1 0 1 1 1 2 1 1 1
+ Node 160:   0 0 1 0 0 0 0 1 1 1
+ Node 161:   2 1 1 0 0 1 1 0 1 1
+ Node 162:   1 1 1 0 0 0 0 2 1 1
+ Node 163:   0 1 1 0 0 0 2 1 1 1
+ Node 164:   0 0 1 0 1 2 1 1 1 1
+ Node 165:   2 1 1 0 1 2 1 1 1 1
+ Node 166:   1 2 0 0 1 2 0 2 1 1
+ Node 167:   0 1 0 0 1 2 2 2 1 1
+ Node 168:   0 0 0 2 1 1 0 1 1 1
+ Node 169:   2 1 0 2 1 2 1 0 1 1
+ Node 170:   1 1 0 2 1 1 0 2 1 1
+ Node 171:   0 1 0 2 1 1 2 1 1 1
+ Node 172:   0 0 0 1 1 1 0 1 1 1
+ Node 173:   2 1 0 1 2 1 1 0 1 1
+ Node 174:   1 1 0 1 1 1 0 2 1 1
+ Node 175:   0 1 0 1 1 1 2 1 1 1
+ Node 176:   0 0 1 0 0 0 0 1 1 1
+ Node 177:   2 1 1 0 0 1 1 0 1 1
+ Node 178:   1 1 1 0 0 0 0 2 1 1
+ Node 179:   0 1 1 0 0 0 2 1 1 1
+ Node 180:   0 0 2 1 0 0 0 1 1 1
+ Node 181:   2 1 2 2 0 0 1 0 1 1
+ Node 182:   1 1 2 1 0 0 0 2 1 1
+ Node 183:   0 1 2 1 0 0 2 1 1 1
+ Node 184:   0 0 2 1 0 1 0 1 1 1
+ Node 185:   2 1 2 2 0 1 1 0 1 1
+ Node 186:   1 1 2 1 0 1 0 2 1 1
+ Node 187:   0 1 2 1 0 1 2 1 1 1
+ Node 188:   0 0 0 1 0 2 1 1 1 1
+ Node 189:   2 1 0 2 0 2 1 1 1 1
+ Node 190:   1 2 0 1 0 2 0 2 1 1
+ Node 191:   0 1 0 1 0 2 2 2 1 1
+ Node 192:   2 0 0 0 1 0 0 0 1 1
+ Node 193:   2 1 0 0 2 0 0 1 1 1
+ Node 194:   2 1 0 0 2 0 0 1 1 1
+ Node 195:   0 2 1 0 2 0 0 2 1 1
+ Node 196:   1 0 0 1 0 0 0 0 1 1
+ Node 197:   1 1 0 2 0 0 0 1 1 1
+ Node 198:   1 1 0 2 0 0 0 1 1 1
+ Node 199:   0 2 1 2 0 0 0 1 1 1
+ Node 200:   1 0 0 0 1 0 0 0 1 1
+ Node 201:   1 1 0 1 0 0 0 1 1 1
+ Node 202:   1 1 0 1 0 0 0 1 1 1
+ Node 203:   0 2 1 1 0 0 0 1 1 1
+ Node 204:   1 0 0 0 1 0 0 0 1 1
+ Node 205:   1 1 0 0 1 0 0 1 1 1
+ Node 206:   1 1 0 0 1 0 0 1 1 1
+ Node 207:   0 2 0 0 2 0 0 1 1 1
+ Node 208:   1 0 1 0 1 0 0 0 1 1
+ Node 209:   1 1 1 0 1 0 0 1 1 1
+ Node 210:   1 1 1 0 1 0 0 1 1 1
+ Node 211:   0 2 1 0 1 1 0 1 1 1
+ Node 212:   1 0 1 1 1 1 0 0 1 1
+ Node 213:   1 1 2 0 0 1 0 1 1 1
+ Node 214:   1 1 2 0 0 1 0 1 1 1
+ Node 215:   0 2 2 0 1 1 0 1 1 1
+ Node 216:   2 0 1 1 1 1 0 0 1 1
+ Node 217:   2 1 1 0 2 1 0 1 1 1
+ Node 218:   2 1 1 0 2 1 0 1 1 1
+ Node 219:   0 2 1 1 2 1 0 2 1 1
+ Node 220:   1 0 0 1 1 1 0 0 1 1
+ Node 221:   1 1 0 1 1 1 0 1 1 1
+ Node 222:   1 1 0 1 1 1 0 1 1 1
+ Node 223:   0 2 0 1 2 1 0 1 1 1
+ Node 224:   1 0 1 0 0 0 0 0 1 1
+ Node 225:   1 1 1 0 0 0 0 1 1 1
+ Node 226:   1 1 1 0 0 0 0 1 1 1
+ Node 227:   0 2 1 0 0 1 0 1 1 1
+ Node 228:   2 0 1 0 1 2 0 0 1 1
+ Node 229:   2 1 0 0 1 2 0 1 1 1
+ Node 230:   2 1 0 0 1 2 0 1 1 1
+ Node 231:   0 2 1 0 1 2 0 2 1 1
+ Node 232:   1 0 0 2 1 1 0 0 1 1
+ Node 233:   1 1 0 2 1 1 0 1 1 1
+ Node 234:   1 1 0 2 1 1 0 1 1 1
+ Node 235:   0 2 0 2 1 2 0 1 1 1
+ Node 236:   1 0 0 1 1 1 0 0 1 1
+ Node 237:   1 1 0 1 1 1 0 1 1 1
+ Node 238:   1 1 0 1 1 1 0 1 1 1
+ Node 239:   0 2 0 1 2 1 0 1 1 1
+ Node 240:   1 0 1 0 0 0 0 0 1 1
+ Node 241:   1 1 1 0 0 0 0 1 1 1
+ Node 242:   1 1 1 0 0 0 0 1 1 1
+ Node 243:   0 2 1 0 0 1 0 1 1 1
+ Node 244:   1 0 2 1 0 0 0 0 1 1
+ Node 245:   1 1 2 1 0 0 0 1 1 1
+ Node 246:   1 1 2 1 0 0 0 1 1 1
+ Node 247:   0 2 2 2 0 0 0 1 1 1
+ Node 248:   1 0 2 1 0 1 0 0 1 1
+ Node 249:   1 1 2 1 0 1 0 1 1 1
+ Node 250:   1 1 2 1 0 1 0 1 1 1
+ Node 251:   0 2 2 2 0 1 0 1 1 1
+ Node 252:   2 0 0 1 0 2 0 0 1 1
+ Node 253:   2 1 0 1 0 2 0 1 1 1
+ Node 254:   2 1 0 1 0 2 0 1 1 1
+ Node 255:   0 2 0 2 0 2 0 2 1 1
+
+(Maximum) Crossing Paths: 2
+The number of paths on this application : 256 (all-to-all cases: 65280)
+The average hops : 6.500000
+ID size(without ID modification)3
+total_slots: 1408
+avg_slots: 0.687500
+efficiency: 0.343750
+unused_total_slots: 2688
+unused_avg_slots: 1.312500
+inefficiency: 0.656250
+
+src_greedy total_increased_slots: 49
+
+src_greedy src_greedy total_slots: 1457
+src_greedy avg_slots: 0.711426
+src_greedy increased_avg_slots: 0.023926
+src_greedy efficiency: 0.355713
+src_greedy increased_efficiency: 0.011963
+src_greedy unused_total_slots: 2639
+src_greedy unused_avg_slots: 1.288574
+src_greedy decreased_unused_avg_slots: 0.023926
+src_greedy inefficiency: 0.644287
+src_greedy decreased_inefficiency: 0.011963
+
+src_polling total_increased_slots: 49
+
+src_polling total_slots: 1457
+src_polling avg_slots: 0.711426
+src_polling increased_avg_slots: 0.023926
+src_polling efficiency: 0.355713
+src_polling increased_efficiency: 0.011963
+src_polling unused_total_slots: 2639
+src_polling unused_avg_slots: 1.288574
+src_polling decreased_unused_avg_slots: 0.023926
+src_polling inefficiency: 0.644287
+src_polling decreased_inefficiency: 0.011963
+
+hcLtoS_greedy total_increased_slots: 49
+
+hcLtoS_greedy total_slots: 1457
+hcLtoS_greedy avg_slots: 0.711426
+hcLtoS_greedy increased_avg_slots: 0.023926
+hcLtoS_greedy efficiency: 0.355713
+hcLtoS_greedy increased_efficiency: 0.011963
+hcLtoS_greedy unused_total_slots: 2639
+hcLtoS_greedy unused_avg_slots: 1.288574
+hcLtoS_greedy decreased_unused_avg_slots: 0.023926
+hcLtoS_greedy inefficiency: 0.644287
+hcLtoS_greedy decreased_inefficiency: 0.011963
+
+hcLtoS_polling total_increased_slots: 49
+
+hcLtoS_polling total_slots: 1457
+hcLtoS_polling avg_slots: 0.711426
+hcLtoS_polling increased_avg_slots: 0.023926
+hcLtoS_polling efficiency: 0.355713
+hcLtoS_polling increased_efficiency: 0.011963
+hcLtoS_polling unused_total_slots: 2639
+hcLtoS_polling unused_avg_slots: 1.288574
+hcLtoS_polling decreased_unused_avg_slots: 0.023926
+hcLtoS_polling inefficiency: 0.644287
+hcLtoS_polling decreased_inefficiency: 0.011963
+
+hcStoL_greedy total_increased_slots: 49
+
+hcStoL_greedy total_slots: 1457
+hcStoL_greedy avg_slots: 0.711426
+hcStoL_greedy increased_avg_slots: 0.023926
+hcStoL_greedy efficiency: 0.355713
+hcStoL_greedy increased_efficiency: 0.011963
+hcStoL_greedy unused_total_slots: 2639
+hcStoL_greedy unused_avg_slots: 1.288574
+hcStoL_greedy decreased_unused_avg_slots: 0.023926
+hcStoL_greedy inefficiency: 0.644287
+hcStoL_greedy decreased_inefficiency: 0.011963
+
+hcStoL_polling total_increased_slots: 49
+
+hcStoL_polling total_slots: 1457
+hcStoL_polling avg_slots: 0.711426
+hcStoL_polling increased_avg_slots: 0.023926
+hcStoL_polling efficiency: 0.355713
+hcStoL_polling increased_efficiency: 0.011963
+hcStoL_polling unused_total_slots: 2639
+hcStoL_polling unused_avg_slots: 1.288574
+hcStoL_polling decreased_unused_avg_slots: 0.023926
+hcStoL_polling inefficiency: 0.644287
+hcStoL_polling decreased_inefficiency: 0.011963
+
+total_slots: 1408
+src_greedy_total_slots: 1457
+src_polling_total_slots: 1457
+hcLtoS_greedy_total_slots: 1457
+hcLtoS_polling_total_slots: 1457
+hcStoL_greedy_total_slots: 1457
+hcStoL_polling_total_slots: 1457
+
+baseline_efficiency: 0.343750
+src_greedy_efficiency: 0.355713
+src_polling_efficiency: 0.355713
+hcLtoS_greedy_efficiency: 0.355713
+hcLtoS_polling_efficiency: 0.355713
+hcStoL_greedy_efficiency: 0.355713
+hcStoL_polling_efficiency: 0.355713
+
+baseline_inefficiency: 0.656250
+src_greedy_inefficiency: 0.644287
+src_polling_inefficiency: 0.644287
+hcLtoS_greedy_inefficiency: 0.644287
+hcLtoS_polling_inefficiency: 0.644287
+hcStoL_greedy_inefficiency: 0.644287
+hcStoL_polling_inefficiency: 0.644287
+
+baseline_avg_slots: 0.687500
+src_greedy_avg_slots: 0.711426
+src_polling_avg_slots: 0.711426
+hcLtoS_greedy_avg_slots: 0.711426
+hcLtoS_polling_avg_slots: 0.711426
+hcStoL_greedy_avg_slots: 0.711426
+hcStoL_polling_avg_slots: 0.711426
+
+baseline_unused_avg_slots: 1.312500
+src_greedy_unused_avg_slots: 1.288574
+src_polling_unused_avg_slots: 1.288574
+hcLtoS_greedy_unused_avg_slots: 1.288574
+hcLtoS_polling_unused_avg_slots: 1.288574
+hcStoL_greedy_unused_avg_slots: 1.288574
+hcStoL_polling_unused_avg_slots: 1.288574
+

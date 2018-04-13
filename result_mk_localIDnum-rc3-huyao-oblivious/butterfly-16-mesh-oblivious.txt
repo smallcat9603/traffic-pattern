@@ -1,0 +1,357 @@
+ID Allocation Policy is 0(low port first) / 1(Crossing Paths based method): 1
+Address method is 0(destination_based) / 1(path_based): 1
+ dst_based renewable label = 2
+ path_based renewable label = 3
+
+Channels (0)
+Channels (1)
+ channel from 0 to 10 is assigned to the ID 0
+Channels (2)
+Channels (3)
+ channel from 1 to 8 is assigned to the ID 0
+Channels (4)
+Channels (5)
+ channel from 0 to 10 is assigned to the ID 0
+Channels (6)
+ channel from 5 to 0 is assigned to the ID 0
+Channels (7)
+Channels (8)
+ channel from 0 to 10 is assigned to the ID 0
+Channels (9)
+ channel from 1 to 8 is assigned to the ID 0
+Channels (10)
+ channel from 2 to 13 is assigned to the ID 0
+Channels (11)
+Channels (12)
+ channel from 1 to 8 is assigned to the ID 0
+Channels (13)
+ channel from 8 to 1 is assigned to the ID 0
+Channels (14)
+Channels (15)
+Channels (16)
+ channel from 2 to 13 is assigned to the ID 0
+Channels (17)
+ channel from 0 to 10 is assigned to the ID 0
+Channels (18)
+Channels (19)
+ channel from 2 to 13 is assigned to the ID 0
+Channels (20)
+ channel from 13 to 2 is assigned to the ID 1
+Channels (21)
+Channels (22)
+Channels (23)
+Channels (24)
+ channel from 3 to 10 is assigned to the ID 1
+Channels (25)
+Channels (26)
+ channel from 3 to 10 is assigned to the ID 1
+Channels (27)
+ channel from 10 to 3 is assigned to the ID 1
+Channels (28)
+Channels (29)
+ channel from 4 to 11 is assigned to the ID 0
+Channels (30)
+Channels (31)
+ channel from 1 to 8 is assigned to the ID 0
+ channel from 5 to 12 is assigned to the ID 1
+Channels (32)
+ channel from 5 to 0 is assigned to the ID 0
+Channels (33)
+ channel from 4 to 11 is assigned to the ID 0
+Channels (34)
+ channel from 11 to 4 is assigned to the ID 0
+Channels (35)
+Channels (36)
+ channel from 4 to 11 is assigned to the ID 0
+Channels (37)
+ channel from 5 to 12 is assigned to the ID 1
+ channel from 5 to 0 is assigned to the ID 0
+Channels (38)
+ channel from 2 to 13 is assigned to the ID 0
+ channel from 6 to 9 is assigned to the ID 1
+Channels (39)
+ channel from 8 to 1 is assigned to the ID 0
+Channels (40)
+ channel from 5 to 12 is assigned to the ID 1
+ channel from 5 to 0 is assigned to the ID 0
+Channels (41)
+ channel from 12 to 5 is assigned to the ID 1
+ channel from 15 to 5 is assigned to the ID 2
+Channels (42)
+Channels (43)
+ channel from 4 to 11 is assigned to the ID 0
+Channels (44)
+ channel from 6 to 9 is assigned to the ID 1
+Channels (45)
+ channel from 0 to 10 is assigned to the ID 0
+ channel from 7 to 14 is assigned to the ID 1
+Channels (46)
+ channel from 13 to 2 is assigned to the ID 1
+Channels (47)
+ channel from 6 to 9 is assigned to the ID 1
+Channels (48)
+ channel from 9 to 6 is assigned to the ID 0
+Channels (49)
+Channels (50)
+Channels (51)
+ channel from 7 to 14 is assigned to the ID 1
+Channels (52)
+ channel from 3 to 10 is assigned to the ID 1
+ channel from 4 to 11 is assigned to the ID 0
+Channels (53)
+ channel from 10 to 3 is assigned to the ID 1
+Channels (54)
+ channel from 7 to 14 is assigned to the ID 1
+Channels (55)
+ channel from 14 to 7 is assigned to the ID 0
+Channels (56)
+Channels (57)
+ channel from 8 to 1 is assigned to the ID 0
+Channels (58)
+Channels (59)
+ channel from 5 to 12 is assigned to the ID 1
+Channels (60)
+ channel from 11 to 4 is assigned to the ID 0
+Channels (61)
+ channel from 8 to 1 is assigned to the ID 0
+Channels (62)
+ channel from 1 to 8 is assigned to the ID 0
+Channels (63)
+Channels (64)
+ channel from 9 to 6 is assigned to the ID 0
+Channels (65)
+ channel from 11 to 4 is assigned to the ID 0
+Channels (66)
+ channel from 2 to 13 is assigned to the ID 0
+Channels (67)
+ channel from 8 to 1 is assigned to the ID 0
+ channel from 12 to 5 is assigned to the ID 1
+ channel from 15 to 5 is assigned to the ID 2
+Channels (68)
+ channel from 9 to 6 is assigned to the ID 0
+Channels (69)
+ channel from 6 to 9 is assigned to the ID 1
+Channels (70)
+Channels (71)
+ channel from 10 to 15 is assigned to the ID 0
+ channel from 10 to 3 is assigned to the ID 1
+Channels (72)
+ channel from 11 to 4 is assigned to the ID 0
+Channels (73)
+ channel from 7 to 14 is assigned to the ID 1
+Channels (74)
+ channel from 9 to 6 is assigned to the ID 0
+ channel from 13 to 2 is assigned to the ID 1
+Channels (75)
+ channel from 10 to 15 is assigned to the ID 0
+ channel from 10 to 3 is assigned to the ID 1
+Channels (76)
+ channel from 0 to 10 is assigned to the ID 0
+ channel from 3 to 10 is assigned to the ID 1
+Channels (77)
+Channels (78)
+Channels (79)
+ channel from 3 to 10 is assigned to the ID 1
+ channel from 11 to 4 is assigned to the ID 0
+Channels (80)
+ channel from 10 to 15 is assigned to the ID 0
+Channels (81)
+ channel from 10 to 3 is assigned to the ID 1
+ channel from 14 to 7 is assigned to the ID 0
+Channels (82)
+ channel from 11 to 4 is assigned to the ID 0
+Channels (83)
+ channel from 4 to 11 is assigned to the ID 0
+Channels (84)
+Channels (85)
+ channel from 12 to 5 is assigned to the ID 1
+Channels (86)
+Channels (87)
+Channels (88)
+Channels (89)
+ channel from 12 to 5 is assigned to the ID 1
+Channels (90)
+ channel from 5 to 12 is assigned to the ID 1
+Channels (91)
+Channels (92)
+ channel from 13 to 2 is assigned to the ID 1
+Channels (93)
+Channels (94)
+Channels (95)
+ channel from 12 to 5 is assigned to the ID 1
+ channel from 15 to 5 is assigned to the ID 2
+Channels (96)
+ channel from 13 to 2 is assigned to the ID 1
+Channels (97)
+ channel from 2 to 13 is assigned to the ID 0
+Channels (98)
+Channels (99)
+ channel from 14 to 7 is assigned to the ID 0
+Channels (100)
+ channel from 15 to 5 is assigned to the ID 2
+Channels (101)
+Channels (102)
+ channel from 13 to 2 is assigned to the ID 1
+Channels (103)
+ channel from 14 to 7 is assigned to the ID 0
+Channels (104)
+ channel from 7 to 14 is assigned to the ID 1
+Channels (105)
+Channels (106)
+Channels (107)
+ channel from 15 to 5 is assigned to the ID 2
+Channels (108)
+Channels (109)
+ channel from 14 to 7 is assigned to the ID 0
+Channels (110)
+ channel from 15 to 5 is assigned to the ID 2
+Channels (111)
+ channel from 10 to 15 is assigned to the ID 0
+
+ (east, west, south, north, from host0,... east(vch2), south(vch2), west(vch2), north(vch2), from host(vch2)0,.. to host(vch2)0,..
+ Node  0:   1 0 1 0 1 1
+ Node  1:   1 1 1 0 1 1
+ Node  2:   0 1 1 0 1 1
+ Node  3:   0 0 1 0 1 1
+ Node  4:   1 0 2 1 1 1
+ Node  5:   1 2 2 1 2 2
+ Node  6:   1 1 2 1 1 1
+ Node  7:   0 1 2 1 1 1
+ Node  8:   1 0 1 1 1 1
+ Node  9:   1 1 1 3 1 1
+ Node 10:   2 1 1 2 2 2
+ Node 11:   0 2 1 2 1 1
+ Node 12:   1 0 0 0 1 1
+ Node 13:   1 0 0 2 1 1
+ Node 14:   1 1 0 1 1 1
+ Node 15:   0 1 0 1 1 1
+
+(Maximum) Crossing Paths: 3
+The number of paths on this application : 18 (all-to-all cases: 240)
+The average hops : 4.111111
+ID size(without ID modification)3
+total_slots: 56
+avg_slots: 0.875000
+efficiency: 0.291667
+unused_total_slots: 136
+unused_avg_slots: 2.125000
+inefficiency: 0.708333
+
+src_greedy total_increased_slots: 23
+
+src_greedy src_greedy total_slots: 79
+src_greedy avg_slots: 1.234375
+src_greedy increased_avg_slots: 0.359375
+src_greedy efficiency: 0.411458
+src_greedy increased_efficiency: 0.119792
+src_greedy unused_total_slots: 113
+src_greedy unused_avg_slots: 1.765625
+src_greedy decreased_unused_avg_slots: 0.359375
+src_greedy inefficiency: 0.588542
+src_greedy decreased_inefficiency: 0.119792
+
+src_polling total_increased_slots: 23
+
+src_polling total_slots: 79
+src_polling avg_slots: 1.234375
+src_polling increased_avg_slots: 0.359375
+src_polling efficiency: 0.411458
+src_polling increased_efficiency: 0.119792
+src_polling unused_total_slots: 113
+src_polling unused_avg_slots: 1.765625
+src_polling decreased_unused_avg_slots: 0.359375
+src_polling inefficiency: 0.588542
+src_polling decreased_inefficiency: 0.119792
+
+hcLtoS_greedy total_increased_slots: 30
+
+hcLtoS_greedy total_slots: 86
+hcLtoS_greedy avg_slots: 1.343750
+hcLtoS_greedy increased_avg_slots: 0.468750
+hcLtoS_greedy efficiency: 0.447917
+hcLtoS_greedy increased_efficiency: 0.156250
+hcLtoS_greedy unused_total_slots: 106
+hcLtoS_greedy unused_avg_slots: 1.656250
+hcLtoS_greedy decreased_unused_avg_slots: 0.468750
+hcLtoS_greedy inefficiency: 0.552083
+hcLtoS_greedy decreased_inefficiency: 0.156250
+
+hcLtoS_polling total_increased_slots: 30
+
+hcLtoS_polling total_slots: 86
+hcLtoS_polling avg_slots: 1.343750
+hcLtoS_polling increased_avg_slots: 0.468750
+hcLtoS_polling efficiency: 0.447917
+hcLtoS_polling increased_efficiency: 0.156250
+hcLtoS_polling unused_total_slots: 106
+hcLtoS_polling unused_avg_slots: 1.656250
+hcLtoS_polling decreased_unused_avg_slots: 0.468750
+hcLtoS_polling inefficiency: 0.552083
+hcLtoS_polling decreased_inefficiency: 0.156250
+
+hcStoL_greedy total_increased_slots: 20
+
+hcStoL_greedy total_slots: 76
+hcStoL_greedy avg_slots: 1.187500
+hcStoL_greedy increased_avg_slots: 0.312500
+hcStoL_greedy efficiency: 0.395833
+hcStoL_greedy increased_efficiency: 0.104167
+hcStoL_greedy unused_total_slots: 116
+hcStoL_greedy unused_avg_slots: 1.812500
+hcStoL_greedy decreased_unused_avg_slots: 0.312500
+hcStoL_greedy inefficiency: 0.604167
+hcStoL_greedy decreased_inefficiency: 0.104167
+
+hcStoL_polling total_increased_slots: 20
+
+hcStoL_polling total_slots: 76
+hcStoL_polling avg_slots: 1.187500
+hcStoL_polling increased_avg_slots: 0.312500
+hcStoL_polling efficiency: 0.395833
+hcStoL_polling increased_efficiency: 0.104167
+hcStoL_polling unused_total_slots: 116
+hcStoL_polling unused_avg_slots: 1.812500
+hcStoL_polling decreased_unused_avg_slots: 0.312500
+hcStoL_polling inefficiency: 0.604167
+hcStoL_polling decreased_inefficiency: 0.104167
+
+total_slots: 56
+src_greedy_total_slots: 79
+src_polling_total_slots: 79
+hcLtoS_greedy_total_slots: 86
+hcLtoS_polling_total_slots: 86
+hcStoL_greedy_total_slots: 76
+hcStoL_polling_total_slots: 76
+
+baseline_efficiency: 0.291667
+src_greedy_efficiency: 0.411458
+src_polling_efficiency: 0.411458
+hcLtoS_greedy_efficiency: 0.447917
+hcLtoS_polling_efficiency: 0.447917
+hcStoL_greedy_efficiency: 0.395833
+hcStoL_polling_efficiency: 0.395833
+
+baseline_inefficiency: 0.708333
+src_greedy_inefficiency: 0.588542
+src_polling_inefficiency: 0.588542
+hcLtoS_greedy_inefficiency: 0.552083
+hcLtoS_polling_inefficiency: 0.552083
+hcStoL_greedy_inefficiency: 0.604167
+hcStoL_polling_inefficiency: 0.604167
+
+baseline_avg_slots: 0.875000
+src_greedy_avg_slots: 1.234375
+src_polling_avg_slots: 1.234375
+hcLtoS_greedy_avg_slots: 1.343750
+hcLtoS_polling_avg_slots: 1.343750
+hcStoL_greedy_avg_slots: 1.187500
+hcStoL_polling_avg_slots: 1.187500
+
+baseline_unused_avg_slots: 2.125000
+src_greedy_unused_avg_slots: 1.765625
+src_polling_unused_avg_slots: 1.765625
+hcLtoS_greedy_unused_avg_slots: 1.656250
+hcLtoS_polling_unused_avg_slots: 1.656250
+hcStoL_greedy_unused_avg_slots: 1.812500
+hcStoL_polling_unused_avg_slots: 1.812500
+
