@@ -2,6 +2,7 @@ ID Allocation Policy is 0(low port first) / 1(Crossing Paths based method): 1
 Address method is 0(destination_based) / 1(path_based): 1
  dst_based renewable label = 8
  path_based renewable label = 8
+ slot_max = 8
 
 
  (east, west, south, north, front, back, from host0,... east(vch2), south(vch2), west(vch2), north(vch2), front, back, from host(vch2)0,.. to host(vch2)0,..

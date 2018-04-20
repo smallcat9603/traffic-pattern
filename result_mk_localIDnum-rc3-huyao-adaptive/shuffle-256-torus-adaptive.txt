@@ -2,6 +2,7 @@ ID Allocation Policy is 0(low port first) / 1(Crossing Paths based method): 1
 Address method is 0(destination_based) / 1(path_based): 1
  dst_based renewable label = 8
  path_based renewable label = 8
+ slot_max = 8
 
 Channels (0)
 Channels (1)
@@ -20,7 +21,7 @@ Channels (11)
 Channels (12)
  channel from 0 to 255 is assigned to the ID 0
 Channels (13)
- channel from 255 to 0 is assigned to the ID 4
+ channel from 255 to 0 is assigned to the ID 0
 Channels (14)
 Channels (15)
  channel from 1 to 2 is assigned to the ID 0
@@ -132,7 +133,6 @@ Channels (86)
  channel from 10 to 20 is assigned to the ID 2
 Channels (87)
  channel from 11 to 22 is assigned to the ID 3
- channel from 255 to 0 is assigned to the ID 4
 Channels (88)
 Channels (89)
  channel from 6 to 12 is assigned to the ID 2
@@ -180,7 +180,7 @@ Channels (114)
  channel from 10 to 20 is assigned to the ID 2
  channel from 11 to 22 is assigned to the ID 3
 Channels (115)
- channel from 12 to 24 is assigned to the ID 4
+ channel from 12 to 24 is assigned to the ID 0
 Channels (116)
 Channels (117)
  channel from 8 to 16 is assigned to the ID 0
@@ -202,7 +202,7 @@ Channels (128)
  channel from 9 to 18 is assigned to the ID 1
  channel from 10 to 20 is assigned to the ID 2
  channel from 11 to 22 is assigned to the ID 3
- channel from 12 to 24 is assigned to the ID 4
+ channel from 12 to 24 is assigned to the ID 0
 Channels (129)
 Channels (130)
 Channels (131)
@@ -214,7 +214,6 @@ Channels (134)
 Channels (135)
 Channels (136)
 Channels (137)
- channel from 0 to 255 is assigned to the ID 0
 Channels (138)
 Channels (139)
 Channels (140)
@@ -222,10 +221,9 @@ Channels (141)
  channel from 6 to 12 is assigned to the ID 2
  channel from 7 to 14 is assigned to the ID 3
 Channels (142)
- channel from 0 to 255 is assigned to the ID 0
  channel from 10 to 20 is assigned to the ID 2
  channel from 11 to 22 is assigned to the ID 3
- channel from 12 to 24 is assigned to the ID 4
+ channel from 12 to 24 is assigned to the ID 0
 Channels (143)
  channel from 13 to 26 is assigned to the ID 1
 Channels (144)
@@ -245,9 +243,8 @@ Channels (155)
  channel from 6 to 12 is assigned to the ID 2
  channel from 7 to 14 is assigned to the ID 3
 Channels (156)
- channel from 0 to 255 is assigned to the ID 0
  channel from 11 to 22 is assigned to the ID 3
- channel from 12 to 24 is assigned to the ID 4
+ channel from 12 to 24 is assigned to the ID 0
  channel from 13 to 26 is assigned to the ID 1
 Channels (157)
 Channels (158)
@@ -266,14 +263,13 @@ Channels (168)
 Channels (169)
  channel from 7 to 14 is assigned to the ID 3
 Channels (170)
- channel from 0 to 255 is assigned to the ID 0
- channel from 12 to 24 is assigned to the ID 4
+ channel from 12 to 24 is assigned to the ID 0
  channel from 13 to 26 is assigned to the ID 1
 Channels (171)
- channel from 14 to 28 is assigned to the ID 2
+ channel from 14 to 28 is assigned to the ID 0
 Channels (172)
 Channels (173)
- channel from 12 to 24 is assigned to the ID 4
+ channel from 12 to 24 is assigned to the ID 0
 Channels (174)
  channel from 6 to 12 is assigned to the ID 2
 Channels (175)
@@ -287,9 +283,8 @@ Channels (182)
 Channels (183)
  channel from 7 to 14 is assigned to the ID 3
 Channels (184)
- channel from 0 to 255 is assigned to the ID 0
  channel from 13 to 26 is assigned to the ID 1
- channel from 14 to 28 is assigned to the ID 2
+ channel from 14 to 28 is assigned to the ID 0
 Channels (185)
 Channels (186)
 Channels (187)
@@ -306,13 +301,12 @@ Channels (195)
 Channels (196)
 Channels (197)
 Channels (198)
- channel from 0 to 255 is assigned to the ID 0
- channel from 14 to 28 is assigned to the ID 2
+ channel from 14 to 28 is assigned to the ID 0
 Channels (199)
- channel from 15 to 30 is assigned to the ID 1
+ channel from 15 to 30 is assigned to the ID 0
 Channels (200)
 Channels (201)
- channel from 14 to 28 is assigned to the ID 2
+ channel from 14 to 28 is assigned to the ID 0
 Channels (202)
 Channels (203)
 Channels (204)
@@ -325,18 +319,18 @@ Channels (209)
 Channels (210)
 Channels (211)
 Channels (212)
- channel from 0 to 255 is assigned to the ID 0
- channel from 15 to 30 is assigned to the ID 1
+ channel from 15 to 30 is assigned to the ID 0
 Channels (213)
 Channels (214)
 Channels (215)
- channel from 15 to 30 is assigned to the ID 1
+ channel from 15 to 30 is assigned to the ID 0
 Channels (216)
 Channels (217)
 Channels (218)
 Channels (219)
 Channels (220)
 Channels (221)
+ channel from 0 to 255 is assigned to the ID 0
 Channels (222)
 Channels (223)
  channel from 135 to 15 is assigned to the ID 0
@@ -475,7 +469,6 @@ Channels (310)
 Channels (311)
  channel from 19 to 38 is assigned to the ID 2
  channel from 27 to 54 is assigned to the ID 3
- channel from 255 to 0 is assigned to the ID 4
 Channels (312)
 Channels (313)
  channel from 22 to 44 is assigned to the ID 2
@@ -530,7 +523,7 @@ Channels (340)
 Channels (341)
  channel from 24 to 48 is assigned to the ID 0
 Channels (342)
- channel from 12 to 24 is assigned to the ID 4
+ channel from 12 to 24 is assigned to the ID 0
 Channels (343)
 Channels (344)
 Channels (345)
@@ -572,7 +565,7 @@ Channels (366)
  channel from 28 to 56 is assigned to the ID 4
 Channels (367)
  channel from 21 to 42 is assigned to the ID 1
- channel from 29 to 58 is assigned to the ID 5
+ channel from 29 to 58 is assigned to the ID 2
 Channels (368)
 Channels (369)
  channel from 26 to 52 is assigned to the ID 1
@@ -592,7 +585,7 @@ Channels (379)
 Channels (380)
  channel from 27 to 54 is assigned to the ID 3
  channel from 28 to 56 is assigned to the ID 4
- channel from 29 to 58 is assigned to the ID 5
+ channel from 29 to 58 is assigned to the ID 2
 Channels (381)
 Channels (382)
  channel from 133 to 11 is assigned to the ID 1
@@ -612,15 +605,15 @@ Channels (393)
  channel from 23 to 46 is assigned to the ID 3
 Channels (394)
  channel from 28 to 56 is assigned to the ID 4
- channel from 29 to 58 is assigned to the ID 5
+ channel from 29 to 58 is assigned to the ID 2
 Channels (395)
  channel from 22 to 44 is assigned to the ID 2
- channel from 30 to 60 is assigned to the ID 1
+ channel from 30 to 60 is assigned to the ID 0
 Channels (396)
 Channels (397)
  channel from 28 to 56 is assigned to the ID 4
 Channels (398)
- channel from 14 to 28 is assigned to the ID 2
+ channel from 14 to 28 is assigned to the ID 0
 Channels (399)
 Channels (400)
 Channels (401)
@@ -632,13 +625,13 @@ Channels (406)
 Channels (407)
  channel from 23 to 46 is assigned to the ID 3
 Channels (408)
- channel from 29 to 58 is assigned to the ID 5
- channel from 30 to 60 is assigned to the ID 1
+ channel from 29 to 58 is assigned to the ID 2
+ channel from 30 to 60 is assigned to the ID 0
 Channels (409)
 Channels (410)
  channel from 134 to 13 is assigned to the ID 3
 Channels (411)
- channel from 29 to 58 is assigned to the ID 5
+ channel from 29 to 58 is assigned to the ID 2
 Channels (412)
  channel from 142 to 29 is assigned to the ID 0
 Channels (413)
@@ -651,13 +644,13 @@ Channels (419)
 Channels (420)
 Channels (421)
 Channels (422)
- channel from 30 to 60 is assigned to the ID 1
+ channel from 30 to 60 is assigned to the ID 0
 Channels (423)
  channel from 23 to 46 is assigned to the ID 3
  channel from 31 to 62 is assigned to the ID 0
 Channels (424)
 Channels (425)
- channel from 30 to 60 is assigned to the ID 1
+ channel from 30 to 60 is assigned to the ID 0
 Channels (426)
 Channels (427)
 Channels (428)
@@ -666,7 +659,7 @@ Channels (430)
 Channels (431)
 Channels (432)
 Channels (433)
- channel from 15 to 30 is assigned to the ID 1
+ channel from 15 to 30 is assigned to the ID 0
 Channels (434)
 Channels (435)
 Channels (436)
@@ -691,7 +684,7 @@ Channels (450)
 Channels (451)
  channel from 24 to 48 is assigned to the ID 0
  channel from 32 to 64 is assigned to the ID 1
- channel from 40 to 80 is assigned to the ID 3
+ channel from 40 to 80 is assigned to the ID 2
 Channels (452)
 Channels (453)
  channel from 32 to 64 is assigned to the ID 1
@@ -708,7 +701,7 @@ Channels (462)
 Channels (463)
  channel from 33 to 66 is assigned to the ID 0
 Channels (464)
- channel from 40 to 80 is assigned to the ID 3
+ channel from 40 to 80 is assigned to the ID 2
 Channels (465)
 Channels (466)
  channel from 128 to 1 is assigned to the ID 0
@@ -726,16 +719,16 @@ Channels (474)
 Channels (475)
 Channels (476)
 Channels (477)
- channel from 34 to 68 is assigned to the ID 2
+ channel from 34 to 68 is assigned to the ID 0
 Channels (478)
- channel from 40 to 80 is assigned to the ID 3
+ channel from 40 to 80 is assigned to the ID 2
 Channels (479)
  channel from 25 to 50 is assigned to the ID 2
  channel from 33 to 66 is assigned to the ID 0
  channel from 41 to 82 is assigned to the ID 1
 Channels (480)
 Channels (481)
- channel from 34 to 68 is assigned to the ID 2
+ channel from 34 to 68 is assigned to the ID 0
 Channels (482)
 Channels (483)
 Channels (484)
@@ -747,17 +740,17 @@ Channels (489)
  channel from 17 to 34 is assigned to the ID 0
 Channels (490)
 Channels (491)
- channel from 34 to 68 is assigned to the ID 2
- channel from 35 to 70 is assigned to the ID 0
+ channel from 34 to 68 is assigned to the ID 0
+ channel from 35 to 70 is assigned to the ID 2
 Channels (492)
- channel from 40 to 80 is assigned to the ID 3
+ channel from 40 to 80 is assigned to the ID 2
  channel from 41 to 82 is assigned to the ID 1
 Channels (493)
 Channels (494)
  channel from 129 to 3 is assigned to the ID 0
  channel from 137 to 19 is assigned to the ID 2
 Channels (495)
- channel from 35 to 70 is assigned to the ID 0
+ channel from 35 to 70 is assigned to the ID 2
 Channels (496)
 Channels (497)
 Channels (498)
@@ -769,18 +762,18 @@ Channels (503)
  channel from 145 to 35 is assigned to the ID 1
 Channels (504)
 Channels (505)
- channel from 35 to 70 is assigned to the ID 0
- channel from 36 to 72 is assigned to the ID 1
+ channel from 35 to 70 is assigned to the ID 2
+ channel from 36 to 72 is assigned to the ID 0
 Channels (506)
- channel from 40 to 80 is assigned to the ID 3
+ channel from 40 to 80 is assigned to the ID 2
  channel from 41 to 82 is assigned to the ID 1
 Channels (507)
  channel from 26 to 52 is assigned to the ID 1
- channel from 34 to 68 is assigned to the ID 2
+ channel from 34 to 68 is assigned to the ID 0
  channel from 42 to 84 is assigned to the ID 5
 Channels (508)
 Channels (509)
- channel from 36 to 72 is assigned to the ID 1
+ channel from 36 to 72 is assigned to the ID 0
 Channels (510)
  channel from 18 to 36 is assigned to the ID 0
 Channels (511)
@@ -792,11 +785,11 @@ Channels (516)
 Channels (517)
 Channels (518)
 Channels (519)
- channel from 35 to 70 is assigned to the ID 0
- channel from 36 to 72 is assigned to the ID 1
- channel from 37 to 74 is assigned to the ID 2
+ channel from 35 to 70 is assigned to the ID 2
+ channel from 36 to 72 is assigned to the ID 0
+ channel from 37 to 74 is assigned to the ID 1
 Channels (520)
- channel from 40 to 80 is assigned to the ID 3
+ channel from 40 to 80 is assigned to the ID 2
  channel from 41 to 82 is assigned to the ID 1
  channel from 42 to 84 is assigned to the ID 5
 Channels (521)
@@ -804,7 +797,7 @@ Channels (522)
  channel from 130 to 5 is assigned to the ID 1
  channel from 138 to 21 is assigned to the ID 0
 Channels (523)
- channel from 37 to 74 is assigned to the ID 2
+ channel from 37 to 74 is assigned to the ID 1
 Channels (524)
  channel from 146 to 37 is assigned to the ID 2
 Channels (525)
@@ -816,21 +809,20 @@ Channels (530)
 Channels (531)
 Channels (532)
 Channels (533)
- channel from 36 to 72 is assigned to the ID 1
- channel from 37 to 74 is assigned to the ID 2
- channel from 38 to 76 is assigned to the ID 0
+ channel from 36 to 72 is assigned to the ID 0
+ channel from 37 to 74 is assigned to the ID 1
+ channel from 38 to 76 is assigned to the ID 3
 Channels (534)
- channel from 40 to 80 is assigned to the ID 3
+ channel from 40 to 80 is assigned to the ID 2
  channel from 41 to 82 is assigned to the ID 1
  channel from 42 to 84 is assigned to the ID 5
 Channels (535)
  channel from 27 to 54 is assigned to the ID 3
- channel from 35 to 70 is assigned to the ID 0
- channel from 43 to 86 is assigned to the ID 2
- channel from 255 to 0 is assigned to the ID 4
+ channel from 35 to 70 is assigned to the ID 2
+ channel from 43 to 86 is assigned to the ID 4
 Channels (536)
 Channels (537)
- channel from 38 to 76 is assigned to the ID 0
+ channel from 38 to 76 is assigned to the ID 3
 Channels (538)
 Channels (539)
 Channels (540)
@@ -842,21 +834,21 @@ Channels (545)
  channel from 19 to 38 is assigned to the ID 2
 Channels (546)
 Channels (547)
- channel from 36 to 72 is assigned to the ID 1
- channel from 37 to 74 is assigned to the ID 2
- channel from 38 to 76 is assigned to the ID 0
- channel from 39 to 78 is assigned to the ID 3
+ channel from 36 to 72 is assigned to the ID 0
+ channel from 37 to 74 is assigned to the ID 1
+ channel from 38 to 76 is assigned to the ID 3
+ channel from 39 to 78 is assigned to the ID 2
 Channels (548)
- channel from 40 to 80 is assigned to the ID 3
+ channel from 40 to 80 is assigned to the ID 2
  channel from 41 to 82 is assigned to the ID 1
  channel from 42 to 84 is assigned to the ID 5
- channel from 43 to 86 is assigned to the ID 2
+ channel from 43 to 86 is assigned to the ID 4
 Channels (549)
 Channels (550)
  channel from 131 to 7 is assigned to the ID 0
  channel from 139 to 23 is assigned to the ID 3
 Channels (551)
- channel from 39 to 78 is assigned to the ID 3
+ channel from 39 to 78 is assigned to the ID 2
 Channels (552)
 Channels (553)
 Channels (554)
@@ -868,21 +860,21 @@ Channels (559)
  channel from 147 to 39 is assigned to the ID 1
 Channels (560)
 Channels (561)
- channel from 37 to 74 is assigned to the ID 2
- channel from 38 to 76 is assigned to the ID 0
- channel from 39 to 78 is assigned to the ID 3
+ channel from 37 to 74 is assigned to the ID 1
+ channel from 38 to 76 is assigned to the ID 3
+ channel from 39 to 78 is assigned to the ID 2
 Channels (562)
- channel from 40 to 80 is assigned to the ID 3
+ channel from 40 to 80 is assigned to the ID 2
  channel from 41 to 82 is assigned to the ID 1
  channel from 42 to 84 is assigned to the ID 5
- channel from 43 to 86 is assigned to the ID 2
+ channel from 43 to 86 is assigned to the ID 4
 Channels (563)
  channel from 28 to 56 is assigned to the ID 4
- channel from 36 to 72 is assigned to the ID 1
+ channel from 36 to 72 is assigned to the ID 0
  channel from 44 to 88 is assigned to the ID 3
 Channels (564)
 Channels (565)
- channel from 40 to 80 is assigned to the ID 3
+ channel from 40 to 80 is assigned to the ID 2
 Channels (566)
  channel from 20 to 40 is assigned to the ID 0
 Channels (567)
@@ -894,13 +886,13 @@ Channels (572)
 Channels (573)
 Channels (574)
 Channels (575)
- channel from 37 to 74 is assigned to the ID 2
- channel from 38 to 76 is assigned to the ID 0
- channel from 39 to 78 is assigned to the ID 3
+ channel from 37 to 74 is assigned to the ID 1
+ channel from 38 to 76 is assigned to the ID 3
+ channel from 39 to 78 is assigned to the ID 2
 Channels (576)
  channel from 41 to 82 is assigned to the ID 1
  channel from 42 to 84 is assigned to the ID 5
- channel from 43 to 86 is assigned to the ID 2
+ channel from 43 to 86 is assigned to the ID 4
  channel from 44 to 88 is assigned to the ID 3
 Channels (577)
 Channels (578)
@@ -919,15 +911,15 @@ Channels (586)
 Channels (587)
 Channels (588)
 Channels (589)
- channel from 38 to 76 is assigned to the ID 0
- channel from 39 to 78 is assigned to the ID 3
+ channel from 38 to 76 is assigned to the ID 3
+ channel from 39 to 78 is assigned to the ID 2
 Channels (590)
  channel from 42 to 84 is assigned to the ID 5
- channel from 43 to 86 is assigned to the ID 2
+ channel from 43 to 86 is assigned to the ID 4
  channel from 44 to 88 is assigned to the ID 3
 Channels (591)
- channel from 29 to 58 is assigned to the ID 5
- channel from 37 to 74 is assigned to the ID 2
+ channel from 29 to 58 is assigned to the ID 2
+ channel from 37 to 74 is assigned to the ID 1
  channel from 45 to 90 is assigned to the ID 0
 Channels (592)
 Channels (593)
@@ -943,10 +935,10 @@ Channels (601)
  channel from 21 to 42 is assigned to the ID 1
 Channels (602)
 Channels (603)
- channel from 38 to 76 is assigned to the ID 0
- channel from 39 to 78 is assigned to the ID 3
+ channel from 38 to 76 is assigned to the ID 3
+ channel from 39 to 78 is assigned to the ID 2
 Channels (604)
- channel from 43 to 86 is assigned to the ID 2
+ channel from 43 to 86 is assigned to the ID 4
  channel from 44 to 88 is assigned to the ID 3
  channel from 45 to 90 is assigned to the ID 0
 Channels (605)
@@ -954,7 +946,7 @@ Channels (606)
  channel from 133 to 11 is assigned to the ID 1
  channel from 141 to 27 is assigned to the ID 0
 Channels (607)
- channel from 43 to 86 is assigned to the ID 2
+ channel from 43 to 86 is assigned to the ID 4
 Channels (608)
 Channels (609)
 Channels (610)
@@ -966,13 +958,13 @@ Channels (615)
  channel from 149 to 43 is assigned to the ID 2
 Channels (616)
 Channels (617)
- channel from 39 to 78 is assigned to the ID 3
+ channel from 39 to 78 is assigned to the ID 2
 Channels (618)
  channel from 44 to 88 is assigned to the ID 3
  channel from 45 to 90 is assigned to the ID 0
 Channels (619)
- channel from 30 to 60 is assigned to the ID 1
- channel from 38 to 76 is assigned to the ID 0
+ channel from 30 to 60 is assigned to the ID 0
+ channel from 38 to 76 is assigned to the ID 3
  channel from 46 to 92 is assigned to the ID 2
 Channels (620)
 Channels (621)
@@ -988,7 +980,7 @@ Channels (628)
 Channels (629)
 Channels (630)
 Channels (631)
- channel from 39 to 78 is assigned to the ID 3
+ channel from 39 to 78 is assigned to the ID 2
 Channels (632)
  channel from 45 to 90 is assigned to the ID 0
  channel from 46 to 92 is assigned to the ID 2
@@ -1013,7 +1005,7 @@ Channels (646)
  channel from 46 to 92 is assigned to the ID 2
 Channels (647)
  channel from 31 to 62 is assigned to the ID 0
- channel from 39 to 78 is assigned to the ID 3
+ channel from 39 to 78 is assigned to the ID 2
  channel from 47 to 94 is assigned to the ID 1
 Channels (648)
 Channels (649)
@@ -1051,9 +1043,9 @@ Channels (673)
 Channels (674)
 Channels (675)
  channel from 32 to 64 is assigned to the ID 1
- channel from 40 to 80 is assigned to the ID 3
+ channel from 40 to 80 is assigned to the ID 2
  channel from 48 to 96 is assigned to the ID 4
- channel from 56 to 112 is assigned to the ID 7
+ channel from 56 to 112 is assigned to the ID 6
 Channels (676)
 Channels (677)
  channel from 48 to 96 is assigned to the ID 4
@@ -1070,7 +1062,7 @@ Channels (686)
 Channels (687)
  channel from 49 to 98 is assigned to the ID 3
 Channels (688)
- channel from 56 to 112 is assigned to the ID 7
+ channel from 56 to 112 is assigned to the ID 6
 Channels (689)
 Channels (690)
  channel from 128 to 1 is assigned to the ID 0
@@ -1091,7 +1083,7 @@ Channels (700)
 Channels (701)
  channel from 50 to 100 is assigned to the ID 4
 Channels (702)
- channel from 56 to 112 is assigned to the ID 7
+ channel from 56 to 112 is assigned to the ID 6
 Channels (703)
  channel from 33 to 66 is assigned to the ID 0
  channel from 41 to 82 is assigned to the ID 1
@@ -1114,7 +1106,7 @@ Channels (715)
  channel from 50 to 100 is assigned to the ID 4
  channel from 51 to 102 is assigned to the ID 3
 Channels (716)
- channel from 56 to 112 is assigned to the ID 7
+ channel from 56 to 112 is assigned to the ID 6
  channel from 57 to 114 is assigned to the ID 5
 Channels (717)
 Channels (718)
@@ -1137,10 +1129,10 @@ Channels (729)
  channel from 51 to 102 is assigned to the ID 3
  channel from 52 to 104 is assigned to the ID 2
 Channels (730)
- channel from 56 to 112 is assigned to the ID 7
+ channel from 56 to 112 is assigned to the ID 6
  channel from 57 to 114 is assigned to the ID 5
 Channels (731)
- channel from 34 to 68 is assigned to the ID 2
+ channel from 34 to 68 is assigned to the ID 0
  channel from 42 to 84 is assigned to the ID 5
  channel from 50 to 100 is assigned to the ID 4
  channel from 58 to 116 is assigned to the ID 8
@@ -1162,7 +1154,7 @@ Channels (743)
  channel from 52 to 104 is assigned to the ID 2
  channel from 53 to 106 is assigned to the ID 4
 Channels (744)
- channel from 56 to 112 is assigned to the ID 7
+ channel from 56 to 112 is assigned to the ID 6
  channel from 57 to 114 is assigned to the ID 5
  channel from 58 to 116 is assigned to the ID 8
 Channels (745)
@@ -1187,15 +1179,14 @@ Channels (757)
  channel from 53 to 106 is assigned to the ID 4
  channel from 54 to 108 is assigned to the ID 5
 Channels (758)
- channel from 56 to 112 is assigned to the ID 7
+ channel from 56 to 112 is assigned to the ID 6
  channel from 57 to 114 is assigned to the ID 5
  channel from 58 to 116 is assigned to the ID 8
 Channels (759)
- channel from 35 to 70 is assigned to the ID 0
- channel from 43 to 86 is assigned to the ID 2
+ channel from 35 to 70 is assigned to the ID 2
+ channel from 43 to 86 is assigned to the ID 4
  channel from 51 to 102 is assigned to the ID 3
- channel from 59 to 118 is assigned to the ID 6
- channel from 255 to 0 is assigned to the ID 4
+ channel from 59 to 118 is assigned to the ID 7
 Channels (760)
 Channels (761)
  channel from 54 to 108 is assigned to the ID 5
@@ -1215,10 +1206,10 @@ Channels (771)
  channel from 54 to 108 is assigned to the ID 5
  channel from 55 to 110 is assigned to the ID 6
 Channels (772)
- channel from 56 to 112 is assigned to the ID 7
+ channel from 56 to 112 is assigned to the ID 6
  channel from 57 to 114 is assigned to the ID 5
  channel from 58 to 116 is assigned to the ID 8
- channel from 59 to 118 is assigned to the ID 6
+ channel from 59 to 118 is assigned to the ID 7
 Channels (773)
 Channels (774)
  channel from 131 to 7 is assigned to the ID 0
@@ -1241,18 +1232,18 @@ Channels (785)
  channel from 54 to 108 is assigned to the ID 5
  channel from 55 to 110 is assigned to the ID 6
 Channels (786)
- channel from 56 to 112 is assigned to the ID 7
+ channel from 56 to 112 is assigned to the ID 6
  channel from 57 to 114 is assigned to the ID 5
  channel from 58 to 116 is assigned to the ID 8
- channel from 59 to 118 is assigned to the ID 6
+ channel from 59 to 118 is assigned to the ID 7
 Channels (787)
- channel from 36 to 72 is assigned to the ID 1
+ channel from 36 to 72 is assigned to the ID 0
  channel from 44 to 88 is assigned to the ID 3
  channel from 52 to 104 is assigned to the ID 2
  channel from 60 to 120 is assigned to the ID 4
 Channels (788)
 Channels (789)
- channel from 56 to 112 is assigned to the ID 7
+ channel from 56 to 112 is assigned to the ID 6
 Channels (790)
  channel from 28 to 56 is assigned to the ID 4
 Channels (791)
@@ -1270,7 +1261,7 @@ Channels (799)
 Channels (800)
  channel from 57 to 114 is assigned to the ID 5
  channel from 58 to 116 is assigned to the ID 8
- channel from 59 to 118 is assigned to the ID 6
+ channel from 59 to 118 is assigned to the ID 7
  channel from 60 to 120 is assigned to the ID 4
 Channels (801)
 Channels (802)
@@ -1294,10 +1285,10 @@ Channels (813)
  channel from 55 to 110 is assigned to the ID 6
 Channels (814)
  channel from 58 to 116 is assigned to the ID 8
- channel from 59 to 118 is assigned to the ID 6
+ channel from 59 to 118 is assigned to the ID 7
  channel from 60 to 120 is assigned to the ID 4
 Channels (815)
- channel from 37 to 74 is assigned to the ID 2
+ channel from 37 to 74 is assigned to the ID 1
  channel from 45 to 90 is assigned to the ID 0
  channel from 53 to 106 is assigned to the ID 4
  channel from 61 to 122 is assigned to the ID 5
@@ -1312,13 +1303,13 @@ Channels (822)
 Channels (823)
 Channels (824)
 Channels (825)
- channel from 29 to 58 is assigned to the ID 5
+ channel from 29 to 58 is assigned to the ID 2
 Channels (826)
 Channels (827)
  channel from 54 to 108 is assigned to the ID 5
  channel from 55 to 110 is assigned to the ID 6
 Channels (828)
- channel from 59 to 118 is assigned to the ID 6
+ channel from 59 to 118 is assigned to the ID 7
  channel from 60 to 120 is assigned to the ID 4
  channel from 61 to 122 is assigned to the ID 5
 Channels (829)
@@ -1327,7 +1318,7 @@ Channels (830)
  channel from 141 to 27 is assigned to the ID 0
  channel from 149 to 43 is assigned to the ID 2
 Channels (831)
- channel from 59 to 118 is assigned to the ID 6
+ channel from 59 to 118 is assigned to the ID 7
 Channels (832)
 Channels (833)
 Channels (834)
@@ -1344,7 +1335,7 @@ Channels (842)
  channel from 60 to 120 is assigned to the ID 4
  channel from 61 to 122 is assigned to the ID 5
 Channels (843)
- channel from 38 to 76 is assigned to the ID 0
+ channel from 38 to 76 is assigned to the ID 3
  channel from 46 to 92 is assigned to the ID 2
  channel from 54 to 108 is assigned to the ID 5
  channel from 62 to 124 is assigned to the ID 6
@@ -1352,7 +1343,7 @@ Channels (844)
 Channels (845)
  channel from 60 to 120 is assigned to the ID 4
 Channels (846)
- channel from 30 to 60 is assigned to the ID 1
+ channel from 30 to 60 is assigned to the ID 0
 Channels (847)
 Channels (848)
 Channels (849)
@@ -1387,7 +1378,7 @@ Channels (869)
 Channels (870)
  channel from 62 to 124 is assigned to the ID 6
 Channels (871)
- channel from 39 to 78 is assigned to the ID 3
+ channel from 39 to 78 is assigned to the ID 2
  channel from 47 to 94 is assigned to the ID 1
  channel from 55 to 110 is assigned to the ID 6
  channel from 63 to 126 is assigned to the ID 5
@@ -1427,9 +1418,9 @@ Channels (896)
 Channels (897)
 Channels (898)
 Channels (899)
- channel from 40 to 80 is assigned to the ID 3
+ channel from 40 to 80 is assigned to the ID 2
  channel from 48 to 96 is assigned to the ID 4
- channel from 56 to 112 is assigned to the ID 7
+ channel from 56 to 112 is assigned to the ID 6
  channel from 64 to 128 is assigned to the ID 0
  channel from 72 to 144 is assigned to the ID 1
 Channels (900)
@@ -1530,7 +1521,7 @@ Channels (956)
 Channels (957)
  channel from 68 to 136 is assigned to the ID 0
 Channels (958)
- channel from 34 to 68 is assigned to the ID 2
+ channel from 34 to 68 is assigned to the ID 0
 Channels (959)
 Channels (960)
 Channels (961)
@@ -1574,12 +1565,11 @@ Channels (982)
  channel from 73 to 146 is assigned to the ID 2
  channel from 74 to 148 is assigned to the ID 3
 Channels (983)
- channel from 43 to 86 is assigned to the ID 2
+ channel from 43 to 86 is assigned to the ID 4
  channel from 51 to 102 is assigned to the ID 3
- channel from 59 to 118 is assigned to the ID 6
+ channel from 59 to 118 is assigned to the ID 7
  channel from 67 to 134 is assigned to the ID 1
  channel from 75 to 150 is assigned to the ID 0
- channel from 255 to 0 is assigned to the ID 4
 Channels (984)
 Channels (985)
  channel from 70 to 140 is assigned to the ID 1
@@ -1591,7 +1581,7 @@ Channels (990)
 Channels (991)
 Channels (992)
 Channels (993)
- channel from 35 to 70 is assigned to the ID 0
+ channel from 35 to 70 is assigned to the ID 2
 Channels (994)
 Channels (995)
  channel from 68 to 136 is assigned to the ID 0
@@ -1640,7 +1630,7 @@ Channels (1012)
 Channels (1013)
  channel from 72 to 144 is assigned to the ID 1
 Channels (1014)
- channel from 36 to 72 is assigned to the ID 1
+ channel from 36 to 72 is assigned to the ID 0
 Channels (1015)
 Channels (1016)
 Channels (1017)
@@ -1700,7 +1690,7 @@ Channels (1046)
 Channels (1047)
 Channels (1048)
 Channels (1049)
- channel from 37 to 74 is assigned to the ID 2
+ channel from 37 to 74 is assigned to the ID 1
 Channels (1050)
 Channels (1051)
  channel from 70 to 140 is assigned to the ID 1
@@ -1742,7 +1732,7 @@ Channels (1068)
 Channels (1069)
  channel from 76 to 152 is assigned to the ID 1
 Channels (1070)
- channel from 38 to 76 is assigned to the ID 0
+ channel from 38 to 76 is assigned to the ID 3
 Channels (1071)
 Channels (1072)
 Channels (1073)
@@ -1794,7 +1784,7 @@ Channels (1102)
 Channels (1103)
 Channels (1104)
 Channels (1105)
- channel from 39 to 78 is assigned to the ID 3
+ channel from 39 to 78 is assigned to the ID 2
 Channels (1106)
 Channels (1107)
 Channels (1108)
@@ -1821,7 +1811,7 @@ Channels (1121)
 Channels (1122)
 Channels (1123)
  channel from 48 to 96 is assigned to the ID 4
- channel from 56 to 112 is assigned to the ID 7
+ channel from 56 to 112 is assigned to the ID 6
  channel from 64 to 128 is assigned to the ID 0
  channel from 72 to 144 is assigned to the ID 1
  channel from 80 to 160 is assigned to the ID 2
@@ -1830,7 +1820,7 @@ Channels (1124)
 Channels (1125)
  channel from 80 to 160 is assigned to the ID 2
 Channels (1126)
- channel from 40 to 80 is assigned to the ID 3
+ channel from 40 to 80 is assigned to the ID 2
 Channels (1127)
 Channels (1128)
 Channels (1129)
@@ -1974,12 +1964,11 @@ Channels (1206)
  channel from 90 to 180 is assigned to the ID 2
 Channels (1207)
  channel from 51 to 102 is assigned to the ID 3
- channel from 59 to 118 is assigned to the ID 6
+ channel from 59 to 118 is assigned to the ID 7
  channel from 67 to 134 is assigned to the ID 1
  channel from 75 to 150 is assigned to the ID 0
  channel from 83 to 166 is assigned to the ID 2
  channel from 91 to 182 is assigned to the ID 5
- channel from 255 to 0 is assigned to the ID 4
 Channels (1208)
 Channels (1209)
  channel from 86 to 172 is assigned to the ID 2
@@ -1991,7 +1980,7 @@ Channels (1214)
 Channels (1215)
 Channels (1216)
 Channels (1217)
- channel from 43 to 86 is assigned to the ID 2
+ channel from 43 to 86 is assigned to the ID 4
 Channels (1218)
 Channels (1219)
  channel from 84 to 168 is assigned to the ID 3
@@ -2229,7 +2218,7 @@ Channels (1344)
 Channels (1345)
 Channels (1346)
 Channels (1347)
- channel from 56 to 112 is assigned to the ID 7
+ channel from 56 to 112 is assigned to the ID 6
  channel from 64 to 128 is assigned to the ID 0
  channel from 72 to 144 is assigned to the ID 1
  channel from 80 to 160 is assigned to the ID 2
@@ -2388,7 +2377,7 @@ Channels (1430)
  channel from 105 to 210 is assigned to the ID 6
  channel from 106 to 212 is assigned to the ID 7
 Channels (1431)
- channel from 59 to 118 is assigned to the ID 6
+ channel from 59 to 118 is assigned to the ID 7
  channel from 67 to 134 is assigned to the ID 1
  channel from 75 to 150 is assigned to the ID 0
  channel from 83 to 166 is assigned to the ID 2
@@ -2665,7 +2654,7 @@ Channels (1572)
 Channels (1573)
  channel from 112 to 224 is assigned to the ID 6
 Channels (1574)
- channel from 56 to 112 is assigned to the ID 7
+ channel from 56 to 112 is assigned to the ID 6
 Channels (1575)
 Channels (1576)
 Channels (1577)
@@ -2837,7 +2826,7 @@ Channels (1662)
 Channels (1663)
 Channels (1664)
 Channels (1665)
- channel from 59 to 118 is assigned to the ID 6
+ channel from 59 to 118 is assigned to the ID 7
 Channels (1666)
 Channels (1667)
  channel from 116 to 232 is assigned to the ID 4
@@ -4197,7 +4186,6 @@ Channels (2368)
  channel from 171 to 87 is assigned to the ID 4
 Channels (2369)
 Channels (2370)
- channel from 0 to 255 is assigned to the ID 0
  channel from 164 to 73 is assigned to the ID 6
  channel from 172 to 89 is assigned to the ID 5
  channel from 180 to 105 is assigned to the ID 4
@@ -4206,7 +4194,7 @@ Channels (2370)
  channel from 204 to 153 is assigned to the ID 1
 Channels (2371)
 Channels (2372)
- channel from 212 to 169 is assigned to the ID 3
+ channel from 212 to 169 is assigned to the ID 0
 Channels (2373)
 Channels (2374)
 Channels (2375)
@@ -4361,7 +4349,7 @@ Channels (2461)
 Channels (2462)
  channel from 175 to 95 is assigned to the ID 5
 Channels (2463)
- channel from 215 to 175 is assigned to the ID 5
+ channel from 215 to 175 is assigned to the ID 3
 Channels (2464)
 Channels (2465)
  channel from 176 to 97 is assigned to the ID 6
@@ -4597,15 +4585,14 @@ Channels (2592)
  channel from 187 to 119 is assigned to the ID 6
 Channels (2593)
 Channels (2594)
- channel from 0 to 255 is assigned to the ID 0
  channel from 180 to 105 is assigned to the ID 4
  channel from 188 to 121 is assigned to the ID 7
  channel from 196 to 137 is assigned to the ID 2
  channel from 204 to 153 is assigned to the ID 1
- channel from 212 to 169 is assigned to the ID 3
+ channel from 212 to 169 is assigned to the ID 0
 Channels (2595)
 Channels (2596)
- channel from 220 to 185 is assigned to the ID 4
+ channel from 220 to 185 is assigned to the ID 3
 Channels (2597)
 Channels (2598)
 Channels (2599)
@@ -4664,7 +4651,7 @@ Channels (2629)
 Channels (2630)
  channel from 187 to 119 is assigned to the ID 6
 Channels (2631)
- channel from 221 to 187 is assigned to the ID 3
+ channel from 221 to 187 is assigned to the ID 4
 Channels (2632)
 Channels (2633)
  channel from 182 to 109 is assigned to the ID 6
@@ -4743,7 +4730,7 @@ Channels (2678)
  channel from 191 to 127 is assigned to the ID 6
  channel from 199 to 143 is assigned to the ID 0
  channel from 207 to 159 is assigned to the ID 1
- channel from 215 to 175 is assigned to the ID 5
+ channel from 215 to 175 is assigned to the ID 3
 Channels (2679)
 Channels (2680)
 Channels (2681)
@@ -4981,11 +4968,10 @@ Channels (2816)
  channel from 203 to 151 is assigned to the ID 3
 Channels (2817)
 Channels (2818)
- channel from 0 to 255 is assigned to the ID 0
  channel from 196 to 137 is assigned to the ID 2
  channel from 204 to 153 is assigned to the ID 1
- channel from 212 to 169 is assigned to the ID 3
- channel from 220 to 185 is assigned to the ID 4
+ channel from 212 to 169 is assigned to the ID 0
+ channel from 220 to 185 is assigned to the ID 3
 Channels (2819)
 Channels (2820)
  channel from 228 to 201 is assigned to the ID 1
@@ -5034,7 +5020,7 @@ Channels (2846)
  channel from 197 to 139 is assigned to the ID 1
  channel from 205 to 155 is assigned to the ID 0
  channel from 213 to 171 is assigned to the ID 2
- channel from 221 to 187 is assigned to the ID 3
+ channel from 221 to 187 is assigned to the ID 4
 Channels (2847)
 Channels (2848)
 Channels (2849)
@@ -5045,7 +5031,7 @@ Channels (2853)
 Channels (2854)
  channel from 203 to 151 is assigned to the ID 3
 Channels (2855)
- channel from 229 to 203 is assigned to the ID 4
+ channel from 229 to 203 is assigned to the ID 3
 Channels (2856)
 Channels (2857)
  channel from 198 to 141 is assigned to the ID 3
@@ -5119,7 +5105,7 @@ Channels (2901)
 Channels (2902)
  channel from 199 to 143 is assigned to the ID 0
  channel from 207 to 159 is assigned to the ID 1
- channel from 215 to 175 is assigned to the ID 5
+ channel from 215 to 175 is assigned to the ID 3
  channel from 223 to 191 is assigned to the ID 2
 Channels (2903)
 Channels (2904)
@@ -5218,7 +5204,7 @@ Channels (2968)
 Channels (2969)
  channel from 210 to 165 is assigned to the ID 2
  channel from 211 to 167 is assigned to the ID 1
- channel from 212 to 169 is assigned to the ID 3
+ channel from 212 to 169 is assigned to the ID 0
 Channels (2970)
  channel from 216 to 177 is assigned to the ID 3
  channel from 217 to 179 is assigned to the ID 4
@@ -5235,12 +5221,12 @@ Channels (2977)
 Channels (2978)
 Channels (2979)
 Channels (2980)
- channel from 212 to 169 is assigned to the ID 3
+ channel from 212 to 169 is assigned to the ID 0
 Channels (2981)
 Channels (2982)
 Channels (2983)
  channel from 211 to 167 is assigned to the ID 1
- channel from 212 to 169 is assigned to the ID 3
+ channel from 212 to 169 is assigned to the ID 0
  channel from 213 to 171 is assigned to the ID 2
 Channels (2984)
  channel from 216 to 177 is assigned to the ID 3
@@ -5264,7 +5250,7 @@ Channels (2995)
 Channels (2996)
 Channels (2997)
  channel from 211 to 167 is assigned to the ID 1
- channel from 212 to 169 is assigned to the ID 3
+ channel from 212 to 169 is assigned to the ID 0
  channel from 213 to 171 is assigned to the ID 2
  channel from 214 to 173 is assigned to the ID 4
 Channels (2998)
@@ -5288,10 +5274,10 @@ Channels (3009)
  channel from 107 to 214 is assigned to the ID 4
 Channels (3010)
 Channels (3011)
- channel from 212 to 169 is assigned to the ID 3
+ channel from 212 to 169 is assigned to the ID 0
  channel from 213 to 171 is assigned to the ID 2
  channel from 214 to 173 is assigned to the ID 4
- channel from 215 to 175 is assigned to the ID 5
+ channel from 215 to 175 is assigned to the ID 3
 Channels (3012)
  channel from 216 to 177 is assigned to the ID 3
  channel from 217 to 179 is assigned to the ID 4
@@ -5309,15 +5295,15 @@ Channels (3019)
 Channels (3020)
 Channels (3021)
 Channels (3022)
- channel from 215 to 175 is assigned to the ID 5
+ channel from 215 to 175 is assigned to the ID 3
 Channels (3023)
  channel from 235 to 215 is assigned to the ID 3
 Channels (3024)
 Channels (3025)
- channel from 212 to 169 is assigned to the ID 3
+ channel from 212 to 169 is assigned to the ID 0
  channel from 213 to 171 is assigned to the ID 2
  channel from 214 to 173 is assigned to the ID 4
- channel from 215 to 175 is assigned to the ID 5
+ channel from 215 to 175 is assigned to the ID 3
 Channels (3026)
  channel from 216 to 177 is assigned to the ID 3
  channel from 217 to 179 is assigned to the ID 4
@@ -5342,20 +5328,19 @@ Channels (3038)
 Channels (3039)
  channel from 213 to 171 is assigned to the ID 2
  channel from 214 to 173 is assigned to the ID 4
- channel from 215 to 175 is assigned to the ID 5
+ channel from 215 to 175 is assigned to the ID 3
 Channels (3040)
  channel from 217 to 179 is assigned to the ID 4
  channel from 218 to 181 is assigned to the ID 5
  channel from 219 to 183 is assigned to the ID 2
 Channels (3041)
 Channels (3042)
- channel from 0 to 255 is assigned to the ID 0
- channel from 212 to 169 is assigned to the ID 3
- channel from 220 to 185 is assigned to the ID 4
+ channel from 212 to 169 is assigned to the ID 0
+ channel from 220 to 185 is assigned to the ID 3
  channel from 228 to 201 is assigned to the ID 1
 Channels (3043)
 Channels (3044)
- channel from 236 to 217 is assigned to the ID 4
+ channel from 236 to 217 is assigned to the ID 0
 Channels (3045)
 Channels (3046)
 Channels (3047)
@@ -5368,11 +5353,11 @@ Channels (3052)
 Channels (3053)
  channel from 213 to 171 is assigned to the ID 2
  channel from 214 to 173 is assigned to the ID 4
- channel from 215 to 175 is assigned to the ID 5
+ channel from 215 to 175 is assigned to the ID 3
 Channels (3054)
  channel from 218 to 181 is assigned to the ID 5
  channel from 219 to 183 is assigned to the ID 2
- channel from 220 to 185 is assigned to the ID 4
+ channel from 220 to 185 is assigned to the ID 3
 Channels (3055)
  channel from 117 to 234 is assigned to the ID 5
  channel from 125 to 250 is assigned to the ID 8
@@ -5391,15 +5376,15 @@ Channels (3065)
 Channels (3066)
 Channels (3067)
  channel from 214 to 173 is assigned to the ID 4
- channel from 215 to 175 is assigned to the ID 5
+ channel from 215 to 175 is assigned to the ID 3
 Channels (3068)
  channel from 219 to 183 is assigned to the ID 2
- channel from 220 to 185 is assigned to the ID 4
+ channel from 220 to 185 is assigned to the ID 3
 Channels (3069)
 Channels (3070)
  channel from 213 to 171 is assigned to the ID 2
- channel from 221 to 187 is assigned to the ID 3
- channel from 229 to 203 is assigned to the ID 4
+ channel from 221 to 187 is assigned to the ID 4
+ channel from 229 to 203 is assigned to the ID 3
 Channels (3071)
 Channels (3072)
 Channels (3073)
@@ -5410,14 +5395,14 @@ Channels (3077)
 Channels (3078)
  channel from 219 to 183 is assigned to the ID 2
 Channels (3079)
- channel from 237 to 219 is assigned to the ID 0
+ channel from 237 to 219 is assigned to the ID 1
 Channels (3080)
 Channels (3081)
  channel from 214 to 173 is assigned to the ID 4
- channel from 215 to 175 is assigned to the ID 5
+ channel from 215 to 175 is assigned to the ID 3
 Channels (3082)
- channel from 220 to 185 is assigned to the ID 4
- channel from 221 to 187 is assigned to the ID 3
+ channel from 220 to 185 is assigned to the ID 3
+ channel from 221 to 187 is assigned to the ID 4
 Channels (3083)
  channel from 118 to 236 is assigned to the ID 6
  channel from 126 to 252 is assigned to the ID 7
@@ -5431,13 +5416,13 @@ Channels (3089)
 Channels (3090)
 Channels (3091)
 Channels (3092)
- channel from 220 to 185 is assigned to the ID 4
+ channel from 220 to 185 is assigned to the ID 3
 Channels (3093)
 Channels (3094)
 Channels (3095)
- channel from 215 to 175 is assigned to the ID 5
+ channel from 215 to 175 is assigned to the ID 3
 Channels (3096)
- channel from 221 to 187 is assigned to the ID 3
+ channel from 221 to 187 is assigned to the ID 4
 Channels (3097)
 Channels (3098)
  channel from 214 to 173 is assigned to the ID 4
@@ -5452,11 +5437,11 @@ Channels (3103)
 Channels (3104)
 Channels (3105)
 Channels (3106)
- channel from 221 to 187 is assigned to the ID 3
+ channel from 221 to 187 is assigned to the ID 4
 Channels (3107)
 Channels (3108)
 Channels (3109)
- channel from 215 to 175 is assigned to the ID 5
+ channel from 215 to 175 is assigned to the ID 3
 Channels (3110)
  channel from 222 to 189 is assigned to the ID 1
 Channels (3111)
@@ -5479,7 +5464,7 @@ Channels (3123)
 Channels (3124)
 Channels (3125)
 Channels (3126)
- channel from 215 to 175 is assigned to the ID 5
+ channel from 215 to 175 is assigned to the ID 3
  channel from 223 to 191 is assigned to the ID 2
  channel from 231 to 207 is assigned to the ID 0
 Channels (3127)
@@ -5570,7 +5555,7 @@ Channels (3189)
 Channels (3190)
  channel from 227 to 199 is assigned to the ID 0
 Channels (3191)
- channel from 241 to 227 is assigned to the ID 1
+ channel from 241 to 227 is assigned to the ID 0
 Channels (3192)
 Channels (3193)
  channel from 226 to 197 is assigned to the ID 3
@@ -5597,7 +5582,7 @@ Channels (3206)
 Channels (3207)
  channel from 227 to 199 is assigned to the ID 0
  channel from 228 to 201 is assigned to the ID 1
- channel from 229 to 203 is assigned to the ID 4
+ channel from 229 to 203 is assigned to the ID 3
 Channels (3208)
  channel from 232 to 209 is assigned to the ID 0
  channel from 233 to 211 is assigned to the ID 1
@@ -5607,20 +5592,20 @@ Channels (3210)
  channel from 234 to 213 is assigned to the ID 2
 Channels (3211)
 Channels (3212)
- channel from 242 to 229 is assigned to the ID 0
+ channel from 242 to 229 is assigned to the ID 2
 Channels (3213)
 Channels (3214)
 Channels (3215)
 Channels (3216)
 Channels (3217)
 Channels (3218)
- channel from 229 to 203 is assigned to the ID 4
+ channel from 229 to 203 is assigned to the ID 3
 Channels (3219)
 Channels (3220)
 Channels (3221)
  channel from 227 to 199 is assigned to the ID 0
  channel from 228 to 201 is assigned to the ID 1
- channel from 229 to 203 is assigned to the ID 4
+ channel from 229 to 203 is assigned to the ID 3
  channel from 230 to 205 is assigned to the ID 2
 Channels (3222)
  channel from 232 to 209 is assigned to the ID 0
@@ -5643,7 +5628,7 @@ Channels (3233)
 Channels (3234)
 Channels (3235)
  channel from 228 to 201 is assigned to the ID 1
- channel from 229 to 203 is assigned to the ID 4
+ channel from 229 to 203 is assigned to the ID 3
  channel from 230 to 205 is assigned to the ID 2
  channel from 231 to 207 is assigned to the ID 0
 Channels (3236)
@@ -5664,11 +5649,11 @@ Channels (3245)
 Channels (3246)
  channel from 231 to 207 is assigned to the ID 0
 Channels (3247)
- channel from 243 to 231 is assigned to the ID 1
+ channel from 243 to 231 is assigned to the ID 0
 Channels (3248)
 Channels (3249)
  channel from 228 to 201 is assigned to the ID 1
- channel from 229 to 203 is assigned to the ID 4
+ channel from 229 to 203 is assigned to the ID 3
  channel from 230 to 205 is assigned to the ID 2
  channel from 231 to 207 is assigned to the ID 0
 Channels (3250)
@@ -5692,7 +5677,7 @@ Channels (3260)
 Channels (3261)
 Channels (3262)
 Channels (3263)
- channel from 229 to 203 is assigned to the ID 4
+ channel from 229 to 203 is assigned to the ID 3
  channel from 230 to 205 is assigned to the ID 2
  channel from 231 to 207 is assigned to the ID 0
 Channels (3264)
@@ -5701,12 +5686,11 @@ Channels (3264)
  channel from 235 to 215 is assigned to the ID 3
 Channels (3265)
 Channels (3266)
- channel from 0 to 255 is assigned to the ID 0
  channel from 228 to 201 is assigned to the ID 1
- channel from 236 to 217 is assigned to the ID 4
+ channel from 236 to 217 is assigned to the ID 0
 Channels (3267)
 Channels (3268)
- channel from 244 to 233 is assigned to the ID 2
+ channel from 244 to 233 is assigned to the ID 1
 Channels (3269)
 Channels (3270)
 Channels (3271)
@@ -5717,13 +5701,13 @@ Channels (3274)
 Channels (3275)
 Channels (3276)
 Channels (3277)
- channel from 229 to 203 is assigned to the ID 4
+ channel from 229 to 203 is assigned to the ID 3
  channel from 230 to 205 is assigned to the ID 2
  channel from 231 to 207 is assigned to the ID 0
 Channels (3278)
  channel from 234 to 213 is assigned to the ID 2
  channel from 235 to 215 is assigned to the ID 3
- channel from 236 to 217 is assigned to the ID 4
+ channel from 236 to 217 is assigned to the ID 0
 Channels (3279)
  channel from 125 to 250 is assigned to the ID 8
 Channels (3280)
@@ -5744,11 +5728,11 @@ Channels (3291)
  channel from 231 to 207 is assigned to the ID 0
 Channels (3292)
  channel from 235 to 215 is assigned to the ID 3
- channel from 236 to 217 is assigned to the ID 4
+ channel from 236 to 217 is assigned to the ID 0
 Channels (3293)
 Channels (3294)
- channel from 229 to 203 is assigned to the ID 4
- channel from 237 to 219 is assigned to the ID 0
+ channel from 229 to 203 is assigned to the ID 3
+ channel from 237 to 219 is assigned to the ID 1
 Channels (3295)
 Channels (3296)
 Channels (3297)
@@ -5759,14 +5743,14 @@ Channels (3301)
 Channels (3302)
  channel from 235 to 215 is assigned to the ID 3
 Channels (3303)
- channel from 245 to 235 is assigned to the ID 0
+ channel from 245 to 235 is assigned to the ID 2
 Channels (3304)
 Channels (3305)
  channel from 230 to 205 is assigned to the ID 2
  channel from 231 to 207 is assigned to the ID 0
 Channels (3306)
- channel from 236 to 217 is assigned to the ID 4
- channel from 237 to 219 is assigned to the ID 0
+ channel from 236 to 217 is assigned to the ID 0
+ channel from 237 to 219 is assigned to the ID 1
 Channels (3307)
  channel from 126 to 252 is assigned to the ID 7
 Channels (3308)
@@ -5779,13 +5763,13 @@ Channels (3313)
 Channels (3314)
 Channels (3315)
 Channels (3316)
- channel from 236 to 217 is assigned to the ID 4
+ channel from 236 to 217 is assigned to the ID 0
 Channels (3317)
 Channels (3318)
 Channels (3319)
  channel from 231 to 207 is assigned to the ID 0
 Channels (3320)
- channel from 237 to 219 is assigned to the ID 0
+ channel from 237 to 219 is assigned to the ID 1
 Channels (3321)
 Channels (3322)
  channel from 230 to 205 is assigned to the ID 2
@@ -5799,7 +5783,7 @@ Channels (3327)
 Channels (3328)
 Channels (3329)
 Channels (3330)
- channel from 237 to 219 is assigned to the ID 0
+ channel from 237 to 219 is assigned to the ID 1
 Channels (3331)
 Channels (3332)
 Channels (3333)
@@ -5837,11 +5821,10 @@ Channels (3357)
 Channels (3358)
  channel from 239 to 223 is assigned to the ID 1
 Channels (3359)
- channel from 247 to 239 is assigned to the ID 1
+ channel from 247 to 239 is assigned to the ID 0
 Channels (3360)
 Channels (3361)
  channel from 240 to 225 is assigned to the ID 0
- channel from 255 to 0 is assigned to the ID 4
 Channels (3362)
 Channels (3363)
 Channels (3364)
@@ -5852,14 +5835,14 @@ Channels (3367)
 Channels (3368)
 Channels (3369)
 Channels (3370)
+ channel from 255 to 0 is assigned to the ID 0
 Channels (3371)
 Channels (3372)
  channel from 240 to 225 is assigned to the ID 0
 Channels (3373)
 Channels (3374)
 Channels (3375)
- channel from 241 to 227 is assigned to the ID 1
- channel from 255 to 0 is assigned to the ID 4
+ channel from 241 to 227 is assigned to the ID 0
 Channels (3376)
 Channels (3377)
 Channels (3378)
@@ -5873,13 +5856,12 @@ Channels (3383)
 Channels (3384)
 Channels (3385)
 Channels (3386)
- channel from 241 to 227 is assigned to the ID 1
+ channel from 241 to 227 is assigned to the ID 0
 Channels (3387)
 Channels (3388)
 Channels (3389)
- channel from 241 to 227 is assigned to the ID 1
- channel from 242 to 229 is assigned to the ID 0
- channel from 255 to 0 is assigned to the ID 4
+ channel from 241 to 227 is assigned to the ID 0
+ channel from 242 to 229 is assigned to the ID 2
 Channels (3390)
  channel from 248 to 241 is assigned to the ID 0
 Channels (3391)
@@ -5892,19 +5874,18 @@ Channels (3397)
 Channels (3398)
 Channels (3399)
 Channels (3400)
- channel from 242 to 229 is assigned to the ID 0
+ channel from 242 to 229 is assigned to the ID 2
 Channels (3401)
  channel from 121 to 242 is assigned to the ID 8
 Channels (3402)
 Channels (3403)
- channel from 242 to 229 is assigned to the ID 0
- channel from 243 to 231 is assigned to the ID 1
- channel from 255 to 0 is assigned to the ID 4
+ channel from 242 to 229 is assigned to the ID 2
+ channel from 243 to 231 is assigned to the ID 0
 Channels (3404)
  channel from 248 to 241 is assigned to the ID 0
 Channels (3405)
 Channels (3406)
- channel from 241 to 227 is assigned to the ID 1
+ channel from 241 to 227 is assigned to the ID 0
 Channels (3407)
 Channels (3408)
 Channels (3409)
@@ -5913,15 +5894,14 @@ Channels (3411)
 Channels (3412)
 Channels (3413)
 Channels (3414)
- channel from 243 to 231 is assigned to the ID 1
+ channel from 243 to 231 is assigned to the ID 0
 Channels (3415)
  channel from 249 to 243 is assigned to the ID 1
 Channels (3416)
 Channels (3417)
- channel from 242 to 229 is assigned to the ID 0
- channel from 243 to 231 is assigned to the ID 1
- channel from 244 to 233 is assigned to the ID 2
- channel from 255 to 0 is assigned to the ID 4
+ channel from 242 to 229 is assigned to the ID 2
+ channel from 243 to 231 is assigned to the ID 0
+ channel from 244 to 233 is assigned to the ID 1
 Channels (3418)
  channel from 248 to 241 is assigned to the ID 0
  channel from 249 to 243 is assigned to the ID 1
@@ -5936,20 +5916,19 @@ Channels (3425)
 Channels (3426)
 Channels (3427)
 Channels (3428)
- channel from 244 to 233 is assigned to the ID 2
+ channel from 244 to 233 is assigned to the ID 1
 Channels (3429)
 Channels (3430)
 Channels (3431)
- channel from 243 to 231 is assigned to the ID 1
- channel from 244 to 233 is assigned to the ID 2
- channel from 245 to 235 is assigned to the ID 0
- channel from 255 to 0 is assigned to the ID 4
+ channel from 243 to 231 is assigned to the ID 0
+ channel from 244 to 233 is assigned to the ID 1
+ channel from 245 to 235 is assigned to the ID 2
 Channels (3432)
  channel from 248 to 241 is assigned to the ID 0
  channel from 249 to 243 is assigned to the ID 1
 Channels (3433)
 Channels (3434)
- channel from 242 to 229 is assigned to the ID 0
+ channel from 242 to 229 is assigned to the ID 2
 Channels (3435)
 Channels (3436)
  channel from 250 to 245 is assigned to the ID 2
@@ -5959,13 +5938,13 @@ Channels (3439)
 Channels (3440)
 Channels (3441)
 Channels (3442)
- channel from 245 to 235 is assigned to the ID 0
+ channel from 245 to 235 is assigned to the ID 2
 Channels (3443)
 Channels (3444)
 Channels (3445)
- channel from 243 to 231 is assigned to the ID 1
- channel from 244 to 233 is assigned to the ID 2
- channel from 245 to 235 is assigned to the ID 0
+ channel from 243 to 231 is assigned to the ID 0
+ channel from 244 to 233 is assigned to the ID 1
+ channel from 245 to 235 is assigned to the ID 2
  channel from 246 to 237 is assigned to the ID 3
 Channels (3446)
  channel from 248 to 241 is assigned to the ID 0
@@ -5979,7 +5958,6 @@ Channels (3451)
 Channels (3452)
 Channels (3453)
 Channels (3454)
- channel from 255 to 0 is assigned to the ID 4
 Channels (3455)
 Channels (3456)
  channel from 246 to 237 is assigned to the ID 3
@@ -5987,17 +5965,17 @@ Channels (3457)
  channel from 123 to 246 is assigned to the ID 9
 Channels (3458)
 Channels (3459)
- channel from 244 to 233 is assigned to the ID 2
- channel from 245 to 235 is assigned to the ID 0
+ channel from 244 to 233 is assigned to the ID 1
+ channel from 245 to 235 is assigned to the ID 2
  channel from 246 to 237 is assigned to the ID 3
- channel from 247 to 239 is assigned to the ID 1
+ channel from 247 to 239 is assigned to the ID 0
 Channels (3460)
  channel from 248 to 241 is assigned to the ID 0
  channel from 249 to 243 is assigned to the ID 1
  channel from 250 to 245 is assigned to the ID 2
 Channels (3461)
 Channels (3462)
- channel from 243 to 231 is assigned to the ID 1
+ channel from 243 to 231 is assigned to the ID 0
 Channels (3463)
 Channels (3464)
 Channels (3465)
@@ -6006,15 +5984,15 @@ Channels (3467)
 Channels (3468)
 Channels (3469)
 Channels (3470)
- channel from 247 to 239 is assigned to the ID 1
+ channel from 247 to 239 is assigned to the ID 0
 Channels (3471)
  channel from 251 to 247 is assigned to the ID 3
 Channels (3472)
 Channels (3473)
- channel from 244 to 233 is assigned to the ID 2
- channel from 245 to 235 is assigned to the ID 0
+ channel from 244 to 233 is assigned to the ID 1
+ channel from 245 to 235 is assigned to the ID 2
  channel from 246 to 237 is assigned to the ID 3
- channel from 247 to 239 is assigned to the ID 1
+ channel from 247 to 239 is assigned to the ID 0
 Channels (3474)
  channel from 248 to 241 is assigned to the ID 0
  channel from 249 to 243 is assigned to the ID 1
@@ -6035,17 +6013,16 @@ Channels (3484)
 Channels (3485)
 Channels (3486)
 Channels (3487)
- channel from 245 to 235 is assigned to the ID 0
+ channel from 245 to 235 is assigned to the ID 2
  channel from 246 to 237 is assigned to the ID 3
- channel from 247 to 239 is assigned to the ID 1
+ channel from 247 to 239 is assigned to the ID 0
 Channels (3488)
  channel from 249 to 243 is assigned to the ID 1
  channel from 250 to 245 is assigned to the ID 2
  channel from 251 to 247 is assigned to the ID 3
 Channels (3489)
 Channels (3490)
- channel from 0 to 255 is assigned to the ID 0
- channel from 244 to 233 is assigned to the ID 2
+ channel from 244 to 233 is assigned to the ID 1
 Channels (3491)
 Channels (3492)
  channel from 252 to 249 is assigned to the ID 0
@@ -6059,9 +6036,9 @@ Channels (3498)
 Channels (3499)
 Channels (3500)
 Channels (3501)
- channel from 245 to 235 is assigned to the ID 0
+ channel from 245 to 235 is assigned to the ID 2
  channel from 246 to 237 is assigned to the ID 3
- channel from 247 to 239 is assigned to the ID 1
+ channel from 247 to 239 is assigned to the ID 0
 Channels (3502)
  channel from 250 to 245 is assigned to the ID 2
  channel from 251 to 247 is assigned to the ID 3
@@ -6082,13 +6059,13 @@ Channels (3513)
 Channels (3514)
 Channels (3515)
  channel from 246 to 237 is assigned to the ID 3
- channel from 247 to 239 is assigned to the ID 1
+ channel from 247 to 239 is assigned to the ID 0
 Channels (3516)
  channel from 251 to 247 is assigned to the ID 3
  channel from 252 to 249 is assigned to the ID 0
 Channels (3517)
 Channels (3518)
- channel from 245 to 235 is assigned to the ID 0
+ channel from 245 to 235 is assigned to the ID 2
 Channels (3519)
 Channels (3520)
 Channels (3521)
@@ -6103,7 +6080,7 @@ Channels (3527)
 Channels (3528)
 Channels (3529)
  channel from 246 to 237 is assigned to the ID 3
- channel from 247 to 239 is assigned to the ID 1
+ channel from 247 to 239 is assigned to the ID 0
 Channels (3530)
  channel from 252 to 249 is assigned to the ID 0
  channel from 253 to 251 is assigned to the ID 1
@@ -6122,7 +6099,7 @@ Channels (3540)
 Channels (3541)
 Channels (3542)
 Channels (3543)
- channel from 247 to 239 is assigned to the ID 1
+ channel from 247 to 239 is assigned to the ID 0
 Channels (3544)
  channel from 253 to 251 is assigned to the ID 1
 Channels (3545)
@@ -6141,7 +6118,7 @@ Channels (3554)
 Channels (3555)
 Channels (3556)
 Channels (3557)
- channel from 247 to 239 is assigned to the ID 1
+ channel from 247 to 239 is assigned to the ID 0
 Channels (3558)
  channel from 254 to 253 is assigned to the ID 0
 Channels (3559)
@@ -6162,14 +6139,14 @@ Channels (3571)
 Channels (3572)
 Channels (3573)
 Channels (3574)
- channel from 247 to 239 is assigned to the ID 1
+ channel from 247 to 239 is assigned to the ID 0
 Channels (3575)
- channel from 255 to 0 is assigned to the ID 4
+ channel from 255 to 0 is assigned to the ID 0
 Channels (3576)
  channel from 0 to 255 is assigned to the ID 0
 Channels (3577)
 Channels (3578)
- channel from 255 to 0 is assigned to the ID 4
+ channel from 255 to 0 is assigned to the ID 0
 Channels (3579)
 Channels (3580)
 Channels (3581)
@@ -6183,23 +6160,23 @@ Channels (3583)
  Node  3:   2 2 0 0 1 0 0 0 0 0 0 1
  Node  4:   2 2 1 0 1 1 0 0 0 0 0 0
  Node  5:   3 3 0 0 1 1 0 0 0 0 0 0
- Node  6:   3 3 2 0 1 0 0 0 0 0 0 1
+ Node  6:   3 3 1 0 1 0 0 0 0 0 0 1
  Node  7:   4 4 0 0 1 0 0 0 0 0 0 1
  Node  8:   3 4 1 0 1 1 0 0 0 0 0 0
- Node  9:   3 4 0 0 1 1 0 0 0 1 0 0
- Node 10:   2 4 1 0 1 0 0 0 0 0 0 1
- Node 11:   2 4 0 0 1 0 0 0 0 0 0 1
- Node 12:   1 3 1 0 1 1 0 0 0 0 0 0
- Node 13:   1 3 0 0 1 1 0 0 0 0 0 0
- Node 14:   0 2 1 0 1 0 0 0 0 0 0 1
- Node 15:   0 2 0 0 1 0 0 0 0 0 0 1
+ Node  9:   3 4 0 0 1 1 0 0 0 0 0 0
+ Node 10:   2 3 1 0 1 0 0 0 0 0 0 1
+ Node 11:   2 3 0 0 1 0 0 0 0 0 0 1
+ Node 12:   1 2 1 0 1 1 0 0 0 0 0 0
+ Node 13:   1 2 0 0 1 1 0 0 0 0 0 0
+ Node 14:   0 1 1 0 1 0 0 0 0 0 0 1
+ Node 15:   0 1 0 0 1 0 0 0 0 1 0 1
  Node 16:   0 0 2 0 1 1 0 0 0 0 0 0
  Node 17:   1 1 0 1 1 1 0 0 0 0 0 0
  Node 18:   1 1 2 0 1 0 0 0 0 0 0 1
  Node 19:   2 2 0 1 1 0 0 0 0 0 0 1
  Node 20:   2 2 2 0 1 1 0 0 0 0 0 0
  Node 21:   3 3 0 1 1 1 0 0 0 0 0 0
- Node 22:   3 3 3 0 1 0 0 0 0 0 0 1
+ Node 22:   3 3 2 0 1 0 0 0 0 0 0 1
  Node 23:   4 4 0 1 1 0 0 0 0 0 0 1
  Node 24:   3 4 2 0 1 1 0 0 0 0 0 0
  Node 25:   3 4 0 1 1 1 0 0 0 0 0 0
@@ -6215,7 +6192,7 @@ Channels (3583)
  Node 35:   2 2 0 2 1 0 0 0 0 0 0 1
  Node 36:   2 2 3 0 1 1 0 0 0 0 0 0
  Node 37:   3 3 0 2 1 1 0 0 0 0 0 0
- Node 38:   3 3 4 0 1 0 0 0 0 0 0 1
+ Node 38:   3 3 3 0 1 0 0 0 0 0 0 1
  Node 39:   4 4 0 2 1 0 0 0 0 0 0 1
  Node 40:   3 4 3 0 1 1 0 0 0 0 0 0
  Node 41:   3 4 0 2 1 1 0 0 0 0 0 0
@@ -6231,7 +6208,7 @@ Channels (3583)
  Node 51:   2 2 0 3 1 0 0 0 0 0 0 1
  Node 52:   2 2 4 0 1 1 0 0 0 0 0 0
  Node 53:   3 3 0 3 1 1 0 0 0 0 0 0
- Node 54:   3 3 5 0 1 0 0 0 0 0 0 1
+ Node 54:   3 3 4 0 1 0 0 0 0 0 0 1
  Node 55:   4 4 0 3 1 0 0 0 0 0 0 1
  Node 56:   3 4 4 0 1 1 0 0 0 0 0 0
  Node 57:   3 4 0 3 1 1 0 0 0 0 0 0
@@ -6247,7 +6224,7 @@ Channels (3583)
  Node 67:   2 2 0 4 1 0 0 0 0 0 0 1
  Node 68:   2 2 5 0 1 1 0 0 0 0 0 0
  Node 69:   3 3 0 4 1 1 0 0 0 0 0 0
- Node 70:   3 3 6 0 1 0 0 0 0 0 0 1
+ Node 70:   3 3 5 0 1 0 0 0 0 0 0 1
  Node 71:   4 4 0 4 1 0 0 0 0 0 0 1
  Node 72:   3 4 5 0 1 1 0 0 0 0 0 0
  Node 73:   3 4 0 4 1 1 0 0 0 0 0 0
@@ -6263,7 +6240,7 @@ Channels (3583)
  Node 83:   2 2 0 5 1 0 0 0 0 0 0 1
  Node 84:   2 2 6 0 1 1 0 0 0 0 0 0
  Node 85:   3 3 0 5 1 1 0 0 0 0 0 0
- Node 86:   3 3 7 0 1 0 0 0 0 0 0 1
+ Node 86:   3 3 6 0 1 0 0 0 0 0 0 1
  Node 87:   4 4 0 5 1 0 0 0 0 0 0 1
  Node 88:   3 4 6 0 1 1 0 0 0 0 0 0
  Node 89:   3 4 0 5 1 1 0 0 0 0 0 0
@@ -6346,7 +6323,7 @@ Channels (3583)
  Node 166:   4 3 5 0 0 0 0 0 0 0 1 1
  Node 167:   4 3 0 6 0 0 0 0 0 0 1 1
  Node 168:   4 4 5 0 0 1 0 0 0 0 1 0
- Node 169:   3 3 0 7 0 1 0 0 0 0 1 0
+ Node 169:   3 3 0 6 0 1 0 0 0 0 1 0
  Node 170:   3 3 5 0 0 0 0 0 0 0 1 1
  Node 171:   2 2 0 6 0 0 0 0 0 0 1 1
  Node 172:   2 2 5 0 0 1 0 0 0 0 1 0
@@ -6362,7 +6339,7 @@ Channels (3583)
  Node 182:   4 3 4 0 0 0 0 0 0 0 1 1
  Node 183:   4 3 0 5 0 0 0 0 0 0 1 1
  Node 184:   4 4 4 0 0 1 0 0 0 0 1 0
- Node 185:   3 3 0 6 0 1 0 0 0 0 1 0
+ Node 185:   3 3 0 5 0 1 0 0 0 0 1 0
  Node 186:   3 3 4 0 0 0 0 0 0 0 1 1
  Node 187:   2 2 0 5 0 0 0 0 0 0 1 1
  Node 188:   2 2 4 0 0 1 0 0 0 0 1 0
@@ -6378,7 +6355,7 @@ Channels (3583)
  Node 198:   4 3 3 0 0 0 0 0 0 0 1 1
  Node 199:   4 3 0 4 0 0 0 0 0 0 1 1
  Node 200:   4 4 3 0 0 1 0 0 0 0 1 0
- Node 201:   3 3 0 5 0 1 0 0 0 0 1 0
+ Node 201:   3 3 0 4 0 1 0 0 0 0 1 0
  Node 202:   3 3 3 0 0 0 0 0 0 0 1 1
  Node 203:   2 2 0 4 0 0 0 0 0 0 1 1
  Node 204:   2 2 3 0 0 1 0 0 0 0 1 0
@@ -6394,7 +6371,7 @@ Channels (3583)
  Node 214:   4 3 2 0 0 0 0 0 0 0 1 1
  Node 215:   4 3 0 3 0 0 0 0 0 0 1 1
  Node 216:   4 4 2 0 0 1 0 0 0 0 1 0
- Node 217:   3 3 0 4 0 1 0 0 0 0 1 0
+ Node 217:   3 3 0 3 0 1 0 0 0 0 1 0
  Node 218:   3 3 2 0 0 0 0 0 0 0 1 1
  Node 219:   2 2 0 3 0 0 0 0 0 0 1 1
  Node 220:   2 2 2 0 0 1 0 0 0 0 1 0
@@ -6410,23 +6387,23 @@ Channels (3583)
  Node 230:   4 3 1 0 0 0 0 0 0 0 1 1
  Node 231:   4 3 0 2 0 0 0 0 0 0 1 1
  Node 232:   4 4 1 0 0 1 0 0 0 0 1 0
- Node 233:   3 3 0 3 0 1 0 0 0 0 1 0
+ Node 233:   3 3 0 2 0 1 0 0 0 0 1 0
  Node 234:   3 3 1 0 0 0 0 0 0 0 1 1
  Node 235:   2 2 0 2 0 0 0 0 0 0 1 1
  Node 236:   2 2 1 0 0 1 0 0 0 0 1 0
  Node 237:   1 1 0 2 0 1 0 0 0 0 1 0
  Node 238:   1 1 1 0 0 0 0 0 0 0 1 1
  Node 239:   0 0 0 2 0 0 0 0 0 0 1 1
- Node 240:   2 0 0 0 0 1 0 0 0 0 1 0
- Node 241:   2 0 0 1 0 1 0 0 0 0 1 0
- Node 242:   3 1 0 0 0 0 0 0 0 0 1 1
- Node 243:   3 1 0 1 0 0 0 0 0 0 1 1
- Node 244:   4 2 0 0 0 1 0 0 0 0 1 0
- Node 245:   4 2 0 1 0 1 0 0 0 0 1 0
- Node 246:   4 3 0 0 0 0 0 0 1 0 1 1
+ Node 240:   1 0 0 0 0 1 0 0 1 0 1 0
+ Node 241:   1 0 0 1 0 1 0 0 0 0 1 0
+ Node 242:   2 1 0 0 0 0 0 0 0 0 1 1
+ Node 243:   2 1 0 1 0 0 0 0 0 0 1 1
+ Node 244:   3 2 0 0 0 1 0 0 0 0 1 0
+ Node 245:   3 2 0 1 0 1 0 0 0 0 1 0
+ Node 246:   4 3 0 0 0 0 0 0 0 0 1 1
  Node 247:   4 3 0 1 0 0 0 0 0 0 1 1
  Node 248:   4 4 0 0 0 1 0 0 0 0 1 0
- Node 249:   3 3 0 2 0 1 0 0 0 0 1 0
+ Node 249:   3 3 0 1 0 1 0 0 0 0 1 0
  Node 250:   3 3 0 0 0 0 0 0 0 0 1 1
  Node 251:   2 2 0 1 0 0 0 0 0 0 1 1
  Node 252:   2 2 0 0 0 1 0 0 0 0 1 0
@@ -6436,130 +6413,130 @@ Channels (3583)
 
 (Maximum) Crossing Paths: 8
 The number of paths on this application : 256 (all-to-all cases: 65280)
-The average hops : 9.109375
+The average hops : 9.015625
 ID size(without ID modification)10
-total_slots: 2076
-avg_slots: 2.027344
-efficiency: 0.253418
-unused_total_slots: 6116
-unused_avg_slots: 5.972656
-inefficiency: 0.746582
+total_slots: 2052
+avg_slots: 2.003906
+efficiency: 0.250488
+unused_total_slots: 6140
+unused_avg_slots: 5.996094
+inefficiency: 0.749512
 
-src_greedy total_increased_slots: 865
+src_greedy total_increased_slots: 927
 
-src_greedy src_greedy total_slots: 2941
-src_greedy avg_slots: 2.872070
-src_greedy increased_avg_slots: 0.844727
-src_greedy efficiency: 0.359009
-src_greedy increased_efficiency: 0.105591
-src_greedy unused_total_slots: 5251
-src_greedy unused_avg_slots: 5.127930
-src_greedy decreased_unused_avg_slots: 0.844727
-src_greedy inefficiency: 0.640991
-src_greedy decreased_inefficiency: 0.105591
+src_greedy src_greedy total_slots: 2979
+src_greedy avg_slots: 2.909180
+src_greedy increased_avg_slots: 0.905273
+src_greedy efficiency: 0.363647
+src_greedy increased_efficiency: 0.113159
+src_greedy unused_total_slots: 5213
+src_greedy unused_avg_slots: 5.090820
+src_greedy decreased_unused_avg_slots: 0.905273
+src_greedy inefficiency: 0.636353
+src_greedy decreased_inefficiency: 0.113159
 
-src_polling total_increased_slots: 924
+src_polling total_increased_slots: 980
 
-src_polling total_slots: 3000
-src_polling avg_slots: 2.929688
-src_polling increased_avg_slots: 0.902344
-src_polling efficiency: 0.366211
-src_polling increased_efficiency: 0.112793
-src_polling unused_total_slots: 5192
-src_polling unused_avg_slots: 5.070312
-src_polling decreased_unused_avg_slots: 0.902344
-src_polling inefficiency: 0.633789
-src_polling decreased_inefficiency: 0.112793
+src_polling total_slots: 3032
+src_polling avg_slots: 2.960938
+src_polling increased_avg_slots: 0.957031
+src_polling efficiency: 0.370117
+src_polling increased_efficiency: 0.119629
+src_polling unused_total_slots: 5160
+src_polling unused_avg_slots: 5.039062
+src_polling decreased_unused_avg_slots: 0.957031
+src_polling inefficiency: 0.629883
+src_polling decreased_inefficiency: 0.119629
 
-hcLtoS_greedy total_increased_slots: 1010
+hcLtoS_greedy total_increased_slots: 1074
 
-hcLtoS_greedy total_slots: 3086
-hcLtoS_greedy avg_slots: 3.013672
-hcLtoS_greedy increased_avg_slots: 0.986328
-hcLtoS_greedy efficiency: 0.376709
-hcLtoS_greedy increased_efficiency: 0.123291
-hcLtoS_greedy unused_total_slots: 5106
-hcLtoS_greedy unused_avg_slots: 4.986328
-hcLtoS_greedy decreased_unused_avg_slots: 0.986328
-hcLtoS_greedy inefficiency: 0.623291
-hcLtoS_greedy decreased_inefficiency: 0.123291
+hcLtoS_greedy total_slots: 3126
+hcLtoS_greedy avg_slots: 3.052734
+hcLtoS_greedy increased_avg_slots: 1.048828
+hcLtoS_greedy efficiency: 0.381592
+hcLtoS_greedy increased_efficiency: 0.131104
+hcLtoS_greedy unused_total_slots: 5066
+hcLtoS_greedy unused_avg_slots: 4.947266
+hcLtoS_greedy decreased_unused_avg_slots: 1.048828
+hcLtoS_greedy inefficiency: 0.618408
+hcLtoS_greedy decreased_inefficiency: 0.131104
 
-hcLtoS_polling total_increased_slots: 926
+hcLtoS_polling total_increased_slots: 980
 
-hcLtoS_polling total_slots: 3002
-hcLtoS_polling avg_slots: 2.931641
-hcLtoS_polling increased_avg_slots: 0.904297
-hcLtoS_polling efficiency: 0.366455
-hcLtoS_polling increased_efficiency: 0.113037
-hcLtoS_polling unused_total_slots: 5190
-hcLtoS_polling unused_avg_slots: 5.068359
-hcLtoS_polling decreased_unused_avg_slots: 0.904297
-hcLtoS_polling inefficiency: 0.633545
-hcLtoS_polling decreased_inefficiency: 0.113037
+hcLtoS_polling total_slots: 3032
+hcLtoS_polling avg_slots: 2.960938
+hcLtoS_polling increased_avg_slots: 0.957031
+hcLtoS_polling efficiency: 0.370117
+hcLtoS_polling increased_efficiency: 0.119629
+hcLtoS_polling unused_total_slots: 5160
+hcLtoS_polling unused_avg_slots: 5.039062
+hcLtoS_polling decreased_unused_avg_slots: 0.957031
+hcLtoS_polling inefficiency: 0.629883
+hcLtoS_polling decreased_inefficiency: 0.119629
 
-hcStoL_greedy total_increased_slots: 730
+hcStoL_greedy total_increased_slots: 780
 
-hcStoL_greedy total_slots: 2806
-hcStoL_greedy avg_slots: 2.740234
-hcStoL_greedy increased_avg_slots: 0.712891
-hcStoL_greedy efficiency: 0.342529
-hcStoL_greedy increased_efficiency: 0.089111
-hcStoL_greedy unused_total_slots: 5386
-hcStoL_greedy unused_avg_slots: 5.259766
-hcStoL_greedy decreased_unused_avg_slots: 0.712891
-hcStoL_greedy inefficiency: 0.657471
-hcStoL_greedy decreased_inefficiency: 0.089111
+hcStoL_greedy total_slots: 2832
+hcStoL_greedy avg_slots: 2.765625
+hcStoL_greedy increased_avg_slots: 0.761719
+hcStoL_greedy efficiency: 0.345703
+hcStoL_greedy increased_efficiency: 0.095215
+hcStoL_greedy unused_total_slots: 5360
+hcStoL_greedy unused_avg_slots: 5.234375
+hcStoL_greedy decreased_unused_avg_slots: 0.761719
+hcStoL_greedy inefficiency: 0.654297
+hcStoL_greedy decreased_inefficiency: 0.095215
 
-hcStoL_polling total_increased_slots: 922
+hcStoL_polling total_increased_slots: 980
 
-hcStoL_polling total_slots: 2998
-hcStoL_polling avg_slots: 2.927734
-hcStoL_polling increased_avg_slots: 0.900391
-hcStoL_polling efficiency: 0.365967
-hcStoL_polling increased_efficiency: 0.112549
-hcStoL_polling unused_total_slots: 5194
-hcStoL_polling unused_avg_slots: 5.072266
-hcStoL_polling decreased_unused_avg_slots: 0.900391
-hcStoL_polling inefficiency: 0.634033
-hcStoL_polling decreased_inefficiency: 0.112549
+hcStoL_polling total_slots: 3032
+hcStoL_polling avg_slots: 2.960938
+hcStoL_polling increased_avg_slots: 0.957031
+hcStoL_polling efficiency: 0.370117
+hcStoL_polling increased_efficiency: 0.119629
+hcStoL_polling unused_total_slots: 5160
+hcStoL_polling unused_avg_slots: 5.039062
+hcStoL_polling decreased_unused_avg_slots: 0.957031
+hcStoL_polling inefficiency: 0.629883
+hcStoL_polling decreased_inefficiency: 0.119629
 
-total_slots: 2076
-src_greedy_total_slots: 2941
-src_polling_total_slots: 3000
-hcLtoS_greedy_total_slots: 3086
-hcLtoS_polling_total_slots: 3002
-hcStoL_greedy_total_slots: 2806
-hcStoL_polling_total_slots: 2998
+total_slots: 2052
+src_greedy_total_slots: 2979
+src_polling_total_slots: 3032
+hcLtoS_greedy_total_slots: 3126
+hcLtoS_polling_total_slots: 3032
+hcStoL_greedy_total_slots: 2832
+hcStoL_polling_total_slots: 3032
 
-baseline_efficiency: 0.253418
-src_greedy_efficiency: 0.359009
-src_polling_efficiency: 0.366211
-hcLtoS_greedy_efficiency: 0.376709
-hcLtoS_polling_efficiency: 0.366455
-hcStoL_greedy_efficiency: 0.342529
-hcStoL_polling_efficiency: 0.365967
+baseline_efficiency: 0.250488
+src_greedy_efficiency: 0.363647
+src_polling_efficiency: 0.370117
+hcLtoS_greedy_efficiency: 0.381592
+hcLtoS_polling_efficiency: 0.370117
+hcStoL_greedy_efficiency: 0.345703
+hcStoL_polling_efficiency: 0.370117
 
-baseline_inefficiency: 0.746582
-src_greedy_inefficiency: 0.640991
-src_polling_inefficiency: 0.633789
-hcLtoS_greedy_inefficiency: 0.623291
-hcLtoS_polling_inefficiency: 0.633545
-hcStoL_greedy_inefficiency: 0.657471
-hcStoL_polling_inefficiency: 0.634033
+baseline_inefficiency: 0.749512
+src_greedy_inefficiency: 0.636353
+src_polling_inefficiency: 0.629883
+hcLtoS_greedy_inefficiency: 0.618408
+hcLtoS_polling_inefficiency: 0.629883
+hcStoL_greedy_inefficiency: 0.654297
+hcStoL_polling_inefficiency: 0.629883
 
-baseline_avg_slots: 2.027344
-src_greedy_avg_slots: 2.872070
-src_polling_avg_slots: 2.929688
-hcLtoS_greedy_avg_slots: 3.013672
-hcLtoS_polling_avg_slots: 2.931641
-hcStoL_greedy_avg_slots: 2.740234
-hcStoL_polling_avg_slots: 2.927734
+baseline_avg_slots: 2.003906
+src_greedy_avg_slots: 2.909180
+src_polling_avg_slots: 2.960938
+hcLtoS_greedy_avg_slots: 3.052734
+hcLtoS_polling_avg_slots: 2.960938
+hcStoL_greedy_avg_slots: 2.765625
+hcStoL_polling_avg_slots: 2.960938
 
-baseline_unused_avg_slots: 5.972656
-src_greedy_unused_avg_slots: 5.127930
-src_polling_unused_avg_slots: 5.070312
-hcLtoS_greedy_unused_avg_slots: 4.986328
-hcLtoS_polling_unused_avg_slots: 5.068359
-hcStoL_greedy_unused_avg_slots: 5.259766
-hcStoL_polling_unused_avg_slots: 5.072266
+baseline_unused_avg_slots: 5.996094
+src_greedy_unused_avg_slots: 5.090820
+src_polling_unused_avg_slots: 5.039062
+hcLtoS_greedy_unused_avg_slots: 4.947266
+hcLtoS_polling_unused_avg_slots: 5.039062
+hcStoL_greedy_unused_avg_slots: 5.234375
+hcStoL_polling_unused_avg_slots: 5.039062
 

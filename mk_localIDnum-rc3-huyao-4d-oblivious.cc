@@ -752,39 +752,63 @@ int main(int argc, char *argv[])
 	  aa = dst/(array_size*array_size*array_size) - src/(array_size*array_size*array_size);
       aa_sd = dst/(array_size*array_size*array_size) - src/(array_size*array_size*array_size); //huyao180410
 	  if ( aa < 0 && abs(aa) > array_size/2 ) {
-	    aa = -( aa + array_size/2);
-        aa_sd = -( aa_sd + array_size/2); //huyao180410		
+	    //aa = -( aa + array_size/2);
+        //aa_sd = -( aa_sd + array_size/2); //huyao180410	
+		//huyao 180417 rev
+        aa = aa + array_size;
+        aa_sd = aa_sd + array_size; 	
 	  } else if ( aa > 0 && abs(aa) > array_size/2 ) {
-	    aa = -( aa - array_size/2);
-        aa_sd = -( aa_sd - array_size/2); //huyao180410		
+	    //aa = -( aa - array_size/2);
+        //aa_sd = -( aa_sd - array_size/2); //huyao180410	
+		//huyao 180417 rev
+        aa = aa - array_size;
+        aa_sd = aa_sd - array_size;	
 	  }
 	  //delta_z huyao 170102
 	  zz = (dst%(array_size*array_size*array_size))/(array_size*array_size) - (src%(array_size*array_size*array_size))/(array_size*array_size); //huyao 170103
       zz_sd = (dst%(array_size*array_size*array_size))/(array_size*array_size) - (src%(array_size*array_size*array_size))/(array_size*array_size); //huyao 180410
 	  if ( zz < 0 && abs(zz) > array_size/2 ) {
-	    zz = -( zz + array_size/2);
-        zz_sd = -( zz_sd + array_size/2);		
+	    //zz = -( zz + array_size/2);
+        //zz_sd = -( zz_sd + array_size/2);		
+		//huyao 180417 rev
+        zz = zz + array_size;
+        zz_sd = zz_sd + array_size; 
 	  } else if ( zz > 0 && abs(zz) > array_size/2 ) {
-	    zz = -( zz - array_size/2);
-        zz_sd = -( zz_sd - array_size/2);
+	    //zz = -( zz - array_size/2);
+        //zz_sd = -( zz_sd - array_size/2);
+		//huyao 180417 rev
+        zz = zz - array_size;
+        zz_sd = zz_sd - array_size;
 	  }
 	  xx = ((dst%(array_size*array_size*array_size))%(array_size*array_size))%array_size - ((src%(array_size*array_size*array_size))%(array_size*array_size))%array_size; //huyao 170101
       xx_sd = ((dst%(array_size*array_size*array_size))%(array_size*array_size))%array_size - ((src%(array_size*array_size*array_size))%(array_size*array_size))%array_size; //huyao 180410
 	  if ( xx < 0 && abs(xx) > array_size/2 ) {
-	    xx = -( xx + array_size/2);
-        xx_sd = -( xx_sd + array_size/2);		
+	    //xx = -( xx + array_size/2);
+        //xx_sd = -( xx_sd + array_size/2);	
+		//huyao 180417 rev
+        xx = xx + array_size;
+        xx_sd = xx_sd + array_size; 	
 	  } else if ( xx > 0 && abs(xx) > array_size/2 ) {
-	    xx = -( xx - array_size/2);
-        xx_sd = -( xx_sd - array_size/2);	
+	    //xx = -( xx - array_size/2);
+        //xx_sd = -( xx_sd - array_size/2);	
+		//huyao 180417 rev
+        xx = xx - array_size;
+        xx_sd = xx_sd - array_size;
 	  }
 	  yy = ((dst%(array_size*array_size*array_size))%(array_size*array_size))/array_size - ((src%(array_size*array_size*array_size))%(array_size*array_size))/array_size; //huyao 170101
       yy_sd = ((dst%(array_size*array_size*array_size))%(array_size*array_size))/array_size - ((src%(array_size*array_size*array_size))%(array_size*array_size))/array_size; //huyao 180410
 	  if ( yy < 0 && abs(yy) > array_size/2 ) {
-	    yy = -( yy + array_size/2);
-        yy_sd = -( yy_sd + array_size/2);	
+	    //yy = -( yy + array_size/2);
+        //yy_sd = -( yy_sd + array_size/2);	
+		//huyao 180417 rev
+        yy = yy + array_size;
+        yy_sd = yy_sd + array_size; 
 	  } else if ( yy > 0 && abs(yy) > array_size/2 ) {
-	    yy = -( yy - array_size/2);
-        yy_sd = -( yy_sd - array_size/2);
+	    //yy = -( yy - array_size/2);
+        //yy_sd = -( yy_sd - array_size/2);
+		//huyao 180417 rev
+        yy = yy - array_size;
+        yy_sd = yy_sd - array_size;
 	  }
 	  break;
       default:
@@ -803,11 +827,15 @@ int main(int argc, char *argv[])
             h_dst = h_dst - (xx/2)*Host_Num;
             h_dst = h_dst - (yy/2)*array_size*Host_Num;
 			h_dst = h_dst - (zz/2)*array_size*array_size*Host_Num; 
-			h_dst = h_dst - (aa/2)*array_size*array_size*array_size*Host_Num;     
+			h_dst = h_dst - (aa/2)*array_size*array_size*array_size*Host_Num; 
+			h_dst = h_dst%(switch_num*Host_Num); //huyao 180417
+            if (h_dst < 0) h_dst = h_dst + switch_num*Host_Num; //huyao 180417    
             dst = dst - xx/2;
             dst = dst - (yy/2)*array_size;
 			dst = dst - (zz/2)*array_size*array_size;
 			dst = dst - (aa/2)*array_size*array_size*array_size;
+			dst = dst%switch_num; //huyao 180417
+            if (dst < 0) dst = dst + switch_num; //huyao 180417
          }
          if (obli == 0){
             h_src = h_dst;
@@ -869,54 +897,78 @@ int main(int argc, char *argv[])
 	 delta_a = dst/(array_size*array_size*array_size) - src/(array_size*array_size*array_size);
          delta_a_sd = dst/(array_size*array_size*array_size) - src/(array_size*array_size*array_size); //huyao180410
 	 if ( delta_a < 0 && abs(delta_a) > array_size/2 ) {
-	    delta_a = -( delta_a + array_size/2);
-            delta_a_sd = -( delta_a_sd + array_size/2); //huyao180410
-		wrap_around_a = true;
+	    //delta_a = -( delta_a + array_size/2);
+        //delta_a_sd = -( delta_a_sd + array_size/2); //huyao180410
+		//huyao 180417 rev
+		delta_a = delta_a + array_size;
+        delta_a_sd = delta_a_sd + array_size;
+				wrap_around_a = true;
                 wrap_around_a_sd = true;		
 	 } else if ( delta_a > 0 && abs(delta_a) > array_size/2 ) {
-	    delta_a = -( delta_a - array_size/2);
-            delta_a_sd = -( delta_a_sd - array_size/2); //huyao180410
-		wrap_around_a = true;
+	    //delta_a = -( delta_a - array_size/2);
+        //delta_a_sd = -( delta_a_sd - array_size/2); //huyao180410
+		//huyao 180417 rev
+        delta_a = delta_a - array_size;
+        delta_a_sd = delta_a_sd - array_size;
+				wrap_around_a = true;
                 wrap_around_a_sd = true;		
 	 }
 	 //delta_z huyao 170102
 	 delta_z = dst_xyz/(array_size*array_size) - src_xyz/(array_size*array_size); //huyao 170103
          delta_z_sd = dst_xyz/(array_size*array_size) - src_xyz/(array_size*array_size); //huyao 180410
 	 if ( delta_z < 0 && abs(delta_z) > array_size/2 ) {
-	    delta_z = -( delta_z + array_size/2);
-            delta_z_sd = -( delta_z_sd + array_size/2);
-		wrap_around_z = true;
+	    //delta_z = -( delta_z + array_size/2);
+        //delta_z_sd = -( delta_z_sd + array_size/2);
+		//huyao 180417 rev
+		delta_z = delta_z + array_size;
+        delta_z_sd = delta_z_sd + array_size;
+				wrap_around_z = true;
                 wrap_around_z_sd = true;		
 	 } else if ( delta_z > 0 && abs(delta_z) > array_size/2 ) {
-	    delta_z = -( delta_z - array_size/2);
-            delta_z_sd = -( delta_z_sd - array_size/2);
-		wrap_around_z = true;	
+	    //delta_z = -( delta_z - array_size/2);
+        //delta_z_sd = -( delta_z_sd - array_size/2);
+		//huyao 180417 rev
+        delta_z = delta_z - array_size;
+        delta_z_sd = delta_z_sd - array_size;
+				wrap_around_z = true;	
                 wrap_around_z_sd = true;	
 	 }
 	 delta_x = dst_xy%array_size - src_xy%array_size; //huyao 170101
          delta_x_sd = dst_xy%array_size - src_xy%array_size; //huyao 180410
 	 if ( delta_x < 0 && abs(delta_x) > array_size/2 ) {
-	    delta_x = -( delta_x + array_size/2);
-            delta_x_sd = -( delta_x_sd + array_size/2);
-		wrap_around_x = true;
+	    //delta_x = -( delta_x + array_size/2);
+        //delta_x_sd = -( delta_x_sd + array_size/2);
+		//huyao 180417 rev
+		delta_x = delta_x + array_size;
+        delta_x_sd = delta_x_sd + array_size;
+				wrap_around_x = true;
                 wrap_around_x_sd = true;		
 	 } else if ( delta_x > 0 && abs(delta_x) > array_size/2 ) {
-	    delta_x = -( delta_x - array_size/2);
-            delta_x_sd = -( delta_x_sd - array_size/2);
-		wrap_around_x = true;	
+	    //delta_x = -( delta_x - array_size/2);
+        //delta_x_sd = -( delta_x_sd - array_size/2);
+		//huyao 180417 rev
+        delta_x = delta_x - array_size;
+        delta_x_sd = delta_x_sd - array_size;
+				wrap_around_x = true;	
                 wrap_around_x_sd = true;	
 	 }
 	 delta_y = dst_xy/array_size - src_xy/array_size; //huyao 170101
          delta_y_sd = dst_xy/array_size - src_xy/array_size; //huyao 180410
 	 if ( delta_y < 0 && abs(delta_y) > array_size/2 ) {
-	    delta_y = -( delta_y + array_size/2);
-            delta_y_sd = -( delta_y_sd + array_size/2);
-		wrap_around_y = true;	
+	    //delta_y = -( delta_y + array_size/2);
+        //delta_y_sd = -( delta_y_sd + array_size/2);
+		//huyao 180417 rev
+		delta_y = delta_y + array_size;
+        delta_y_sd = delta_y_sd + array_size;
+				wrap_around_y = true;	
                 wrap_around_y_sd = true;	
 	 } else if ( delta_y > 0 && abs(delta_y) > array_size/2 ) {
-	    delta_y = -( delta_y - array_size/2);
-            delta_y_sd = -( delta_y_sd - array_size/2);
-		wrap_around_y = true;	
+	    //delta_y = -( delta_y - array_size/2);
+        //delta_y_sd = -( delta_y_sd - array_size/2);
+		//huyao 180417 rev
+        delta_y = delta_y - array_size;
+        delta_y_sd = delta_y_sd - array_size;
+				wrap_around_y = true;	
                 wrap_around_y_sd = true;	
 	 }
 	 current = src; 
@@ -4221,6 +4273,14 @@ int main(int argc, char *argv[])
    }
 	cout << " dst_based renewable label = " << max_cp_dst << endl;	
 	cout << " path_based renewable label = " << max_cp << endl;	
+    //huyao 180417
+    int slot_max = 0;
+    for (int i = 0; i < Crossing_Paths.size(); i++){
+            if (i%(degree+1+2*Host_Num) != degree+2*Host_Num || i%(degree+1+2*Host_Num) != degree+2*Host_Num-1)
+                    if(Crossing_Paths[i].pair_index.size() > slot_max)
+                            slot_max = Crossing_Paths[i].pair_index.size();
+    }
+    cout << " slot_max = " << slot_max << endl;	
 
 
    for (int j = 0; j < Vch * (degree+1+2*Host_Num) * switch_num; j++ ){ 

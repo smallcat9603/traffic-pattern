@@ -2,6 +2,7 @@ ID Allocation Policy is 0(low port first) / 1(Crossing Paths based method): 1
 Address method is 0(destination_based) / 1(path_based): 1
  dst_based renewable label = 4
  path_based renewable label = 4
+ slot_max = 4
 
 
  (east, west, south, north, front, back, out, in, from host0,... east(vch2), south(vch2), west(vch2), north(vch2), front, back, out, in, from host(vch2)0,.. to host(vch2)0,..
@@ -453,7 +454,7 @@ Address method is 0(destination_based) / 1(path_based): 1
  Node 445:   0 0 0 0 1 0 1 0 1 1 0 0 0 0 0 0 0 0 0 0
  Node 446:   0 0 0 0 1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 1
  Node 447:   0 0 0 0 1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 1
- Node 448:   0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 448:   0 0 0 0 0 0 1 0 1 1 0 0 0 0 1 0 0 0 0 0
  Node 449:   0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 0 0 0 0 0
  Node 450:   0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 1
  Node 451:   0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 1
@@ -509,14 +510,14 @@ Address method is 0(destination_based) / 1(path_based): 1
  Node 501:   0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 0 0 0 0 0
  Node 502:   0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 1
  Node 503:   0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 1
- Node 504:   0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 504:   0 0 0 0 0 0 1 0 1 1 0 0 1 0 0 0 0 0 0 0
  Node 505:   0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 0 0 0 0 0
  Node 506:   0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 1
  Node 507:   0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 1
  Node 508:   0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 0 0 0 0 0
  Node 509:   0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 0 0 0 0 0
  Node 510:   0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 1
- Node 511:   0 0 0 0 0 0 2 0 1 0 0 0 0 0 0 0 0 0 0 1
+ Node 511:   0 0 0 0 0 0 1 0 1 0 1 0 0 0 0 0 0 0 0 1
  Node 512:   0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0
  Node 513:   0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0
  Node 514:   0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 1
@@ -1028,7 +1029,7 @@ Address method is 0(destination_based) / 1(path_based): 1
  Node 1020:   3 4 0 1 0 1 1 0 1 1 0 0 0 0 0 0 0 0 0 0
  Node 1021:   2 3 0 1 0 1 1 0 1 1 0 0 0 0 0 0 0 0 0 0
  Node 1022:   1 2 0 1 0 1 1 0 1 0 0 0 0 0 0 0 0 0 0 1
- Node 1023:   0 1 0 1 0 1 2 0 1 0 0 0 0 0 0 0 0 0 0 1
+ Node 1023:   0 1 0 1 0 1 1 0 1 0 0 0 0 0 0 0 0 0 0 1
  Node 1024:   1 0 1 0 1 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0
  Node 1025:   2 1 1 0 1 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0
  Node 1026:   3 2 1 0 1 0 1 1 1 0 0 0 0 0 0 0 0 0 0 1
@@ -1047,7 +1048,7 @@ Address method is 0(destination_based) / 1(path_based): 1
  Node 1039:   0 1 2 1 1 0 1 1 1 0 0 0 0 0 0 0 0 0 0 1
  Node 1040:   1 0 3 2 1 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0
  Node 1041:   2 1 3 2 1 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0
- Node 1042:   3 2 3 2 2 0 1 1 1 0 0 0 0 0 0 0 0 0 0 1
+ Node 1042:   3 2 3 2 1 0 1 1 1 0 0 0 0 0 0 0 0 0 0 1
  Node 1043:   4 3 3 2 1 0 1 1 1 0 0 0 0 0 0 0 0 0 0 1
  Node 1044:   3 4 3 2 1 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0
  Node 1045:   2 3 3 2 1 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0
@@ -1111,7 +1112,7 @@ Address method is 0(destination_based) / 1(path_based): 1
  Node 1103:   0 1 2 1 2 0 1 1 1 0 0 0 0 0 0 0 0 0 0 1
  Node 1104:   1 0 3 2 2 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0
  Node 1105:   2 1 3 2 2 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0
- Node 1106:   3 2 3 2 3 0 1 1 1 0 0 0 0 0 0 0 0 0 0 1
+ Node 1106:   3 2 3 2 2 0 1 1 1 0 0 0 0 0 0 0 0 0 0 1
  Node 1107:   4 3 3 2 2 0 1 1 1 0 0 0 0 0 0 0 0 0 0 1
  Node 1108:   3 4 3 2 2 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0
  Node 1109:   2 3 3 2 2 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0
@@ -1479,7 +1480,7 @@ Address method is 0(destination_based) / 1(path_based): 1
  Node 1471:   0 0 0 0 1 0 2 1 1 0 0 0 0 0 0 0 0 0 0 1
  Node 1472:   0 0 0 0 0 0 2 1 1 1 0 0 0 0 0 0 0 0 0 0
  Node 1473:   0 0 0 0 0 0 2 1 1 1 0 0 0 0 0 0 0 0 0 0
- Node 1474:   0 0 1 0 0 0 2 1 1 0 0 0 0 0 0 0 0 0 0 1
+ Node 1474:   0 0 0 0 0 0 2 1 1 0 0 0 0 0 0 0 0 0 0 1
  Node 1475:   0 0 0 0 0 0 2 1 1 0 0 0 0 0 0 0 0 0 0 1
  Node 1476:   0 0 0 0 0 0 2 1 1 1 0 0 0 0 0 0 0 0 0 0
  Node 1477:   0 0 0 0 0 0 2 1 1 1 0 0 0 0 0 0 0 0 0 0
@@ -1487,7 +1488,7 @@ Address method is 0(destination_based) / 1(path_based): 1
  Node 1479:   0 0 0 0 0 0 2 1 1 0 0 0 0 0 0 0 0 0 0 1
  Node 1480:   0 0 0 0 0 0 2 1 1 1 0 0 0 0 0 0 0 0 0 0
  Node 1481:   0 0 0 0 0 0 2 1 1 1 0 0 0 0 0 0 0 0 0 0
- Node 1482:   0 0 1 0 0 0 2 1 1 0 0 0 0 0 0 0 0 0 0 1
+ Node 1482:   0 0 0 0 0 0 2 1 1 0 0 0 0 0 0 0 0 0 0 1
  Node 1483:   0 0 0 0 0 0 2 1 1 0 0 0 0 0 0 0 0 0 0 1
  Node 1484:   0 0 0 0 0 0 2 1 1 1 0 0 0 0 0 0 0 0 0 0
  Node 1485:   0 0 0 0 0 0 2 1 1 1 0 0 0 0 0 0 0 0 0 0
@@ -1495,7 +1496,7 @@ Address method is 0(destination_based) / 1(path_based): 1
  Node 1487:   0 0 0 0 0 0 2 1 1 0 0 0 0 0 0 0 0 0 0 1
  Node 1488:   0 0 0 0 0 0 2 1 1 1 0 0 0 0 0 0 0 0 0 0
  Node 1489:   0 0 0 0 0 0 2 1 1 1 0 0 0 0 0 0 0 0 0 0
- Node 1490:   0 0 0 0 0 0 2 1 1 0 0 0 0 0 1 0 0 0 0 1
+ Node 1490:   0 0 0 0 0 0 2 1 1 0 0 0 0 0 0 0 0 0 0 1
  Node 1491:   0 0 0 0 0 0 2 1 1 0 0 0 0 0 0 0 0 0 0 1
  Node 1492:   0 0 0 0 0 0 2 1 1 1 0 0 0 0 0 0 0 0 0 0
  Node 1493:   0 0 0 0 0 0 2 1 1 1 0 0 0 0 0 0 0 0 0 0
@@ -1533,14 +1534,14 @@ Address method is 0(destination_based) / 1(path_based): 1
  Node 1525:   0 0 0 0 0 0 2 1 1 1 0 0 0 0 0 0 0 0 0 0
  Node 1526:   0 0 0 0 0 0 2 1 1 0 0 0 0 0 0 0 0 0 0 1
  Node 1527:   0 0 0 0 0 0 2 1 1 0 0 0 0 0 0 0 0 0 0 1
- Node 1528:   1 0 0 0 0 0 2 1 1 1 0 0 0 0 0 0 0 0 0 0
- Node 1529:   1 0 0 0 0 0 2 1 1 1 0 0 0 0 0 0 0 0 0 0
- Node 1530:   0 0 0 0 0 0 2 1 1 0 0 0 1 0 0 0 0 0 0 1
+ Node 1528:   0 0 0 0 0 0 2 1 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 1529:   0 0 0 0 0 0 2 1 1 1 0 0 0 0 0 0 0 0 0 0
+ Node 1530:   0 0 0 0 0 0 2 1 1 0 0 0 0 0 0 0 0 0 0 1
  Node 1531:   0 0 0 0 0 0 2 1 1 0 0 0 0 0 0 0 0 0 0 1
  Node 1532:   0 0 0 0 0 0 2 1 1 1 0 0 0 0 0 0 0 0 0 0
  Node 1533:   0 0 0 0 0 0 2 1 1 1 0 0 0 0 0 0 0 0 0 0
  Node 1534:   0 0 0 0 0 0 2 1 1 0 0 0 0 0 0 0 0 0 0 1
- Node 1535:   0 0 0 0 0 0 2 1 1 0 1 0 0 0 0 0 0 0 0 1
+ Node 1535:   0 0 0 0 0 0 2 1 1 0 0 0 0 0 0 0 0 0 0 1
  Node 1536:   0 0 0 0 0 0 2 2 1 1 0 0 0 0 0 0 0 0 0 0
  Node 1537:   0 0 0 0 0 0 2 2 1 1 0 0 0 0 0 0 0 0 0 0
  Node 1538:   0 0 0 0 0 0 2 2 1 0 0 0 0 0 0 0 0 0 0 1
@@ -2565,14 +2566,14 @@ Address method is 0(destination_based) / 1(path_based): 1
  Node 2557:   0 0 0 0 0 0 2 2 0 1 0 0 0 0 0 0 0 0 1 0
  Node 2558:   0 0 0 0 0 0 2 2 0 0 0 0 0 0 0 0 0 0 1 1
  Node 2559:   0 0 0 0 0 0 2 2 0 0 0 0 0 0 0 0 0 0 1 1
- Node 2560:   0 0 0 0 0 0 1 2 0 1 0 1 0 0 0 0 0 0 1 0
+ Node 2560:   0 0 0 0 0 0 1 2 0 1 0 0 0 0 0 0 0 0 1 0
  Node 2561:   0 0 0 0 0 0 1 2 0 1 0 0 0 0 0 0 0 0 1 0
  Node 2562:   0 0 0 0 0 0 1 2 0 0 0 0 0 0 0 0 0 0 1 1
  Node 2563:   0 0 0 0 0 0 1 2 0 0 0 0 0 0 0 0 0 0 1 1
  Node 2564:   0 0 0 0 0 0 1 2 0 1 0 0 0 0 0 0 0 0 1 0
- Node 2565:   0 0 0 0 0 0 1 2 0 1 0 0 0 1 0 0 0 0 1 0
- Node 2566:   0 1 0 0 0 0 1 2 0 0 0 0 0 0 0 0 0 0 1 1
- Node 2567:   0 1 0 0 0 0 1 2 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 2565:   0 0 0 0 0 0 1 2 0 1 0 0 0 0 0 0 0 0 1 0
+ Node 2566:   0 0 0 0 0 0 1 2 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 2567:   0 0 0 0 0 0 1 2 0 0 0 0 0 0 0 0 0 0 1 1
  Node 2568:   0 0 0 0 0 0 1 2 0 1 0 0 0 0 0 0 0 0 1 0
  Node 2569:   0 0 0 0 0 0 1 2 0 1 0 0 0 0 0 0 0 0 1 0
  Node 2570:   0 0 0 0 0 0 1 2 0 0 0 0 0 0 0 0 0 0 1 1
@@ -2610,7 +2611,7 @@ Address method is 0(destination_based) / 1(path_based): 1
  Node 2602:   0 0 0 0 0 0 1 2 0 0 0 0 0 0 0 0 0 0 1 1
  Node 2603:   0 0 0 0 0 0 1 2 0 0 0 0 0 0 0 0 0 0 1 1
  Node 2604:   0 0 0 0 0 0 1 2 0 1 0 0 0 0 0 0 0 0 1 0
- Node 2605:   0 0 0 0 0 0 1 2 0 1 0 0 0 0 0 1 0 0 1 0
+ Node 2605:   0 0 0 0 0 0 1 2 0 1 0 0 0 0 0 0 0 0 1 0
  Node 2606:   0 0 0 0 0 0 1 2 0 0 0 0 0 0 0 0 0 0 1 1
  Node 2607:   0 0 0 0 0 0 1 2 0 0 0 0 0 0 0 0 0 0 1 1
  Node 2608:   0 0 0 0 0 0 1 2 0 1 0 0 0 0 0 0 0 0 1 0
@@ -2618,7 +2619,7 @@ Address method is 0(destination_based) / 1(path_based): 1
  Node 2610:   0 0 0 0 0 0 1 2 0 0 0 0 0 0 0 0 0 0 1 1
  Node 2611:   0 0 0 0 0 0 1 2 0 0 0 0 0 0 0 0 0 0 1 1
  Node 2612:   0 0 0 0 0 0 1 2 0 1 0 0 0 0 0 0 0 0 1 0
- Node 2613:   0 0 0 1 0 0 1 2 0 1 0 0 0 0 0 0 0 0 1 0
+ Node 2613:   0 0 0 0 0 0 1 2 0 1 0 0 0 0 0 0 0 0 1 0
  Node 2614:   0 0 0 0 0 0 1 2 0 0 0 0 0 0 0 0 0 0 1 1
  Node 2615:   0 0 0 0 0 0 1 2 0 0 0 0 0 0 0 0 0 0 1 1
  Node 2616:   0 0 0 0 0 0 1 2 0 1 0 0 0 0 0 0 0 0 1 0
@@ -2626,7 +2627,7 @@ Address method is 0(destination_based) / 1(path_based): 1
  Node 2618:   0 0 0 0 0 0 1 2 0 0 0 0 0 0 0 0 0 0 1 1
  Node 2619:   0 0 0 0 0 0 1 2 0 0 0 0 0 0 0 0 0 0 1 1
  Node 2620:   0 0 0 0 0 0 1 2 0 1 0 0 0 0 0 0 0 0 1 0
- Node 2621:   0 0 0 1 0 0 1 2 0 1 0 0 0 0 0 0 0 0 1 0
+ Node 2621:   0 0 0 0 0 0 1 2 0 1 0 0 0 0 0 0 0 0 1 0
  Node 2622:   0 0 0 0 0 0 1 2 0 0 0 0 0 0 0 0 0 0 1 1
  Node 2623:   0 0 0 0 0 0 1 2 0 0 0 0 0 0 0 0 0 0 1 1
  Node 2624:   0 0 0 0 0 1 1 2 0 1 0 0 0 0 0 0 0 0 1 0
@@ -2994,7 +2995,7 @@ Address method is 0(destination_based) / 1(path_based): 1
  Node 2986:   3 2 2 3 0 2 1 1 0 0 0 0 0 0 0 0 0 0 1 1
  Node 2987:   4 3 2 3 0 2 1 1 0 0 0 0 0 0 0 0 0 0 1 1
  Node 2988:   3 4 2 3 0 2 1 1 0 1 0 0 0 0 0 0 0 0 1 0
- Node 2989:   2 3 2 3 0 3 1 1 0 1 0 0 0 0 0 0 0 0 1 0
+ Node 2989:   2 3 2 3 0 2 1 1 0 1 0 0 0 0 0 0 0 0 1 0
  Node 2990:   1 2 2 3 0 2 1 1 0 0 0 0 0 0 0 0 0 0 1 1
  Node 2991:   0 1 2 3 0 2 1 1 0 0 0 0 0 0 0 0 0 0 1 1
  Node 2992:   1 0 1 2 0 2 1 1 0 1 0 0 0 0 0 0 0 0 1 0
@@ -3058,7 +3059,7 @@ Address method is 0(destination_based) / 1(path_based): 1
  Node 3050:   3 2 2 3 0 1 1 1 0 0 0 0 0 0 0 0 0 0 1 1
  Node 3051:   4 3 2 3 0 1 1 1 0 0 0 0 0 0 0 0 0 0 1 1
  Node 3052:   3 4 2 3 0 1 1 1 0 1 0 0 0 0 0 0 0 0 1 0
- Node 3053:   2 3 2 3 0 2 1 1 0 1 0 0 0 0 0 0 0 0 1 0
+ Node 3053:   2 3 2 3 0 1 1 1 0 1 0 0 0 0 0 0 0 0 1 0
  Node 3054:   1 2 2 3 0 1 1 1 0 0 0 0 0 0 0 0 0 0 1 1
  Node 3055:   0 1 2 3 0 1 1 1 0 0 0 0 0 0 0 0 0 0 1 1
  Node 3056:   1 0 1 2 0 1 1 1 0 1 0 0 0 0 0 0 0 0 1 0
@@ -3077,7 +3078,7 @@ Address method is 0(destination_based) / 1(path_based): 1
  Node 3069:   2 3 0 1 0 1 1 1 0 1 0 0 0 0 0 0 0 0 1 0
  Node 3070:   1 2 0 1 0 1 1 1 0 0 0 0 0 0 0 0 0 0 1 1
  Node 3071:   0 1 0 1 0 1 1 1 0 0 0 0 0 0 0 0 0 0 1 1
- Node 3072:   1 0 1 0 1 0 0 2 0 1 0 0 0 0 0 0 0 0 1 0
+ Node 3072:   1 0 1 0 1 0 0 1 0 1 0 0 0 0 0 0 0 0 1 0
  Node 3073:   2 1 1 0 1 0 0 1 0 1 0 0 0 0 0 0 0 0 1 0
  Node 3074:   3 2 1 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1
  Node 3075:   4 3 1 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1
@@ -3589,14 +3590,14 @@ Address method is 0(destination_based) / 1(path_based): 1
  Node 3581:   0 0 0 0 0 0 1 1 0 1 0 0 0 0 0 0 0 0 1 0
  Node 3582:   0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 1 1
  Node 3583:   0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 1 1
- Node 3584:   0 0 0 0 0 0 0 2 0 1 0 0 0 0 0 0 0 0 1 0
+ Node 3584:   0 0 0 0 0 0 0 1 0 1 0 1 0 0 0 0 0 0 1 0
  Node 3585:   0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 1 0
  Node 3586:   0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1
  Node 3587:   0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1
  Node 3588:   0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 1 0
  Node 3589:   0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 1 0
  Node 3590:   0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1
- Node 3591:   0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 3591:   0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 1 1
  Node 3592:   0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 1 0
  Node 3593:   0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 1 0
  Node 3594:   0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1
@@ -3652,7 +3653,7 @@ Address method is 0(destination_based) / 1(path_based): 1
  Node 3644:   0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 1 0
  Node 3645:   0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 1 0
  Node 3646:   0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1
- Node 3647:   0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1
+ Node 3647:   0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 1 1
  Node 3648:   0 0 0 0 0 1 0 1 0 1 0 0 0 0 0 0 0 0 1 0
  Node 3649:   0 0 0 0 0 1 0 1 0 1 0 0 0 0 0 0 0 0 1 0
  Node 3650:   0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 1 1
@@ -4104,130 +4105,130 @@ Address method is 0(destination_based) / 1(path_based): 1
 
 (Maximum) Crossing Paths: 4
 The number of paths on this application : 4096 (all-to-all cases: 16773120)
-The average hops : 9.005859
+The average hops : 9.001953
 ID size(without ID modification)8
-total_slots: 32792
-avg_slots: 1.000732
-efficiency: 0.250183
-unused_total_slots: 98280
-unused_avg_slots: 2.999268
-inefficiency: 0.749817
+total_slots: 32776
+avg_slots: 1.000244
+efficiency: 0.250061
+unused_total_slots: 98296
+unused_avg_slots: 2.999756
+inefficiency: 0.749939
 
-src_greedy total_increased_slots: 2739
+src_greedy total_increased_slots: 2761
 
-src_greedy src_greedy total_slots: 35531
-src_greedy avg_slots: 1.084320
-src_greedy increased_avg_slots: 0.083588
-src_greedy efficiency: 0.271080
-src_greedy increased_efficiency: 0.020897
-src_greedy unused_total_slots: 95541
-src_greedy unused_avg_slots: 2.915680
-src_greedy decreased_unused_avg_slots: 0.083588
-src_greedy inefficiency: 0.728920
-src_greedy decreased_inefficiency: 0.020897
+src_greedy src_greedy total_slots: 35537
+src_greedy avg_slots: 1.084503
+src_greedy increased_avg_slots: 0.084259
+src_greedy efficiency: 0.271126
+src_greedy increased_efficiency: 0.021065
+src_greedy unused_total_slots: 95535
+src_greedy unused_avg_slots: 2.915497
+src_greedy decreased_unused_avg_slots: 0.084259
+src_greedy inefficiency: 0.728874
+src_greedy decreased_inefficiency: 0.021065
 
-src_polling total_increased_slots: 2748
+src_polling total_increased_slots: 2770
 
-src_polling total_slots: 35540
-src_polling avg_slots: 1.084595
-src_polling increased_avg_slots: 0.083862
-src_polling efficiency: 0.271149
-src_polling increased_efficiency: 0.020966
-src_polling unused_total_slots: 95532
-src_polling unused_avg_slots: 2.915405
-src_polling decreased_unused_avg_slots: 0.083862
-src_polling inefficiency: 0.728851
-src_polling decreased_inefficiency: 0.020966
+src_polling total_slots: 35546
+src_polling avg_slots: 1.084778
+src_polling increased_avg_slots: 0.084534
+src_polling efficiency: 0.271194
+src_polling increased_efficiency: 0.021133
+src_polling unused_total_slots: 95526
+src_polling unused_avg_slots: 2.915222
+src_polling decreased_unused_avg_slots: 0.084534
+src_polling inefficiency: 0.728806
+src_polling decreased_inefficiency: 0.021133
 
-hcLtoS_greedy total_increased_slots: 2802
+hcLtoS_greedy total_increased_slots: 2824
 
-hcLtoS_greedy total_slots: 35594
-hcLtoS_greedy avg_slots: 1.086243
-hcLtoS_greedy increased_avg_slots: 0.085510
-hcLtoS_greedy efficiency: 0.271561
-hcLtoS_greedy increased_efficiency: 0.021378
-hcLtoS_greedy unused_total_slots: 95478
-hcLtoS_greedy unused_avg_slots: 2.913757
-hcLtoS_greedy decreased_unused_avg_slots: 0.085510
-hcLtoS_greedy inefficiency: 0.728439
-hcLtoS_greedy decreased_inefficiency: 0.021378
+hcLtoS_greedy total_slots: 35600
+hcLtoS_greedy avg_slots: 1.086426
+hcLtoS_greedy increased_avg_slots: 0.086182
+hcLtoS_greedy efficiency: 0.271606
+hcLtoS_greedy increased_efficiency: 0.021545
+hcLtoS_greedy unused_total_slots: 95472
+hcLtoS_greedy unused_avg_slots: 2.913574
+hcLtoS_greedy decreased_unused_avg_slots: 0.086182
+hcLtoS_greedy inefficiency: 0.728394
+hcLtoS_greedy decreased_inefficiency: 0.021545
 
-hcLtoS_polling total_increased_slots: 2754
+hcLtoS_polling total_increased_slots: 2770
 
 hcLtoS_polling total_slots: 35546
 hcLtoS_polling avg_slots: 1.084778
-hcLtoS_polling increased_avg_slots: 0.084045
+hcLtoS_polling increased_avg_slots: 0.084534
 hcLtoS_polling efficiency: 0.271194
-hcLtoS_polling increased_efficiency: 0.021011
+hcLtoS_polling increased_efficiency: 0.021133
 hcLtoS_polling unused_total_slots: 95526
 hcLtoS_polling unused_avg_slots: 2.915222
-hcLtoS_polling decreased_unused_avg_slots: 0.084045
+hcLtoS_polling decreased_unused_avg_slots: 0.084534
 hcLtoS_polling inefficiency: 0.728806
-hcLtoS_polling decreased_inefficiency: 0.021011
+hcLtoS_polling decreased_inefficiency: 0.021133
 
-hcStoL_greedy total_increased_slots: 2600
+hcStoL_greedy total_increased_slots: 2622
 
-hcStoL_greedy total_slots: 35392
-hcStoL_greedy avg_slots: 1.080078
-hcStoL_greedy increased_avg_slots: 0.079346
-hcStoL_greedy efficiency: 0.270020
-hcStoL_greedy increased_efficiency: 0.019836
-hcStoL_greedy unused_total_slots: 95680
-hcStoL_greedy unused_avg_slots: 2.919922
-hcStoL_greedy decreased_unused_avg_slots: 0.079346
-hcStoL_greedy inefficiency: 0.729980
-hcStoL_greedy decreased_inefficiency: 0.019836
+hcStoL_greedy total_slots: 35398
+hcStoL_greedy avg_slots: 1.080261
+hcStoL_greedy increased_avg_slots: 0.080017
+hcStoL_greedy efficiency: 0.270065
+hcStoL_greedy increased_efficiency: 0.020004
+hcStoL_greedy unused_total_slots: 95674
+hcStoL_greedy unused_avg_slots: 2.919739
+hcStoL_greedy decreased_unused_avg_slots: 0.080017
+hcStoL_greedy inefficiency: 0.729935
+hcStoL_greedy decreased_inefficiency: 0.020004
 
-hcStoL_polling total_increased_slots: 2742
+hcStoL_polling total_increased_slots: 2770
 
-hcStoL_polling total_slots: 35534
-hcStoL_polling avg_slots: 1.084412
-hcStoL_polling increased_avg_slots: 0.083679
-hcStoL_polling efficiency: 0.271103
-hcStoL_polling increased_efficiency: 0.020920
-hcStoL_polling unused_total_slots: 95538
-hcStoL_polling unused_avg_slots: 2.915588
-hcStoL_polling decreased_unused_avg_slots: 0.083679
-hcStoL_polling inefficiency: 0.728897
-hcStoL_polling decreased_inefficiency: 0.020920
+hcStoL_polling total_slots: 35546
+hcStoL_polling avg_slots: 1.084778
+hcStoL_polling increased_avg_slots: 0.084534
+hcStoL_polling efficiency: 0.271194
+hcStoL_polling increased_efficiency: 0.021133
+hcStoL_polling unused_total_slots: 95526
+hcStoL_polling unused_avg_slots: 2.915222
+hcStoL_polling decreased_unused_avg_slots: 0.084534
+hcStoL_polling inefficiency: 0.728806
+hcStoL_polling decreased_inefficiency: 0.021133
 
-total_slots: 32792
-src_greedy_total_slots: 35531
-src_polling_total_slots: 35540
-hcLtoS_greedy_total_slots: 35594
+total_slots: 32776
+src_greedy_total_slots: 35537
+src_polling_total_slots: 35546
+hcLtoS_greedy_total_slots: 35600
 hcLtoS_polling_total_slots: 35546
-hcStoL_greedy_total_slots: 35392
-hcStoL_polling_total_slots: 35534
+hcStoL_greedy_total_slots: 35398
+hcStoL_polling_total_slots: 35546
 
-baseline_efficiency: 0.250183
-src_greedy_efficiency: 0.271080
-src_polling_efficiency: 0.271149
-hcLtoS_greedy_efficiency: 0.271561
+baseline_efficiency: 0.250061
+src_greedy_efficiency: 0.271126
+src_polling_efficiency: 0.271194
+hcLtoS_greedy_efficiency: 0.271606
 hcLtoS_polling_efficiency: 0.271194
-hcStoL_greedy_efficiency: 0.270020
-hcStoL_polling_efficiency: 0.271103
+hcStoL_greedy_efficiency: 0.270065
+hcStoL_polling_efficiency: 0.271194
 
-baseline_inefficiency: 0.749817
-src_greedy_inefficiency: 0.728920
-src_polling_inefficiency: 0.728851
-hcLtoS_greedy_inefficiency: 0.728439
+baseline_inefficiency: 0.749939
+src_greedy_inefficiency: 0.728874
+src_polling_inefficiency: 0.728806
+hcLtoS_greedy_inefficiency: 0.728394
 hcLtoS_polling_inefficiency: 0.728806
-hcStoL_greedy_inefficiency: 0.729980
-hcStoL_polling_inefficiency: 0.728897
+hcStoL_greedy_inefficiency: 0.729935
+hcStoL_polling_inefficiency: 0.728806
 
-baseline_avg_slots: 1.000732
-src_greedy_avg_slots: 1.084320
-src_polling_avg_slots: 1.084595
-hcLtoS_greedy_avg_slots: 1.086243
+baseline_avg_slots: 1.000244
+src_greedy_avg_slots: 1.084503
+src_polling_avg_slots: 1.084778
+hcLtoS_greedy_avg_slots: 1.086426
 hcLtoS_polling_avg_slots: 1.084778
-hcStoL_greedy_avg_slots: 1.080078
-hcStoL_polling_avg_slots: 1.084412
+hcStoL_greedy_avg_slots: 1.080261
+hcStoL_polling_avg_slots: 1.084778
 
-baseline_unused_avg_slots: 2.999268
-src_greedy_unused_avg_slots: 2.915680
-src_polling_unused_avg_slots: 2.915405
-hcLtoS_greedy_unused_avg_slots: 2.913757
+baseline_unused_avg_slots: 2.999756
+src_greedy_unused_avg_slots: 2.915497
+src_polling_unused_avg_slots: 2.915222
+hcLtoS_greedy_unused_avg_slots: 2.913574
 hcLtoS_polling_unused_avg_slots: 2.915222
-hcStoL_greedy_unused_avg_slots: 2.919922
-hcStoL_polling_unused_avg_slots: 2.915588
+hcStoL_greedy_unused_avg_slots: 2.919739
+hcStoL_polling_unused_avg_slots: 2.915222
 

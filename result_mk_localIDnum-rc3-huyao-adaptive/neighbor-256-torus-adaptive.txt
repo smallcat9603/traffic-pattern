@@ -1,7 +1,8 @@
 ID Allocation Policy is 0(low port first) / 1(Crossing Paths based method): 1
 Address method is 0(destination_based) / 1(path_based): 1
- dst_based renewable label = 2
+ dst_based renewable label = 3
  path_based renewable label = 3
+ slot_max = 3
 
 Channels (0)
 Channels (1)
@@ -68,6 +69,7 @@ Channels (50)
 Channels (51)
 Channels (52)
 Channels (53)
+ channel from 16 to 163 is assigned to the ID 0
 Channels (54)
  channel from 3 to 19 is assigned to the ID 0
 Channels (55)
@@ -231,6 +233,7 @@ Channels (183)
 Channels (184)
  channel from 13 to 12 is assigned to the ID 0
 Channels (185)
+ channel from 194 to 29 is assigned to the ID 1
 Channels (186)
 Channels (187)
  channel from 13 to 12 is assigned to the ID 0
@@ -883,7 +886,7 @@ Channels (710)
 Channels (711)
 Channels (712)
 Channels (713)
- channel from 161 to 50 is assigned to the ID 1
+ channel from 161 to 50 is assigned to the ID 0
 Channels (714)
 Channels (715)
  channel from 51 to 52 is assigned to the ID 0
@@ -1149,7 +1152,7 @@ Channels (925)
 Channels (926)
 Channels (927)
 Channels (928)
- channel from 161 to 50 is assigned to the ID 1
+ channel from 161 to 50 is assigned to the ID 0
 Channels (929)
 Channels (930)
 Channels (931)
@@ -1434,7 +1437,7 @@ Channels (1150)
 Channels (1151)
  channel from 82 to 130 is assigned to the ID 0
 Channels (1152)
- channel from 161 to 50 is assigned to the ID 1
+ channel from 161 to 50 is assigned to the ID 0
 Channels (1153)
  channel from 82 to 130 is assigned to the ID 0
 Channels (1154)
@@ -1676,6 +1679,7 @@ Channels (1346)
 Channels (1347)
  channel from 96 to 112 is assigned to the ID 0
 Channels (1348)
+ channel from 141 to 80 is assigned to the ID 0
 Channels (1349)
  channel from 96 to 112 is assigned to the ID 0
 Channels (1350)
@@ -1711,8 +1715,7 @@ Channels (1375)
  channel from 82 to 130 is assigned to the ID 0
  channel from 98 to 114 is assigned to the ID 1
 Channels (1376)
- channel from 141 to 80 is assigned to the ID 0
- channel from 161 to 50 is assigned to the ID 1
+ channel from 161 to 50 is assigned to the ID 0
 Channels (1377)
  channel from 98 to 114 is assigned to the ID 1
 Channels (1378)
@@ -1958,6 +1961,7 @@ Channels (1570)
 Channels (1571)
  channel from 112 to 128 is assigned to the ID 0
 Channels (1572)
+ channel from 141 to 80 is assigned to the ID 0
 Channels (1573)
  channel from 112 to 128 is assigned to the ID 0
 Channels (1574)
@@ -1994,8 +1998,7 @@ Channels (1598)
 Channels (1599)
  channel from 82 to 130 is assigned to the ID 0
 Channels (1600)
- channel from 141 to 80 is assigned to the ID 0
- channel from 161 to 50 is assigned to the ID 1
+ channel from 161 to 50 is assigned to the ID 0
 Channels (1601)
 Channels (1602)
  channel from 98 to 114 is assigned to the ID 1
@@ -2237,11 +2240,11 @@ Channels (1791)
  channel from 143 to 127 is assigned to the ID 0
 Channels (1792)
 Channels (1793)
- channel from 128 to 129 is assigned to the ID 1
- channel from 141 to 80 is assigned to the ID 0
+ channel from 128 to 129 is assigned to the ID 0
 Channels (1794)
 Channels (1795)
 Channels (1796)
+ channel from 141 to 80 is assigned to the ID 0
 Channels (1797)
 Channels (1798)
  channel from 112 to 128 is assigned to the ID 0
@@ -2252,12 +2255,11 @@ Channels (1801)
 Channels (1802)
 Channels (1803)
 Channels (1804)
- channel from 128 to 129 is assigned to the ID 1
+ channel from 128 to 129 is assigned to the ID 0
 Channels (1805)
  channel from 129 to 128 is assigned to the ID 0
 Channels (1806)
 Channels (1807)
- channel from 141 to 80 is assigned to the ID 0
 Channels (1808)
  channel from 129 to 128 is assigned to the ID 0
 Channels (1809)
@@ -2266,8 +2268,8 @@ Channels (1810)
 Channels (1811)
  channel from 129 to 128 is assigned to the ID 0
 Channels (1812)
- channel from 128 to 129 is assigned to the ID 1
- channel from 130 to 129 is assigned to the ID 0
+ channel from 128 to 129 is assigned to the ID 0
+ channel from 130 to 129 is assigned to the ID 1
 Channels (1813)
 Channels (1814)
 Channels (1815)
@@ -2278,11 +2280,10 @@ Channels (1819)
 Channels (1820)
 Channels (1821)
 Channels (1822)
- channel from 130 to 129 is assigned to the ID 0
+ channel from 130 to 129 is assigned to the ID 1
 Channels (1823)
 Channels (1824)
- channel from 141 to 80 is assigned to the ID 0
- channel from 161 to 50 is assigned to the ID 1
+ channel from 161 to 50 is assigned to the ID 0
 Channels (1825)
 Channels (1826)
  channel from 82 to 130 is assigned to the ID 0
@@ -2292,7 +2293,7 @@ Channels (1829)
 Channels (1830)
 Channels (1831)
 Channels (1832)
- channel from 130 to 129 is assigned to the ID 0
+ channel from 130 to 129 is assigned to the ID 1
 Channels (1833)
 Channels (1834)
 Channels (1835)
@@ -2566,10 +2567,10 @@ Channels (2045)
 Channels (2046)
 Channels (2047)
 Channels (2048)
- channel from 161 to 50 is assigned to the ID 1
+ channel from 161 to 50 is assigned to the ID 0
 Channels (2049)
 Channels (2050)
- channel from 162 to 146 is assigned to the ID 0
+ channel from 162 to 146 is assigned to the ID 1
 Channels (2051)
 Channels (2052)
 Channels (2053)
@@ -2588,7 +2589,7 @@ Channels (2063)
  channel from 147 to 148 is assigned to the ID 0
 Channels (2064)
  channel from 146 to 147 is assigned to the ID 0
- channel from 248 to 147 is assigned to the ID 1
+ channel from 248 to 147 is assigned to the ID 2
 Channels (2065)
 Channels (2066)
 Channels (2067)
@@ -2805,6 +2806,7 @@ Channels (2239)
 Channels (2240)
 Channels (2241)
  channel from 160 to 161 is assigned to the ID 0
+ channel from 172 to 241 is assigned to the ID 1
 Channels (2242)
 Channels (2243)
 Channels (2244)
@@ -2822,13 +2824,14 @@ Channels (2252)
 Channels (2253)
 Channels (2254)
 Channels (2255)
- channel from 161 to 50 is assigned to the ID 1
+ channel from 161 to 50 is assigned to the ID 0
 Channels (2256)
 Channels (2257)
  channel from 103 to 225 is assigned to the ID 0
+ channel from 172 to 241 is assigned to the ID 1
 Channels (2258)
 Channels (2259)
- channel from 161 to 50 is assigned to the ID 1
+ channel from 161 to 50 is assigned to the ID 0
 Channels (2260)
  channel from 160 to 161 is assigned to the ID 0
 Channels (2261)
@@ -2843,10 +2846,10 @@ Channels (2269)
 Channels (2270)
 Channels (2271)
 Channels (2272)
- channel from 161 to 50 is assigned to the ID 1
- channel from 162 to 146 is assigned to the ID 0
+ channel from 161 to 50 is assigned to the ID 0
+ channel from 162 to 146 is assigned to the ID 1
 Channels (2273)
- channel from 162 to 146 is assigned to the ID 0
+ channel from 162 to 146 is assigned to the ID 1
 Channels (2274)
 Channels (2275)
 Channels (2276)
@@ -2861,7 +2864,7 @@ Channels (2284)
 Channels (2285)
 Channels (2286)
  channel from 163 to 147 is assigned to the ID 0
- channel from 248 to 147 is assigned to the ID 1
+ channel from 248 to 147 is assigned to the ID 2
 Channels (2287)
 Channels (2288)
  channel from 16 to 163 is assigned to the ID 0
@@ -2873,7 +2876,7 @@ Channels (2293)
 Channels (2294)
  channel from 163 to 147 is assigned to the ID 0
 Channels (2295)
- channel from 179 to 163 is assigned to the ID 0
+ channel from 179 to 163 is assigned to the ID 1
 Channels (2296)
 Channels (2297)
  channel from 164 to 165 is assigned to the ID 0
@@ -3024,12 +3027,12 @@ Channels (2414)
  channel from 156 to 172 is assigned to the ID 0
 Channels (2415)
 Channels (2416)
- channel from 172 to 241 is assigned to the ID 0
+ channel from 172 to 241 is assigned to the ID 1
 Channels (2417)
 Channels (2418)
 Channels (2419)
 Channels (2420)
- channel from 172 to 241 is assigned to the ID 0
+ channel from 172 to 241 is assigned to the ID 1
 Channels (2421)
 Channels (2422)
 Channels (2423)
@@ -3043,7 +3046,7 @@ Channels (2427)
 Channels (2428)
 Channels (2429)
 Channels (2430)
- channel from 172 to 241 is assigned to the ID 0
+ channel from 172 to 241 is assigned to the ID 1
 Channels (2431)
 Channels (2432)
 Channels (2433)
@@ -3060,7 +3063,7 @@ Channels (2442)
  channel from 158 to 174 is assigned to the ID 0
 Channels (2443)
 Channels (2444)
- channel from 172 to 241 is assigned to the ID 0
+ channel from 172 to 241 is assigned to the ID 1
 Channels (2445)
 Channels (2446)
 Channels (2447)
@@ -3072,7 +3075,6 @@ Channels (2450)
 Channels (2451)
 Channels (2452)
 Channels (2453)
- channel from 172 to 241 is assigned to the ID 0
 Channels (2454)
  channel from 175 to 159 is assigned to the ID 0
 Channels (2455)
@@ -3080,6 +3082,7 @@ Channels (2456)
  channel from 174 to 175 is assigned to the ID 0
 Channels (2457)
 Channels (2458)
+ channel from 172 to 241 is assigned to the ID 1
 Channels (2459)
 Channels (2460)
 Channels (2461)
@@ -3109,6 +3112,7 @@ Channels (2479)
 Channels (2480)
 Channels (2481)
  channel from 103 to 225 is assigned to the ID 0
+ channel from 172 to 241 is assigned to the ID 1
 Channels (2482)
 Channels (2483)
 Channels (2484)
@@ -3142,8 +3146,9 @@ Channels (2507)
 Channels (2508)
 Channels (2509)
 Channels (2510)
- channel from 179 to 163 is assigned to the ID 0
- channel from 248 to 147 is assigned to the ID 1
+ channel from 16 to 163 is assigned to the ID 0
+ channel from 179 to 163 is assigned to the ID 1
+ channel from 248 to 147 is assigned to the ID 2
 Channels (2511)
 Channels (2512)
  channel from 178 to 179 is assigned to the ID 0
@@ -3153,7 +3158,7 @@ Channels (2515)
 Channels (2516)
 Channels (2517)
 Channels (2518)
- channel from 179 to 163 is assigned to the ID 0
+ channel from 179 to 163 is assigned to the ID 1
 Channels (2519)
 Channels (2520)
 Channels (2521)
@@ -3264,6 +3269,7 @@ Channels (2605)
 Channels (2606)
 Channels (2607)
  channel from 102 to 202 is assigned to the ID 0
+ channel from 189 to 250 is assigned to the ID 1
 Channels (2608)
  channel from 186 to 170 is assigned to the ID 0
 Channels (2609)
@@ -3281,13 +3287,13 @@ Channels (2617)
 Channels (2618)
 Channels (2619)
 Channels (2620)
+ channel from 189 to 250 is assigned to the ID 1
 Channels (2621)
- channel from 177 to 255 is assigned to the ID 0
 Channels (2622)
  channel from 187 to 171 is assigned to the ID 1
 Channels (2623)
 Channels (2624)
- channel from 188 to 187 is assigned to the ID 1
+ channel from 188 to 187 is assigned to the ID 0
 Channels (2625)
 Channels (2626)
 Channels (2627)
@@ -3301,8 +3307,8 @@ Channels (2631)
 Channels (2632)
 Channels (2633)
 Channels (2634)
- channel from 177 to 255 is assigned to the ID 0
- channel from 188 to 187 is assigned to the ID 1
+ channel from 188 to 187 is assigned to the ID 0
+ channel from 189 to 250 is assigned to the ID 1
 Channels (2635)
 Channels (2636)
 Channels (2637)
@@ -3313,20 +3319,19 @@ Channels (2641)
 Channels (2642)
 Channels (2643)
 Channels (2644)
- channel from 188 to 187 is assigned to the ID 1
+ channel from 188 to 187 is assigned to the ID 0
 Channels (2645)
 Channels (2646)
 Channels (2647)
 Channels (2648)
- channel from 177 to 255 is assigned to the ID 0
+ channel from 189 to 250 is assigned to the ID 1
 Channels (2649)
  channel from 110 to 237 is assigned to the ID 0
- channel from 189 to 250 is assigned to the ID 1
 Channels (2650)
 Channels (2651)
  channel from 189 to 250 is assigned to the ID 1
 Channels (2652)
- channel from 190 to 189 is assigned to the ID 1
+ channel from 190 to 189 is assigned to the ID 0
 Channels (2653)
 Channels (2654)
 Channels (2655)
@@ -3337,8 +3342,7 @@ Channels (2659)
 Channels (2660)
 Channels (2661)
 Channels (2662)
- channel from 177 to 255 is assigned to the ID 0
- channel from 190 to 189 is assigned to the ID 1
+ channel from 190 to 189 is assigned to the ID 0
 Channels (2663)
 Channels (2664)
 Channels (2665)
@@ -3349,14 +3353,13 @@ Channels (2669)
 Channels (2670)
 Channels (2671)
 Channels (2672)
- channel from 190 to 189 is assigned to the ID 1
+ channel from 190 to 189 is assigned to the ID 0
 Channels (2673)
 Channels (2674)
 Channels (2675)
 Channels (2676)
- channel from 177 to 255 is assigned to the ID 0
 Channels (2677)
- channel from 172 to 241 is assigned to the ID 0
+ channel from 177 to 255 is assigned to the ID 0
  channel from 191 to 207 is assigned to the ID 1
 Channels (2678)
 Channels (2679)
@@ -3394,7 +3397,8 @@ Channels (2703)
 Channels (2704)
 Channels (2705)
  channel from 103 to 225 is assigned to the ID 0
- channel from 193 to 209 is assigned to the ID 1
+ channel from 172 to 241 is assigned to the ID 1
+ channel from 193 to 209 is assigned to the ID 2
 Channels (2706)
 Channels (2707)
 Channels (2708)
@@ -3406,7 +3410,7 @@ Channels (2711)
 Channels (2712)
 Channels (2713)
 Channels (2714)
- channel from 193 to 209 is assigned to the ID 1
+ channel from 193 to 209 is assigned to the ID 2
 Channels (2715)
 Channels (2716)
 Channels (2717)
@@ -3430,7 +3434,8 @@ Channels (2731)
 Channels (2732)
 Channels (2733)
 Channels (2734)
- channel from 248 to 147 is assigned to the ID 1
+ channel from 16 to 163 is assigned to the ID 0
+ channel from 248 to 147 is assigned to the ID 2
 Channels (2735)
  channel from 195 to 196 is assigned to the ID 0
 Channels (2736)
@@ -3553,6 +3558,7 @@ Channels (2829)
 Channels (2830)
  channel from 202 to 201 is assigned to the ID 0
 Channels (2831)
+ channel from 189 to 250 is assigned to the ID 1
 Channels (2832)
 Channels (2833)
 Channels (2834)
@@ -3569,7 +3575,6 @@ Channels (2842)
 Channels (2843)
 Channels (2844)
 Channels (2845)
- channel from 177 to 255 is assigned to the ID 0
 Channels (2846)
  channel from 203 to 187 is assigned to the ID 1
 Channels (2847)
@@ -3604,7 +3609,6 @@ Channels (2871)
 Channels (2872)
 Channels (2873)
  channel from 110 to 237 is assigned to the ID 0
- channel from 189 to 250 is assigned to the ID 1
 Channels (2874)
 Channels (2875)
  channel from 205 to 206 is assigned to the ID 0
@@ -3614,6 +3618,7 @@ Channels (2877)
 Channels (2878)
 Channels (2879)
 Channels (2880)
+ channel from 194 to 29 is assigned to the ID 1
 Channels (2881)
 Channels (2882)
 Channels (2883)
@@ -3621,6 +3626,7 @@ Channels (2884)
 Channels (2885)
  channel from 206 to 207 is assigned to the ID 0
 Channels (2886)
+ channel from 194 to 29 is assigned to the ID 1
 Channels (2887)
 Channels (2888)
 Channels (2889)
@@ -3638,8 +3644,9 @@ Channels (2897)
 Channels (2898)
 Channels (2899)
 Channels (2900)
+ channel from 194 to 29 is assigned to the ID 1
 Channels (2901)
- channel from 172 to 241 is assigned to the ID 0
+ channel from 177 to 255 is assigned to the ID 0
  channel from 207 to 223 is assigned to the ID 1
 Channels (2902)
 Channels (2903)
@@ -3649,7 +3656,6 @@ Channels (2905)
 Channels (2906)
 Channels (2907)
 Channels (2908)
- channel from 194 to 29 is assigned to the ID 1
 Channels (2909)
 Channels (2910)
  channel from 207 to 223 is assigned to the ID 1
@@ -3678,6 +3684,7 @@ Channels (2927)
 Channels (2928)
 Channels (2929)
  channel from 103 to 225 is assigned to the ID 0
+ channel from 172 to 241 is assigned to the ID 1
 Channels (2930)
 Channels (2931)
  channel from 209 to 210 is assigned to the ID 0
@@ -3690,7 +3697,7 @@ Channels (2936)
 Channels (2937)
 Channels (2938)
 Channels (2939)
- channel from 193 to 209 is assigned to the ID 1
+ channel from 193 to 209 is assigned to the ID 2
  channel from 225 to 209 is assigned to the ID 0
 Channels (2940)
 Channels (2941)
@@ -3715,7 +3722,8 @@ Channels (2955)
 Channels (2956)
 Channels (2957)
 Channels (2958)
- channel from 248 to 147 is assigned to the ID 1
+ channel from 16 to 163 is assigned to the ID 0
+ channel from 248 to 147 is assigned to the ID 2
 Channels (2959)
  channel from 211 to 212 is assigned to the ID 0
 Channels (2960)
@@ -3842,6 +3850,7 @@ Channels (3053)
 Channels (3054)
  channel from 219 to 180 is assigned to the ID 0
 Channels (3055)
+ channel from 189 to 250 is assigned to the ID 1
  channel from 218 to 234 is assigned to the ID 0
 Channels (3056)
 Channels (3057)
@@ -3859,7 +3868,6 @@ Channels (3067)
 Channels (3068)
  channel from 219 to 180 is assigned to the ID 0
 Channels (3069)
- channel from 177 to 255 is assigned to the ID 0
 Channels (3070)
 Channels (3071)
  channel from 219 to 180 is assigned to the ID 0
@@ -3895,7 +3903,6 @@ Channels (3096)
  channel from 221 to 220 is assigned to the ID 0
 Channels (3097)
  channel from 110 to 237 is assigned to the ID 0
- channel from 189 to 250 is assigned to the ID 1
 Channels (3098)
 Channels (3099)
  channel from 221 to 220 is assigned to the ID 0
@@ -3904,6 +3911,7 @@ Channels (3101)
 Channels (3102)
 Channels (3103)
 Channels (3104)
+ channel from 194 to 29 is assigned to the ID 1
 Channels (3105)
 Channels (3106)
 Channels (3107)
@@ -3928,7 +3936,7 @@ Channels (3122)
 Channels (3123)
 Channels (3124)
 Channels (3125)
- channel from 172 to 241 is assigned to the ID 0
+ channel from 177 to 255 is assigned to the ID 0
  channel from 223 to 239 is assigned to the ID 1
 Channels (3126)
 Channels (3127)
@@ -3937,7 +3945,6 @@ Channels (3129)
 Channels (3130)
 Channels (3131)
 Channels (3132)
- channel from 194 to 29 is assigned to the ID 1
 Channels (3133)
 Channels (3134)
  channel from 223 to 239 is assigned to the ID 1
@@ -3964,6 +3971,7 @@ Channels (3150)
 Channels (3151)
 Channels (3152)
 Channels (3153)
+ channel from 172 to 241 is assigned to the ID 1
 Channels (3154)
  channel from 225 to 209 is assigned to the ID 0
 Channels (3155)
@@ -4001,7 +4009,8 @@ Channels (3179)
 Channels (3180)
 Channels (3181)
 Channels (3182)
- channel from 248 to 147 is assigned to the ID 1
+ channel from 16 to 163 is assigned to the ID 0
+ channel from 248 to 147 is assigned to the ID 2
 Channels (3183)
  channel from 227 to 228 is assigned to the ID 0
 Channels (3184)
@@ -4118,6 +4127,7 @@ Channels (3276)
 Channels (3277)
 Channels (3278)
 Channels (3279)
+ channel from 189 to 250 is assigned to the ID 1
  channel from 234 to 250 is assigned to the ID 0
 Channels (3280)
 Channels (3281)
@@ -4135,7 +4145,6 @@ Channels (3290)
 Channels (3291)
 Channels (3292)
 Channels (3293)
- channel from 177 to 255 is assigned to the ID 0
 Channels (3294)
  channel from 235 to 219 is assigned to the ID 0
 Channels (3295)
@@ -4170,7 +4179,6 @@ Channels (3318)
 Channels (3319)
 Channels (3320)
 Channels (3321)
- channel from 189 to 250 is assigned to the ID 1
 Channels (3322)
  channel from 237 to 221 is assigned to the ID 0
 Channels (3323)
@@ -4182,6 +4190,7 @@ Channels (3325)
 Channels (3326)
 Channels (3327)
 Channels (3328)
+ channel from 194 to 29 is assigned to the ID 1
 Channels (3329)
 Channels (3330)
  channel from 237 to 221 is assigned to the ID 0
@@ -4208,7 +4217,7 @@ Channels (3347)
 Channels (3348)
  channel from 239 to 238 is assigned to the ID 0
 Channels (3349)
- channel from 172 to 241 is assigned to the ID 0
+ channel from 177 to 255 is assigned to the ID 0
 Channels (3350)
 Channels (3351)
  channel from 239 to 238 is assigned to the ID 0
@@ -4217,7 +4226,6 @@ Channels (3353)
 Channels (3354)
 Channels (3355)
 Channels (3356)
- channel from 194 to 29 is assigned to the ID 1
 Channels (3357)
 Channels (3358)
 Channels (3359)
@@ -4225,7 +4233,7 @@ Channels (3359)
  channel from 255 to 239 is assigned to the ID 0
 Channels (3360)
 Channels (3361)
- channel from 240 to 241 is assigned to the ID 1
+ channel from 240 to 241 is assigned to the ID 0
 Channels (3362)
 Channels (3363)
 Channels (3364)
@@ -4238,7 +4246,7 @@ Channels (3369)
 Channels (3370)
 Channels (3371)
 Channels (3372)
- channel from 240 to 241 is assigned to the ID 1
+ channel from 240 to 241 is assigned to the ID 0
 Channels (3373)
 Channels (3374)
 Channels (3375)
@@ -4248,8 +4256,8 @@ Channels (3378)
  channel from 241 to 225 is assigned to the ID 1
 Channels (3379)
 Channels (3380)
- channel from 172 to 241 is assigned to the ID 0
- channel from 240 to 241 is assigned to the ID 1
+ channel from 172 to 241 is assigned to the ID 1
+ channel from 240 to 241 is assigned to the ID 0
 Channels (3381)
 Channels (3382)
 Channels (3383)
@@ -4281,7 +4289,8 @@ Channels (3403)
 Channels (3404)
 Channels (3405)
 Channels (3406)
- channel from 248 to 147 is assigned to the ID 1
+ channel from 16 to 163 is assigned to the ID 0
+ channel from 248 to 147 is assigned to the ID 2
 Channels (3407)
  channel from 243 to 244 is assigned to the ID 0
 Channels (3408)
@@ -4297,7 +4306,7 @@ Channels (3416)
 Channels (3417)
  channel from 244 to 245 is assigned to the ID 0
 Channels (3418)
- channel from 248 to 147 is assigned to the ID 1
+ channel from 248 to 147 is assigned to the ID 2
 Channels (3419)
 Channels (3420)
 Channels (3421)
@@ -4315,14 +4324,14 @@ Channels (3430)
 Channels (3431)
  channel from 245 to 246 is assigned to the ID 0
 Channels (3432)
- channel from 248 to 147 is assigned to the ID 1
+ channel from 248 to 147 is assigned to the ID 2
 Channels (3433)
 Channels (3434)
 Channels (3435)
  channel from 245 to 246 is assigned to the ID 0
 Channels (3436)
  channel from 244 to 245 is assigned to the ID 0
- channel from 246 to 245 is assigned to the ID 2
+ channel from 246 to 245 is assigned to the ID 1
 Channels (3437)
 Channels (3438)
 Channels (3439)
@@ -4333,8 +4342,8 @@ Channels (3443)
 Channels (3444)
 Channels (3445)
 Channels (3446)
- channel from 246 to 245 is assigned to the ID 2
- channel from 248 to 147 is assigned to the ID 1
+ channel from 246 to 245 is assigned to the ID 1
+ channel from 248 to 147 is assigned to the ID 2
 Channels (3447)
 Channels (3448)
 Channels (3449)
@@ -4345,14 +4354,14 @@ Channels (3453)
 Channels (3454)
 Channels (3455)
 Channels (3456)
- channel from 246 to 245 is assigned to the ID 2
+ channel from 246 to 245 is assigned to the ID 1
 Channels (3457)
  channel from 245 to 246 is assigned to the ID 0
 Channels (3458)
 Channels (3459)
  channel from 247 to 248 is assigned to the ID 0
 Channels (3460)
- channel from 248 to 147 is assigned to the ID 1
+ channel from 248 to 147 is assigned to the ID 2
 Channels (3461)
 Channels (3462)
 Channels (3463)
@@ -4369,7 +4378,7 @@ Channels (3471)
 Channels (3472)
 Channels (3473)
 Channels (3474)
- channel from 248 to 147 is assigned to the ID 1
+ channel from 248 to 147 is assigned to the ID 2
 Channels (3475)
 Channels (3476)
 Channels (3477)
@@ -4380,7 +4389,7 @@ Channels (3481)
 Channels (3482)
 Channels (3483)
 Channels (3484)
- channel from 248 to 147 is assigned to the ID 1
+ channel from 248 to 147 is assigned to the ID 2
 Channels (3485)
  channel from 247 to 248 is assigned to the ID 0
  channel from 249 to 248 is assigned to the ID 1
@@ -4421,7 +4430,6 @@ Channels (3513)
 Channels (3514)
 Channels (3515)
 Channels (3516)
- channel from 189 to 250 is assigned to the ID 1
 Channels (3517)
 Channels (3518)
  channel from 251 to 235 is assigned to the ID 0
@@ -4439,7 +4447,6 @@ Channels (3527)
 Channels (3528)
 Channels (3529)
 Channels (3530)
- channel from 189 to 250 is assigned to the ID 1
 Channels (3531)
 Channels (3532)
 Channels (3533)
@@ -4457,7 +4464,6 @@ Channels (3542)
 Channels (3543)
  channel from 253 to 254 is assigned to the ID 0
 Channels (3544)
- channel from 189 to 250 is assigned to the ID 1
 Channels (3545)
 Channels (3546)
 Channels (3547)
@@ -4468,6 +4474,7 @@ Channels (3550)
  channel from 252 to 128 is assigned to the ID 1
 Channels (3551)
 Channels (3552)
+ channel from 194 to 29 is assigned to the ID 1
 Channels (3553)
 Channels (3554)
 Channels (3555)
@@ -4513,7 +4520,7 @@ Channels (3583)
  Node  0:   1 0 0 0 0 0 0 0 0 0 1 1
  Node  1:   0 1 0 0 1 2 0 0 0 0 0 0
  Node  2:   0 1 0 0 0 1 0 0 0 0 1 0
- Node  3:   0 0 1 0 0 0 0 0 0 0 1 1
+ Node  3:   0 0 1 0 0 0 0 0 0 1 1 1
  Node  4:   1 0 0 0 0 0 0 0 0 0 1 0
  Node  5:   1 0 1 0 1 0 0 0 0 0 0 0
  Node  6:   1 0 0 0 0 0 0 0 0 0 1 1
@@ -4523,7 +4530,7 @@ Channels (3583)
  Node 10:   0 1 0 0 0 0 0 0 0 0 1 1
  Node 11:   0 1 0 0 1 1 0 0 0 0 0 1
  Node 12:   0 1 0 0 0 0 0 0 0 0 1 1
- Node 13:   0 1 0 0 1 2 0 0 0 0 0 0
+ Node 13:   0 1 1 0 1 2 0 0 0 0 0 0
  Node 14:   0 1 0 0 0 0 0 0 0 0 1 0
  Node 15:   0 0 1 0 0 0 0 0 0 0 1 0
  Node 16:   1 0 0 0 0 0 0 0 0 0 1 1
@@ -4606,9 +4613,9 @@ Channels (3583)
  Node 93:   0 1 0 0 1 0 0 0 0 0 0 0
  Node 94:   1 0 0 0 0 0 0 0 0 0 1 1
  Node 95:   0 1 0 0 1 2 0 0 0 0 0 0
- Node 96:   0 0 1 0 1 0 0 0 0 0 0 0
+ Node 96:   0 0 1 1 1 0 0 0 0 0 0 0
  Node 97:   1 0 1 0 1 0 0 0 0 0 0 0
- Node 98:   0 1 2 2 1 0 0 0 0 0 0 1
+ Node 98:   0 1 2 1 1 0 0 0 0 0 0 1
  Node 99:   1 1 1 0 1 0 0 0 0 0 0 0
  Node 100:   0 1 1 0 1 0 0 0 0 0 0 2
  Node 101:   0 2 1 0 1 0 0 0 0 0 0 0
@@ -4622,9 +4629,9 @@ Channels (3583)
  Node 109:   0 1 1 0 1 1 0 0 0 0 0 0
  Node 110:   0 1 0 0 0 0 0 0 0 0 1 1
  Node 111:   0 1 0 0 1 0 0 0 0 0 0 0
- Node 112:   0 0 1 0 1 1 0 0 0 0 0 0
+ Node 112:   0 0 1 1 1 1 0 0 0 0 0 0
  Node 113:   1 0 1 0 1 1 0 0 0 0 0 0
- Node 114:   0 1 1 2 0 2 0 0 0 0 1 1
+ Node 114:   0 1 1 1 0 2 0 0 0 0 1 1
  Node 115:   1 1 1 0 1 0 0 0 0 0 0 1
  Node 116:   0 1 1 0 1 0 0 0 0 0 0 2
  Node 117:   0 1 1 0 1 1 0 0 0 0 0 1
@@ -4638,9 +4645,9 @@ Channels (3583)
  Node 125:   0 1 1 0 1 2 0 0 0 0 0 0
  Node 126:   0 1 0 0 0 0 0 0 0 0 1 0
  Node 127:   0 0 1 0 0 0 0 0 0 0 1 1
- Node 128:   2 0 0 0 0 2 0 0 0 0 1 1
- Node 129:   1 1 1 0 1 2 0 0 0 0 0 0
- Node 130:   0 1 0 2 0 1 0 0 0 0 1 0
+ Node 128:   1 0 0 1 0 2 0 0 0 0 1 1
+ Node 129:   0 1 1 0 1 2 0 0 0 0 0 0
+ Node 130:   0 1 0 1 0 1 0 0 0 0 1 0
  Node 131:   0 0 0 1 0 1 0 0 0 0 1 0
  Node 132:   0 0 1 0 1 2 0 0 0 0 0 0
  Node 133:   0 0 1 1 0 2 0 0 0 0 1 0
@@ -4670,8 +4677,8 @@ Channels (3583)
  Node 157:   0 0 1 1 0 0 0 0 0 0 1 0
  Node 158:   0 0 1 0 1 0 0 0 0 0 0 1
  Node 159:   0 1 0 0 1 0 0 0 0 0 0 1
- Node 160:   1 0 0 1 0 1 0 0 0 0 1 0
- Node 161:   1 0 1 0 1 1 0 0 0 0 0 0
+ Node 160:   2 0 0 1 0 1 0 0 0 0 1 0
+ Node 161:   1 0 2 0 1 1 0 0 0 0 0 0
  Node 162:   0 0 0 2 1 0 0 0 0 0 0 0
  Node 163:   0 0 0 2 0 1 0 0 0 0 1 1
  Node 164:   1 0 0 0 0 1 0 0 0 0 1 0
@@ -4685,75 +4692,75 @@ Channels (3583)
  Node 172:   0 0 0 0 0 1 1 0 0 0 1 0
  Node 173:   1 0 1 0 1 0 1 0 0 0 0 0
  Node 174:   1 0 0 0 0 1 1 0 0 0 1 1
- Node 175:   0 0 1 1 0 1 0 0 0 0 1 0
+ Node 175:   0 0 0 1 0 1 1 0 0 0 1 0
  Node 176:   0 0 1 1 1 0 0 1 0 0 0 0
- Node 177:   0 0 1 0 0 0 0 1 0 0 1 0
+ Node 177:   0 0 2 0 0 0 0 1 0 0 1 0
  Node 178:   1 0 0 0 0 0 0 0 0 0 1 0
- Node 179:   0 0 0 2 0 1 0 0 0 0 1 0
+ Node 179:   0 0 0 3 0 1 0 0 0 0 1 0
  Node 180:   0 0 0 1 1 0 0 0 0 0 0 1
  Node 181:   1 0 1 0 1 0 0 0 0 0 0 1
  Node 182:   1 0 0 0 0 0 0 0 0 0 1 2
  Node 183:   0 1 0 0 1 2 0 0 0 0 0 0
  Node 184:   0 0 1 0 1 1 0 0 0 0 0 0
  Node 185:   1 0 0 0 1 0 0 0 0 0 0 0
- Node 186:   0 0 1 1 1 1 0 0 0 0 0 1
- Node 187:   0 0 1 1 0 1 0 0 0 0 1 2
+ Node 186:   0 0 2 1 1 1 0 0 0 0 0 1
+ Node 187:   0 1 0 1 0 1 0 0 0 0 1 2
  Node 188:   0 2 0 0 0 0 0 0 0 0 1 0
- Node 189:   0 1 2 0 1 1 0 0 0 0 0 0
- Node 190:   0 2 0 0 0 0 0 0 0 0 1 0
- Node 191:   0 1 2 0 0 0 0 0 0 0 1 0
+ Node 189:   0 1 1 0 1 1 0 0 0 0 0 0
+ Node 190:   0 1 0 0 0 0 0 0 0 0 1 0
+ Node 191:   0 0 2 0 0 0 0 0 0 0 1 0
  Node 192:   1 0 0 1 0 2 0 1 0 0 1 0
- Node 193:   0 0 2 0 0 1 0 1 0 0 1 0
+ Node 193:   0 0 3 0 0 1 0 1 0 0 1 0
  Node 194:   0 0 0 0 0 0 0 1 0 0 1 0
- Node 195:   1 0 0 1 1 0 0 0 0 0 0 0
+ Node 195:   1 0 0 2 1 0 0 0 0 0 0 0
  Node 196:   1 0 0 1 0 0 0 0 0 0 1 1
  Node 197:   1 0 1 0 1 2 0 0 0 0 0 0
  Node 198:   0 1 0 0 0 0 0 0 0 0 1 2
  Node 199:   0 1 0 1 1 0 0 0 0 0 0 0
  Node 200:   0 0 0 1 1 1 0 0 0 0 0 0
  Node 201:   0 0 1 0 0 1 0 0 0 0 1 1
- Node 202:   0 1 0 0 0 1 0 0 0 0 1 0
- Node 203:   0 0 1 1 0 0 0 0 0 0 1 0
+ Node 202:   0 1 1 0 0 1 0 0 0 0 1 0
+ Node 203:   0 0 0 1 0 0 0 0 0 0 1 0
  Node 204:   1 0 0 0 0 0 0 0 0 0 1 0
- Node 205:   1 0 2 0 1 1 0 0 0 0 0 0
- Node 206:   1 0 0 0 0 1 0 0 0 0 1 1
- Node 207:   0 0 2 0 0 1 0 0 1 0 1 1
+ Node 205:   1 0 1 0 1 1 0 0 1 0 0 0
+ Node 206:   1 1 0 0 0 1 0 0 0 0 1 1
+ Node 207:   0 1 2 0 0 1 0 0 0 0 1 1
  Node 208:   0 0 0 2 1 0 0 0 0 0 0 0
- Node 209:   1 0 1 0 1 1 0 0 0 0 0 2
+ Node 209:   1 0 2 0 1 1 0 0 0 0 0 2
  Node 210:   0 1 0 0 0 0 0 0 0 0 1 1
- Node 211:   1 0 0 1 1 1 0 0 0 0 0 0
+ Node 211:   1 0 0 2 1 1 0 0 0 0 0 0
  Node 212:   0 1 0 1 0 0 0 0 0 0 1 2
  Node 213:   0 2 1 0 1 0 0 0 0 0 0 1
  Node 214:   0 1 1 0 1 0 0 0 0 0 0 0
  Node 215:   1 1 0 1 1 0 0 0 0 0 0 0
  Node 216:   0 2 0 0 0 1 0 0 0 0 1 1
  Node 217:   0 1 0 1 0 0 0 0 0 0 1 1
- Node 218:   0 1 1 0 1 0 0 0 0 0 0 0
- Node 219:   0 1 1 0 1 0 0 0 0 0 0 1
+ Node 218:   0 1 2 0 1 0 0 0 0 0 0 0
+ Node 219:   0 1 0 0 1 0 0 0 0 0 0 1
  Node 220:   0 0 1 0 1 0 0 0 0 0 0 1
- Node 221:   0 1 2 0 1 0 0 0 0 0 0 1
+ Node 221:   0 1 1 0 1 0 0 0 1 0 0 1
  Node 222:   0 0 0 1 1 0 0 0 0 0 0 0
- Node 223:   0 0 2 0 0 0 0 0 1 0 1 1
+ Node 223:   0 0 2 0 0 0 0 0 0 0 1 1
  Node 224:   1 0 0 1 0 0 0 0 0 0 1 0
- Node 225:   0 0 0 1 0 1 0 0 0 0 1 2
+ Node 225:   0 0 1 1 0 1 0 0 0 0 1 2
  Node 226:   0 0 1 0 1 0 0 0 0 0 0 0
- Node 227:   1 0 0 1 1 0 0 0 0 0 0 0
+ Node 227:   1 0 0 2 1 0 0 0 0 0 0 0
  Node 228:   1 0 0 0 0 0 0 0 0 0 1 1
  Node 229:   0 0 0 1 0 2 0 0 0 0 1 1
  Node 230:   0 1 0 0 0 1 0 0 0 0 1 0
  Node 231:   0 0 1 0 0 0 0 0 0 0 1 0
  Node 232:   0 0 0 1 1 0 0 0 0 0 0 1
  Node 233:   0 1 0 0 1 0 0 0 0 0 0 0
- Node 234:   0 0 1 0 1 1 0 0 0 0 0 0
- Node 235:   0 0 1 1 0 0 0 0 0 0 1 1
+ Node 234:   0 0 2 0 1 1 0 0 0 0 0 0
+ Node 235:   0 0 0 1 0 0 0 0 0 0 1 1
  Node 236:   1 0 0 0 0 1 0 0 0 0 1 0
- Node 237:   0 0 1 1 0 3 0 0 0 0 1 0
+ Node 237:   0 0 0 1 0 3 0 0 1 0 1 0
  Node 238:   0 1 0 0 0 0 0 0 0 0 1 1
- Node 239:   0 1 1 0 1 0 0 0 1 0 0 2
+ Node 239:   0 1 1 0 1 0 0 0 0 0 0 2
  Node 240:   1 0 0 1 0 0 0 0 0 0 1 0
  Node 241:   0 0 0 1 0 2 0 0 0 0 1 0
  Node 242:   1 0 0 0 0 1 0 0 0 0 1 0
- Node 243:   1 0 0 1 1 1 0 0 0 0 0 0
+ Node 243:   1 0 0 2 1 1 0 0 0 0 0 0
  Node 244:   1 1 0 0 0 0 0 0 0 0 1 1
  Node 245:   1 1 0 0 1 2 0 0 0 0 0 0
  Node 246:   0 2 0 0 0 0 0 0 0 0 1 1
@@ -4761,138 +4768,138 @@ Channels (3583)
  Node 248:   0 1 0 0 0 0 0 0 0 0 1 2
  Node 249:   0 1 0 0 1 0 0 0 0 0 0 0
  Node 250:   1 0 0 0 0 1 0 0 0 0 1 1
- Node 251:   0 1 0 1 0 1 0 0 0 0 1 0
- Node 252:   0 1 0 0 1 0 1 0 0 0 0 0
- Node 253:   1 1 0 0 1 0 1 0 0 0 0 0
+ Node 251:   0 0 0 1 0 1 0 0 0 0 1 0
+ Node 252:   0 0 0 0 1 0 1 0 0 0 0 0
+ Node 253:   1 0 0 0 1 0 1 0 1 0 0 0
  Node 254:   1 0 0 0 0 0 1 0 0 0 1 1
  Node 255:   0 0 0 1 0 1 1 0 0 0 1 1
 
 (Maximum) Crossing Paths: 3
 The number of paths on this application : 256 (all-to-all cases: 65280)
-The average hops : 2.597656
+The average hops : 2.621094
 ID size(without ID modification)3
-total_slots: 409
-avg_slots: 0.399414
-efficiency: 0.133138
-unused_total_slots: 2663
-unused_avg_slots: 2.600586
-inefficiency: 0.866862
+total_slots: 415
+avg_slots: 0.405273
+efficiency: 0.135091
+unused_total_slots: 2657
+unused_avg_slots: 2.594727
+inefficiency: 0.864909
 
-src_greedy total_increased_slots: 546
+src_greedy total_increased_slots: 554
 
-src_greedy src_greedy total_slots: 955
-src_greedy avg_slots: 0.932617
-src_greedy increased_avg_slots: 0.533203
-src_greedy efficiency: 0.310872
-src_greedy increased_efficiency: 0.177734
-src_greedy unused_total_slots: 2117
-src_greedy unused_avg_slots: 2.067383
-src_greedy decreased_unused_avg_slots: 0.533203
-src_greedy inefficiency: 0.689128
-src_greedy decreased_inefficiency: 0.177734
+src_greedy src_greedy total_slots: 969
+src_greedy avg_slots: 0.946289
+src_greedy increased_avg_slots: 0.541016
+src_greedy efficiency: 0.315430
+src_greedy increased_efficiency: 0.180339
+src_greedy unused_total_slots: 2103
+src_greedy unused_avg_slots: 2.053711
+src_greedy decreased_unused_avg_slots: 0.541016
+src_greedy inefficiency: 0.684570
+src_greedy decreased_inefficiency: 0.180339
 
-src_polling total_increased_slots: 546
+src_polling total_increased_slots: 554
 
-src_polling total_slots: 955
-src_polling avg_slots: 0.932617
-src_polling increased_avg_slots: 0.533203
-src_polling efficiency: 0.310872
-src_polling increased_efficiency: 0.177734
-src_polling unused_total_slots: 2117
-src_polling unused_avg_slots: 2.067383
-src_polling decreased_unused_avg_slots: 0.533203
-src_polling inefficiency: 0.689128
-src_polling decreased_inefficiency: 0.177734
+src_polling total_slots: 969
+src_polling avg_slots: 0.946289
+src_polling increased_avg_slots: 0.541016
+src_polling efficiency: 0.315430
+src_polling increased_efficiency: 0.180339
+src_polling unused_total_slots: 2103
+src_polling unused_avg_slots: 2.053711
+src_polling decreased_unused_avg_slots: 0.541016
+src_polling inefficiency: 0.684570
+src_polling decreased_inefficiency: 0.180339
 
-hcLtoS_greedy total_increased_slots: 599
+hcLtoS_greedy total_increased_slots: 587
 
-hcLtoS_greedy total_slots: 1008
-hcLtoS_greedy avg_slots: 0.984375
-hcLtoS_greedy increased_avg_slots: 0.584961
-hcLtoS_greedy efficiency: 0.328125
-hcLtoS_greedy increased_efficiency: 0.194987
-hcLtoS_greedy unused_total_slots: 2064
-hcLtoS_greedy unused_avg_slots: 2.015625
-hcLtoS_greedy decreased_unused_avg_slots: 0.584961
-hcLtoS_greedy inefficiency: 0.671875
-hcLtoS_greedy decreased_inefficiency: 0.194987
+hcLtoS_greedy total_slots: 1002
+hcLtoS_greedy avg_slots: 0.978516
+hcLtoS_greedy increased_avg_slots: 0.573242
+hcLtoS_greedy efficiency: 0.326172
+hcLtoS_greedy increased_efficiency: 0.191081
+hcLtoS_greedy unused_total_slots: 2070
+hcLtoS_greedy unused_avg_slots: 2.021484
+hcLtoS_greedy decreased_unused_avg_slots: 0.573242
+hcLtoS_greedy inefficiency: 0.673828
+hcLtoS_greedy decreased_inefficiency: 0.191081
 
-hcLtoS_polling total_increased_slots: 599
+hcLtoS_polling total_increased_slots: 587
 
-hcLtoS_polling total_slots: 1008
-hcLtoS_polling avg_slots: 0.984375
-hcLtoS_polling increased_avg_slots: 0.584961
-hcLtoS_polling efficiency: 0.328125
-hcLtoS_polling increased_efficiency: 0.194987
-hcLtoS_polling unused_total_slots: 2064
-hcLtoS_polling unused_avg_slots: 2.015625
-hcLtoS_polling decreased_unused_avg_slots: 0.584961
-hcLtoS_polling inefficiency: 0.671875
-hcLtoS_polling decreased_inefficiency: 0.194987
+hcLtoS_polling total_slots: 1002
+hcLtoS_polling avg_slots: 0.978516
+hcLtoS_polling increased_avg_slots: 0.573242
+hcLtoS_polling efficiency: 0.326172
+hcLtoS_polling increased_efficiency: 0.191081
+hcLtoS_polling unused_total_slots: 2070
+hcLtoS_polling unused_avg_slots: 2.021484
+hcLtoS_polling decreased_unused_avg_slots: 0.573242
+hcLtoS_polling inefficiency: 0.673828
+hcLtoS_polling decreased_inefficiency: 0.191081
 
-hcStoL_greedy total_increased_slots: 508
+hcStoL_greedy total_increased_slots: 528
 
-hcStoL_greedy total_slots: 917
-hcStoL_greedy avg_slots: 0.895508
-hcStoL_greedy increased_avg_slots: 0.496094
-hcStoL_greedy efficiency: 0.298503
-hcStoL_greedy increased_efficiency: 0.165365
-hcStoL_greedy unused_total_slots: 2155
-hcStoL_greedy unused_avg_slots: 2.104492
-hcStoL_greedy decreased_unused_avg_slots: 0.496094
-hcStoL_greedy inefficiency: 0.701497
-hcStoL_greedy decreased_inefficiency: 0.165365
+hcStoL_greedy total_slots: 943
+hcStoL_greedy avg_slots: 0.920898
+hcStoL_greedy increased_avg_slots: 0.515625
+hcStoL_greedy efficiency: 0.306966
+hcStoL_greedy increased_efficiency: 0.171875
+hcStoL_greedy unused_total_slots: 2129
+hcStoL_greedy unused_avg_slots: 2.079102
+hcStoL_greedy decreased_unused_avg_slots: 0.515625
+hcStoL_greedy inefficiency: 0.693034
+hcStoL_greedy decreased_inefficiency: 0.171875
 
-hcStoL_polling total_increased_slots: 508
+hcStoL_polling total_increased_slots: 528
 
-hcStoL_polling total_slots: 917
-hcStoL_polling avg_slots: 0.895508
-hcStoL_polling increased_avg_slots: 0.496094
-hcStoL_polling efficiency: 0.298503
-hcStoL_polling increased_efficiency: 0.165365
-hcStoL_polling unused_total_slots: 2155
-hcStoL_polling unused_avg_slots: 2.104492
-hcStoL_polling decreased_unused_avg_slots: 0.496094
-hcStoL_polling inefficiency: 0.701497
-hcStoL_polling decreased_inefficiency: 0.165365
+hcStoL_polling total_slots: 943
+hcStoL_polling avg_slots: 0.920898
+hcStoL_polling increased_avg_slots: 0.515625
+hcStoL_polling efficiency: 0.306966
+hcStoL_polling increased_efficiency: 0.171875
+hcStoL_polling unused_total_slots: 2129
+hcStoL_polling unused_avg_slots: 2.079102
+hcStoL_polling decreased_unused_avg_slots: 0.515625
+hcStoL_polling inefficiency: 0.693034
+hcStoL_polling decreased_inefficiency: 0.171875
 
-total_slots: 409
-src_greedy_total_slots: 955
-src_polling_total_slots: 955
-hcLtoS_greedy_total_slots: 1008
-hcLtoS_polling_total_slots: 1008
-hcStoL_greedy_total_slots: 917
-hcStoL_polling_total_slots: 917
+total_slots: 415
+src_greedy_total_slots: 969
+src_polling_total_slots: 969
+hcLtoS_greedy_total_slots: 1002
+hcLtoS_polling_total_slots: 1002
+hcStoL_greedy_total_slots: 943
+hcStoL_polling_total_slots: 943
 
-baseline_efficiency: 0.133138
-src_greedy_efficiency: 0.310872
-src_polling_efficiency: 0.310872
-hcLtoS_greedy_efficiency: 0.328125
-hcLtoS_polling_efficiency: 0.328125
-hcStoL_greedy_efficiency: 0.298503
-hcStoL_polling_efficiency: 0.298503
+baseline_efficiency: 0.135091
+src_greedy_efficiency: 0.315430
+src_polling_efficiency: 0.315430
+hcLtoS_greedy_efficiency: 0.326172
+hcLtoS_polling_efficiency: 0.326172
+hcStoL_greedy_efficiency: 0.306966
+hcStoL_polling_efficiency: 0.306966
 
-baseline_inefficiency: 0.866862
-src_greedy_inefficiency: 0.689128
-src_polling_inefficiency: 0.689128
-hcLtoS_greedy_inefficiency: 0.671875
-hcLtoS_polling_inefficiency: 0.671875
-hcStoL_greedy_inefficiency: 0.701497
-hcStoL_polling_inefficiency: 0.701497
+baseline_inefficiency: 0.864909
+src_greedy_inefficiency: 0.684570
+src_polling_inefficiency: 0.684570
+hcLtoS_greedy_inefficiency: 0.673828
+hcLtoS_polling_inefficiency: 0.673828
+hcStoL_greedy_inefficiency: 0.693034
+hcStoL_polling_inefficiency: 0.693034
 
-baseline_avg_slots: 0.399414
-src_greedy_avg_slots: 0.932617
-src_polling_avg_slots: 0.932617
-hcLtoS_greedy_avg_slots: 0.984375
-hcLtoS_polling_avg_slots: 0.984375
-hcStoL_greedy_avg_slots: 0.895508
-hcStoL_polling_avg_slots: 0.895508
+baseline_avg_slots: 0.405273
+src_greedy_avg_slots: 0.946289
+src_polling_avg_slots: 0.946289
+hcLtoS_greedy_avg_slots: 0.978516
+hcLtoS_polling_avg_slots: 0.978516
+hcStoL_greedy_avg_slots: 0.920898
+hcStoL_polling_avg_slots: 0.920898
 
-baseline_unused_avg_slots: 2.600586
-src_greedy_unused_avg_slots: 2.067383
-src_polling_unused_avg_slots: 2.067383
-hcLtoS_greedy_unused_avg_slots: 2.015625
-hcLtoS_polling_unused_avg_slots: 2.015625
-hcStoL_greedy_unused_avg_slots: 2.104492
-hcStoL_polling_unused_avg_slots: 2.104492
+baseline_unused_avg_slots: 2.594727
+src_greedy_unused_avg_slots: 2.053711
+src_polling_unused_avg_slots: 2.053711
+hcLtoS_greedy_unused_avg_slots: 2.021484
+hcLtoS_polling_unused_avg_slots: 2.021484
+hcStoL_greedy_unused_avg_slots: 2.079102
+hcStoL_polling_unused_avg_slots: 2.079102
 

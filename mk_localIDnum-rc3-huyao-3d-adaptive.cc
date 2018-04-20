@@ -740,40 +740,58 @@ int main(int argc, char *argv[])
 	 delta_z = dst/(array_size*array_size) - src/(array_size*array_size);
          delta_z_sd = dst/(array_size*array_size) - src/(array_size*array_size); //huyao180410
 	 if ( delta_z < 0 && abs(delta_z) > array_size/2 ) {
-	    delta_z = -( delta_z + array_size/2);
-            delta_z_sd = -( delta_z_sd + array_size/2); //huyao180410
-		wrap_around_z = true;	
+	    //delta_z = -( delta_z + array_size/2);
+        //delta_z_sd = -( delta_z_sd + array_size/2); //huyao180410
+		//huyao 180417 rev
+        delta_z = delta_z + array_size;
+        delta_z_sd = delta_z_sd + array_size;
+				wrap_around_z = true;	
                 wrap_around_z_sd = true; //huyao180410	
 	 } else if ( delta_z > 0 && abs(delta_z) > array_size/2 ) {
-	    delta_z = -( delta_z - array_size/2);
-            delta_z_sd = -( delta_z_sd - array_size/2); //huyao180410
-		wrap_around_z = true;	
+	    //delta_z = -( delta_z - array_size/2);
+        //delta_z_sd = -( delta_z_sd - array_size/2); //huyao180410
+		//huyao 180417 rev
+        delta_z = delta_z - array_size;
+        delta_z_sd = delta_z_sd - array_size;
+				wrap_around_z = true;	
                 wrap_around_z_sd = true; //huyao180410	
 	 }
 	 delta_x = dst_xy%array_size - src_xy%array_size; //huyao 170101
          delta_x_sd = dst_xy%array_size - src_xy%array_size; //huyao 180410
 	 if ( delta_x < 0 && abs(delta_x) > array_size/2 ) {
-	    delta_x = -( delta_x + array_size/2);
-            delta_x_sd = -( delta_x_sd + array_size/2); //huyao 180410
-		wrap_around_x = true;	
+	    //delta_x = -( delta_x + array_size/2);
+        //delta_x_sd = -( delta_x_sd + array_size/2); //huyao 180410
+		//huyao 180417 rev
+        delta_x = delta_x + array_size;
+        delta_x_sd = delta_x_sd + array_size;
+				wrap_around_x = true;	
                 wrap_around_x_sd = true; //huyao 180410		
 	 } else if ( delta_x > 0 && abs(delta_x) > array_size/2 ) {
-	    delta_x = -( delta_x - array_size/2);
-            delta_x_sd = -( delta_x_sd - array_size/2); //huyao180410
-		wrap_around_x = true;	
+	    //delta_x = -( delta_x - array_size/2);
+        //delta_x_sd = -( delta_x_sd - array_size/2); //huyao180410
+		//huyao 180417 rev
+        delta_x = delta_x - array_size;
+        delta_x_sd = delta_x_sd - array_size;
+				wrap_around_x = true;	
                 wrap_around_x_sd = true; //huyao 180410		
 	 }
 	 delta_y = dst_xy/array_size - src_xy/array_size; //huyao 170101
          delta_y_sd = dst_xy/array_size - src_xy/array_size; //huyao 180410
 	 if ( delta_y < 0 && abs(delta_y) > array_size/2 ) {
-	    delta_y = -( delta_y + array_size/2);
-            delta_y_sd = -( delta_y_sd + array_size/2); //huyao 180410
-		wrap_around_y = true;
+	    //delta_y = -( delta_y + array_size/2);
+        //delta_y_sd = -( delta_y_sd + array_size/2); //huyao 180410
+		//huyao 180417 rev
+        delta_y = delta_y + array_size;
+        delta_y_sd = delta_y_sd + array_size;
+				wrap_around_y = true;
                 wrap_around_y_sd = true; //huyao 180410		
 	 } else if ( delta_y > 0 && abs(delta_y) > array_size/2 ) {
-	    delta_y = -( delta_y - array_size/2);
-            delta_y_sd = -( delta_y_sd - array_size/2); //huyao 180410
-		wrap_around_y = true;	
+	    //delta_y = -( delta_y - array_size/2);
+        //delta_y_sd = -( delta_y_sd - array_size/2); //huyao 180410
+		//huyao 180417 rev
+        delta_y = delta_y - array_size;
+        delta_y_sd = delta_y_sd - array_size;
+				wrap_around_y = true;	
                 wrap_around_y_sd = true; //huyao 180410		
 	 }
 	 current = src; 
@@ -1463,6 +1481,14 @@ int main(int argc, char *argv[])
    }
 	cout << " dst_based renewable label = " << max_cp_dst << endl;	
 	cout << " path_based renewable label = " << max_cp << endl;	
+	//huyao 180417
+    int slot_max = 0;
+    for (int i = 0; i < Crossing_Paths.size(); i++){
+            if (i%(degree+1+2*Host_Num) != degree+2*Host_Num || i%(degree+1+2*Host_Num) != degree+2*Host_Num-1)
+                    if(Crossing_Paths[i].pair_index.size() > slot_max)
+                            slot_max = Crossing_Paths[i].pair_index.size();
+    }
+    cout << " slot_max = " << slot_max << endl;
 
 
    for (int j = 0; j < Vch * (degree+1+2*Host_Num) * switch_num; j++ ){ 

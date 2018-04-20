@@ -722,35 +722,51 @@ int main(int argc, char *argv[])
 	 //delta_a huyao 170103
 	 delta_a = dst/(array_size*array_size*array_size) - src/(array_size*array_size*array_size);
 	 if ( delta_a < 0 && abs(delta_a) > array_size/2 ) {
-	    delta_a = -( delta_a + array_size/2);
+	    //delta_a = -( delta_a + array_size/2);
+            //huyao 180417 rev
+            delta_a = delta_a + array_size;
 		wrap_around_a = true;		
 	 } else if ( delta_a > 0 && abs(delta_a) > array_size/2 ) {
-	    delta_a = -( delta_a - array_size/2);
+	    //delta_a = -( delta_a - array_size/2);
+            //huyao 180417 rev
+            delta_a = delta_a - array_size;
 		wrap_around_a = true;		
 	 }
 	 //delta_z huyao 170102
 	 delta_z = dst_xyz/(array_size*array_size) - src_xyz/(array_size*array_size); //huyao 170103
 	 if ( delta_z < 0 && abs(delta_z) > array_size/2 ) {
-	    delta_z = -( delta_z + array_size/2);
+	    //delta_z = -( delta_z + array_size/2);
+            //huyao 180417 rev
+            delta_z = delta_z + array_size;
 		wrap_around_z = true;		
 	 } else if ( delta_z > 0 && abs(delta_z) > array_size/2 ) {
-	    delta_z = -( delta_z - array_size/2);
+	    //delta_z = -( delta_z - array_size/2);
+            //huyao 180417 rev
+            delta_z = delta_z - array_size;
 		wrap_around_z = true;		
 	 }
 	 delta_x = dst_xy%array_size - src_xy%array_size; //huyao 170101
 	 if ( delta_x < 0 && abs(delta_x) > array_size/2 ) {
-	    delta_x = -( delta_x + array_size/2);
+	    //delta_x = -( delta_x + array_size/2);
+            //huyao 180417 rev
+            delta_x = delta_x + array_size;
 		wrap_around_x = true;		
 	 } else if ( delta_x > 0 && abs(delta_x) > array_size/2 ) {
-	    delta_x = -( delta_x - array_size/2);
+	    //delta_x = -( delta_x - array_size/2);
+            //huyao 180417 rev
+            delta_x = delta_x - array_size;
 		wrap_around_x = true;		
 	 }
 	 delta_y = dst_xy/array_size - src_xy/array_size; //huyao 170101
 	 if ( delta_y < 0 && abs(delta_y) > array_size/2 ) {
-	    delta_y = -( delta_y + array_size/2);
+	    //delta_y = -( delta_y + array_size/2);
+            //huyao 180417 rev
+            delta_y = delta_y + array_size;
 		wrap_around_y = true;		
 	 } else if ( delta_y > 0 && abs(delta_y) > array_size/2 ) {
-	    delta_y = -( delta_y - array_size/2);
+	    //delta_y = -( delta_y - array_size/2);
+            //huyao 180417 rev
+            delta_y = delta_y - array_size;
 		wrap_around_y = true;		
 	 }
 	 current = src; 
@@ -954,7 +970,15 @@ int main(int argc, char *argv[])
 		max_cp_dst_t = 0;
    }
 	cout << " dst_based renewable label = " << max_cp_dst << endl;	
-	cout << " path_based renewable label = " << max_cp << endl;	
+	cout << " path_based renewable label = " << max_cp << endl;
+        //huyao 180417
+        int slot_max = 0;
+        for (int i = 0; i < Crossing_Paths.size(); i++){
+                if (i%(degree+1+2*Host_Num) != degree+2*Host_Num || i%(degree+1+2*Host_Num) != degree+2*Host_Num-1)
+                        if(Crossing_Paths[i].pair_index.size() > slot_max)
+                                slot_max = Crossing_Paths[i].pair_index.size();
+        }
+        cout << " slot_max = " << slot_max << endl;	
 
 
    for (int j = 0; j < Vch * (degree+1+2*Host_Num) * switch_num; j++ ){ 
