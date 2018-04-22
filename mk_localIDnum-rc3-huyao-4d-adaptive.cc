@@ -4160,7 +4160,7 @@ int main(int argc, char *argv[])
 	//huyao 180417
     int slot_max = 0;
     for (int i = 0; i < Crossing_Paths.size(); i++){
-            if (i%(degree+1+2*Host_Num) != degree+2*Host_Num || i%(degree+1+2*Host_Num) != degree+2*Host_Num-1)
+            if (i%(degree+1+2*Host_Num) != degree+2*Host_Num && i%(degree+1+2*Host_Num) != degree+2*Host_Num-1)
                     if(Crossing_Paths[i].pair_index.size() > slot_max)
                             slot_max = Crossing_Paths[i].pair_index.size();
     }

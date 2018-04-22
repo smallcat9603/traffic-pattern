@@ -2,7 +2,7 @@ ID Allocation Policy is 0(low port first) / 1(Crossing Paths based method): 1
 Address method is 0(destination_based) / 1(path_based): 1
  dst_based renewable label = 46
  path_based renewable label = 46
- slot_max = 46
+ slot_max = 45
 
 Channels (0)
 Channels (1)
