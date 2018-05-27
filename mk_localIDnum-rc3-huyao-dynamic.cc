@@ -684,12 +684,6 @@ int main(int argc, char *argv[])
 
    // $B7PO)(B
    vector<Pair> pairs;
-
-   //huyao180408 routing option
-   vector<Cross_Paths> Crossing_Paths_xy(Crossing_Paths.size());
-   vector<Cross_Paths> Crossing_Paths_yx(Crossing_Paths.size());
-   vector<Pair> pairs_xy;
-   vector<Pair> pairs_yx;
    
    // ########################################## //
    // ##############   PHASE 1   ############### //
@@ -703,8 +697,6 @@ int main(int argc, char *argv[])
 
       bool wrap_around_x = false;
       bool wrap_around_y = false;
-      bool wrap_around_x_sd = false;  //huyao180410
-      bool wrap_around_y_sd = false;  //huyao180410
 
       //#######################//
       // (switch port:0 localhost->switch, 1 +x, 2 -x, 3 +y, 4 -y, 5 switch-> localhost)
@@ -726,54 +718,37 @@ int main(int argc, char *argv[])
       pairs[ct].channels.push_back(t); 
       pairs[ct].pair_id = ct; //huyao170315     
       int delta_x, delta_y, current;
-      int delta_x_sd, delta_y_sd; //huyao180410
       switch (Topology){
       case 0: //mesh
 	 delta_x = dst%array_size - src%array_size;
 	 delta_y = dst/array_size - src/array_size;
-         delta_x_sd = dst%array_size - src%array_size; //huyao180410
-         delta_y_sd = dst/array_size - src/array_size; //huyao180410
 	 current = src; 
 	 break;
 
       case 1: // torus
 	 delta_x = dst%array_size - src%array_size;
-         delta_x_sd = dst%array_size - src%array_size; //huyao180410
 	 if ( delta_x < 0 && abs(delta_x) > array_size/2 ) {
 	    //delta_x = -( delta_x + array_size/2);
-            //delta_x_sd = -( delta_x_sd + array_size/2); //huyao180410
             //huyao 180417 rev
             delta_x = delta_x + array_size;
-            delta_x_sd = delta_x_sd + array_size;
 		wrap_around_x = true;	
-                wrap_around_x_sd = true;  //huyao180410	
 	 } else if ( delta_x > 0 && abs(delta_x) > array_size/2 ) {
 	    //delta_x = -( delta_x - array_size/2);
-            //delta_x_sd = -( delta_x_sd - array_size/2); //huyao180410
             //huyao 180417 rev
             delta_x = delta_x - array_size;
-            delta_x_sd = delta_x_sd - array_size;
-		wrap_around_x = true;	
-                wrap_around_x_sd = true;  //huyao180410		
+		wrap_around_x = true;		
 	 }
 	 delta_y = dst/array_size - src/array_size;
-         delta_y_sd = dst/array_size - src/array_size; //huyao180410
 	 if ( delta_y < 0 && abs(delta_y) > array_size/2 ) {
 	    //delta_y = -( delta_y + array_size/2);
-            //delta_y_sd = -( delta_y_sd + array_size/2); //huyao180410
             //huyao 180417 rev
             delta_y = delta_y + array_size;
-            delta_y_sd = delta_y_sd + array_size;  
-		wrap_around_y = true;	
-                wrap_around_y_sd = true;  //huyao180410		
+		wrap_around_y = true;		
 	 } else if ( delta_y > 0 && abs(delta_y) > array_size/2 ) {
 	    //delta_y = -( delta_y - array_size/2);
-            //delta_y_sd = -( delta_y_sd - array_size/2); //huyao180410
             //huyao 180417 rev
             delta_y = delta_y - array_size;
-            delta_y_sd = delta_y_sd - array_size; 
-		wrap_around_y = true;	
-                wrap_around_y_sd = true;  //huyao180410		
+		wrap_around_y = true;		
 	 }
 	 current = src; 
 	 break;
@@ -790,31 +765,103 @@ int main(int argc, char *argv[])
       //Crossing_Paths_xy.reserve(Crossing_Paths.size());//先㝫メモリ領域を確保㝙る。
       //copy(Crossing_Paths.begin(), Crossing_Paths.end(), back_inserter(Crossing_Paths_xy));
       //Crossing_Paths_xy = NULL;
-      copy(Crossing_Paths.begin(), Crossing_Paths.end(), Crossing_Paths_xy.begin());
+      //copy(Crossing_Paths.begin(), Crossing_Paths.end(), Crossing_Paths_xy.begin());
       //cout << max_element(Crossing_Paths.begin(),Crossing_Paths.end())->pair_index.size() << endl;
       //cout << max_element(Crossing_Paths_xy.begin(),Crossing_Paths_xy.end())->pair_index.size() << endl;
       //Crossing_Paths_yx.reserve(Crossing_Paths.size());//先㝫メモリ領域を確保㝙る。
       //copy(Crossing_Paths.begin(), Crossing_Paths.end(), back_inserter(Crossing_Paths_yx));
       //Crossing_Paths_yx = NULL;
-      copy(Crossing_Paths.begin(), Crossing_Paths.end(), Crossing_Paths_yx.begin());
+      //copy(Crossing_Paths.begin(), Crossing_Paths.end(), Crossing_Paths_yx.begin());
       //pairs_xy = NULL;
       //pairs_xy.reserve(pairs.size());//先㝫メモリ領域を確保㝙る。
       //copy(pairs.begin(), pairs.end(), back_inserter(pairs_xy));
       //copy(pairs.begin(), pairs.end(), pairs_xy.begin());
-      pairs_xy = pairs;
+      //pairs_xy = pairs;
       //pairs_yx = NULL;
       //pairs_yx.reserve(pairs.size());//先㝫メモリ領域を確保㝙る。
       //copy(pairs.begin(), pairs.end(), back_inserter(pairs_yx));  
       //copy(pairs.begin(), pairs.end(), pairs_yx.begin());  
-      pairs_yx = pairs; 
+      //pairs_yx = pairs; 
+
+      //huyao180527 dynamic hop-by-hop routing
+      if (delta_x > 0){
+         if (delta_y > 0){
+            while (delta_x != 0 || delta_y != 0){
+	       if (delta_x != 0 && delta_y != 0)
+                        int tx = (wrap_around_x) ? Vch*current*(degree+1+2*Host_Num)+1+(degree+1+2*Host_Num) :
+                        Vch * current * (degree+1+2*Host_Num) + 1;
+                        int ty = (wrap_around_y) ? Vch*current*(degree+1+2*Host_Num)+3+(degree+1+2*Host_Num) :
+                        Vch * current * (degree+1+2*Host_Num) + 3;
+                        if (Crossing_Paths[tx].pair_index.size() > Crossing_Paths[ty].pair_index.size()){
+                                Crossing_Paths[ty].pair_index.push_back(ct);  
+                                pairs[ct].channels.push_back(ty); 
+                                if ( current >= array_size*(array_size-1) ){
+                                wrap_around_y = false;
+                                current = current - array_size*(array_size -1);
+                                } else current += array_size;
+                                //hops++;
+                                delta_y--;
+                        }
+                        else {
+                                Crossing_Paths[tx].pair_index.push_back(ct);  
+                                pairs[ct].channels.push_back(tx); 
+                                if ( current % array_size == array_size-1) {
+                                wrap_around_x = false;
+                                current = current - (array_size -1);
+                                } else current++; 
+                                delta_x--;
+                                //hops++; 
+                        }
+               if (delta_x == 0){
+                       while (delta_y != 0){
+                          int t = (wrap_around_y) ? Vch*current*(degree+1+2*Host_Num)+3+(degree+1+2*Host_Num) :
+	                  Vch * current * (degree+1+2*Host_Num) + 3;
+	                  Crossing_Paths[t].pair_index.push_back(ct);  
+	                  pairs[ct].channels.push_back(t); 
+	                  if ( current >= array_size*(array_size-1) ){
+	                  wrap_around_y = false;
+	                  current = current - array_size*(array_size -1);
+                          } else current += array_size;
+	                  //hops++;
+	                  delta_y--;  
+                       }
+               } 
+               if (delta_y == 0){
+                       while (delta_x != 0){
+	                  int t = (wrap_around_x) ? Vch*current*(degree+1+2*Host_Num)+1+(degree+1+2*Host_Num) :
+	                  Vch * current * (degree+1+2*Host_Num) + 1;
+	                  Crossing_Paths[t].pair_index.push_back(ct);  
+	                  pairs[ct].channels.push_back(t); 
+	                  if ( current % array_size == array_size-1) {
+	                  wrap_around_x = false;
+	                  current = current - (array_size -1);
+	                  } else current++; 
+	                  delta_x--;
+	                  //hops++;  
+                       }
+               }                       
+            }
+         }
+         else if (delta_y < 0){
+
+         }
+      }
+      else if (delta_x < 0){
+         if (delta_y > 0){
+              
+         }
+         else if (delta_y < 0){
+
+         }
+      }
 
       // X $BJ}8~$N%k!<%F%#%s%0(B
       if (delta_x > 0){
 	 while ( delta_x != 0 ){ // +x$BJ}8~(B
 	    int t = (wrap_around_x) ? Vch*current*(degree+1+2*Host_Num)+1+(degree+1+2*Host_Num) :
 	       Vch * current * (degree+1+2*Host_Num) + 1;
-	    Crossing_Paths_xy[t].pair_index.push_back(ct);  //huyao180410
-	    pairs_xy[ct].channels.push_back(t); //huyao180410
+	    Crossing_Paths[t].pair_index.push_back(ct);  
+	    pairs[ct].channels.push_back(t); 
 	    if ( current % array_size == array_size-1) {
 	       wrap_around_x = false;
 	       current = current - (array_size -1);
@@ -826,8 +873,8 @@ int main(int argc, char *argv[])
 	 while ( delta_x != 0 ){ // -x$BJ}8~(B
 	    int t = (wrap_around_x) ? Vch*current*(degree+1+2*Host_Num)+2+(degree+1+2*Host_Num) :
 	       Vch * current * (degree+1+2*Host_Num) + 2;
-	    Crossing_Paths_xy[t].pair_index.push_back(ct);  //huyao180410
-	    pairs_xy[ct].channels.push_back(t);  //huyao180410
+	    Crossing_Paths[t].pair_index.push_back(ct);  
+	    pairs[ct].channels.push_back(t); 
 	    if ( current % array_size == 0 ) {
 	       wrap_around_x = false;
 	       current = current + (array_size - 1 );
@@ -848,8 +895,8 @@ int main(int argc, char *argv[])
 	 while ( delta_y != 0 ){ // +y$BJ}8~(B
 	    int t = (wrap_around_y) ? Vch*current*(degree+1+2*Host_Num)+3+(degree+1+2*Host_Num) :
 	       Vch * current * (degree+1+2*Host_Num) + 3;
-	    Crossing_Paths_xy[t].pair_index.push_back(ct);  //huyao180410
-	    pairs_xy[ct].channels.push_back(t);  //huyao180410
+	    Crossing_Paths[t].pair_index.push_back(ct);  
+	    pairs[ct].channels.push_back(t); 
 	    if ( current >= array_size*(array_size-1) ){
 	       wrap_around_y = false;
 	       current = current - array_size*(array_size -1);
@@ -861,8 +908,8 @@ int main(int argc, char *argv[])
 	 while ( delta_y != 0 ){ // -y$BJ}8~(B
 	    int t = (wrap_around_y) ? Vch*current*(degree+1+2*Host_Num)+4+(degree+1+2*Host_Num) :
 	       Vch * current * (degree+1+2*Host_Num) + 4;
-	    Crossing_Paths_xy[t].pair_index.push_back(ct);  //huyao180410
-	    pairs_xy[ct].channels.push_back(t); //huyao180410
+	    Crossing_Paths[t].pair_index.push_back(ct);  
+	    pairs[ct].channels.push_back(t); 
 	    if ( current < array_size ) {
 	       wrap_around_y = false;
 	       current = current + array_size*(array_size -1);
@@ -876,181 +923,6 @@ int main(int argc, char *argv[])
       if ( delta_x != 0 || delta_y != 0 ){
 	 cerr << "Routing Error " << endl;
 	 exit (1);
-      }
-
-      //huyao180410 y-x routing
-      delta_x = delta_x_sd;
-      delta_y = delta_y_sd;
-      current = src;
-      wrap_around_x = wrap_around_x_sd;
-      wrap_around_y = wrap_around_y_sd;
-      //cout << delta_x << endl;
-      //cout << delta_y << endl;
-      //cout << current << endl;
-      //cout << wrap_around_x << endl;
-      //cout << wrap_around_y << endl;
-      if (delta_y > 0){
-	 while ( delta_y != 0 ){ // +y$BJ}8~(B
-	    int t = (wrap_around_y) ? Vch*current*(degree+1+2*Host_Num)+3+(degree+1+2*Host_Num) :
-	       Vch * current * (degree+1+2*Host_Num) + 3;
-	    Crossing_Paths_yx[t].pair_index.push_back(ct);  //huyao180410
-	    pairs_yx[ct].channels.push_back(t);  //huyao180410 
-	    if ( current >= array_size*(array_size-1) ){
-	       wrap_around_y = false;
-	       current = current - array_size*(array_size -1);
-	    } else current += array_size;
-	    //hops++;
-	    delta_y--;
-	 }
-      } else if (delta_y < 0){
-	 while ( delta_y != 0 ){ // -y$BJ}8~(B
-	    int t = (wrap_around_y) ? Vch*current*(degree+1+2*Host_Num)+4+(degree+1+2*Host_Num) :
-	       Vch * current * (degree+1+2*Host_Num) + 4;
-	    Crossing_Paths_yx[t].pair_index.push_back(ct);  //huyao180410
-	    pairs_yx[ct].channels.push_back(t); //huyao180410
-	    if ( current < array_size ) {
-	       wrap_around_y = false;
-	       current = current + array_size*(array_size -1);
-	    } else current -= array_size;
-	    //hops++;
-	    delta_y++;
-	 }
-      }
-      //cout << current << endl;
-      if (delta_x > 0){
-	 while ( delta_x != 0 ){ // +x$BJ}8~(B
-	    int t = (wrap_around_x) ? Vch*current*(degree+1+2*Host_Num)+1+(degree+1+2*Host_Num) :
-	       Vch * current * (degree+1+2*Host_Num) + 1;
-	    Crossing_Paths_yx[t].pair_index.push_back(ct);  //huyao180410
-	    pairs_yx[ct].channels.push_back(t); //huyao180410
-	    if ( current % array_size == array_size-1) {
-	       wrap_around_x = false;
-	       current = current - (array_size -1);
-	    } else current++; 
-	    delta_x--;
-	    //hops++; 
-	 }
-      } else if (delta_x < 0){
-	 while ( delta_x != 0 ){ // -x$BJ}8~(B
-	    int t = (wrap_around_x) ? Vch*current*(degree+1+2*Host_Num)+2+(degree+1+2*Host_Num) :
-	       Vch * current * (degree+1+2*Host_Num) + 2;
-	    Crossing_Paths_yx[t].pair_index.push_back(ct);  //huyao180410
-	    pairs_yx[ct].channels.push_back(t);  //huyao180410
-	    if ( current % array_size == 0 ) {
-	       wrap_around_x = false;
-	       current = current + (array_size - 1 );
-	    } else current--;
-	    //hops++;
-	    delta_x++;
-	 }
-      }
-      if ( delta_x != 0 || delta_y != 0 ){
-	 cerr << "Routing Error " << endl;
-	 exit (1);
-      }
-      //test
-//       cout << "----Crossing_Paths----" << endl;
-//       cout << Crossing_Paths.size() << endl;
-//       vector<Cross_Paths>::iterator ppt = Crossing_Paths.begin();
-//       int aaa = 0;
-//       cout << " Node " << setw(2) << aaa/((degree+1+2*Host_Num)*Vch) << ":  ";    
-//       while ( ppt != Crossing_Paths.end() ){
-//       if (aaa%(degree+1+2*Host_Num)!=0) cout << " " << (*ppt).pair_index.size();
-//       aaa ++; ppt++;
-//       if ( aaa%((degree+1+2*Host_Num)*Vch) == 0){
-// 	 cout << endl;		
-// 	 if ( aaa != Vch*(degree+1+2*Host_Num)*switch_num)
-// 	    cout << " Node " << setw(2) << aaa/((degree+1+2*Host_Num)*Vch) << ":  ";	
-//       }
-//       }
-//       cout << "----Crossing_Paths----" << endl;
-//       cout << "----Crossing_Paths_xy----" << endl;
-//       cout << Crossing_Paths_xy.size() << endl;
-//       ppt = Crossing_Paths_xy.begin();
-//       aaa = 0;
-//       cout << " Node " << setw(2) << aaa/((degree+1+2*Host_Num)*Vch) << ":  ";    
-//       while ( ppt != Crossing_Paths_xy.end() ){
-//       if (aaa%(degree+1+2*Host_Num)!=0) cout << " " << (*ppt).pair_index.size();
-//       aaa ++; ppt++;
-//       if ( aaa%((degree+1+2*Host_Num)*Vch) == 0){
-// 	 cout << endl;		
-// 	 if ( aaa != Vch*(degree+1+2*Host_Num)*switch_num)
-// 	    cout << " Node " << setw(2) << aaa/((degree+1+2*Host_Num)*Vch) << ":  ";	
-//       }
-//       }
-//       cout << "----Crossing_Paths_xy----" << endl;
-//       cout << "----Crossing_Paths_yx----" << endl;
-//       cout << Crossing_Paths_yx.size() << endl;
-//       ppt = Crossing_Paths_yx.begin();
-//       aaa = 0;
-//       cout << " Node " << setw(2) << aaa/((degree+1+2*Host_Num)*Vch) << ":  ";    
-//       while ( ppt != Crossing_Paths_yx.end() ){
-//       if (aaa%(degree+1+2*Host_Num)!=0) cout << " " << (*ppt).pair_index.size();
-//       aaa ++; ppt++;
-//       if ( aaa%((degree+1+2*Host_Num)*Vch) == 0){
-// 	 cout << endl;		
-// 	 if ( aaa != Vch*(degree+1+2*Host_Num)*switch_num)
-// 	    cout << " Node " << setw(2) << aaa/((degree+1+2*Host_Num)*Vch) << ":  ";	
-//       }
-//       }
-//       cout << "----Crossing_Paths_yx----" << endl;
-//       vector<Pair>::iterator pppt = pairs.begin();
-//       cout << "----pairs----" << endl;
-//       cout << pairs.size() << endl;
-//       //ppt = pairs.begin();
-//       aaa = 0;  
-//       while ( pppt != pairs.end() ){
-//       cout << "Pair:" << aaa << endl;        
-//       for (int i = 0; i < (*pppt).channels.size(); i++){
-//           cout << (*pppt).channels[i] << ", " << endl;
-//       }
-//       aaa ++; pppt++;
-//       }
-//       cout << "----pairs----" << endl;
-//       cout << "----pairs_xy----" << endl;
-//       cout << pairs_xy.size() << endl;
-//       pppt = pairs_xy.begin();
-//       aaa = 0;  
-//       while ( pppt != pairs_xy.end() ){
-//       cout << "Pair:" << aaa << endl;        
-//       for (int i = 0; i < (*pppt).channels.size(); i++){
-//           cout << (*pppt).channels[i] << ", " << endl;
-//       }
-//       aaa ++; pppt++;
-//       }
-//       cout << "----pairs_xy----" << endl;
-//       cout << "----pairs_yx----" << endl;
-//       cout << pairs_yx.size() << endl;
-//       pppt = pairs_yx.begin();
-//       aaa = 0;  
-//       while ( pppt != pairs_yx.end() ){
-//       cout << "Pair:" << aaa << endl;        
-//       for (int i = 0; i < (*pppt).channels.size(); i++){
-//           cout << (*pppt).channels[i] << ", " << endl;
-//       }
-//       aaa ++; pppt++;
-//       }
-//       cout << "----pairs_yx----" << endl;      
-      //cout << max_element(Crossing_Paths_xy.begin(),Crossing_Paths_xy.end())->pair_index.size() << endl;
-      //cout << max_element(Crossing_Paths_yx.begin(),Crossing_Paths_yx.end())->pair_index.size() << endl;
-      //cout << max_element(Crossing_Paths.begin(),Crossing_Paths.end())->pair_index.size() << endl;
-      if (max_element(Crossing_Paths_yx.begin(),Crossing_Paths_yx.end())->pair_index.size() < max_element(Crossing_Paths_xy.begin(),Crossing_Paths_xy.end())->pair_index.size()){
-         //Crossing_Paths.reserve(Crossing_Paths_yx.size());
-         //copy(Crossing_Paths_yx.begin(), Crossing_Paths_yx.end(), back_inserter(Crossing_Paths));  
-         //Crossing_Paths = NULL;
-         copy(Crossing_Paths_yx.begin(), Crossing_Paths_yx.end(), Crossing_Paths.begin()); 
-         pairs = pairs_yx;
-      }
-      else{
-         //Crossing_Paths.reserve(Crossing_Paths_xy.size());
-         //cout << max_element(Crossing_Paths.begin(),Crossing_Paths.end())->pair_index.size() << endl; 
-         //cout << max_element(Crossing_Paths_xy.begin(),Crossing_Paths_xy.end())->pair_index.size() << endl;         
-         //copy(Crossing_Paths_xy.begin(), Crossing_Paths_xy.end(), back_inserter(Crossing_Paths)); 
-         //Crossing_Paths = NULL;
-         copy(Crossing_Paths_xy.begin(), Crossing_Paths_xy.end(), Crossing_Paths.begin());  
-         //cout << max_element(Crossing_Paths.begin(),Crossing_Paths.end())->pair_index.size() << endl; 
-         //cout << max_element(Crossing_Paths_xy.begin(),Crossing_Paths_xy.end())->pair_index.size() << endl; 
-         pairs = pairs_xy;
       }
       
 
