@@ -787,7 +787,7 @@ int main(int argc, char *argv[])
       if (delta_x > 0){
          if (delta_y > 0){
             while (delta_x != 0 || delta_y != 0){
-	       if (delta_x != 0 && delta_y != 0)
+	       if (delta_x != 0 && delta_y != 0){
                         int tx = (wrap_around_x) ? Vch*current*(degree+1+2*Host_Num)+1+(degree+1+2*Host_Num) :
                         Vch * current * (degree+1+2*Host_Num) + 1;
                         int ty = (wrap_around_y) ? Vch*current*(degree+1+2*Host_Num)+3+(degree+1+2*Host_Num) :
@@ -812,6 +812,7 @@ int main(int argc, char *argv[])
                                 delta_x--;
                                 //hops++; 
                         }
+                }
                if (delta_x == 0){
                        while (delta_y != 0){
                           int t = (wrap_around_y) ? Vch*current*(degree+1+2*Host_Num)+3+(degree+1+2*Host_Num) :
@@ -843,46 +844,212 @@ int main(int argc, char *argv[])
             }
          }
          else if (delta_y < 0){
-
+            while (delta_x != 0 || delta_y != 0){
+	       if (delta_x != 0 && delta_y != 0){
+                        int tx = (wrap_around_x) ? Vch*current*(degree+1+2*Host_Num)+1+(degree+1+2*Host_Num) :
+                        Vch * current * (degree+1+2*Host_Num) + 1;
+                        int ty = (wrap_around_y) ? Vch*current*(degree+1+2*Host_Num)+4+(degree+1+2*Host_Num) :
+                        Vch * current * (degree+1+2*Host_Num) + 4;
+                        if (Crossing_Paths[tx].pair_index.size() > Crossing_Paths[ty].pair_index.size()){
+                                Crossing_Paths[ty].pair_index.push_back(ct);  
+                                pairs[ct].channels.push_back(ty); 
+	                        if ( current < array_size ) {
+	                        wrap_around_y = false;
+	                        current = current + array_size*(array_size -1);
+	                        } else current -= array_size;
+	                        //hops++;
+	                        delta_y++;
+                        }
+                        else {
+                                Crossing_Paths[tx].pair_index.push_back(ct);  
+                                pairs[ct].channels.push_back(tx); 
+                                if ( current % array_size == array_size-1) {
+                                wrap_around_x = false;
+                                current = current - (array_size -1);
+                                } else current++; 
+                                delta_x--;
+                                //hops++; 
+                        }
+                }
+               if (delta_x == 0){
+                       while (delta_y != 0){
+                          int t = (wrap_around_y) ? Vch*current*(degree+1+2*Host_Num)+4+(degree+1+2*Host_Num) :
+	                  Vch * current * (degree+1+2*Host_Num) + 4;
+	                  Crossing_Paths[t].pair_index.push_back(ct);  
+	                  pairs[ct].channels.push_back(t); 
+	                  if ( current < array_size ) {
+	                  wrap_around_y = false;
+	                  current = current + array_size*(array_size -1);
+	                  } else current -= array_size;
+	                  //hops++;
+	                  delta_y++;
+                       }
+               } 
+               if (delta_y == 0){
+                       while (delta_x != 0){
+	                  int t = (wrap_around_x) ? Vch*current*(degree+1+2*Host_Num)+1+(degree+1+2*Host_Num) :
+	                  Vch * current * (degree+1+2*Host_Num) + 1;
+	                  Crossing_Paths[t].pair_index.push_back(ct);  
+	                  pairs[ct].channels.push_back(t); 
+	                  if ( current % array_size == array_size-1) {
+	                  wrap_around_x = false;
+	                  current = current - (array_size -1);
+	                  } else current++; 
+	                  delta_x--;
+	                  //hops++;  
+                       }
+               }                       
+            }
          }
       }
       else if (delta_x < 0){
          if (delta_y > 0){
+            while (delta_x != 0 || delta_y != 0){
+	       if (delta_x != 0 && delta_y != 0){
+                        int tx = (wrap_around_x) ? Vch*current*(degree+1+2*Host_Num)+2+(degree+1+2*Host_Num) :
+                        Vch * current * (degree+1+2*Host_Num) + 2;
+                        int ty = (wrap_around_y) ? Vch*current*(degree+1+2*Host_Num)+3+(degree+1+2*Host_Num) :
+                        Vch * current * (degree+1+2*Host_Num) + 3;
+                        if (Crossing_Paths[tx].pair_index.size() > Crossing_Paths[ty].pair_index.size()){
+                                Crossing_Paths[ty].pair_index.push_back(ct);  
+                                pairs[ct].channels.push_back(ty); 
+                                if ( current >= array_size*(array_size-1) ){
+                                wrap_around_y = false;
+                                current = current - array_size*(array_size -1);
+                                } else current += array_size;
+                                //hops++;
+                                delta_y--;
+                        }
+                        else {
+                                Crossing_Paths[tx].pair_index.push_back(ct);  
+                                pairs[ct].channels.push_back(tx); 
+	                        if ( current % array_size == 0 ) {
+	                        wrap_around_x = false;
+	                        current = current + (array_size - 1 );
+	                        } else current--;
+	                        //hops++;
+	                        delta_x++; 
+                        }
+                }
+               if (delta_x == 0){
+                       while (delta_y != 0){
+                          int t = (wrap_around_y) ? Vch*current*(degree+1+2*Host_Num)+3+(degree+1+2*Host_Num) :
+	                  Vch * current * (degree+1+2*Host_Num) + 3;
+	                  Crossing_Paths[t].pair_index.push_back(ct);  
+	                  pairs[ct].channels.push_back(t); 
+	                  if ( current >= array_size*(array_size-1) ){
+	                  wrap_around_y = false;
+	                  current = current - array_size*(array_size -1);
+                          } else current += array_size;
+	                  //hops++;
+	                  delta_y--;  
+                       }
+               } 
+               if (delta_y == 0){
+                       while (delta_x != 0){
+	                  int t = (wrap_around_x) ? Vch*current*(degree+1+2*Host_Num)+2+(degree+1+2*Host_Num) :
+	                  Vch * current * (degree+1+2*Host_Num) + 2;
+	                  Crossing_Paths[t].pair_index.push_back(ct);  
+	                  pairs[ct].channels.push_back(t); 
+	                  if ( current % array_size == 0 ) {
+	                  wrap_around_x = false;
+	                  current = current + (array_size - 1 );
+	                  } else current--;
+	                  //hops++;
+	                  delta_x++;  
+                       }
+               }                       
+            }                 
               
          }
          else if (delta_y < 0){
-
+            while (delta_x != 0 || delta_y != 0){
+	       if (delta_x != 0 && delta_y != 0){
+                        int tx = (wrap_around_x) ? Vch*current*(degree+1+2*Host_Num)+2+(degree+1+2*Host_Num) :
+                        Vch * current * (degree+1+2*Host_Num) + 2;
+                        int ty = (wrap_around_y) ? Vch*current*(degree+1+2*Host_Num)+4+(degree+1+2*Host_Num) :
+                        Vch * current * (degree+1+2*Host_Num) + 4;
+                        if (Crossing_Paths[tx].pair_index.size() > Crossing_Paths[ty].pair_index.size()){
+                                Crossing_Paths[ty].pair_index.push_back(ct);  
+                                pairs[ct].channels.push_back(ty); 
+	                        if ( current < array_size ) {
+	                        wrap_around_y = false;
+	                        current = current + array_size*(array_size -1);
+	                        } else current -= array_size;
+	                        //hops++;
+	                        delta_y++;
+                        }
+                        else {
+                                Crossing_Paths[tx].pair_index.push_back(ct);  
+                                pairs[ct].channels.push_back(tx); 
+	                        if ( current % array_size == 0 ) {
+	                        wrap_around_x = false;
+	                        current = current + (array_size - 1 );
+	                        } else current--;
+	                        //hops++;
+	                        delta_x++; 
+                        }
+                }
+               if (delta_x == 0){
+                       while (delta_y != 0){
+                          int t = (wrap_around_y) ? Vch*current*(degree+1+2*Host_Num)+4+(degree+1+2*Host_Num) :
+	                  Vch * current * (degree+1+2*Host_Num) + 4;
+	                  Crossing_Paths[t].pair_index.push_back(ct);  
+	                  pairs[ct].channels.push_back(t); 
+	                  if ( current < array_size ) {
+	                  wrap_around_y = false;
+	                  current = current + array_size*(array_size -1);
+	                  } else current -= array_size;
+	                  //hops++;
+	                  delta_y++;
+                       }
+               } 
+               if (delta_y == 0){
+                       while (delta_x != 0){
+	                  int t = (wrap_around_x) ? Vch*current*(degree+1+2*Host_Num)+2+(degree+1+2*Host_Num) :
+	                  Vch * current * (degree+1+2*Host_Num) + 2;
+	                  Crossing_Paths[t].pair_index.push_back(ct);  
+	                  pairs[ct].channels.push_back(t); 
+	                  if ( current % array_size == 0 ) {
+	                  wrap_around_x = false;
+	                  current = current + (array_size - 1 );
+	                  } else current--;
+	                  //hops++;
+	                  delta_x++;
+                       }
+               }                       
+            }
          }
       }
 
-      // X 方向のルーティング
-      if (delta_x > 0){
-	 while ( delta_x != 0 ){ // +x方向
-	    int t = (wrap_around_x) ? Vch*current*(degree+1+2*Host_Num)+1+(degree+1+2*Host_Num) :
-	       Vch * current * (degree+1+2*Host_Num) + 1;
-	    Crossing_Paths[t].pair_index.push_back(ct);  
-	    pairs[ct].channels.push_back(t); 
-	    if ( current % array_size == array_size-1) {
-	       wrap_around_x = false;
-	       current = current - (array_size -1);
-	    } else current++; 
-	    delta_x--;
-	    //hops++; 
-	 }
-      } else if (delta_x < 0){
-	 while ( delta_x != 0 ){ // -x方向
-	    int t = (wrap_around_x) ? Vch*current*(degree+1+2*Host_Num)+2+(degree+1+2*Host_Num) :
-	       Vch * current * (degree+1+2*Host_Num) + 2;
-	    Crossing_Paths[t].pair_index.push_back(ct);  
-	    pairs[ct].channels.push_back(t); 
-	    if ( current % array_size == 0 ) {
-	       wrap_around_x = false;
-	       current = current + (array_size - 1 );
-	    } else current--;
-	    //hops++;
-	    delta_x++;
-	 }
-      }
+//       // X 方向のルーティング
+//       if (delta_x > 0){
+// 	 while ( delta_x != 0 ){ // +x方向
+// 	    int t = (wrap_around_x) ? Vch*current*(degree+1+2*Host_Num)+1+(degree+1+2*Host_Num) :
+// 	       Vch * current * (degree+1+2*Host_Num) + 1;
+// 	    Crossing_Paths[t].pair_index.push_back(ct);  
+// 	    pairs[ct].channels.push_back(t); 
+// 	    if ( current % array_size == array_size-1) {
+// 	       wrap_around_x = false;
+// 	       current = current - (array_size -1);
+// 	    } else current++; 
+// 	    delta_x--;
+// 	    //hops++; 
+// 	 }
+//       } else if (delta_x < 0){
+// 	 while ( delta_x != 0 ){ // -x方向
+// 	    int t = (wrap_around_x) ? Vch*current*(degree+1+2*Host_Num)+2+(degree+1+2*Host_Num) :
+// 	       Vch * current * (degree+1+2*Host_Num) + 2;
+// 	    Crossing_Paths[t].pair_index.push_back(ct);  
+// 	    pairs[ct].channels.push_back(t); 
+// 	    if ( current % array_size == 0 ) {
+// 	       wrap_around_x = false;
+// 	       current = current + (array_size - 1 );
+// 	    } else current--;
+// 	    //hops++;
+// 	    delta_x++;
+// 	 }
+//       }
       
       // X 方向のルーティングが終了していることを確認
 //       if (delta_x != 0){
@@ -890,34 +1057,34 @@ int main(int argc, char *argv[])
 // 	 exit (1);
 //       }
 
-      // Y 方向のルーティング	
-      if (delta_y > 0){
-	 while ( delta_y != 0 ){ // +y方向
-	    int t = (wrap_around_y) ? Vch*current*(degree+1+2*Host_Num)+3+(degree+1+2*Host_Num) :
-	       Vch * current * (degree+1+2*Host_Num) + 3;
-	    Crossing_Paths[t].pair_index.push_back(ct);  
-	    pairs[ct].channels.push_back(t); 
-	    if ( current >= array_size*(array_size-1) ){
-	       wrap_around_y = false;
-	       current = current - array_size*(array_size -1);
-	    } else current += array_size;
-	    //hops++;
-	    delta_y--;
-	 }
-      } else if (delta_y < 0){
-	 while ( delta_y != 0 ){ // -y方向
-	    int t = (wrap_around_y) ? Vch*current*(degree+1+2*Host_Num)+4+(degree+1+2*Host_Num) :
-	       Vch * current * (degree+1+2*Host_Num) + 4;
-	    Crossing_Paths[t].pair_index.push_back(ct);  
-	    pairs[ct].channels.push_back(t); 
-	    if ( current < array_size ) {
-	       wrap_around_y = false;
-	       current = current + array_size*(array_size -1);
-	    } else current -= array_size;
-	    //hops++;
-	    delta_y++;
-	 }
-      }
+//       // Y 方向のルーティング	
+//       if (delta_y > 0){
+// 	 while ( delta_y != 0 ){ // +y方向
+// 	    int t = (wrap_around_y) ? Vch*current*(degree+1+2*Host_Num)+3+(degree+1+2*Host_Num) :
+// 	       Vch * current * (degree+1+2*Host_Num) + 3;
+// 	    Crossing_Paths[t].pair_index.push_back(ct);  
+// 	    pairs[ct].channels.push_back(t); 
+// 	    if ( current >= array_size*(array_size-1) ){
+// 	       wrap_around_y = false;
+// 	       current = current - array_size*(array_size -1);
+// 	    } else current += array_size;
+// 	    //hops++;
+// 	    delta_y--;
+// 	 }
+//       } else if (delta_y < 0){
+// 	 while ( delta_y != 0 ){ // -y方向
+// 	    int t = (wrap_around_y) ? Vch*current*(degree+1+2*Host_Num)+4+(degree+1+2*Host_Num) :
+// 	       Vch * current * (degree+1+2*Host_Num) + 4;
+// 	    Crossing_Paths[t].pair_index.push_back(ct);  
+// 	    pairs[ct].channels.push_back(t); 
+// 	    if ( current < array_size ) {
+// 	       wrap_around_y = false;
+// 	       current = current + array_size*(array_size -1);
+// 	    } else current -= array_size;
+// 	    //hops++;
+// 	    delta_y++;
+// 	 }
+//       }
       
       // X,Y 方向のルーティングが終了していることを確認
       if ( delta_x != 0 || delta_y != 0 ){
