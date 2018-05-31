@@ -1,9 +1,9 @@
-#traffic-pattern dimension-order minimal-adaptive minimal-oblivious minimal
-Uniform		17	16	16	16
-Reversal	33	31	20	20
-Matrix		37	31	34	31
-Neighbor	6	5	5	5
-Shuffle		32	32	29	29
-Butterfly	32	24	123	24
-Complement	32	22	168	22
-Tornado		63	32	32	32
+#traffic-pattern dimension-order minimal-adaptive minimal-oblivious minimal dynamic-xy
+Uniform		17	16	16	16	20
+Reversal	33	31	20	20	29
+Matrix		37	31	34	31	32
+Neighbor	6	5	5	5	6
+Shuffle		32	32	29	29	33
+Butterfly	32	24	123	24	35
+Complement	32	22	168	22	45
+Tornado		63	32	32	32	32

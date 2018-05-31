@@ -1,9 +1,9 @@
-#traffic-pattern dimension-order minimal-adaptive minimal-oblivious
-Uniform		4	2	3	
-Reversal	3	2	3
-Matrix		3	2	3
-Neighbor	3	1	1
-Shuffle		2	2	2
-Butterfly	2	2	3
-Complement	2	2	3
-Tornado		2	2	2
+#traffic-pattern dimension-order minimal-adaptive minimal-oblivious dynamic-xy
+Uniform		4	2	3	2
+Reversal	3	2	3	2
+Matrix		3	2	3	3
+Neighbor	3	1	1	1
+Shuffle		2	2	2	2
+Butterfly	2	2	3	2
+Complement	2	2	3	3
+Tornado		2	2	2	2
