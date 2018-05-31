@@ -813,7 +813,7 @@ int main(int argc, char *argv[])
                                 //hops++; 
                         }
                 }
-               if (delta_x == 0){
+               else if (delta_x == 0){
                        while (delta_y != 0){
                           int t = (wrap_around_y) ? Vch*current*(degree+1+2*Host_Num)+3+(degree+1+2*Host_Num) :
 	                  Vch * current * (degree+1+2*Host_Num) + 3;
@@ -827,7 +827,7 @@ int main(int argc, char *argv[])
 	                  delta_y--;  
                        }
                } 
-               if (delta_y == 0){
+               else if (delta_y == 0){
                        while (delta_x != 0){
 	                  int t = (wrap_around_x) ? Vch*current*(degree+1+2*Host_Num)+1+(degree+1+2*Host_Num) :
 	                  Vch * current * (degree+1+2*Host_Num) + 1;
@@ -871,7 +871,7 @@ int main(int argc, char *argv[])
                                 //hops++; 
                         }
                 }
-               if (delta_x == 0){
+               else if (delta_x == 0){
                        while (delta_y != 0){
                           int t = (wrap_around_y) ? Vch*current*(degree+1+2*Host_Num)+4+(degree+1+2*Host_Num) :
 	                  Vch * current * (degree+1+2*Host_Num) + 4;
@@ -885,7 +885,7 @@ int main(int argc, char *argv[])
 	                  delta_y++;
                        }
                } 
-               if (delta_y == 0){
+               else if (delta_y == 0){
                        while (delta_x != 0){
 	                  int t = (wrap_around_x) ? Vch*current*(degree+1+2*Host_Num)+1+(degree+1+2*Host_Num) :
 	                  Vch * current * (degree+1+2*Host_Num) + 1;
@@ -900,6 +900,20 @@ int main(int argc, char *argv[])
                        }
                }                       
             }
+         }
+         else if (delta_y == 0){
+                while ( delta_x != 0 ){ // +x方向
+                int t = (wrap_around_x) ? Vch*current*(degree+1+2*Host_Num)+1+(degree+1+2*Host_Num) :
+                Vch * current * (degree+1+2*Host_Num) + 1;
+                Crossing_Paths[t].pair_index.push_back(ct);  
+                pairs[ct].channels.push_back(t); 
+                if ( current % array_size == array_size-1) {
+                wrap_around_x = false;
+                current = current - (array_size -1);
+                } else current++; 
+                delta_x--;
+                //hops++;   
+                }               
          }
       }
       else if (delta_x < 0){
@@ -931,7 +945,7 @@ int main(int argc, char *argv[])
 	                        delta_x++; 
                         }
                 }
-               if (delta_x == 0){
+               else if (delta_x == 0){
                        while (delta_y != 0){
                           int t = (wrap_around_y) ? Vch*current*(degree+1+2*Host_Num)+3+(degree+1+2*Host_Num) :
 	                  Vch * current * (degree+1+2*Host_Num) + 3;
@@ -945,7 +959,7 @@ int main(int argc, char *argv[])
 	                  delta_y--;  
                        }
                } 
-               if (delta_y == 0){
+               else if (delta_y == 0){
                        while (delta_x != 0){
 	                  int t = (wrap_around_x) ? Vch*current*(degree+1+2*Host_Num)+2+(degree+1+2*Host_Num) :
 	                  Vch * current * (degree+1+2*Host_Num) + 2;
@@ -990,7 +1004,7 @@ int main(int argc, char *argv[])
 	                        delta_x++; 
                         }
                 }
-               if (delta_x == 0){
+               else if (delta_x == 0){
                        while (delta_y != 0){
                           int t = (wrap_around_y) ? Vch*current*(degree+1+2*Host_Num)+4+(degree+1+2*Host_Num) :
 	                  Vch * current * (degree+1+2*Host_Num) + 4;
@@ -1004,7 +1018,7 @@ int main(int argc, char *argv[])
 	                  delta_y++;
                        }
                } 
-               if (delta_y == 0){
+               else if (delta_y == 0){
                        while (delta_x != 0){
 	                  int t = (wrap_around_x) ? Vch*current*(degree+1+2*Host_Num)+2+(degree+1+2*Host_Num) :
 	                  Vch * current * (degree+1+2*Host_Num) + 2;
@@ -1020,6 +1034,49 @@ int main(int argc, char *argv[])
                }                       
             }
          }
+         else if (delta_y == 0){
+                while ( delta_x != 0 ){ // -x方向
+                int t = (wrap_around_x) ? Vch*current*(degree+1+2*Host_Num)+2+(degree+1+2*Host_Num) :
+                Vch * current * (degree+1+2*Host_Num) + 2;
+                Crossing_Paths[t].pair_index.push_back(ct);  
+                pairs[ct].channels.push_back(t); 
+                if ( current % array_size == 0 ) {
+                wrap_around_x = false;
+                current = current + (array_size - 1 );
+                } else current--;
+                //hops++;
+                delta_x++;
+                }
+         }
+      }
+      else if (delta_x == 0){
+        if (delta_y > 0){
+                while ( delta_y != 0 ){ // +y方向
+                int t = (wrap_around_y) ? Vch*current*(degree+1+2*Host_Num)+3+(degree+1+2*Host_Num) :
+                Vch * current * (degree+1+2*Host_Num) + 3;
+                Crossing_Paths[t].pair_index.push_back(ct);  
+                pairs[ct].channels.push_back(t); 
+                if ( current >= array_size*(array_size-1) ){
+                wrap_around_y = false;
+                current = current - array_size*(array_size -1);
+                } else current += array_size;
+                //hops++;
+                delta_y--;
+                }
+        } else if (delta_y < 0){
+                while ( delta_y != 0 ){ // -y方向
+                int t = (wrap_around_y) ? Vch*current*(degree+1+2*Host_Num)+4+(degree+1+2*Host_Num) :
+                Vch * current * (degree+1+2*Host_Num) + 4;
+                Crossing_Paths[t].pair_index.push_back(ct);  
+                pairs[ct].channels.push_back(t); 
+                if ( current < array_size ) {
+                wrap_around_y = false;
+                current = current + array_size*(array_size -1);
+                } else current -= array_size;
+                //hops++;
+                delta_y++;
+                }
+        }              
       }
 
 //       // X 方向のルーティング
@@ -1088,6 +1145,10 @@ int main(int argc, char *argv[])
       
       // X,Y 方向のルーティングが終了していることを確認
       if ( delta_x != 0 || delta_y != 0 ){
+         cout << " src = " << src << endl;
+         cout << " dst = " << dst << endl;
+         cout << " delta_x = " << delta_x << endl;
+         cout << " delta_y = " << delta_y << endl;
 	 cerr << "Routing Error " << endl;
 	 exit (1);
       }
