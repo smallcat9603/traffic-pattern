@@ -11,13 +11,13 @@ set xtics font "GothicBBB-Medium-RKSJ-H, 20"
 set xlabel "Traffic Pattern" font "GothicBBB-Medium-RKSJ-H, 20"
 set ylabel "Minimal Necessary \# of Slots" font ",20"
 
-plot  '/Users/smallcat/gnuplot/adaptive-routing-2d-torus-256.txt' using ($2):xtic(1) title "dimension order routing", '' using ($5) title "MiniCAR" 
+plot  '/Users/smallcat/Documents/GitHub/traffic-pattern/gnuplot/adaptive-routing-2d-torus-256.txt' using ($2):xtic(1) title "dimension order routing", '' using ($6) title "dynamic X-Y routing", '' using ($5) title "MiniCAR" 
 #, '' using ($3) title "dimension adaptive routing", '' using ($4) title "minimal oblivious routing"
 
 #set terminal png         # gnuplot recommends setting terminal before output
-#set output '/Users/smallcat/gnuplot/adaptive-routing-2d-torus-256-minimal.png'  
+#set output '/Users/smallcat/Documents/GitHub/traffic-pattern/gnuplot/adaptive-routing-2d-torus-256-minicar.png'  
  
 set terminal postscript eps 20
 #set term post eps color     
-set output '/Users/smallcat/gnuplot/adaptive-routing-2d-torus-256-minimal.eps'  
+set output '/Users/smallcat/Documents/GitHub/traffic-pattern/gnuplot/adaptive-routing-2d-torus-256-minicar.eps'  
 replot
