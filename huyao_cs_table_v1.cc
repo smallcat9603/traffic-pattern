@@ -1,0 +1,596 @@
+//
+// huyao_cs_table_v1.cc
+//
+//
+// 2-D mesh/torus
+// Usage: cat test.txt | ./mk_localIDnum -a 4 -T 0 
+// Usage: ./traffic_pattern_gen.out | ./mk_localIDnum -a 4 -T 0 
+//
+// Mon Aug 28 19:24:42 JST 2018 huyao@nii.ac.jp
+//
+
+#include <unistd.h> // getopt
+#include <iostream>
+#include <iomanip>
+#include <vector>
+#include <list>
+#include <algorithm>
+
+#include <fstream> //huyao180830 file output
+#include <sstream> //huyao180830 string operation
+
+using namespace std;
+
+#define degree 4 // 2-Dimension
+
+//
+// Communication node pair
+//
+struct Pair {
+   //pair id (from 0, 1, 2, ...)
+   int pair_id; 
+   // channels
+   vector<int> channels;
+   // source and destination
+   int src; int dst;
+   int h_src; int h_dst;
+   // assigned ID (different from pair_id)
+   int ID;
+   // ID is valid or not
+   bool Valid;
+   // the distance between src and dst
+   int hops;
+   // initialize
+   Pair(int s, int d, int h_s, int h_d): 
+	src(s),dst(d),h_src(h_s),h_dst(h_d),ID(-1),Valid(false),hops(-1){}
+
+   bool operator < (Pair &a){
+	 if (Valid == a.Valid)
+	    return hops < a.hops;
+	 else if (Valid == false)
+	    return false; 
+	 else
+	    return true;
+   }
+};
+
+//
+// Channels
+//
+struct Cross_Paths {
+   // Communication node pair index going through a channel
+   vector<int> pair_index;
+   // list of ID in Pair for a channel
+   vector<int> assigned_list;
+   // list of h_dst in Pair for a channel
+   vector<int> assigned_dst_list;
+   // If all IDs are assigned
+   bool Valid;
+   // initialize
+   Cross_Paths():Valid(false){}
+
+   bool operator == (Cross_Paths &a){
+      return Valid == a.Valid && pair_index.size() == a.pair_index.size();
+   }
+   bool operator < (Cross_Paths &a){
+	 if (Valid == a.Valid)
+	    return pair_index.size() < a.pair_index.size();
+	 else if (Valid == false)
+	    return false; 
+	 else
+	    return true;
+   }
+};
+
+//
+// output and error check
+//
+void show_paths (vector<Cross_Paths> Crossing_Paths, int ct, int switch_num, \
+int max_id, vector<Pair> pairs, int hops, int Vch, int Host_Num, int max_cp,
+bool path_based)
+{
+   // for each channel
+   for (int i=0; i < Vch*(degree+1+2*Host_Num)*switch_num; i++){
+      vector<int> ID_array(Crossing_Paths[i].pair_index.size(),-1);  // list of node pairs passing through a channel
+      //cout << "Channels (" << i << ")" << endl;
+      // for each node pair passing through a channel
+      for (unsigned int j=0; j < Crossing_Paths[i].pair_index.size(); j++){
+	 int t = Crossing_Paths[i].pair_index[j];
+	 //cout << " channel from " << pairs[t].src << " to " << pairs[t].dst << " is assigned to the ID " << pairs[t].ID << endl;
+ 	 ID_array.push_back(pairs[t].ID);
+      }
+      sort ( ID_array.begin(), ID_array.end() );
+      unsigned int k = 0;
+      bool error = false;
+      while ( k+1 < ID_array.size() && !error){
+	 if ( ID_array[k] == ID_array[k+1] && ID_array[k] != -1 && path_based)
+	    error = true;
+	 	k++;
+      }
+      if (error){
+	 cout << "ERROR : ID collision is occured!!." << endl;      
+	 exit (1);
+      }
+   }
+   cout << endl;
+
+   // output
+   vector<Cross_Paths>::iterator elem = Crossing_Paths.begin();
+   int port = 0;
+   //int slots = 0; //huyao161226
+   //int pointer = 0; //huyao161226
+   int total_slots = 0; //huyao170307
+   if (Vch == 0)
+	cout << " (east, west, south, north, from host0,... to host0,...)";
+   else
+   	//cout << " (east, west, south, north, from host0,... east(vch2), south(vch2), west(vch2), north(vch2), from host(vch2)0,.. to host(vch2)0,.." 
+	cout << " === Number of slots === " << endl;
+        cout << " East, West, South, North, Out, In " << endl;
+
+   	cout << " SW " << setw(2) << port/((degree+1+2*Host_Num)*Vch) << ":  ";    while ( elem != Crossing_Paths.end() ){
+      if (port%(degree+1+2*Host_Num)!=0) cout << " " << (*elem).pair_index.size();
+      //if (pointer<4 && slots<(*elem).pair_index.size())  {pointer++; slots = (*elem).pair_index.size();} //huyao161226
+
+      //huyao 170307
+      if (port%(degree+1+2*Host_Num)!=0 && port%(degree+1+2*Host_Num)!=degree+2*Host_Num && port%(degree+1+2*Host_Num)!=degree+2*Host_Num-1)  total_slots += (*elem).pair_index.size();
+
+      elem ++; port++;
+      if ( port%((degree+1+2*Host_Num)*Vch) == 0){
+         //pointer = 0; //huyao161226
+	 cout << endl;		
+	 if ( port != Vch*(degree+1+2*Host_Num)*switch_num)
+	    cout << " SW " << setw(2) << port/((degree+1+2*Host_Num)*Vch) << ":  ";	
+      }
+   }
+	// setting for comparing (maximum) Cross_Path 
+    vector<Cross_Paths>::iterator pt = Crossing_Paths.begin();
+	while ( pt != Crossing_Paths.end() ){
+    	(*pt).Valid = true;
+        ++pt;
+	}
+
+   // important output
+   // cout << "(Maximum) Crossing Paths: " << max_element(Crossing_Paths.begin(),Crossing_Paths.end())->pair_index.size() << endl;
+//   cout << "(Maximum) Crossing Paths: " << max_cp << endl;
+   cout << endl << "=== The number of paths on this application ===" << endl << ct << " (all-to-all cases: " 	\
+	<< (switch_num*Host_Num)*(switch_num*Host_Num-1) << ")" << endl;
+   cout << endl << "=== The average hops ===" << endl << setiosflags(ios::fixed | ios::showpoint) <<
+		   (float)hops/ct+1 << endl;
+   // cout << "ID size(without ID modification)" << max_id << endl;
+   // cout << "(Maximum) number of slots: " << slots;
+   cout << endl << " ### OVER ###" << endl;
+   cout << endl;
+
+
+   //huyao180830 routing table file output for each sw   
+   int target_sw; // switch file to be written, sw0, sw1, ...
+   int input_port; // of target_sw
+   int output_port; // of target_sw
+   int slot_num; // assigned slot number for a node pair
+   string output_port_s; // string
+   string input_port_s; // string
+   string slot_num_s; // string
+   system("rm output/sw*");  // delete previous output results
+    for (int i=0; i < pairs.size(); i++){
+            Pair current_pair = pairs[i];
+            slot_num = current_pair.ID;
+            for (int j=1; j < current_pair.channels.size(); j++){ //current_pair.channels[0] --> src, current_pair.channels[current_pair.channels.size()-1] --> dst
+                    target_sw = -1;
+                    input_port = -1;
+                    output_port = -1;
+                    if (j == 1){ // source switch
+                            target_sw = current_pair.src;
+                            output_port = current_pair.channels[j]%(degree+1+2*Host_Num)-1;
+                    }
+                    else if (j == current_pair.channels.size()-1){ // destination switch
+                            target_sw = current_pair.dst;
+                            input_port = current_pair.channels[j-1]%(degree+1+2*Host_Num)-1;
+                            if (input_port%2 == 0){
+                                    input_port++; // 0-->1, 2-->3, ...
+                            }
+                            else{
+                                    input_port--; // 1-->0, 3-->2, ...
+                            }
+                    }
+                    else{
+                            target_sw = current_pair.channels[j]/((degree+1+2*Host_Num)*Vch);
+                            output_port = current_pair.channels[j]%(degree+1+2*Host_Num)-1;
+                            input_port = current_pair.channels[j-1]%(degree+1+2*Host_Num)-1;
+                            if (input_port%2 == 0){
+                                    input_port++; // 0-->1, 2-->3, ...
+                            }
+                            else{
+                                    input_port--; // 1-->0, 3-->2, ...
+                            }
+                    }
+                    char filename[100]; 
+                    sprintf(filename, "output/sw%d", target_sw); // save to output/ 
+                    char* fn = filename;
+                    ofstream outputfile(fn, ios::app); // iostream append
+                    stringstream ss_op;
+                    stringstream ss_ip;
+                    stringstream ss_sn;
+                    output_port_s = "";
+                    input_port_s = "";
+                    slot_num_s = "";
+                    if (output_port < 10 && output_port > -1){
+                            ss_op << "0" << output_port;
+                            output_port_s = ss_op.str();
+                    }
+                    else{
+                            ss_op << output_port;
+                            output_port_s = ss_op.str();
+                    }
+                    if (input_port < 10 && input_port > -1){
+                            ss_ip << "0" << input_port;
+                            input_port_s = ss_ip.str();
+                    }
+                    else{
+                            ss_ip << input_port;
+                            input_port_s = ss_ip.str();
+                    }
+                    if (slot_num < 10 && slot_num > -1){
+                            ss_sn << "0" << slot_num;
+                            slot_num_s = ss_sn.str();
+                    }
+                    else{
+                            ss_sn << slot_num;
+                            slot_num_s = ss_sn.str();
+                    }
+                    outputfile << output_port_s << slot_num_s << " " << input_port_s << slot_num_s <<"  // from node "<< current_pair.h_src << " to node " << current_pair.h_dst << endl;
+                    outputfile.close();
+
+            }
+    }
+    cout << " !!! Routing tables for each sw are saved to output/ !!!" << endl << endl;
+}
+
+// 
+// Detect crossing_paths of routing
+//
+// Usage: cat $Trace | ./huyao_cs_table_v1.out
+//
+//
+//  Notice that, 
+// % less $Trace
+// 0  2    <--- path from node 0 to node 2
+// 0  4 
+//
+int main(int argc, char *argv[])
+{
+   // side length of mesh/torus
+   static int array_size = 4;
+   // ID Allocation policy
+   static int Allocation = 1; // 0:low port first， 1:Crossing Paths based method
+   // number of hosts for each router
+   static int Host_Num = 1;
+   // The number of VCHs
+   static int Vch = 1; // Mesh:1, Torus:2
+   static int Topology = 0; // Mesh:0, Torus:1
+   int c;
+   static bool path_based = true; //false:destination_based, true:path_based
+   
+   while((c = getopt(argc, argv, "a:A:Z:T:d")) != -1) {
+      switch (c) {
+      case 'a':
+	 array_size = atoi(optarg);
+	 break;
+      case 'A':
+	 Allocation = atoi(optarg);	
+	 break;
+	/*  case 'v':
+	 Vch = atoi(optarg);	
+	 break; */
+      case 'T':
+	 Topology = atoi(optarg);	
+	 break;
+      case 'Z':
+	Host_Num = atoi(optarg);	
+	break;
+      case 'd':
+	 path_based = false;
+	 break;
+      default:
+	 //usage(argv[0]);
+	 cout << " This option is not supported. " << endl;
+	 return EXIT_FAILURE;
+      }
+   }
+
+   if (Topology==1) Vch=2; //Torus
+   else if (Topology==0) Vch=1;//Mesh
+   else{ 
+      cerr << " The combination of Topology and Vchs is wrong!!" << endl;
+      exit (1);
+   }
+
+   // cout << "ID Allocation Policy is 0(low port first) / 1(Crossing Paths based method): " << Allocation << endl;
+   // cout << "Address method is 0(destination_based) / 1(path_based): " 
+   cout << endl << "### start ###" << endl << endl << "=== Update of slot number ===" << endl << " 0 (no) / 1 (yes): "
+	<<  path_based << " (Use -d to deactivate the update) " << endl;
+   
+   // source and destination	
+   int src = -1, dst = -1, h_src = -1, h_dst = -1;
+   // number of nodes
+   static int switch_num = array_size*array_size;
+   // Crossing Paths
+   // including Host <-> Switch
+   vector<Cross_Paths> Crossing_Paths((degree+1+2*Host_Num)*switch_num*Vch);
+   // total number of node pairs
+   int ct = 0;
+   // total number of hops 
+   int hops = 0; 
+
+   // node pairs
+   vector<Pair> pairs;
+   
+   // ########################################## //
+   // ##############   PHASE 1   ############### //
+   // ##                routing          ## //
+   // ########################################## //
+
+   while ( cin >> h_src){	
+      cin >> h_dst;
+	  src = h_src/Host_Num;
+	  dst = h_dst/Host_Num;
+
+      bool wrap_around_x = false;
+      bool wrap_around_y = false;
+
+      //#######################//
+      // (switch port:0 localhost->switch, 1 +x, 2 -x, 3 -y, 4 +y, 5 switch-> localhost)
+      // switch port:1 +x, 2 -x, 3 -y, 4 +y, 
+	  // from 5 to (4+Host_Num) localhost->switch,
+	  // from (5+Host_Num) to (4+Host_Num*2) switch-> localhost
+      //#######################//
+
+      // channel <-- node pair ID, node pair <-- channel ID  
+      Pair tmp_pair(src,dst,h_src,h_dst);  
+      pairs.push_back(tmp_pair);
+      // int t = Vch*src*(degree+1+2*Host_Num)+degree+1+h_src%Host_Num;
+      int t = (dst%2==1 && Topology==1) ? 
+        Vch*src*(degree+1+2*Host_Num)+(degree+1+2*Host_Num)+degree+1+h_src%Host_Num
+        : Vch*src*(degree+1+2*Host_Num)+degree+1+h_src%Host_Num;
+      Crossing_Paths[t].pair_index.push_back(ct); // channel <-- node pair ID
+      pairs[ct].channels.push_back(t);  // node pair <-- channel ID
+      pairs[ct].pair_id = ct; //huyao170315     
+      int delta_x, delta_y, current;
+      switch (Topology){
+      case 0: //mesh
+	 delta_x = dst%array_size - src%array_size;
+	 delta_y = dst/array_size - src/array_size;
+	 current = src; 
+	 break;
+
+      case 1: // torus
+	 delta_x = dst%array_size - src%array_size;
+	 if ( delta_x < 0 && abs(delta_x) > array_size/2 ) {
+	    //delta_x = -( delta_x + array_size/2);
+            //huyao 180417 rev
+            delta_x = delta_x + array_size;
+		wrap_around_x = true;		
+	 } else if ( delta_x > 0 && abs(delta_x) > array_size/2 ) {
+	    //delta_x = -( delta_x - array_size/2);
+            //huyao 180417 rev
+            delta_x = delta_x - array_size;
+		wrap_around_x = true;		
+	 }
+	 delta_y = dst/array_size - src/array_size;
+	 if ( delta_y < 0 && abs(delta_y) > array_size/2 ) {
+	    //delta_y = -( delta_y + array_size/2);
+            //huyao 180417 rev
+            delta_y = delta_y + array_size;
+		wrap_around_y = true;		
+	 } else if ( delta_y > 0 && abs(delta_y) > array_size/2 ) {
+	    //delta_y = -( delta_y - array_size/2);
+            //huyao 180417 rev
+            delta_y = delta_y - array_size;
+		wrap_around_y = true;		
+	 }
+	 current = src; 
+	 break;
+      default:
+	 cerr << "Please select -T 0, or -T 1 option" << endl;
+	 exit(1);
+	 break;
+      }
+
+	 pairs[ct].hops = abs(delta_x) + abs(delta_y); 
+
+      // X
+      if (delta_x > 0){
+	 while ( delta_x != 0 ){ // +x
+	    int t = (wrap_around_x) ? Vch*current*(degree+1+2*Host_Num)+1+(degree+1+2*Host_Num) :
+	       Vch * current * (degree+1+2*Host_Num) + 1;
+	    Crossing_Paths[t].pair_index.push_back(ct); // channel <-- node pair ID
+	    pairs[ct].channels.push_back(t); // node pair <-- channel ID
+	    if ( current % array_size == array_size-1) {
+	       wrap_around_x = false;
+	       current = current - (array_size -1);
+	    } else current++; 
+	    delta_x--;
+	    hops++;
+	 }
+      } else if (delta_x < 0){
+	 while ( delta_x != 0 ){ // -x
+	    int t = (wrap_around_x) ? Vch*current*(degree+1+2*Host_Num)+2+(degree+1+2*Host_Num) :
+	       Vch * current * (degree+1+2*Host_Num) + 2;
+	    Crossing_Paths[t].pair_index.push_back(ct); // channel <-- node pair ID
+	    pairs[ct].channels.push_back(t); // node pair <-- channel ID
+	    if ( current % array_size == 0 ) {
+	       wrap_around_x = false;
+	       current = current + (array_size - 1 );
+	    } else current--;
+	    hops++;
+	    delta_x++;
+	 }
+      }
+      
+      // check X routing is finished
+      if (delta_x != 0){
+	 cerr << "Routing Error " << endl;
+	 exit (1);
+      }
+
+      // Y	
+      if (delta_y > 0){
+	 while ( delta_y != 0 ){ // -y
+	    int t = (wrap_around_y) ? Vch*current*(degree+1+2*Host_Num)+3+(degree+1+2*Host_Num) :
+	       Vch * current * (degree+1+2*Host_Num) + 3;
+	    Crossing_Paths[t].pair_index.push_back(ct);  // channel <-- node pair ID
+	    pairs[ct].channels.push_back(t); // node pair <-- channel ID
+	    if ( current >= array_size*(array_size-1) ){
+	       wrap_around_y = false;
+	       current = current - array_size*(array_size -1);
+	    } else current += array_size;
+	    hops++;
+	    delta_y--;
+	 }
+      } else if (delta_y < 0){
+	 while ( delta_y != 0 ){ // +y
+	    int t = (wrap_around_y) ? Vch*current*(degree+1+2*Host_Num)+4+(degree+1+2*Host_Num) :
+	       Vch * current * (degree+1+2*Host_Num) + 4;
+	    Crossing_Paths[t].pair_index.push_back(ct);  // channel <-- node pair ID
+	    pairs[ct].channels.push_back(t); // node pair <-- channel ID
+	    if ( current < array_size ) {
+	       wrap_around_y = false;
+	       current = current + array_size*(array_size -1);
+	    } else current -= array_size;
+	    hops++;
+	    delta_y++;
+	 }
+      }
+      
+      // check if X,Y routing are finished 
+      if ( delta_x != 0 || delta_y != 0 ){
+	 cerr << "Routing Error " << endl;
+	 exit (1);
+      }
+
+      // switch->host 
+      // t = Vch*dst*(degree+1+2*Host_Num)+degree+1+Host_Num+h_dst%Host_Num;
+      t = (src%2==1 && Topology==1) ? 
+		Vch*dst*(degree+1+2*Host_Num)+(degree+1+2*Host_Num)+degree+1+Host_Num+h_dst%Host_Num
+		: Vch*dst*(degree+1+2*Host_Num)+degree+1+Host_Num+h_dst%Host_Num;
+      Crossing_Paths[t].pair_index.push_back(ct); // channel <-- node pair ID
+      pairs[ct].channels.push_back(t);    // node pair <-- channel ID  
+      ct++;	
+   }	
+
+
+   // ########################################## //
+   // ##############   PHASE 2   ############### //
+   // ##        local ID              ## //
+   // ########################################## //
+
+   int max_cp = max_element(Crossing_Paths.begin(),Crossing_Paths.end())->pair_index.size();
+   int max_id = 0;
+	
+   int max_cp_dst = 0; // number of dst-based renewable labels	
+
+   // calculate number of dst-based renewable label
+   int max_cp_dst_t = 0;
+   for (int j = 0; j < Vch * (degree+1+2*Host_Num) * switch_num; j++ ){ 
+        vector<Cross_Paths>::iterator elem = Crossing_Paths.begin()+j;
+        unsigned int p_ct = 0;
+        while ( p_ct < elem->pair_index.size() ){
+                int u = elem->pair_index[p_ct]; 
+                bool is_duplicate = false; //check if there is a same destination
+                unsigned int p_ct_t = 0;
+                while ( p_ct_t < p_ct ){
+                        int v = elem->pair_index[p_ct_t]; 
+                        if (pairs[u].h_dst == pairs[v].h_dst){
+                                is_duplicate = true;
+                        }
+                        p_ct_t++;
+                }
+                if (!is_duplicate) max_cp_dst_t++;
+                p_ct++;
+        }
+        if (max_cp_dst_t > max_cp_dst) max_cp_dst = max_cp_dst_t;
+        max_cp_dst_t = 0;
+   }
+	cout << endl << " === Max. number of slots (w/o update) ===" << endl << max_cp_dst << endl;	
+	cout << endl << " === Max. number of slots (w/ update) ===" << endl << max_cp << endl;
+
+        /*int slot_max = 0;
+        for (int i = 0; i < Crossing_Paths.size(); i++){
+                if (i%(degree+1+2*Host_Num) != degree+2*Host_Num && i%(degree+1+2*Host_Num) != degree+2*Host_Num-1)
+                        if(Crossing_Paths[i].pair_index.size() > slot_max)
+                                slot_max = Crossing_Paths[i].pair_index.size();
+        }
+        cout << " slot_max = " << slot_max << endl;*/	
+
+
+   for (int j = 0; j < Vch * (degree+1+2*Host_Num) * switch_num; j++ ){ 
+      vector<Cross_Paths>::iterator elem = Crossing_Paths.begin()+j;
+	switch (Allocation){
+	// low port first
+   	case 0:   
+	   if ( j%(degree+1+2*Host_Num)== 0)	 
+	      elem = Crossing_Paths.begin()+j;
+	   break;
+	// Crossing paths based method
+	case 1:
+	   elem = max_element(Crossing_Paths.begin(),Crossing_Paths.end());
+	   break;
+	default:
+	   cerr << "Please select a legal allocation option (-A 0 or 1)" << endl;
+	   exit (1);
+	   break;
+	}
+
+	// local IDs are assigned
+	unsigned int path_ct = 0; 
+	while ( path_ct < elem->pair_index.size() ){
+	   int t = elem->pair_index[path_ct];      
+	   // check if IDs are assigned
+	   if ( pairs[t].Valid == true ) {path_ct++; continue;}
+	   // ID is assigned from 0
+	   int id_tmp = 0;
+	   bool NG_ID = false;
+	   
+      NEXT_ID:
+	 // 
+	 unsigned int s_ct = 0; 
+	 while ( s_ct < pairs[t].channels.size() && !NG_ID ){
+	    int i = pairs[t].channels[s_ct];
+	    vector<int>::iterator find_ptr;
+	    find_ptr = find ( Crossing_Paths[i].assigned_list.begin(), Crossing_Paths[i].assigned_list.end(), id_tmp);
+	    if ( path_based && find_ptr != Crossing_Paths[i].assigned_list.end()) NG_ID = true;
+	    if (!path_based && find_ptr != Crossing_Paths[i].assigned_list.end()) {
+	       int tmp = 0;
+	       while (*find_ptr != Crossing_Paths[i].assigned_list[tmp]) {tmp++;}
+	       if (pairs[t].h_dst != Crossing_Paths[i].assigned_dst_list[tmp])
+			NG_ID = true; 
+	    }
+	    s_ct++;
+	 }
+	 
+	 if (NG_ID){
+	    id_tmp++; NG_ID = false; goto NEXT_ID;
+	 }
+ 	 pairs[t].ID = id_tmp;
+
+	 unsigned int a_ct = 0;
+	 while ( a_ct < pairs[t].channels.size() ){
+	    int j = pairs[t].channels[a_ct];
+	    Crossing_Paths[j].assigned_list.push_back(id_tmp);
+	    int t = elem->pair_index[path_ct];      	
+	    Crossing_Paths[j].assigned_dst_list.push_back(pairs[t].h_dst);
+	    a_ct++; 
+	 }
+
+	 pairs[t].Valid = true;	    
+	 if (max_id <= id_tmp) max_id = id_tmp + 1; 
+	 path_ct++;
+      }
+      elem->Valid = true;
+   }
+   
+   show_paths(Crossing_Paths, ct, switch_num, max_id, pairs, hops, Vch, Host_Num, max_cp, path_based);   
+   
+   return 0;
+}
+
+
