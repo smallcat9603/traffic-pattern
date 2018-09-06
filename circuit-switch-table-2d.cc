@@ -1,13 +1,13 @@
 //
-// huyao_cs_table_v1.cc
-//
+// circuit-switch-table-2d.cc
 //
 // 2-D mesh/torus
-// Usage: cat test.txt | ./mk_localIDnum -a 4 -T 0 
-// Usage: ./traffic_pattern_gen.out | ./mk_localIDnum -a 4 -T 0 
+// Usage: cat test.txt | ./circuit-switch-table-2d.out -a 4 -T 0 
+// Usage: ./traffic_pattern_generator.out -t 0 -n 4 | ./circuit-switch-table-2d.out -a 4 -T 0 
 //
 // Mon Aug 28 19:24:42 JST 2018 huyao@nii.ac.jp
 //
+// This file estimates # of slots and generates routing table for each switch
 
 #include <unistd.h> // getopt
 #include <iostream>
@@ -248,7 +248,7 @@ bool path_based)
 // 
 // Detect crossing_paths of routing
 //
-// Usage: cat $Trace | ./huyao_cs_table_v1.out
+// Usage: cat $Trace | ./circuit-switch-table-2d.out
 //
 //
 //  Notice that, 

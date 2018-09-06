@@ -1,18 +1,19 @@
 //
-//  traffic_pattern_gen.cc
+//  traffic-pattern-generator.cc
 //
 //  Jan-27-1997	nisimura@aa.cs.keio.ac.jp
 //  Oct-02-1999 jouraku@am.ics.keio.ac.jp
 //  Aug-31-2018 huyao@nii.ac.jp
 //
+// This file helps to generate various traditional traffic patterns, including uniform, matrix, reversal, hotspot, neighbor, shuffle, butterfly, complement, tornado, all-to-all
 
-#include "mkpkt-huyao.h"
+#include "traffic-pattern-generator.h"
 
 using namespace std;
 
 #define TRFC_NUM	10	// number of traffic patterns //huyao 161228
 
-static	const	char*	SCCSID = "@(#)mkpkt " VERSION " for " SYSTEM;
+static	const	char*	SCCSID = "@(#)tpg " VERSION " for " SYSTEM;
 
 static	int	Clk	= 1;	// clocks huyao180901
 static	int	Dsts = 1;	// destinations
@@ -30,7 +31,7 @@ static  int     Data_Size   = 1; // data size
 static	int	Itvl_Flit = 1000; // flit interval
 static  int     Itvl_Pkt  = Itvl_Flit*Data_Size; // packet interval
 static	void	usage(char* myname);
-static	void	mkpkt(void);
+static	void	tpg(void);
 static	void	uniform(int src, vector<int> &dst);
 static	void	matrix(int src, vector<int> &dst);
 static	void	shuffle(int src, vector<int> &dst); //huyao161228
@@ -117,7 +118,7 @@ int main(int argc, char *argv[])
 	Itvl_Pkt  = Itvl_Flit*Data_Size;
 
 	// cout << Itvl_Flit << endl;
-	mkpkt();
+	tpg();
 
 	return EXIT_SUCCESS;
 }
@@ -137,7 +138,7 @@ void usage(char* myname)
 }
 
 
-void mkpkt(void)
+void tpg(void)
 {
 	vector<int> cnt;
 	vector<int> dst;
