@@ -1,0 +1,4 @@
+-100 0100  // from node 5 to node 6
+0200 -100  // from node 6 to node 14
+0001 0101  // from node 5 to node 7
+0201 -101  // from node 6 to node 10

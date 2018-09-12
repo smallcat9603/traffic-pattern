@@ -1,0 +1,4 @@
+0200 0000  // from node 3 to node 4
+0200 0000  // from node 2 to node 4
+0200 0000  // from node 1 to node 4
+-102 0002  // from node 3 to node 0
