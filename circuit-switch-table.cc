@@ -97,14 +97,27 @@ int max_id, vector<Pair> pairs, int hops, int Vch, int Host_Num, int max_cp, int
 bool path_based, int degree)
 {
    // for each channel
+   cout << " === Port information for each switch === " << endl;
    for (int i=0; i < Vch*(degree+1+2*Host_Num)*switch_num; i++){
       vector<int> ID_array(Crossing_Paths[i].pair_index.size(),-1);
 //      cout << " Channels (" << i << ")" << endl;
+      if (i%(Vch*(degree+1+2*Host_Num)) == 0) cout << " SW " << i/(Vch*(degree+1+2*Host_Num)) << " : " << endl;
 // for each node pair passing through a channel
       for (unsigned int j=0; j < Crossing_Paths[i].pair_index.size(); j++){
 	 int t = Crossing_Paths[i].pair_index[j];
 //	 cout << " channel from " << pairs[t].src << " to " << pairs[t].dst << " is assigned to the ID " << pairs[t].ID << endl;
  	 ID_array.push_back(pairs[t].ID);
+
+         if (i%(degree+1+2*Host_Num) == degree+1+2*Host_Num -2 ){
+                 cout << "      Port 0 (from localhost) --> Pair ID " << pairs[t].pair_id << " (local ID " << pairs[t].ID << "), from node " << pairs[t].h_src << " to node " << pairs[t].h_dst << endl;
+         }
+         else if (i%(degree+1+2*Host_Num) == degree+1+2*Host_Num -1 ){
+                 cout << "      Port 0 (to localhost) --> Pair ID " << pairs[t].pair_id << " (local ID " << pairs[t].ID << "), from node " << pairs[t].h_src << " to node " << pairs[t].h_dst << endl;
+         }
+         else {
+                 cout << "      Port " << i%(degree+1+2*Host_Num) << " --> Pair ID " << pairs[t].pair_id << " (local ID " << pairs[t].ID << "), from node " << pairs[t].h_src << " to node " << pairs[t].h_dst << endl; 
+         }
+         
       }
       sort ( ID_array.begin(), ID_array.end() );
       unsigned int k = 0;
@@ -131,7 +144,8 @@ bool path_based, int degree)
    else
    	//cout << " (east, west, south, north, front, back, from host0,... east(vch2), south(vch2), west(vch2), north(vch2), front, back, from host(vch2)0,.. to host(vch2)0,.."
 	cout << " === Number of slots === " << endl;
-        cout << " East, West, South, North, (Back, Front, ...) Out, In " << endl;
+        //cout << " East, West, South, North, (Back, Front, ...) Out, In " << endl;
+        cout << " X1, X2, (X3, X4, X5, X6, X7, X8, ...), Out, In " << endl;
 
    	cout << " SW " << setw(2) << port/((degree+1+2*Host_Num)*Vch) << ":  ";    while ( elem != Crossing_Paths.end() ){
       if (port%(degree+1+2*Host_Num)!=0) cout << " " << (*elem).pair_index.size();
@@ -147,7 +161,7 @@ bool path_based, int degree)
 	    cout << " SW " << setw(2) << port/((degree+1+2*Host_Num)*Vch) << ":  ";	
       }
    }
-	cout << endl; 
+	//cout << endl; 
 	// setting for comparing (maximum) Cross_Path 
         vector<Cross_Paths>::iterator pt = Crossing_Paths.begin();
 	while ( pt != Crossing_Paths.end() ){
@@ -171,7 +185,7 @@ bool path_based, int degree)
    string input_port_s; // string
    string slot_num_s; // string
    system("rm output/sw*");  // delete previous output results
-   cout << " === Routing information of each node pair ===" << endl; //routing information of each node pair
+   cout << " === Routing path for each node pair ===" << endl; //routing information of each node pair
     for (int i=0; i < pairs.size(); i++){
             Pair current_pair = pairs[i];
             slot_num = current_pair.ID;
@@ -418,7 +432,7 @@ int main(int argc, char *argv[])
 
    //cout << " ID Allocation Policy is 0(low port first) / 1(Crossing Paths based method): " << Allocation << endl;
    //cout << " Address method is 0(destination_based) / 1(path_based): " 
-   cout << " ### start ###" << " === Update of slot number ===" << endl << " 0 (no) / 1 (yes): "
+   cout << " ### start ###" << endl << " === Update of slot number ===" << endl << " 0 (no) / 1 (yes): "
 	<<  path_based << " (Use -d to deactivate the update) " << endl;
    
    // source and destination		
