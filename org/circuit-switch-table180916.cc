@@ -403,8 +403,8 @@ int main(int argc, char *argv[])
       }
    }
 
-   if (dimension > 4 || dimension < 1){
-        cerr << " Please input -D $dimension (1 <= $dimension <= 4)" << endl;
+   if (dimension > 4 || dimension < 2){
+        cerr << " Please input -D $dimension (2 <= $dimension <= 4)" << endl;
         exit (1);   
    }
    degree = 2 * dimension;
@@ -470,7 +470,7 @@ int main(int argc, char *argv[])
       pairs[ct].channels.push_back(t);  // node pair <-- channel ID     
       pairs[ct].pair_id = ct; 
       int delta_x, delta_y, delta_z, delta_a, current, src_xy, dst_xy, src_xyz, dst_xyz; // 2D, 3D, 4D
-      if (dimension == 2 || dimension == 1){ //2D, 1D
+      if (dimension == 2){ //2D
          src_xy = src; 
          dst_xy = dst; 
       }
@@ -501,7 +501,6 @@ int main(int argc, char *argv[])
 	//        delta_x = dst_xy%array_size - src_xy%array_size; 
 	//        delta_y = dst_xy/array_size - src_xy/array_size; 
          }
-         //4D, 3D, 2D, 1D(delta_y=0)
          delta_x = dst_xy%array_size - src_xy%array_size; 
          delta_y = dst_xy/array_size - src_xy/array_size; 
 	 current = src; 
@@ -542,7 +541,7 @@ int main(int argc, char *argv[])
                         wrap_around_z = true;		
                 }
          }
-         //4D, 3D, 2D, 1D(delta_y=0)
+         //4D, 3D, 2D
 	 delta_x = dst_xy%array_size - src_xy%array_size;
 	 if ( delta_x < 0 && abs(delta_x) > array_size/2 ) {
 	    //delta_x = -( delta_x + array_size/2);
@@ -579,7 +578,7 @@ int main(int argc, char *argv[])
       {
          pairs[ct].hops = abs(delta_x) + abs(delta_y)+ abs(delta_z);
       }
-      if (dimension == 2 || dimension == 1) //2D, 1D(delta_y=0)
+      if (dimension == 2) //2D
       {
          pairs[ct].hops = abs(delta_x) + abs(delta_y);
       }
@@ -831,7 +830,7 @@ int main(int argc, char *argv[])
         }        
       }
 
-      if (dimension == 2 || dimension == 1){ //2D routing, 1D routing (delta_y=0)
+      if (dimension == 2){ //2D routing
         // X 
         if (delta_x > 0){
                 while ( delta_x != 0 ){ // +x
