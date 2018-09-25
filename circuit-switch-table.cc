@@ -715,11 +715,11 @@ int main(int argc, char *argv[])
    static int Vch = 1; // Mesh:1, Torus:2
    static int Topology = 0; // Mesh:0, Torus:1, Fat-tree:2, fully-connected:3
    int c;
-   static bool path_based = true; //false:destination_based, true:path_based
+   static bool path_based = false; //false:destination_based (slot # not updated), true:path_based (slot # updated)
    static int degree = 4; // (mesh or torus) degree = 2 * dimension, (fully-connected) degree = switch_num -1 
    static int dimension = 2; //mesh or torus
    
-   while((c = getopt(argc, argv, "a:A:n:T:dD:")) != -1) {
+   while((c = getopt(argc, argv, "a:A:n:T:uD:")) != -1) {
       switch (c) {
       case 'a':
 	 array_size = atoi(optarg);
@@ -736,8 +736,8 @@ int main(int argc, char *argv[])
       case 'n':
 	 Host_Num = atoi(optarg);	
 	 break;
-      case 'd':
-	 path_based = false;
+      case 'u':
+	 path_based = true;
 	 break;
       case 'D':
          dimension = atoi(optarg);
@@ -806,9 +806,11 @@ int main(int argc, char *argv[])
    vector<Pair> pairs;
 
    cout << " === topology ===" << endl;
-   if (Topology == 0) cout << dimension << "-D mesh (" << switch_num << " switches/nodes)";
-   else if (Topology == 1) cout << dimension << "-D torus (" << switch_num << " switches/nodes)";
-   else if (Topology == 2) cout << "fat tree (" << node_num << " nodes + " << node_num/Host_Num+node_num/(int)pow(Host_Num,2)+1 << " switches)";
+   if (Topology == 0) cout << dimension << "-D mesh (" << switch_num << " switches/nodes)" << endl;
+   else if (Topology == 1) cout << dimension << "-D torus (" << switch_num << " switches/nodes)" << endl;
+   else if (Topology == 2) 
+        if (node_num/(int)pow(Host_Num,2) == 1) cout << "fat tree (" << node_num << " nodes + " << node_num/Host_Num+node_num/(int)pow(Host_Num,2) << " switches)" << endl;
+        else cout << "fat tree (" << node_num << " nodes + " << node_num/Host_Num+node_num/(int)pow(Host_Num,2)+1 << " switches)" << endl;
    else if (Topology == 3) cout << "fully connected (" << switch_num << " switches/nodes)" << endl;
    else cout << "Error: please specify -T [0-3] (0 mesh, 1 torus, 2 fat tree, 3 fully connected)" << endl;
 
