@@ -224,7 +224,7 @@ bool path_based, int degree, int default_slot)
                                     input_port++; // 1-->2, 3-->4, ...
                             }
                             //cout << "SW " << target_sw << " (port " << output_port << ")" << " --> ";
-                            cout << "SW " << target_sw << " (port " << input_port << "->" << output_port << ")" << " - [slot " << slot_num << "] --> ";
+                            cout << "SW " << target_sw << " (port " << input_port << "->" << output_port << ")" << " - [slot " << slot_num << "] -> ";
                     }
                 //     char filename[100]; 
                 //     sprintf(filename, "output/sw%d", target_sw); // save to output/ 
