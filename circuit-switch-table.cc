@@ -199,7 +199,7 @@ bool path_based, int degree, int default_slot)
                             target_sw = current_pair.src;
                             output_port = current_pair.channels[j]%(degree+1+2*Host_Num);
                             //cout << "SW " << target_sw << " (port " << output_port << ")" << " --> ";
-                            cout << "   SW " << target_sw << " (port " << input_port << "->" << output_port << ")" << " --> [slot " << slot_num << "] --> ";
+                            cout << "   SW " << target_sw << " (port " << input_port << "->" << output_port << ")" << " - [slot " << slot_num << "] -> ";
                     }
                     else if (j == current_pair.channels.size()-1){ // destination switch
                             target_sw = current_pair.dst;
@@ -224,7 +224,7 @@ bool path_based, int degree, int default_slot)
                                     input_port++; // 1-->2, 3-->4, ...
                             }
                             //cout << "SW " << target_sw << " (port " << output_port << ")" << " --> ";
-                            cout << "SW " << target_sw << " (port " << input_port << "->" << output_port << ")" << " --> [slot " << slot_num << "] --> ";
+                            cout << "SW " << target_sw << " (port " << input_port << "->" << output_port << ")" << " - [slot " << slot_num << "] --> ";
                     }
                 //     char filename[100]; 
                 //     sprintf(filename, "output/sw%d", target_sw); // save to output/ 
@@ -497,10 +497,10 @@ bool path_based, int PORT, int default_slot)
                         }
                         if (j == 1){ //src node
                                 //cout << "Node " << current_pair.h_src << " (port 0)" << " --> ";
-                                cout << "   Node " << current_pair.h_src << " --> [slot " << slot_num << "] --> ";
+                                cout << "   Node " << current_pair.h_src << " - [slot " << slot_num << "] -> ";
                         }
                         //cout << "SW " << target_sw << " (port " << output_port << ")" << " --> ";
-                        cout << "SW " << target_sw << " (port " << input_port << "->" << output_port << ")" << " --> [slot " << slot_num << "] --> ";
+                        cout << "SW " << target_sw << " (port " << input_port << "->" << output_port << ")" << " - [slot " << slot_num << "] -> ";
                         if (j == current_pair.channels.size() - 1){ //dst node
                                 //cout << "Node " << current_pair.h_dst << " (port 0)";
                                 cout << "Node " << current_pair.h_dst;
@@ -671,7 +671,7 @@ bool path_based, int degree, int default_slot)
                         output_port = current_pair.channels[j]%(degree+1+2*Host_Num); // output_port = current_pair.dst
                         //cout << "SW " << target_sw << " (port " << output_port << ")" << " --> SW " << current_pair.dst;
                         input_port = current_pair.src;
-                        cout << "       SW " << target_sw << " (port " << input_port << "->" << output_port << ")" << " --> [slot " << slot_num << "] --> ";
+                        cout << "       SW " << target_sw << " (port " << input_port << "->" << output_port << ")" << " - [slot " << slot_num << "] -> ";
                     }
 
                     Crossing_Paths[current_pair.channels[j]].routing_table.push_back(input_port); // routing table <-- input port
