@@ -1462,54 +1462,69 @@ int main(int argc, char *argv[])
 
    vector<int>::iterator find_ptr;
 
-   for (int j = 0; j < ports; j++ ){ 
-        vector<Cross_Paths>::iterator elem = Crossing_Paths.begin()+j;
-                unsigned int p_ct = 0;
-                while ( p_ct < elem->pair_index.size() ){
-                        int u = elem->pair_index[p_ct]; 
-                        bool is_duplicate = false; //check if there is a same destination
-                        unsigned int p_ct_t = 0;
-                        while ( p_ct_t < p_ct ){
-                                int v = elem->pair_index[p_ct_t]; 
-                                if (pairs[u].h_dst == pairs[v].h_dst){
-                                        is_duplicate = true;
+   if (Topology == 0 || Topology == 1){ //mesh or torus
+        for (int j = 0; j < Vch * (degree+1+2*Host_Num) * switch_num; j++ ){ 
+                vector<Cross_Paths>::iterator elem = Crossing_Paths.begin()+j;
+                        unsigned int p_ct = 0;
+                        while ( p_ct < elem->pair_index.size() ){
+                                int u = elem->pair_index[p_ct]; 
+                                bool is_duplicate = false; //check if there is a same destination
+                                unsigned int p_ct_t = 0;
+                                while ( p_ct_t < p_ct ){
+                                        int v = elem->pair_index[p_ct_t]; 
+                                        if (pairs[u].h_dst == pairs[v].h_dst){
+                                                is_duplicate = true;
+                                        }
+                                        p_ct_t++;
                                 }
-                                p_ct_t++;
+                                if (!is_duplicate) max_cp_dst_t++;
+                                p_ct++;
                         }
-                        if (!is_duplicate) max_cp_dst_t++;
-                        p_ct++;
+                        if (max_cp_dst_t > max_cp_dst) max_cp_dst = max_cp_dst_t;
+                        max_cp_dst_t = 0;
+        }
+                cout << " === Max. number of slots (w/o update) ===" << endl << max_cp_dst << endl;	
+                cout << " === Max. number of slots (w/ update) ===" << endl << max_cp << endl;
+
+                /*int slot_max = 0;
+                for (int i = 0; i < Crossing_Paths.size(); i++){
+                        if (i%(degree+1+2*Host_Num) != degree+2*Host_Num && i%(degree+1+2*Host_Num) != degree+2*Host_Num-1)
+                                if(Crossing_Paths[i].pair_index.size() > slot_max)
+                                        slot_max = Crossing_Paths[i].pair_index.size();
                 }
-                if (max_cp_dst_t > max_cp_dst) max_cp_dst = max_cp_dst_t;
-                max_cp_dst_t = 0;
-   }
-   cout << " === Max. number of slots (w/o update) ===" << endl << max_cp_dst << endl;	
-   cout << " === Max. number of slots (w/ update) ===" << endl << max_cp << endl;
+                cout << " slot_max = " << slot_max << endl;	*/
 
-   /*int slot_max = 0;
-   for (int i = 0; i < Crossing_Paths.size(); i++){
-        if (i%(degree+1+2*Host_Num) != degree+2*Host_Num && i%(degree+1+2*Host_Num) != degree+2*Host_Num-1)
-        if(Crossing_Paths[i].pair_index.size() > slot_max)
-        slot_max = Crossing_Paths[i].pair_index.size();
-   }
-   cout << " slot_max = " << slot_max << endl;	*/
-
-   for (int j = 0; j < ports; j++ ){ 
+        for (int j = 0; j < Vch * (degree+1+2*Host_Num) * switch_num; j++ ){ 
         vector<Cross_Paths>::iterator elem = Crossing_Paths.begin()+j;
-        elem = max_element(Crossing_Paths.begin(),Crossing_Paths.end());
+                switch (Allocation){
+                // low port first
+                case 0:   
+                if ( j%(degree+1+2*Host_Num)== 0)	 
+                elem = Crossing_Paths.begin()+j;
+                break;
+                // Crossing paths based method
+                case 1:
+                elem = max_element(Crossing_Paths.begin(),Crossing_Paths.end());
+                break;
+                default:
+                cerr << "Please select a legal allocation option (-A 0 or 1)" << endl;
+                exit (1);
+                break;
+                }
 
-        // local IDs are assigned
-        unsigned int path_ct = 0; 
-        while ( path_ct < elem->pair_index.size() ){
-        int t = elem->pair_index[path_ct];      
-        // check if IDs are assigned
-        if ( pairs[t].Valid == true ) {path_ct++; continue;}
-        // ID is assigned from 0
-        int id_tmp = 0;
-        bool NG_ID = false;
+                // local IDs are assigned
+                unsigned int path_ct = 0; 
+                while ( path_ct < elem->pair_index.size() ){
+                int t = elem->pair_index[path_ct];      
+                // check if IDs are assigned
+                if ( pairs[t].Valid == true ) {path_ct++; continue;}
+                // ID is assigned from 0
+                int id_tmp = 0;
+                bool NG_ID = false;
                 
         NEXT_ID:
-                // ID is used or not
-                unsigned int s_ct = 0; // channel
+                // 
+                unsigned int s_ct = 0; 
                 while ( s_ct < pairs[t].channels.size() && !NG_ID ){
                 int i = pairs[t].channels[s_ct];
                 //vector<int>::iterator find_ptr;
@@ -1544,16 +1559,198 @@ int main(int argc, char *argv[])
                 path_ct++;
         }
         elem->Valid = true;
+        }
+        
+        show_paths(Crossing_Paths, ct, switch_num, max_id, pairs, hops, Vch, Host_Num, max_cp, max_cp_dst, path_based, degree, default_slot);
    }
 
-   if (Topology == 0 || Topology == 1) // mesh or torus
-   show_paths(Crossing_Paths, ct, switch_num, max_id, pairs, hops, Vch, Host_Num, max_cp, max_cp_dst, path_based, degree, default_slot);     
-        
-   if (Topology == 2) // fat-tree
-   show_paths_tree(Crossing_Paths, ct, node_num, max_id, pairs, hops, Host_Num, max_cp, max_cp_dst, path_based, PORT, default_slot);
+   if (Topology == 2){ //fat-tree
+        for (int j = 0; j < ports; j++ ){ 
+                vector<Cross_Paths>::iterator elem = Crossing_Paths.begin()+j;
+                        unsigned int p_ct = 0;
+                        while ( p_ct < elem->pair_index.size() ){
+                                int u = elem->pair_index[p_ct]; 
+                                bool is_duplicate = false; //check if there is a same destination
+                                unsigned int p_ct_t = 0;
+                                while ( p_ct_t < p_ct ){
+                                        int v = elem->pair_index[p_ct_t]; 
+                                        if (pairs[u].h_dst == pairs[v].h_dst){
+                                                is_duplicate = true;
+                                        }
+                                        p_ct_t++;
+                                }
+                                if (!is_duplicate) max_cp_dst_t++;
+                                p_ct++;
+                        }
+                        if (max_cp_dst_t > max_cp_dst) max_cp_dst = max_cp_dst_t;
+                        max_cp_dst_t = 0;
+        }
+        cout << " === Max. number of slots (w/o update) ===" << endl << max_cp_dst << endl;	
+        cout << " === Max. number of slots (w/ update) ===" << endl << max_cp << endl;
+
+        for (int j = 0; j <= PORT * (node_num+node_num/Host_Num+node_num/(int)pow(Host_Num,2)); j++ ){ 
+        vector<Cross_Paths>::iterator elem = Crossing_Paths.begin()+j;
+                switch (Allocation){
+                // low port first
+                case 0:   
+                elem = Crossing_Paths.begin()+j;
+                break;
+                // Crossing paths based method
+                case 1:
+                elem = max_element(Crossing_Paths.begin(),Crossing_Paths.end());
+                break;
+                default:
+                cerr << "Please select a legal allocation optiohn(-A 0 or 1)" << endl;
+                exit (1);
+                break;
+                }
+
+                // local ID
+                unsigned int path_ct = 0; 
+                while ( path_ct < elem->pair_index.size() ){
+                // pair ID
+                int t = elem->pair_index[path_ct];      
+                // ID is already assigned
+                if ( pairs[t].Valid == true ) {path_ct++; continue;}
+                // assigned from 0
+                int id_tmp = 0;
+                bool NG_ID = false;
+                
+        NEXT_ID_TREE:
+                // ID is used or not
+                unsigned int s_ct = 0; // channel
+                while ( s_ct < pairs[t].channels.size() && !NG_ID ){
+                int i = pairs[t].channels[s_ct];
+                //list<int>::iterator find_ptr;
+                find_ptr = find ( Crossing_Paths[i].assigned_list.begin(), Crossing_Paths[i].assigned_list.end(), id_tmp);
+                if (path_based && find_ptr != Crossing_Paths[i].assigned_list.end()) NG_ID = true;
+                if (!path_based && find_ptr != Crossing_Paths[i].assigned_list.end()) {
+                int tmp = 0;
+                while (*find_ptr != Crossing_Paths[i].assigned_list[tmp]) {tmp++;}
+                if (pairs[t].h_dst != Crossing_Paths[i].assigned_dst_list[tmp])
+                                        NG_ID = true; 
+                }
+                s_ct++;
+                }
+                
+                if (NG_ID){
+                id_tmp++; NG_ID = false; goto NEXT_ID_TREE;
+                }
+                
+                pairs[t].ID = id_tmp;
+                unsigned int a_ct = 0;
+                while ( a_ct < pairs[t].channels.size() ){
+                int j = pairs[t].channels[a_ct];
+                Crossing_Paths[j].assigned_list.push_back(id_tmp);
+                int t = elem->pair_index[path_ct];      	
+                Crossing_Paths[j].assigned_dst_list.push_back(pairs[t].h_dst);
+                a_ct++; 
+                }
+
+                pairs[t].Valid = true;	    
+                //if (max_id < id_tmp) max_id = id_tmp;
+                if (max_id <= id_tmp) max_id = id_tmp + 1; 
+                
+                path_ct++;
+        }
+        elem->Valid = true;
+        }      
+        show_paths_tree(Crossing_Paths, ct, node_num, max_id, pairs, hops, Host_Num, max_cp, max_cp_dst, path_based, PORT, default_slot);
+   }
    
-   if (Topology == 3) // fully-connected
-   show_paths_fullyconnected(Crossing_Paths, ct, switch_num, max_id, pairs, hops, Host_Num, max_cp, max_cp_dst, path_based, degree, default_slot); 
+   if (Topology == 3){ //fully-connected
+        for (int j = 0; j < (degree+1+2*Host_Num) * switch_num; j++ ){ 
+                vector<Cross_Paths>::iterator elem = Crossing_Paths.begin()+j;
+                        unsigned int p_ct = 0;
+                        while ( p_ct < elem->pair_index.size() ){
+                                int u = elem->pair_index[p_ct]; 
+                                bool is_duplicate = false; //check if there is a same destination
+                                unsigned int p_ct_t = 0;
+                                while ( p_ct_t < p_ct ){
+                                        int v = elem->pair_index[p_ct_t]; 
+                                        if (pairs[u].h_dst == pairs[v].h_dst){
+                                                is_duplicate = true;
+                                        }
+                                        p_ct_t++;
+                                }
+                                if (!is_duplicate) max_cp_dst_t++;
+                                p_ct++;
+                        }
+                        if (max_cp_dst_t > max_cp_dst) max_cp_dst = max_cp_dst_t;
+                        max_cp_dst_t = 0;
+        }
+                cout << " === Max. number of slots (w/o update) ===" << endl << max_cp_dst << endl;	
+                cout << " === Max. number of slots (w/ update) ===" << endl << max_cp << endl;
+
+        for (int j = 0; j < (degree+1+2*Host_Num) * switch_num; j++ ){ 
+        vector<Cross_Paths>::iterator elem = Crossing_Paths.begin()+j;
+                switch (Allocation){
+                // low port first
+                case 0:   
+                if ( j%(degree+1+2*Host_Num)== 0)	 
+                elem = Crossing_Paths.begin()+j;
+                break;
+                // Crossing paths based method
+                case 1:
+                elem = max_element(Crossing_Paths.begin(),Crossing_Paths.end());
+                break;
+                default:
+                cerr << "Please select a legal allocation option (-A 0 or 1)" << endl;
+                exit (1);
+                break;
+                }
+
+                // local IDs are assigned
+                unsigned int path_ct = 0; 
+                while ( path_ct < elem->pair_index.size() ){
+                int t = elem->pair_index[path_ct];      
+                // check if IDs are assigned
+                if ( pairs[t].Valid == true ) {path_ct++; continue;}
+                // ID is assigned from 0
+                int id_tmp = 0;
+                bool NG_ID = false;
+                
+        NEXT_ID_FULLY:
+                // 
+                unsigned int s_ct = 0; 
+                while ( s_ct < pairs[t].channels.size() && !NG_ID ){
+                int i = pairs[t].channels[s_ct];
+                //vector<int>::iterator find_ptr;
+                find_ptr = find ( Crossing_Paths[i].assigned_list.begin(), Crossing_Paths[i].assigned_list.end(), id_tmp);
+                if ( path_based && find_ptr != Crossing_Paths[i].assigned_list.end()) NG_ID = true;
+                if (!path_based && find_ptr != Crossing_Paths[i].assigned_list.end()) {
+                int tmp = 0;
+                while (*find_ptr != Crossing_Paths[i].assigned_list[tmp]) {tmp++;}
+                if (pairs[t].h_dst != Crossing_Paths[i].assigned_dst_list[tmp])
+                                        NG_ID = true; 
+                }
+                s_ct++;
+                }
+                
+                if (NG_ID){
+                id_tmp++; NG_ID = false; goto NEXT_ID_FULLY;
+                }
+                pairs[t].ID = id_tmp;
+
+                unsigned int a_ct = 0;
+                while ( a_ct < pairs[t].channels.size() ){
+                int j = pairs[t].channels[a_ct];
+                        Crossing_Paths[j].assigned_list.push_back(id_tmp);
+                        int t = elem->pair_index[path_ct];      	
+                        Crossing_Paths[j].assigned_dst_list.push_back(pairs[t].h_dst);
+                        a_ct++; 
+                }
+
+                pairs[t].Valid = true;	    
+                if (max_id <= id_tmp) max_id = id_tmp + 1; 
+
+                path_ct++;
+        }
+        elem->Valid = true;
+        }
+   
+        show_paths_fullyconnected(Crossing_Paths, ct, switch_num, max_id, pairs, hops, Host_Num, max_cp, max_cp_dst, path_based, degree, default_slot);
+   }   
 
    return 0;
 }
